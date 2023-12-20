@@ -11,7 +11,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 - [Text to 3D Human](#text-to-3d-human)
   * [Paper lists](#paper-lists)
-  * [Datasets](#datasets)
+  * [Pretrained Models](#pretrained-models)
 - [Text to Human Motion](#text-to-human-motion)
   * [Paper lists](#paper-lists)
   * [Datasets](#datasets)
@@ -110,11 +110,12 @@ Fangzhou Hong, Mingyuan Zhang, Liang Pan, Zhongang Cai, Lei Yang, Ziwei Liu
 | 2023 | **AvatarVerse: High-quality & Stable 3D Avatar Creation from Text and Pose**  | arXiv  |          [Link](https://arxiv.org/abs/2308.03610)          |  Coming soon!  | [Link](https://avatarverse3d.github.io/)  |
 | 2022 | **AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars**  | SIGGRAPH 2022 (Journal Track)  |          [Link](https://arxiv.org/abs/2205.08535)          | [Link](https://github.com/hongfz16/AvatarCLIP)  | [Link](https://hongfz16.github.io/projects/AvatarCLIP.html)  |
 
-### Datasets
-<!--
-   | Dataset | Samples |                              URL                              |
+### Pretrained Models
+
+   | Pretrained Models | Info |                              URL                              |
    | :-----: | :-----: | :----------------------------------------------------------: |
-   |  USPS   |  9298   | [usps.zip](https://drive.google.com/file/d/19oBkSeIluW3A5kcV7W0UM1Bt6V9Q62e-/view?usp=sharing) |-->
+   |  SMPL-X  |  smpl model (smpl weights)  | [Link](https://smpl-x.is.tue.mpg.de/) |
+   |  human_body_prior  |  vposer model (smpl weights)  | [Link](https://github.com/nghorbani/human_body_prior) |
 
 --------------
 
