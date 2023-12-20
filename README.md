@@ -153,6 +153,10 @@ Human motion modeling is important for many modern graphics applications, which 
 | 2022 | **MotionDiffuse: Text-Driven Human Motion Generation with Diffusion Model**  | arXiv  |          [Link](https://arxiv.org/abs/2208.15001)          | [Link](https://github.com/mingyuan-zhang/MotionDiffuse)  | [Link](https://mingyuan-zhang.github.io/projects/MotionDiffuse.html)  | 
 
 ### Datasets
+   | Motion Sequences | Info |                              URL                              |               Others                            | 
+   | :-----: | :-----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+   |  AIST |  smpl model (smpl weights)  | [Link](https://aistdancedb.ongaaccel.jp/) |--|
+   |  AIST++  |  AIST++ Dance Motion Dataset | [Link](https://google.github.io/aistplusplus_dataset/) | [dance video database with SMPL annotations](https://google.github.io/aistplusplus_dataset/download.html) |
 
 --------------
 
