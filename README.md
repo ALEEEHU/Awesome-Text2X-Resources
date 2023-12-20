@@ -1,11 +1,4 @@
-[stars-img]: https://img.shields.io/github/stars/ALEEEHU/Awesome-Text2X-Resources?color=yellow
-[stars-url]: https://github.com/ALEEEHU/Awesome-Text2X-Resources/stargazers
-[fork-img]: https://img.shields.io/github/forks/ALEEEHU/Awesome-Text2X-Resources?color=blue&label=fork
-[fork-url]: https://github.com/ALEEEHU/Awesome-Text2X-Resources/network/members
-
 # Awesome Text2X Resources
-[![GitHub stars][stars-img]][stars-url]
-[![GitHub forks][fork-img]][fork-url]
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FALEEEHU%2FAwesome-Text2X-Resources%2F&labelColor=%23d9e3f0&countColor=%23f47373&style=flat)
 
 This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can be everything)** methods (papers, codes and datasets), intended to keep pace with the anticipated surge of research in the coming months. 
