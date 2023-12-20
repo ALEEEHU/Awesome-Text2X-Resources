@@ -236,6 +236,20 @@ year={2023}
 
 % text to human motion
 
+@article{jiang2023motiongpt,
+  title={MotionGPT: Human Motion as a Foreign Language},
+  author={Jiang, Biao and Chen, Xin and Liu, Wen and Yu, Jingyi and Yu, Gang and Chen, Tao},
+  journal={arXiv preprint arXiv:2306.14795},
+  year={2023}
+}
+
+@article{zhang2022motiondiffuse,
+  title={MotionDiffuse: Text-Driven Human Motion Generation with Diffusion Model},
+  author={Zhang, Mingyuan and Cai, Zhongang and Pan, Liang and Hong, Fangzhou and Guo, Xinying and Yang, Lei and Liu, Ziwei},
+  journal={arXiv preprint arXiv:2208.15001},
+  year={2022}
+}
+
 % text to scene
 
 ```
