@@ -12,7 +12,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ⭐ If you find this repository useful to your research or work, it is really appreciated to star this repository. 
 
-:heart: Any additions or suggestions, feel free to contribute. Additional resources like blog posts, videos, etc. are also welcome.
+:heart: Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. Additional resources like blog posts, videos, etc. are also welcome.
 
 ## Table of contents
 
@@ -113,7 +113,7 @@ Fangzhou Hong, Mingyuan Zhang, Liang Pan, Zhongang Cai, Lei Yang, Ziwei Liu
 | 2023 | **TADA! Text to Animatable Digital Avatars**  | 3DV 2024  |          [Link](https://arxiv.org/abs/2308.10899)          | [Link](https://github.com/TingtingLiao/TADA)  | [Link](https://tada.is.tue.mpg.de/)  |
 | 2023 | **DreamWaltz: Make a Scene with Complex 3D Animatable Avatars**  | NeurIPS 2023  |          [Link](https://arxiv.org/abs/2305.12529)          | [Link](https://github.com/IDEA-Research/DreamWaltz)  | [Link](https://idea-research.github.io/DreamWaltz/)  |
 | 2023 | **DreamHuman: Animatable 3D Avatars from Text**  | arXiv  |          [Link](https://arxiv.org/abs/2306.09329)          |  Coming soon!  | [Link](https://dream-human.github.io/)  |
-| 2023 | **Guide3D: Create 3D Avatars from Text and Image Guidance**  | arXiv  |          [Link](https://arxiv.org/abs/2308.09705)          |  Coming soon!  | -- |
+| 2023 | **Guide3D: Create 3D Avatars from Text and Image Guidance**  | arXiv  |          [Link](https://arxiv.org/abs/2308.09705)          |  [Link](https://github.com/yukangcao/Guide3D) | -- |
 | 2023 | **AvatarVerse: High-quality & Stable 3D Avatar Creation from Text and Pose**  | arXiv  |          [Link](https://arxiv.org/abs/2308.03610)          |  Coming soon!  | [Link](https://avatarverse3d.github.io/)  |
 | 2022 | **AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars**  | SIGGRAPH 2022 (Journal Track)  |          [Link](https://arxiv.org/abs/2205.08535)          | [Link](https://github.com/hongfz16/AvatarCLIP)  | [Link](https://hongfz16.github.io/projects/AvatarCLIP.html)  |
 
