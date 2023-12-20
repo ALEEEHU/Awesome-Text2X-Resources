@@ -170,6 +170,70 @@ Human motion modeling is important for many modern graphics applications, which 
     year={2023}
 }
 
+@article{humannorm2023,
+title={HumanNorm: Learning Normal Diffusion Model for High-quality and Realistic 3D Human Generation},
+author={Huang, Xin and Shao, Ruizhi and Zhang, Qi and Zhang, Hongwen and Feng, Ying and Liu, Yebin and Wang, Qing},
+journal={arXiv},
+year={2023}
+}
+
+@inproceedings{huang2024tech,
+  title={{TeCH: Text-guided Reconstruction of Lifelike Clothed Humans}},
+  author={Huang, Yangyi and Yi, Hongwei and Xiu, Yuliang and Liao, Tingting and Tang, Jiaxiang and Cai, Deng and Thies, Justus},
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2024}
+}
+
+@inproceedings{liao2024tada,
+  title={{TADA! Text to Animatable Digital Avatars}},
+  author={Liao, Tingting and Yi, Hongwei and Xiu, Yuliang and Tang, Jiaxiang and Huang, Yangyi and Thies, Justus and Black, Michael J.},
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2024}
+}
+
+@article{huang2023dreamwaltz,
+ title={DreamWaltz: Make a Scene with Complex 3D Animatable Avatars},
+ author={Yukun Huang and Jianan Wang and Ailing Zeng and He Cao and Xianbiao Qi and Yukai Shi and Zheng-Jun Zha and Lei Zhang},
+ year={2023},
+ eprint={2305.12529},
+ archivePrefix={arXiv},
+ primaryClass={cs.CV}
+}
+
+@article{kolotouros2023dreamhuman,
+  title={DreamHuman: Animatable 3D Avatars from Text},
+  author={Kolotouros, Nikos and Alldieck, Thiemo and Zanfir, Andrei and Bazavan, Eduard Gabriel and Fieraru, Mihai and Sminchisescu, Cristian},
+  booktitle={arXiv preprint arxiv:2306.09329},
+  year={2023}
+}
+
+@article{cao2023guide3d,
+  title={Guide3D: Create 3D Avatars from Text and Image Guidance},
+  author={Cao, Yukang and Cao, Yan-Pei and Han, Kai and Shan, Ying and Wong, Kwan-Yee K},
+  journal={arXiv preprint arXiv:2308.09705},
+  year={2023}
+}
+
+@misc{zhang2023avatarverse,
+  title={AvatarVerse: High-quality & Stable 3D Avatar Creation from Text and Pose},
+  author={Huichao Zhang and Bowen Chen and Hao Yang and Liao Qu and Xu Wang and Li Chen and Chao Long and Feida Zhu and Kang Du and Min Zheng},
+  year={2023},
+  eprint={2308.03610},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+
+@article{hong2022avatarclip,
+    title={AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars},
+    author={Hong, Fangzhou and Zhang, Mingyuan and Pan, Liang and Cai, Zhongang and Yang, Lei and Liu, Ziwei},
+    journal={ACM Transactions on Graphics (TOG)},
+    volume={41},
+    number={4},
+    pages={1--19},
+    year={2022},
+    publisher={ACM New York, NY, USA}
+}
+
 % text to human motion
 
 % text to scene
