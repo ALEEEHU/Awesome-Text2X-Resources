@@ -157,3 +157,4 @@ Fangzhou Hong, Mingyuan Zhang, Liang Pan, Zhongang Cai, Lei Yang, Ziwei Liu
 
 ### Other Related Awesome Repository
 - 🔥 topic 1 : 3DGS [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
+- 🔥 text-to-3d object generation **benchmark** [T3Bench](https://github.com/THU-LYJ-Lab/T3Bench)
