@@ -19,6 +19,9 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to Scene](#text-to-scene)
   * [Paper lists](#paper-lists)
   * [Datasets](#datasets)
+- [Text to Video](#text-to-video)
+  * [Paper lists](#paper-lists)
+  * [Datasets](#datasets)
 - [Others](#others)
   * [Reference](#reference)
   * [Other Related Awesome Repository](#other-related-awesome-repository)
@@ -178,6 +181,25 @@ Human motion modeling is important for many modern graphics applications, which 
 
 --------------
 
+## Text to Video
+### 1. Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos 
+Yue Ma, Yingqing He, Xiaodong Cun, Xintao Wang, Ying Shan, Xiu Li, Qifeng Chen
+
+(Tsinghua University(Tsinghua Shenzhen International Graduate School), HKUST, Tencent AI Lab)
+<details span>
+<summary><b>Abstract</b></summary>
+Generating text-editable and pose-controllable character videos have an imperious demand in creating various digital human. Nevertheless, this task has been restricted by the absence of a comprehensive dataset featuring paired video-pose captions and the generative prior models for videos. In this work, we design a novel two-stage training scheme that can utilize easily obtained datasets (i.e.,image pose pair and pose-free video) and the pre-trained text-to-image (T2I) model to obtain the pose-controllable character videos. Specifically, in the first stage, only the keypoint-image pairs are used only for a controllable text-to-image generation. We learn a zero-initialized convolu- tional encoder to encode the pose information. In the second stage, we finetune the motion of the above network via a pose-free video dataset by adding the learnable temporal self-attention and reformed cross-frame self-attention blocks. Powered by our new designs, our method successfully generates continuously pose-controllable character videos while keeps the editing and concept composition ability of the pre-trained T2I model. The code and models will be made publicly available.
+</details>
+
+### Paper lists
+| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2023 | **Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos**  | AAAI 2024 |          [Link](https://arxiv.org/abs/2304.01186)          | [Link](https://github.com/mayuelala/FollowYourPose)  | [Link](https://follow-your-pose.github.io/)  |
+
+### Datasets
+
+--------------
+
 ## Others
 ### Reference
 ```
@@ -286,6 +308,15 @@ year={2023}
 }
 
 % text to scene
+
+% text to video
+
+@article{ma2023follow,
+  title={Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos},
+  author={Ma, Yue and He, Yingqing and Cun, Xiaodong and Wang, Xintao and Shan, Ying and Li, Xiu and Chen, Qifeng},
+  journal={arXiv preprint arXiv:2304.01186},
+  year={2023}
+}
 
 ```
 
