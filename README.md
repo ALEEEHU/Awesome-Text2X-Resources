@@ -1,5 +1,6 @@
 # Awesome Text2X Resources
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FALEEEHU%2FAwesome-Text2X-Resources%2F&labelColor=%23d9e3f0&countColor=%23f47373&style=flat)
+[![GitHub](https://img.shields.io/github/stars/ALEEEHU/Awesome-Text2X-Resources?style=social)](https://github.com/ALEEEHU/Awesome-Text2X-Resources)
 
 This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can be everything)** methods (papers, codes and datasets), intended to keep pace with the anticipated surge of research in the coming months. 
 
