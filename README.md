@@ -114,12 +114,32 @@ Fangzhou Hong, Mingyuan Zhang, Liang Pan, Zhongang Cai, Lei Yang, Ziwei Liu
 | 2023 | **AvatarVerse: High-quality & Stable 3D Avatar Creation from Text and Pose**  | arXiv  |          [Link](https://arxiv.org/abs/2308.03610)          |  Coming soon!  | [Link](https://avatarverse3d.github.io/)  |
 | 2022 | **AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars**  | SIGGRAPH 2022 (Journal Track)  |          [Link](https://arxiv.org/abs/2205.08535)          | [Link](https://github.com/hongfz16/AvatarCLIP)  | [Link](https://hongfz16.github.io/projects/AvatarCLIP.html)  |
 
-### Pretrained Models
+### Pretrained Models 
 
-   | Pretrained Models | Info |                              URL                              |
+   | Pretrained Models (human body) | Info |                              URL                              |
    | :-----: | :-----: | :----------------------------------------------------------: |
+   |  SMPL  |  smpl model (smpl weights) | [Link](https://smpl.is.tue.mpg.de/) |
    |  SMPL-X  |  smpl model (smpl weights)  | [Link](https://smpl-x.is.tue.mpg.de/) |
    |  human_body_prior  |  vposer model (smpl weights)  | [Link](https://github.com/nghorbani/human_body_prior) |
+
+#### Additional Info
+<details>
+<summary>SMPL</summary>
+
+SMPL is an easy-to-use, realistic, model of the of the human body that is useful for animation and computer vision.
+
+- version 1.0.0 for Python 2.7 (female/male, 10 shape PCs)
+- version 1.1.0 for Python 2.7 (female/male/neutral, 300 shape PCs)
+- UV map in OBJ format
+  
+</details>
+
+<details>
+<summary>SMPL-X</summary>
+
+SMPL-X, that extends SMPL with fully articulated hands and facial expressions (55 joints, 10475 vertices)
+
+</details>
 
 --------------
 
@@ -168,10 +188,19 @@ Human motion modeling is important for many modern graphics applications, which 
 | 2022 | **MotionDiffuse: Text-Driven Human Motion Generation with Diffusion Model**  | arXiv  |          [Link](https://arxiv.org/abs/2208.15001)          | [Link](https://github.com/mingyuan-zhang/MotionDiffuse)  | [Link](https://mingyuan-zhang.github.io/projects/MotionDiffuse.html)  | 
 
 ### Datasets
-   | Motion Sequences | Info |                              URL                              |               Others                            | 
+   | Motion | Info |                              URL                              |               Others                            | 
    | :-----: | :-----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-   |  AIST |  smpl model (smpl weights)  | [Link](https://aistdancedb.ongaaccel.jp/) |--|
+   |  AIST |  AIST Dance Motion Dataset  | [Link](https://aistdancedb.ongaaccel.jp/) |--|
    |  AIST++  |  AIST++ Dance Motion Dataset | [Link](https://google.github.io/aistplusplus_dataset/) | [dance video database with SMPL annotations](https://google.github.io/aistplusplus_dataset/download.html) |
+   |  AMASS  |  optical marker-based motion capture datasets  | [Link](https://amass.is.tue.mpg.de/) |--|
+
+#### Additional Info
+<details>
+<summary>AMASS</summary>
+
+AMASS is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. AMASS is readily useful for animation, visualization, and generating training data for deep learning.
+  
+</details>
 
 --------------
 
