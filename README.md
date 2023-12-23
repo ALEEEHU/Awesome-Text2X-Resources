@@ -22,7 +22,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to Video](#text-to-video)
   * [Paper lists](#paper-lists)
   * [Datasets](#datasets)
-- [Text to 3D Video](#text-to-3d-video)
+- [Text to 4D](#text-to-4d)
   * [Paper lists](#paper-lists)
 - [Others](#others)
   * [Reference](#reference)
@@ -242,7 +242,8 @@ Generating text-editable and pose-controllable character videos have an imperiou
 
 --------------
 
-## Text to 3D Video
+## Text to 4D
+(Text to 3D Video)
 
 ### 1. Text-To-4D Dynamic Scene Generation
 Uriel Singer*, Shelly Sheynin*, Adam Polyak*, Oron Ashual, Iurii Makarov, Filippos Kokkinos, Naman Goyal, Andrea Vedaldi, Devi Parikh, Justin Johnson, Yaniv Taigman
@@ -420,6 +421,45 @@ year={2023}
   author={Ma, Yue and He, Yingqing and Cun, Xiaodong and Wang, Xintao and Shan, Ying and Li, Xiu and Chen, Qifeng},
   journal={arXiv preprint arXiv:2304.01186},
   year={2023}
+}
+
+%text to 3D video
+
+@article{singer2023text4d,
+  author = {Singer, Uriel and Sheynin, Shelly and Polyak, Adam and Ashual, Oron and
+           Makarov, Iurii and Kokkinos, Filippos and Goyal, Naman and Vedaldi, Andrea and
+           Parikh, Devi and Johnson, Justin and Taigman, Yaniv},
+  title = {Text-To-4D Dynamic Scene Generation},
+  journal = {arXiv:2301.11280},
+  year = {2023},
+}
+
+@article{bah20234dfy,
+  author = {Bahmani, Sherwin and Skorokhodov, Ivan and Rong, Victor and Wetzstein, Gordon and Guibas, Leonidas and Wonka, Peter and Tulyakov, Sergey and Park, Jeong Joon and Tagliasacchi, Andrea and Lindell, David B.},
+  title = {4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling},
+  journal = {arXiv},
+  year = {2023},
+}
+
+@article{zheng2023unified,
+  title={A Unified Approach for Text- and Image-guided 4D Scene Generation},
+  author={Yufeng Zheng and Xueting Li and Koki Nagano and Sifei Liu and Karsten Kreis and Otmar Hilliges and Shalini De Mello},
+  journal = {arXiv:2311.16854},
+  year={2023}
+}
+
+@article{zhao2023animate124,
+  author    = {Zhao, Yuyang and Yan, Zhiwen and Xie, Enze and Hong, Lanqing and Li, Zhenguo and Lee, Gim Hee},
+  title     = {Animate124: Animating One Image to 4D Dynamic Scene},
+  journal   = {arXiv preprint arXiv:2311.14603},
+  year      = {2023},
+}
+
+@article{ling2023alignyourgaussians,
+    title={Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models},
+    author={Ling, Huan and Kim, Seung Wook and Torralba, Antonio and Fidler, Sanja and Kreis, Karsten},
+    title={arXiv preprint arXiv:2312.13763},
+    year={2023}
 }
 
 ```
