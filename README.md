@@ -22,6 +22,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to Video](#text-to-video)
   * [Paper lists](#paper-lists)
   * [Datasets](#datasets)
+- [Text to 3D Video](#text-to-3d-video)
+  * [Paper lists](#paper-lists)
 - [Others](#others)
   * [Reference](#reference)
   * [Other Related Awesome Repository](#other-related-awesome-repository)
@@ -237,6 +239,68 @@ Generating text-editable and pose-controllable character videos have an imperiou
 | 2023 | **Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos**  | AAAI 2024 |          [Link](https://arxiv.org/abs/2304.01186)          | [Link](https://github.com/mayuelala/FollowYourPose)  | [Link](https://follow-your-pose.github.io/)  |
 
 ### Datasets
+
+--------------
+
+## Text to 3D Video
+
+### 1. Text-To-4D Dynamic Scene Generation
+Uriel Singer*, Shelly Sheynin*, Adam Polyak*, Oron Ashual, Iurii Makarov, Filippos Kokkinos, Naman Goyal, Andrea Vedaldi, Devi Parikh, Justin Johnson, Yaniv Taigman
+
+(Meta AI)
+<details span>
+<summary><b>Abstract</b></summary>
+We present MAV3D (Make-A-Video3D), a method for generating three-dimensional dynamic scenes from text descriptions. Our approach uses a 4D dynamic Neural Radiance Field (NeRF), which is optimized for scene appearance, density, and motion consistency by querying a Text-to-Video (T2V) diffusion-based model. The dynamic video output generated from the provided text can be viewed from any camera location and angle, and can be composited into any 3D environment. MAV3D does not require any 3D or 4D data and the T2V model is trained only on Text-Image pairs and unlabeled videos. We demonstrate the effectiveness of our approach using comprehensive quantitative and qualitative experiments and show an improvement over previously established internal baselines. To the best of our knowledge, our method is the first to generate 3D dynamic scenes given a text description.
+</details>
+
+### 2. 4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling
+Bahmani, Sherwin, Ivan, Skorokhodov, Victor, Rong, Gordon, Wetzstein, Leonidas, Guibas, Peter, Wonka, Sergey, Tulyakov, Jeong Joon, Park, Andrea, Tagliasacchi, David B., Lindell.
+
+(University of Toronto, Vector Institute, KAUST, Snap Inc., Stanford University, University of Michigan, SFU, Google)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent breakthroughs in text-to-4D generation rely on pre-trained text-to-image and text-to-video models to generate dynamic 3D scenes. However, current text-to-4D methods face a three-way tradeoff between the quality of scene appearance, 3D structure, and motion. For example, text-to-image models and their 3D-aware variants are trained on internet-scale image datasets and can be used to produce scenes with realistic appearance and 3D structure-but no motion. Text-to-video models are trained on relatively smaller video datasets and can produce scenes with motion, but poorer appearance and 3D structure. While these models have complementary strengths, they also have opposing weaknesses, making it difficult to combine them in a way that alleviates this three-way tradeoff. Here, we introduce hybrid score distillation sampling, an alternating optimization procedure that blends supervision signals from multiple pre-trained diffusion models and incorporates benefits of each for high-fidelity text-to-4D generation. Using hybrid SDS, we demonstrate synthesis of 4D scenes with compelling appearance, 3D structure, and motion.
+</details>
+
+### 3. A Unified Approach for Text- and Image-guided 4D Scene Generation
+Yufeng Zheng, Xueting Li, Koki Nagano, Sifei Liu, Karsten Kreis, Otmar Hilliges, Shalini De Mello
+
+(NVIDIA, ETH Zurich, Max Planck Institute for Intelligent Systems)
+<details span>
+<summary><b>Abstract</b></summary>
+Large-scale diffusion generative models are greatly simplifying image, video and 3D asset creation from user-provided text prompts and images. However, the challenging problem of text-to-4D dynamic 3D scene generation with diffusion guidance remains largely unexplored. We propose Dream-in-4D, which features a novel two-stage approach for text-to-4D synthesis, leveraging (1) 3D and 2D diffusion guidance to effectively learn a high-quality static 3D asset in the first stage; (2) a deformable neural radiance field that explicitly disentangles the learned static asset from its deformation, preserving quality during motion learning; and (3) a multi-resolution feature grid for the deformation field with a displacement total variation loss to effectively learn motion with video diffusion guidance in the second stage. Through a user preference study, we demonstrate that our approach significantly advances image and motion quality, 3D consistency and text fidelity for text-to-4D generation compared to baseline approaches. Thanks to its motion-disentangled representation, Dream-in-4D can also be easily adapted for controllable generation where appearance is defined by one or multiple images, without the need to modify the motion learning stage. Thus, our method offers, for the first time, a unified approach for text-to-4D, image-to-4D and personalized 4D generation tasks.
+</details>
+
+
+### 4. Animate124: Animating One Image to 4D Dynamic Scene
+Yuyang Zhao, Zhiwen Yan, Enze Xie, Lanqing Hong, Zhenguo Li, Gim Hee Lee
+
+(National University of Singapore, Huawei Noah's Ark Lab)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Animate124 (Animate-one-image-to-4D), the first work to animate a single in-the-wild image into 3D video through textual motion descriptions, an underexplored problem with significant applications. Our 4D generation leverages an advanced 4D grid dynamic Neural Radiance Field (NeRF) model, optimized in three distinct stages using multiple diffusion priors. Initially, a static model is optimized using the reference image, guided by 2D and 3D diffusion priors, which serves as the initialization for the dynamic NeRF. Subsequently, a video diffusion model is employed to learn the motion specific to the subject. However, the object in the 3D videos tends to drift away from the reference image over time. This drift is mainly due to the misalignment between the text prompt and the reference image in the video diffusion model. In the final stage, a personalized diffusion prior is therefore utilized to address the semantic drift. As the pioneering image-text-to-4D generation framework, our method demonstrates significant advancements over existing baselines, evidenced by comprehensive quantitative and qualitative assessments.
+</details>
+
+
+### 5. Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models
+Huan Ling, Seung Wook Kim, Antonio Torralba, Sanja Fidler, Karsten Kreis
+
+(NVIDIA, ETH Zurich, Max Planck Institute for Intelligent Systems)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-guided diffusion models have revolutionized image and video generation and have also been successfully used for optimization-based 3D object synthesis. Here, we instead focus on the underexplored text-to-4D setting and synthesize dynamic, animated 3D objects using score distillation methods with an additional temporal dimension. Compared to previous work, we pursue a novel compositional generation-based approach, and combine text-to-image, text-to-video, and 3D-aware multiview diffusion models to provide feedback during 4D object optimization, thereby simultaneously enforcing temporal consistency, high-quality visual appearance and realistic geometry. Our method, called Align Your Gaussians (AYG), leverages dynamic 3D Gaussian Splatting with deformation fields as 4D representation. Crucial to AYG is a novel method to regularize the distribution of the moving 3D Gaussians and thereby stabilize the optimization and induce motion. We also propose a motion amplification mechanism as well as a new autoregressive synthesis scheme to generate and combine multiple 4D sequences for longer generation. These techniques allow us to synthesize vivid dynamic scenes, outperform previous work qualitatively and quantitatively and achieve state-of-the-art text-to-4D performance. Due to the Gaussian 4D representation, different 4D animations can be seamlessly combined, as we demonstrate. AYG opens up promising avenues for animation, simulation and digital content creation as well as synthetic data generation.
+</details>
+
+
+
+### Paper lists
+| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2023 | **Text-To-4D Dynamic Scene Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | -  | [Link](https://make-a-video3d.github.io/)  |
+| 2023 | **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.17984)          | [link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
+| 2023 | **A Unified Approach for Text- and Image-guided 4D Scene Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.16854)          | -  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
+| 2023 | **Animate124: Animating One Image to 4D Dynamic Scene**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.14603)          | [link](https://github.com/HeliosZhao/Animate124)  | [Link](https://animate124.github.io/)  |
+| 2023 | **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.13763)          | -  | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
 
 --------------
 
