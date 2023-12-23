@@ -423,7 +423,7 @@ year={2023}
   year={2023}
 }
 
-%text to 3D video
+%text to 4D
 
 @article{singer2023text4d,
   author = {Singer, Uriel and Sheynin, Shelly and Polyak, Adam and Ashual, Oron and
