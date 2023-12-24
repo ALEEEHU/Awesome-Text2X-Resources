@@ -381,6 +381,13 @@ year={2023}
     publisher={ACM New York, NY, USA}
 }
 
+@article{xu2023seeavatar,
+  title={SEEAvatar: Photorealistic Text-to-3D Avatar Generation with Constrained Geometry and Appearance},
+  author={Xu, Yuanyou and Yang, Zongxin and Yang, Yi},
+  journal={arXiv preprint arXiv:2312.08889},
+  year={2023}
+}
+
 % text to human motion
 
 @article{humantomato,
