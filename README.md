@@ -397,6 +397,13 @@ year={2023}
   year={2023}
 }
 
+@article{liu2023HeadArtist,
+  author = {Hongyu Liu, Xuan Wang, Ziyu Wan, Yujun Shen, Yibing Song, Jing Liao, Qifeng Chen},
+  title = {HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation},
+  journal = {arXiv:2312.07539},
+  year = {2023},
+}
+
 % text to human motion
 
 @article{humantomato,
