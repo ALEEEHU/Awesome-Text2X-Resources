@@ -1,4 +1,5 @@
 # Awesome Text2X Resources
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FALEEEHU%2FAwesome-Text2X-Resources%2F&labelColor=%23d9e3f0&countColor=%23f47373&style=flat)
 [![GitHub](https://img.shields.io/github/stars/ALEEEHU/Awesome-Text2X-Resources?style=social)](https://github.com/ALEEEHU/Awesome-Text2X-Resources)
 
@@ -491,3 +492,4 @@ year={2023}
 - 🔥 topic 1 : 3DGS [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
 - 🔥 text-to-3d object generation **benchmark** [T3Bench](https://github.com/THU-LYJ-Lab/T3Bench)
 - 🔥 A growing curation of Text-to-3D, Diffusion-to-3D works. [Links](https://github.com/yyeboah/Awesome-Text-to-3D)
+- 🔥 Awesome-LLM-3D. [Links](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
