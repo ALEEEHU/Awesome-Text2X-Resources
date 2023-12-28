@@ -17,12 +17,10 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to Human Motion](#text-to-human-motion)
   * [Paper lists](#paper-lists)
   * [Datasets](#datasets)
-- [Text to Scene](#text-to-scene)
+- [Text to Texture](#text-to-texture)
   * [Paper lists](#paper-lists)
-  * [Datasets](#datasets)
 - [Text to Video](#text-to-video)
   * [Paper lists](#paper-lists)
-  * [Datasets](#datasets)
 - [Text to 4D](#text-to-4d)
   * [Paper lists](#paper-lists)
 - [Others](#others)
@@ -235,9 +233,20 @@ AMASS is a large database of human motion unifying different optical marker-base
 
 --------------
 
-## Text to Scene
+## Text to Texture
+### 1. Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering 
+Kim Youwang, Tae-Hyun Oh, Gerard Pons-Moll
+
+(University of Tübingen, Tübingen AI Center Germany, Max Planck Institute for Informatics Germany, Dept. of Electrical Engineering POSTECH, Grad. School of AI POSTECH, Institute for Convergence Research and Education in Advanced Technology Yonsei University)
+<details span>
+<summary><b>Abstract</b></summary>
+We present Paint-it, a text-driven high-fidelity texture map synthesis method for 3D meshes via neural re-parameterized texture optimization. Paint-it synthesizes texture maps from a text description by synthesis-through-optimization, exploiting the Score-Distillation Sampling (SDS). We observe that directly applying SDS yields undesirable texture quality due to its noisy gradients. We reveal the importance of texture parameterization when using SDS. Specifically, we propose Deep Convolutional Physically-Based Rendering (DC-PBR) parameterization, which re-parameterizes the physically-based rendering (PBR) texture maps with randomly initialized convolution-based neural kernels, instead of a standard pixel-based parameterization. We show that DC-PBR inherently schedules the optimization curriculum according to texture frequency and naturally filters out the noisy signals from SDS. In experiments, Paint-it obtains remarkable quality PBR texture maps within 15 min., given only a text description. We demonstrate the generalizability and practicality of Paint-it by synthesizing high-quality texture maps for large-scale mesh datasets and showing test-time applications such as relighting and material control using a popular graphics engine.
+</details>
+
 ### Paper lists
-### Datasets
+| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2023 | **Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.11360)          | [Link](https://github.com/postech-ami/paint-it)  | [Link](https://kim-youwang.github.io/paint-it)  |
 
 --------------
 
@@ -248,15 +257,13 @@ Yue Ma, Yingqing He, Xiaodong Cun, Xintao Wang, Ying Shan, Xiu Li, Qifeng Chen
 (Tsinghua University(Tsinghua Shenzhen International Graduate School), HKUST, Tencent AI Lab)
 <details span>
 <summary><b>Abstract</b></summary>
-Generating text-editable and pose-controllable character videos have an imperious demand in creating various digital human. Nevertheless, this task has been restricted by the absence of a comprehensive dataset featuring paired video-pose captions and the generative prior models for videos. In this work, we design a novel two-stage training scheme that can utilize easily obtained datasets (i.e.,image pose pair and pose-free video) and the pre-trained text-to-image (T2I) model to obtain the pose-controllable character videos. Specifically, in the first stage, only the keypoint-image pairs are used only for a controllable text-to-image generation. We learn a zero-initialized convolu- tional encoder to encode the pose information. In the second stage, we finetune the motion of the above network via a pose-free video dataset by adding the learnable temporal self-attention and reformed cross-frame self-attention blocks. Powered by our new designs, our method successfully generates continuously pose-controllable character videos while keeps the editing and concept composition ability of the pre-trained T2I model. The code and models will be made publicly available.
+Generating text-editable and pose-controllable character videos have an imperious demand in creating various digital human. Nevertheless, this task has been restricted by the absence of a comprehensive dataset featuring paired video-pose captions and the generative prior models for videos. In this work, we design a novel two-stage training scheme that can utilize easily obtained datasets (i.e.,image pose pair and pose-free video) and the pre-trained text-to-image (T2I) model to obtain the pose-controllable character videos. Specifically, in the first stage, only the keypoint-image pairs are used only for a controllable text-to-image generation. We learn a zero-initialized convolu- tional encoder to encode the pose information. In the second stage, we finetune the motion of the above network via a pose-free video dataset by adding the learnable temporal self-attention and reformed cross-frame self-attention blocks. Powered by our new designs, our method successfully generates continuously pose-controllable character videos while keeps the editing and concept composition ability of the pre-trained T2I model.
 </details>
 
 ### Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
 | 2023 | **Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos**  | AAAI 2024 |          [Link](https://arxiv.org/abs/2304.01186)          | [Link](https://github.com/mayuelala/FollowYourPose)  | [Link](https://follow-your-pose.github.io/)  |
-
-### Datasets
 
 --------------
 
@@ -453,7 +460,16 @@ year={2023}
         primaryClass={cs.CV}
 }
 
-% text to scene
+% text to texture
+
+@misc{youwang2023paintit,
+      title={Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering},
+      author={Kim Youwang and Tae-Hyun Oh and Gerard Pons-Moll},
+      year={2023},
+      eprint={2312.11360},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
 
 % text to video
 
