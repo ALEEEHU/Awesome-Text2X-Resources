@@ -135,7 +135,7 @@ This work presents HeadArtist for 3D head generation from text descriptions. Wit
 | 2023 | **AvatarVerse: High-quality & Stable 3D Avatar Creation from Text and Pose**  | arXiv  |          [Link](https://arxiv.org/abs/2308.03610)          |  Coming soon!  | [Link](https://avatarverse3d.github.io/)  |
 | 2022 | **AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars**  | SIGGRAPH 2022 (Journal Track)  |          [Link](https://arxiv.org/abs/2205.08535)          | [Link](https://github.com/hongfz16/AvatarCLIP)  | [Link](https://hongfz16.github.io/projects/AvatarCLIP.html)  |
 | 2023 | **SEEAvatar: Photorealistic Text-to-3D Avatar Generation with Constrained Geometry and Appearance**  | arXiv  |          [Link](https://arxiv.org/abs/2312.08889)          | Coming Soon!  | [Link](https://seeavatar3d.github.io/)  |
-| 2023 | **HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation**  | arXiv  |          [Link](https://arxiv.org/abs/2312.07539)          | Coming Soon!  | [Link](https://github.com/KumapowerLIU/HeadArtist/tree/main)  |
+| 2023 | **HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation**  | arXiv  |          [Link](https://arxiv.org/abs/2312.07539)          |  [Link](https://github.com/KumapowerLIU/HeadArtist)  | [Link](https://kumapowerliu.github.io/HeadArtist/)  |
 
 ### Pretrained Models 
 
