@@ -11,21 +11,65 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ## Table of contents
 
+- [Text to Scene](#text-to-scene)
+  * [Paper lists](#paper-lists)
 - [Text to 3D Human](#text-to-3d-human)
   * [Paper lists](#paper-lists)
   * [Pretrained Models](#pretrained-models)
 - [Text to Human Motion](#text-to-human-motion)
   * [Paper lists](#paper-lists)
   * [Datasets](#datasets)
-- [Text to Texture](#text-to-texture)
-  * [Paper lists](#paper-lists)
-- [Text to Video](#text-to-video)
-  * [Paper lists](#paper-lists)
 - [Text to 4D](#text-to-4d)
+  * [Paper lists](#paper-lists)
+- [Text to Texture](#text-to-texture)
   * [Paper lists](#paper-lists)
 - [Others](#others)
   * [Reference](#reference)
   * [Other Related Awesome Repository](#other-related-awesome-repository)
+
+--------------
+
+## Text to Scene
+### 1. SceneScape: Text-Driven Consistent Scene Generation 
+Rafail Fridman, Amit Abecasis, Yoni Kasten, Tali Dekel (Weizmann Institute of Science, NVIDIA Research)
+<details span>
+<summary><b>Abstract</b></summary>
+We present a method for text-driven perpetual view generation -- synthesizing long-term videos of various scenes solely, given an input text prompt describing the scene and camera poses. We introduce a novel framework that generates such videos in an online fashion by combining the generative power of a pre-trained text-to-image model with the geometric priors learned by a pre-trained monocular depth prediction model. To tackle the pivotal challenge of achieving 3D consistency, i.e., synthesizing videos that depict geometrically-plausible scenes, we deploy an online test-time training to encourage the predicted depth map of the current frame to be geometrically consistent with the synthesized scene. The depth maps are used to construct a unified mesh representation of the scene, which is progressively constructed along the video generation process. In contrast to previous works, which are applicable only to limited domains, our method generates diverse scenes, such as walkthroughs in spaceships, caves, or ice castles.
+</details>
+
+### 2. Text2Room: Extracting Textured 3D Meshes from 2D Text-to-Image Models 
+Lukas Höllein, Ang Cao, Andrew Owens, Justin Johnson, Matthias Nießner (Technical University of Munich, University of Michigan)
+<details span>
+<summary><b>Abstract</b></summary>
+We present Text2Room, a method for generating room-scale textured 3D meshes from a given text prompt as input. To this end, we leverage pre-trained 2D text-to-image models to synthesize a sequence of images from different poses. In order to lift these outputs into a consistent 3D scene representation, we combine monocular depth estimation with a text-conditioned inpainting model. The core idea of our approach is a tailored viewpoint selection such that the content of each image can be fused into a seamless, textured 3D mesh. More specifically, we propose a continuous alignment strategy that iteratively fuses scene frames with the existing geometry to create a seamless mesh. Unlike existing works that focus on generating single objects or zoom-out trajectories from text, our method generates complete 3D scenes with multiple objects and explicit 3D geometry. We evaluate our approach using qualitative and quantitative metrics, demonstrating it as the first method to generate room-scale 3D geometry with compelling textures from only text as input.
+</details>
+
+### 3. Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints 
+Chuan Fang, Xiaotao Hu, Kunming Luo, Ping Tan 
+
+(Hong Kong University of Science and Technology, Light Illusions, Nankai University)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-driven 3D indoor scene generation could be useful for gaming, film industry, and AR/VR applications. However, existing methods cannot faithfully capture the room layout, nor do they allow flexible editing of individual objects in the room. To address these problems, we present Ctrl-Room, which is able to generate convincing 3D rooms with designer-style layouts and high-fidelity textures from just a text prompt. Moreover, Ctrl-Room enables versatile interactive editing operations such as resizing or moving individual furniture items. Our key insight is to separate the modeling of layouts and appearance. %how to model the room that takes into account both scene texture and geometry at the same time. To this end, Our proposed method consists of two stages, a `Layout Generation Stage' and an `Appearance Generation Stage'. The `Layout Generation Stage' trains a text-conditional diffusion model to learn the layout distribution with our holistic scene code parameterization. Next, the `Appearance Generation Stage' employs a fine-tuned ControlNet to produce a vivid panoramic image of the room guided by the 3D scene layout and text prompt. In this way, we achieve a high-quality 3D room with convincing layouts and lively textures. Benefiting from the scene code parameterization, we can easily edit the generated room model through our mask-guided editing module, without expensive editing-specific training. Extensive experiments on the Structured3D dataset demonstrate that our method outperforms existing methods in producing more reasonable, view-consistent, and editable 3D rooms from natural language prompts.
+</details>
+
+### 4. SceneWiz3D: Towards Text-guided 3D Scene Composition 
+Qihang Zhang, Chaoyang Wang, Aliaksandr Siarohin, Peiye Zhuang, Yinghao Xu, Ceyuan Yang, Dahua Lin, Bolei Zhou, Sergey Tulyakov, Hsin-Ying Lee
+
+(The Chinese University of Hong Kong, Snap Inc., Stanford University, University of California Los Angeles)
+<details span>
+<summary><b>Abstract</b></summary>
+We are witnessing significant breakthroughs in the technology for generating 3D objects from text. Existing approaches either leverage large text-to-image models to optimize a 3D representation or train 3D generators on object-centric datasets. Generating entire scenes, however, remains very challenging as a scene contains multiple 3D objects, diverse and scattered. In this work, we introduce SceneWiz3D, a novel approach to synthesize high-fidelity 3D scenes from text. We marry the locality of objects with globality of scenes by introducing a hybrid 3D representation: explicit for objects and implicit for scenes. Remarkably, an object, being represented explicitly, can be either generated from text using conventional text-to-3D approaches, or provided by users. To configure the layout of the scene and automatically place objects, we apply the Particle Swarm Optimization technique during the optimization process. Furthermore, it is difficult for certain parts of the scene (e.g., corners, occlusion) to receive multi-view supervision, leading to inferior geometry. We incorporate an RGBD panorama diffusion model to mitigate it, resulting in high-quality geometry. Extensive evaluation supports that our approach achieves superior quality over previous approaches, enabling the generation of detailed and view-consistent 3D scenes.
+</details>
+
+### Paper lists
+| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2023 | **SceneScape: Text-Driven Consistent Scene Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2302.01133)          | [Link](https://github.com/RafailFridman/SceneScape)  | [Link](https://scenescape.github.io/)  |
+| 2023 | **Text2Room: Extracting Textured 3D Meshes from 2D Text-to-Image Models**  |  ICCV 2023 (Oral) |          [Link](https://arxiv.org/abs/2303.11989)          | [Link](https://github.com/lukasHoel/text2room)  | [Link](https://lukashoel.github.io/text-to-room/)  |
+| 2023 | **Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2310.03602)          | Coming soon!   | [Link](https://fangchuan.github.io/ctrl-room.github.io/)  |
+| 2023 | **SceneWiz3D: Towards Text-guided 3D Scene Composition**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.08885)          | Coming soon!   | [Link](https://zqh0253.github.io/SceneWiz3D/)  |
+
 
 --------------
 
@@ -234,40 +278,6 @@ AMASS is a large database of human motion unifying different optical marker-base
 
 --------------
 
-## Text to Texture
-### 1. Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering 
-Kim Youwang, Tae-Hyun Oh, Gerard Pons-Moll
-
-(University of Tübingen, Tübingen AI Center Germany, Max Planck Institute for Informatics Germany, Dept. of Electrical Engineering POSTECH, Grad. School of AI POSTECH, Institute for Convergence Research and Education in Advanced Technology Yonsei University)
-<details span>
-<summary><b>Abstract</b></summary>
-We present Paint-it, a text-driven high-fidelity texture map synthesis method for 3D meshes via neural re-parameterized texture optimization. Paint-it synthesizes texture maps from a text description by synthesis-through-optimization, exploiting the Score-Distillation Sampling (SDS). We observe that directly applying SDS yields undesirable texture quality due to its noisy gradients. We reveal the importance of texture parameterization when using SDS. Specifically, we propose Deep Convolutional Physically-Based Rendering (DC-PBR) parameterization, which re-parameterizes the physically-based rendering (PBR) texture maps with randomly initialized convolution-based neural kernels, instead of a standard pixel-based parameterization. We show that DC-PBR inherently schedules the optimization curriculum according to texture frequency and naturally filters out the noisy signals from SDS. In experiments, Paint-it obtains remarkable quality PBR texture maps within 15 min., given only a text description. We demonstrate the generalizability and practicality of Paint-it by synthesizing high-quality texture maps for large-scale mesh datasets and showing test-time applications such as relighting and material control using a popular graphics engine.
-</details>
-
-### Paper lists
-| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2023 | **Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.11360)          | [Link](https://github.com/postech-ami/paint-it)  | [Link](https://kim-youwang.github.io/paint-it)  |
-
---------------
-
-## Text to Video
-### 1. Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos 
-Yue Ma, Yingqing He, Xiaodong Cun, Xintao Wang, Ying Shan, Xiu Li, Qifeng Chen
-
-(Tsinghua University(Tsinghua Shenzhen International Graduate School), HKUST, Tencent AI Lab)
-<details span>
-<summary><b>Abstract</b></summary>
-Generating text-editable and pose-controllable character videos have an imperious demand in creating various digital human. Nevertheless, this task has been restricted by the absence of a comprehensive dataset featuring paired video-pose captions and the generative prior models for videos. In this work, we design a novel two-stage training scheme that can utilize easily obtained datasets (i.e.,image pose pair and pose-free video) and the pre-trained text-to-image (T2I) model to obtain the pose-controllable character videos. Specifically, in the first stage, only the keypoint-image pairs are used only for a controllable text-to-image generation. We learn a zero-initialized convolu- tional encoder to encode the pose information. In the second stage, we finetune the motion of the above network via a pose-free video dataset by adding the learnable temporal self-attention and reformed cross-frame self-attention blocks. Powered by our new designs, our method successfully generates continuously pose-controllable character videos while keeps the editing and concept composition ability of the pre-trained T2I model.
-</details>
-
-### Paper lists
-| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2023 | **Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos**  | AAAI 2024 |          [Link](https://arxiv.org/abs/2304.01186)          | [Link](https://github.com/mayuelala/FollowYourPose)  | [Link](https://follow-your-pose.github.io/)  |
-
---------------
-
 ## Text to 4D
 (Text to 3D Video)
 
@@ -339,8 +349,68 @@ We introduce Control4D, an innovative framework for editing dynamic 4D portraits
 
 --------------
 
+## Text to Texture
+### 1. Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering 
+Kim Youwang, Tae-Hyun Oh, Gerard Pons-Moll
+
+(University of Tübingen, Tübingen AI Center Germany, Max Planck Institute for Informatics Germany, Dept. of Electrical Engineering POSTECH, Grad. School of AI POSTECH, Institute for Convergence Research and Education in Advanced Technology Yonsei University)
+<details span>
+<summary><b>Abstract</b></summary>
+We present Paint-it, a text-driven high-fidelity texture map synthesis method for 3D meshes via neural re-parameterized texture optimization. Paint-it synthesizes texture maps from a text description by synthesis-through-optimization, exploiting the Score-Distillation Sampling (SDS). We observe that directly applying SDS yields undesirable texture quality due to its noisy gradients. We reveal the importance of texture parameterization when using SDS. Specifically, we propose Deep Convolutional Physically-Based Rendering (DC-PBR) parameterization, which re-parameterizes the physically-based rendering (PBR) texture maps with randomly initialized convolution-based neural kernels, instead of a standard pixel-based parameterization. We show that DC-PBR inherently schedules the optimization curriculum according to texture frequency and naturally filters out the noisy signals from SDS. In experiments, Paint-it obtains remarkable quality PBR texture maps within 15 min., given only a text description. We demonstrate the generalizability and practicality of Paint-it by synthesizing high-quality texture maps for large-scale mesh datasets and showing test-time applications such as relighting and material control using a popular graphics engine.
+</details>
+
+### Paper lists
+| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2023 | **Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.11360)          | [Link](https://github.com/postech-ami/paint-it)  | [Link](https://kim-youwang.github.io/paint-it)  |
+
+--------------
+
 ## Others
 ### Reference
+
+<details close>
+<summary>Text to Scene</summary>
+
+```
+% text to scene
+
+@article{SceneScape,
+    author    = {Fridman, Rafail and Abecasis, Amit and Kasten, Yoni and Dekel, Tali},
+    title     = {SceneScape: Text-Driven Consistent Scene Generation},
+    journal   = {arXiv preprint arXiv:2302.01133},
+    year      = {2023},
+}
+
+@InProceedings{hoellein2023text2room,
+    author    = {H\"ollein, Lukas and Cao, Ang and Owens, Andrew and Johnson, Justin and Nie{\ss}ner, Matthias},
+    title     = {Text2Room: Extracting Textured 3D Meshes from 2D Text-to-Image Models},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {7909-7920}
+}
+
+@article{fang2023ctrl,
+      title={Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints},
+      author={Fang, Chuan and Hu, Xiaotao and Luo, Kunming and Tan, Ping},
+      journal={arXiv preprint arXiv:2310.03602},
+      year={2023}
+}
+
+@inproceedings{zhang2023scenewiz3d,
+        author = {Qihang Zhang and Chaoyang Wang and Aliaksandr Siarohin and Peiye Zhuang and Yinghao Xu and Ceyuan Yang and Dahua Lin and Bo Dai and Bolei Zhou and Sergey Tulyakov and Hsin-Ying Lee},
+        title = {{SceneWiz3D}: Towards Text-guided {3D} Scene Composition},
+        booktitle = {arXiv},
+        year = {2023}
+}
+```
+</details>
+
+
+<details close>
+<summary>Text to 3D Human</summary>
+
 ```
 % text to 3d human
 
@@ -428,7 +498,14 @@ year={2023}
   journal = {arXiv:2312.07539},
   year = {2023},
 }
+```
+</details>
 
+
+<details close>
+<summary>Text to Human Motion</summary>
+
+```
 % text to human motion
 
 @article{humantomato,
@@ -468,27 +545,14 @@ year={2023}
   journal={arXiv preprint arXiv:2312.14828},
   year={2023}
 }
+```
+</details>
 
-% text to texture
 
-@misc{youwang2023paintit,
-      title={Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering},
-      author={Kim Youwang and Tae-Hyun Oh and Gerard Pons-Moll},
-      year={2023},
-      eprint={2312.11360},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+<details close>
+<summary>Text to 4D</summary>
 
-% text to video
-
-@article{ma2023follow,
-  title={Follow Your Pose: Pose-Guided Text-to-Video Generation using Pose-Free Videos},
-  author={Ma, Yue and He, Yingqing and Cun, Xiaodong and Wang, Xintao and Shan, Ying and Li, Xiu and Chen, Qifeng},
-  journal={arXiv preprint arXiv:2304.01186},
-  year={2023}
-}
-
+```
 %text to 4D
 
 @article{singer2023text4d,
@@ -534,8 +598,28 @@ author = {Shao, Ruizhi and Sun, Jingxiang and Peng, Cheng and Zheng, Zerong and 
 booktitle = {arxiv},
 year = {2023}
 }
+```
+</details>
+
+
+<details close>
+<summary>Text to Texture</summary>
 
 ```
+% text to texture
+
+@misc{youwang2023paintit,
+      title={Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering},
+      author={Kim Youwang and Tae-Hyun Oh and Gerard Pons-Moll},
+      year={2023},
+      eprint={2312.11360},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+</details>
+
+
 
 ### Other Related Awesome Repository
 - 🔥 Topic 1 : 3DGS [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
