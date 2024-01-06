@@ -626,3 +626,4 @@ year = {2023}
 - 🔥 Topic 2 : Awesome-LLM-3D. [Links](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
 - 🔥 text-to-3d object generation **benchmark** [T3Bench](https://github.com/THU-LYJ-Lab/T3Bench)
 - 🔥 A growing curation of Text-to-3D, Diffusion-to-3D works. [Links](https://github.com/yyeboah/Awesome-Text-to-3D)
+- 🔥 A Survey on Video Diffusion Models. [Links](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models)
