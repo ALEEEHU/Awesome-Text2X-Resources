@@ -624,6 +624,7 @@ year = {2023}
 ### Other Related Awesome Repository
 - 🔥 Topic 1 : 3DGS [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
 - 🔥 Topic 2 : Awesome-LLM-3D. [Links](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
-- 🔥 text-to-3d object generation **benchmark** [T3Bench](https://github.com/THU-LYJ-Lab/T3Bench)
-- 🔥 A growing curation of Text-to-3D, Diffusion-to-3D works. [Links](https://github.com/yyeboah/Awesome-Text-to-3D)
+- 🔥 Topic 3: Text-to-3D
+  - text-to-3d object generation **benchmark** [T3Bench](https://github.com/THU-LYJ-Lab/T3Bench)
+  - A growing curation of Text-to-3D, Diffusion-to-3D works. [Links](https://github.com/yyeboah/Awesome-Text-to-3D)
 - 🔥 A Survey on Video Diffusion Models. [Links](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models)
