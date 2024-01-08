@@ -11,6 +11,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ## Table of contents
 
+- [Related Survey](#related-survey)
 - [Text to Scene](#text-to-scene)
   * [Paper lists](#paper-lists)
 - [Text to 3D Human](#text-to-3d-human)
@@ -28,6 +29,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [Other Related Awesome Repository](#other-related-awesome-repository)
 
 --------------
+## Related Survey
+- [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024 
 
 ## Text to Scene
 ### 1. SceneScape: Text-Driven Consistent Scene Generation 
