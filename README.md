@@ -30,6 +30,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 --------------
 ## Related Survey
+- [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf), ArXiv 2024 
 - [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024 
 
 ## Text to Scene
