@@ -711,7 +711,9 @@ year = {2023}
 
 
 ### Other Related Awesome Repository
-- 🔥 Topic 1: 3DGS [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
+- 🔥 Topic 1: 3DGS
+  - Resource1: [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
+  - Resource2: [3D Gaussian Splatting Papers](https://github.com/Awesome3DGS/3D-Gaussian-Splatting-Papers)
 - 🔥 Topic 2: Awesome Radiance Fields approaches [Links](https://github.com/EricLee0224/awesome-nerf-editing)
 - 🔥 Topic 3: Awesome-LLM-3D [Links](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
 - 🔥 Topic 4: Text-to-3D
