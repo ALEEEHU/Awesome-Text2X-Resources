@@ -214,7 +214,14 @@ SMPL-X, that extends SMPL with fully articulated hands and facial expressions (5
 --------------
 
 ## Text to Human Motion
-### 1. Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation  
+### 1. Synthesizing Moving People with 3D Control  
+Boyi Li, Jathushan Rajasegaran, Yossi Gandelsman, Alexei A. Efros, Jitendra Malik (UC Berkeley)
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we present a diffusion model-based framework for animating people from a single image for a given target 3D motion sequence. Our approach has two core components: a) learning priors about invisible parts of the human body and clothing, and b) rendering novel body poses with proper clothing and texture. For the first part, we learn an in-filling diffusion model to hallucinate unseen parts of a person given a single image. We train this model on texture map space, which makes it more sample-efficient since it is invariant to pose and viewpoint. Second, we develop a diffusion-based rendering pipeline, which is controlled by 3D human poses. This produces realistic renderings of novel poses of the person, including clothing, hair, and plausible in-filling of unseen regions. This disentangled approach allows our method to generate a sequence of images that are faithful to the target motion in the 3D pose and, to the input image in terms of visual similarity. In addition to that, the 3D control allows various synthetic camera trajectories to render a person. Our experiments show that our method is resilient in generating prolonged motions and varied challenging and complex poses compared to prior methods. 
+</details>
+
+### 2. Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation  
 Mathis Petrovich, Or Litany, Umar Iqbal, Michael J. Black, Gül Varol, Xue Bin Peng, Davis Rempe
 
 (LIGM École des Ponts Univ Gustave Eiffel CNRS, Max Planck Institute for Intelligent Systems, NVIDIA, Technion, Simon Fraser University)
@@ -300,6 +307,7 @@ We introduce MoMask, a novel masked modeling framework for text-driven 3D human 
 ### Text to Human Motion Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2024 | **Synthesizing Moving People with 3D Control**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2401.10889)          | [Link](https://github.com/Boyiliee/3DHM)   | [Link](https://boyiliee.github.io/3DHM.github.io/)  |
 | 2024 | **Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2401.08559)          | Coming Soon! | [Link](https://mathis.petrovich.fr/stmc/)  |
 | 2023 | **EMDM: Efficient Motion Diffusion Model for Fast, High-Quality Human Motion Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.02256)          | [Link](https://github.com/Frank-ZY-Dou/EMDM) | [Link](https://frank-zy-dou.github.io/projects/EMDM/index.html)  |
 | 2023 | **SinMDM: Single Motion Diffusion**  | ICLR 2024 Spotlight |          [Link](https://arxiv.org/abs/2302.05905)          | [Link](https://github.com/SinMDM/SinMDM)  | [Link](https://sinmdm.github.io/SinMDM-page/)  |
@@ -557,6 +565,13 @@ year={2023}
 
 ```
 % text to human motion
+
+@article{li20243dhm,
+    author = {Li, Boyi and Rajasegaran, Jathushan and Gandelsman, Yossi and Efros, Alexei A. and Malik, Jitendra},
+    title = {Synthesizing Moving People with 3D Control},
+    journal = {Arxiv},
+    year = {2024},
+}
 
 @article{petrovich24stmc,
     title     = {{STMC}: Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation},
