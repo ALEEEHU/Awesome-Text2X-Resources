@@ -30,7 +30,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 --------------
 ## Related Survey
-- [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf), ArXiv 2024 
+- [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf), ArXiv 2024
+- [Advances in 3D Generation: A Survey](https://arxiv.org/abs/2401.17807), ArXiv 2024
 - [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
 - [A Survey on Video Diffusion Models](https://arxiv.org/abs/2310.10647), ArXiv 2023, [GitHub Repo](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models)
 
