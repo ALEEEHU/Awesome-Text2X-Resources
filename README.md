@@ -12,6 +12,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ## Table of contents
 
 - [Related Survey](#related-survey)
+- [Related Awesome Repository](#related-awesome-repository)
 - [Text to Scene](#text-to-scene)
   * [Paper lists](#text-to-scene-paper-lists)
 - [Text to 3D Human](#text-to-3d-human)
@@ -24,9 +25,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [Paper lists](#text-to-4d-paper-lists)
 - [Text to Texture](#text-to-texture)
   * [Paper lists](#text-to-texture-paper-lists)
-- [Others](#others)
-  * [Reference](#reference)
-  * [Other Related Awesome Repository](#other-related-awesome-repository)
+- [Reference](#reference)
 
 --------------
 ## Related Survey
@@ -35,6 +34,19 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
 - [A Survey on Video Diffusion Models](https://arxiv.org/abs/2310.10647), ArXiv 2023, [GitHub Repo](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models)
 
+## Related Awesome Repository
+- 🔥 Topic 1: 3DGS
+  - Resource1: [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
+  - Resource2: [3D Gaussian Splatting Papers](https://github.com/Awesome3DGS/3D-Gaussian-Splatting-Papers)
+- 🔥 Topic 2: Awesome Radiance Fields approaches [Awesome Radiance Fields approaches](https://github.com/EricLee0224/awesome-nerf-editing)
+- 🔥 Topic 3: Awesome LLM 3D [Awesome LLM 3D](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
+- 🔥 Topic 4: Awesome Digital Human [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
+- 🕵🏻‍♀️ Topic 5: Awesome 3D AIGC [Awesome 3D AIGC](https://github.com/mdyao/Awesome-3D-AIGC)
+- ✨ Topic 6: Text-to-3D
+  - text-to-3d object generation **benchmark** [T3Bench](https://github.com/THU-LYJ-Lab/T3Bench)
+  - A growing curation of Text-to-3D, Diffusion-to-3D works. [Links](https://github.com/yyeboah/Awesome-Text-to-3D)
+
+--------------
 ## Text to Scene
 ### 1. SceneScape: Text-Driven Consistent Scene Generation 
 Rafail Fridman, Amit Abecasis, Yoni Kasten, Tali Dekel (Weizmann Institute of Science, NVIDIA Research)
@@ -435,8 +447,7 @@ We present Paint-it, a text-driven high-fidelity texture map synthesis method fo
 
 --------------
 
-## Others
-### Reference
+## Reference
 
 <details close>
 <summary>Text to Scene</summary>
@@ -741,15 +752,3 @@ year = {2023}
 }
 ```
 </details>
-
-
-
-### Other Related Awesome Repository
-- 🔥 Topic 1: 3DGS
-  - Resource1: [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
-  - Resource2: [3D Gaussian Splatting Papers](https://github.com/Awesome3DGS/3D-Gaussian-Splatting-Papers)
-- 🔥 Topic 2: Awesome Radiance Fields approaches [Links](https://github.com/EricLee0224/awesome-nerf-editing)
-- 🔥 Topic 3: Awesome-LLM-3D [Links](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
-- 🔥 Topic 4: Text-to-3D
-  - text-to-3d object generation **benchmark** [T3Bench](https://github.com/THU-LYJ-Lab/T3Bench)
-  - A growing curation of Text-to-3D, Diffusion-to-3D works. [Links](https://github.com/yyeboah/Awesome-Text-to-3D)
