@@ -10,8 +10,6 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ## Table of contents
 
-- [Related Resources](#related-resources)
-  * [Survey and Awesome Repos](#survey-and-awesome-repos)
 - [Text to Scene](#text-to-scene)
   * [Paper lists](#text-to-scene-paper-lists)
   * [Reference](#text-to-scene-reference)
@@ -26,47 +24,9 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to 4D](#text-to-4d)
   * [Paper lists](#text-to-4d-paper-lists)
   * [Reference](#text-to-4d-reference)
+- [Related Resources](#related-resources)
+  * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
-
-## Related Resources
-### Survey and Awesome Repos 
-<details close>
-<summary>🔥 Topic 1: 3D Gaussian Splatting</summary>
- 
-#### Survey
-- [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf), ArXiv 2024
-  
-#### Awesome Repos
-- Resource1: [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
-- Resource2: [3D Gaussian Splatting Papers](https://github.com/Awesome3DGS/3D-Gaussian-Splatting-Papers)
-
-</details>
-
-<details close>
-<summary>🔥 Topic 2: AIGC 3D </summary>
- 
-#### Survey
-- [Advances in 3D Generation: A Survey](https://arxiv.org/abs/2401.17807), ArXiv 2024
-- [A Comprehensive Survey on 3D Content Generation](https://arxiv.org/abs/2402.01166), ArXiv 2024
-
-#### Awesome Repos
-- Resource1: [Awesome 3D AIGC](https://github.com/mdyao/Awesome-3D-AIGC)
-
-</details>
-
-<details close>
-<summary>🔥 Topic 3: LLM 3D </summary>
- 
-#### Awesome Repos
-- Resource1: [Awesome LLM 3D](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
-
-#### 3D Human
-- Survey: [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
-- Resource1: [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
-
-</details>
-
---------------
 
 ## Text to Scene
 ### 1. SceneScape: Text-Driven Consistent Scene Generation 
@@ -786,3 +746,50 @@ year = {2023}
 }
 ```
 </details>
+
+--------------
+
+## Related Resources
+### Survey and Awesome Repos 
+<details close>
+<summary>🔥 Topic 1: 3D Gaussian Splatting</summary>
+ 
+#### Survey
+- [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf), ArXiv 2024
+  
+#### Awesome Repos
+- Resource1: [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
+- Resource2: [3D Gaussian Splatting Papers](https://github.com/Awesome3DGS/3D-Gaussian-Splatting-Papers)
+
+</details>
+
+<details close>
+<summary>🔥 Topic 2: AIGC 3D </summary>
+ 
+#### Survey
+- [Advances in 3D Generation: A Survey](https://arxiv.org/abs/2401.17807), ArXiv 2024
+- [A Comprehensive Survey on 3D Content Generation](https://arxiv.org/abs/2402.01166), ArXiv 2024
+
+#### Awesome Repos
+- Resource1: [Awesome 3D AIGC](https://github.com/mdyao/Awesome-3D-AIGC)
+
+#### Benchmars
+- text-to-3d generation: [GPT-4V(ision) is a Human-Aligned Evaluator for Text-to-3D Generation](https://arxiv.org/abs/2401.04092), Wu et al., arXiv 2024 | [Code](https://github.com/3DTopia/GPTEval3D)
+</details>
+
+<details close>
+<summary>🔥 Topic 3: LLM 3D </summary>
+ 
+#### Awesome Repos
+- Resource1: [Awesome LLM 3D](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
+
+#### 3D Human
+- Survey: [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
+- Resource1: [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
+
+</details>
+
+--------------
+
+## License 
+Awesome Text2X Resources is released under the [MIT license](./LICENSE).
