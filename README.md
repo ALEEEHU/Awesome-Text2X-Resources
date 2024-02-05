@@ -11,42 +11,191 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ## Table of contents
 
-- [Related Survey](#related-survey)
-- [Related Awesome Repository](#related-awesome-repository)
-- [Text to Scene](#text-to-scene)
-  * [Paper lists](#text-to-scene-paper-lists)
-- [Text to 3D Human](#text-to-3d-human)
-  * [Paper lists](#text-to-3d-human-paper-lists)
-  * [Pretrained Models](#pretrained-models)
-- [Text to Human Motion](#text-to-human-motion)
-  * [Paper lists](#text-to-human-motion-paper-lists)
-  * [Datasets](#datasets)
+- [Related Resources](#related-resources)
+  * [Survey and Awesome Repos](#survey-and-awesome-repos)
 - [Text to 4D](#text-to-4d)
   * [Paper lists](#text-to-4d-paper-lists)
-- [Text to Texture](#text-to-texture)
-  * [Paper lists](#text-to-texture-paper-lists)
-- [Reference](#reference)
+  * [Reference](#text-to-scene-reference)
+- [Text to Scene](#text-to-scene)
+  * [Paper lists](#text-to-scene-paper-lists)
+  * [Reference](#text-to-scene-reference)
+- [Text to 3D Human](#text-to-3d-human)
+  * [Paper lists](#text-to-3d-human-paper-lists)
+  * [Reference](#text-to-3d-human-reference)
+  * [Additional Info](#additional-info)
+- [Text to Human Motion](#text-to-human-motion)
+  * [Paper lists](#text-to-human-motion-paper-lists)
+  * [Reference](#text-to-human-motion-reference)
+  * [Datasets](#datasets)
 
---------------
-## Related Survey
+
+## Related Resources
+### Survey and Awesome Repos 
+<details close>
+<summary>🔥 Topic 1: 3D Gaussian Splatting</summary>
+ 
+#### Survey
 - [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf), ArXiv 2024
-- [Advances in 3D Generation: A Survey](https://arxiv.org/abs/2401.17807), ArXiv 2024
-- [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
-- [A Survey on Video Diffusion Models](https://arxiv.org/abs/2310.10647), ArXiv 2023, [GitHub Repo](https://github.com/ChenHsing/Awesome-Video-Diffusion-Models)
+  
+#### Awesome Repos
+- Resource1: [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
+- Resource2: [3D Gaussian Splatting Papers](https://github.com/Awesome3DGS/3D-Gaussian-Splatting-Papers)
 
-## Related Awesome Repository
-- 🔥 Topic 1: 3DGS
-  - Resource1: [Awesome 3D Gaussian Splatting Resources](https://github.com/MrNeRF/awesome-3D-gaussian-splatting)
-  - Resource2: [3D Gaussian Splatting Papers](https://github.com/Awesome3DGS/3D-Gaussian-Splatting-Papers)
-- 🔥 Topic 2: Awesome Radiance Fields approaches [Awesome Radiance Fields approaches](https://github.com/EricLee0224/awesome-nerf-editing)
-- 🔥 Topic 3: Awesome LLM 3D [Awesome LLM 3D](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
-- 🔥 Topic 4: Awesome Digital Human [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
-- 🕵🏻‍♀️ Topic 5: Awesome 3D AIGC [Awesome 3D AIGC](https://github.com/mdyao/Awesome-3D-AIGC)
-- ✨ Topic 6: Text-to-3D
-  - text-to-3d object generation **benchmark** [T3Bench](https://github.com/THU-LYJ-Lab/T3Bench)
-  - A growing curation of Text-to-3D, Diffusion-to-3D works. [Links](https://github.com/yyeboah/Awesome-Text-to-3D)
+</details>
+
+<details close>
+<summary>🔥 Topic 2: AIGC 3D </summary>
+ 
+#### Survey
+- [Advances in 3D Generation: A Survey](https://arxiv.org/abs/2401.17807), ArXiv 2024
+- [A Comprehensive Survey on 3D Content Generation](https://arxiv.org/abs/2402.01166), ArXiv 2024
+
+#### Awesome Repos
+- Resource1: [Awesome 3D AIGC](https://github.com/mdyao/Awesome-3D-AIGC)
+
+</details>
+
+<details close>
+<summary>🔥 Topic 3: LLM 3D </summary>
+ 
+#### Awesome Repos
+- Resource1: [Awesome LLM 3D](https://github.com/ActiveVisionLab/Awesome-LLM-3D)
+
+#### 3D Human
+- Survey: [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
+- Resource1: [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
+
+</details>
 
 --------------
+
+## Text to 4D
+(Text to 3D Video)
+
+### 1. Text-To-4D Dynamic Scene Generation
+Uriel Singer*, Shelly Sheynin*, Adam Polyak*, Oron Ashual, Iurii Makarov, Filippos Kokkinos, Naman Goyal, Andrea Vedaldi, Devi Parikh, Justin Johnson, Yaniv Taigman
+
+(Meta AI)
+<details span>
+<summary><b>Abstract</b></summary>
+We present MAV3D (Make-A-Video3D), a method for generating three-dimensional dynamic scenes from text descriptions. Our approach uses a 4D dynamic Neural Radiance Field (NeRF), which is optimized for scene appearance, density, and motion consistency by querying a Text-to-Video (T2V) diffusion-based model. The dynamic video output generated from the provided text can be viewed from any camera location and angle, and can be composited into any 3D environment. MAV3D does not require any 3D or 4D data and the T2V model is trained only on Text-Image pairs and unlabeled videos. We demonstrate the effectiveness of our approach using comprehensive quantitative and qualitative experiments and show an improvement over previously established internal baselines. To the best of our knowledge, our method is the first to generate 3D dynamic scenes given a text description.
+</details>
+
+### 2. 4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling
+Bahmani, Sherwin, Ivan, Skorokhodov, Victor, Rong, Gordon, Wetzstein, Leonidas, Guibas, Peter, Wonka, Sergey, Tulyakov, Jeong Joon, Park, Andrea, Tagliasacchi, David B., Lindell.
+
+(University of Toronto, Vector Institute, KAUST, Snap Inc., Stanford University, University of Michigan, SFU, Google)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent breakthroughs in text-to-4D generation rely on pre-trained text-to-image and text-to-video models to generate dynamic 3D scenes. However, current text-to-4D methods face a three-way tradeoff between the quality of scene appearance, 3D structure, and motion. For example, text-to-image models and their 3D-aware variants are trained on internet-scale image datasets and can be used to produce scenes with realistic appearance and 3D structure-but no motion. Text-to-video models are trained on relatively smaller video datasets and can produce scenes with motion, but poorer appearance and 3D structure. While these models have complementary strengths, they also have opposing weaknesses, making it difficult to combine them in a way that alleviates this three-way tradeoff. Here, we introduce hybrid score distillation sampling, an alternating optimization procedure that blends supervision signals from multiple pre-trained diffusion models and incorporates benefits of each for high-fidelity text-to-4D generation. Using hybrid SDS, we demonstrate synthesis of 4D scenes with compelling appearance, 3D structure, and motion.
+</details>
+
+### 3. A Unified Approach for Text- and Image-guided 4D Scene Generation
+Yufeng Zheng, Xueting Li, Koki Nagano, Sifei Liu, Karsten Kreis, Otmar Hilliges, Shalini De Mello
+
+(NVIDIA, ETH Zurich, Max Planck Institute for Intelligent Systems)
+<details span>
+<summary><b>Abstract</b></summary>
+Large-scale diffusion generative models are greatly simplifying image, video and 3D asset creation from user-provided text prompts and images. However, the challenging problem of text-to-4D dynamic 3D scene generation with diffusion guidance remains largely unexplored. We propose Dream-in-4D, which features a novel two-stage approach for text-to-4D synthesis, leveraging (1) 3D and 2D diffusion guidance to effectively learn a high-quality static 3D asset in the first stage; (2) a deformable neural radiance field that explicitly disentangles the learned static asset from its deformation, preserving quality during motion learning; and (3) a multi-resolution feature grid for the deformation field with a displacement total variation loss to effectively learn motion with video diffusion guidance in the second stage. Through a user preference study, we demonstrate that our approach significantly advances image and motion quality, 3D consistency and text fidelity for text-to-4D generation compared to baseline approaches. Thanks to its motion-disentangled representation, Dream-in-4D can also be easily adapted for controllable generation where appearance is defined by one or multiple images, without the need to modify the motion learning stage. Thus, our method offers, for the first time, a unified approach for text-to-4D, image-to-4D and personalized 4D generation tasks.
+</details>
+
+
+### 4. Animate124: Animating One Image to 4D Dynamic Scene
+Yuyang Zhao, Zhiwen Yan, Enze Xie, Lanqing Hong, Zhenguo Li, Gim Hee Lee
+
+(National University of Singapore, Huawei Noah's Ark Lab)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Animate124 (Animate-one-image-to-4D), the first work to animate a single in-the-wild image into 3D video through textual motion descriptions, an underexplored problem with significant applications. Our 4D generation leverages an advanced 4D grid dynamic Neural Radiance Field (NeRF) model, optimized in three distinct stages using multiple diffusion priors. Initially, a static model is optimized using the reference image, guided by 2D and 3D diffusion priors, which serves as the initialization for the dynamic NeRF. Subsequently, a video diffusion model is employed to learn the motion specific to the subject. However, the object in the 3D videos tends to drift away from the reference image over time. This drift is mainly due to the misalignment between the text prompt and the reference image in the video diffusion model. In the final stage, a personalized diffusion prior is therefore utilized to address the semantic drift. As the pioneering image-text-to-4D generation framework, our method demonstrates significant advancements over existing baselines, evidenced by comprehensive quantitative and qualitative assessments.
+</details>
+
+
+### 5. Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models
+Huan Ling, Seung Wook Kim, Antonio Torralba, Sanja Fidler, Karsten Kreis
+
+(NVIDIA, ETH Zurich, Max Planck Institute for Intelligent Systems)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-guided diffusion models have revolutionized image and video generation and have also been successfully used for optimization-based 3D object synthesis. Here, we instead focus on the underexplored text-to-4D setting and synthesize dynamic, animated 3D objects using score distillation methods with an additional temporal dimension. Compared to previous work, we pursue a novel compositional generation-based approach, and combine text-to-image, text-to-video, and 3D-aware multiview diffusion models to provide feedback during 4D object optimization, thereby simultaneously enforcing temporal consistency, high-quality visual appearance and realistic geometry. Our method, called Align Your Gaussians (AYG), leverages dynamic 3D Gaussian Splatting with deformation fields as 4D representation. Crucial to AYG is a novel method to regularize the distribution of the moving 3D Gaussians and thereby stabilize the optimization and induce motion. We also propose a motion amplification mechanism as well as a new autoregressive synthesis scheme to generate and combine multiple 4D sequences for longer generation. These techniques allow us to synthesize vivid dynamic scenes, outperform previous work qualitatively and quantitatively and achieve state-of-the-art text-to-4D performance. Due to the Gaussian 4D representation, different 4D animations can be seamlessly combined, as we demonstrate. AYG opens up promising avenues for animation, simulation and digital content creation as well as synthetic data generation.
+</details>
+
+### 6. Control4D: Efficient 4D Portrait Editing with Text
+Ruizhi Shao, Jingxiang Sun, Cheng Peng, Zerong Zheng, Boyao Zhou, Hongwen Zhang, Yebin Liu (Tsinghua University)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Control4D, an innovative framework for editing dynamic 4D portraits using text instructions. Our method addresses the prevalent challenges in 4D editing, notably the inefficiencies of existing 4D representations and the inconsistent editing effect caused by diffusion-based editors. We first propose GaussianPlanes, a novel 4D representation that makes Gaussian Splatting more structured by applying plane-based decomposition in 3D space and time. This enhances both efficiency and robustness in 4D editing. Furthermore, we propose to leverage a 4D generator to learn a more continuous generation space from inconsistent edited images produced by the diffusion-based editor, which effectively improves the consistency and quality of 4D editing. Comprehensive evaluation demonstrates the superiority of Control4D, including significantly reduced training time, high-quality rendering, and spatial-temporal consistency in 4D portrait editing.
+</details>
+
+
+
+### Text to 4D Paper lists
+| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2023 | **Text-To-4D Dynamic Scene Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | -  | [Link](https://make-a-video3d.github.io/)  |
+| 2023 | **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.17984)          | [link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
+| 2023 | **A Unified Approach for Text- and Image-guided 4D Scene Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.16854)          | -  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
+| 2023 | **Animate124: Animating One Image to 4D Dynamic Scene**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.14603)          | [link](https://github.com/HeliosZhao/Animate124)  | [Link](https://animate124.github.io/)  |
+| 2023 | **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.13763)          | -  | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
+| 2023 | **Control4D: Efficient 4D Portrait Editing with Text**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2305.20082)          | Coming soon!  | [Link](https://control4darxiv.github.io./)  |
+
+
+### Text to 4D Reference
+
+
+<details close>
+<summary>Text to 4D</summary>
+
+```
+%text to 4D
+
+@article{singer2023text4d,
+  author = {Singer, Uriel and Sheynin, Shelly and Polyak, Adam and Ashual, Oron and
+           Makarov, Iurii and Kokkinos, Filippos and Goyal, Naman and Vedaldi, Andrea and
+           Parikh, Devi and Johnson, Justin and Taigman, Yaniv},
+  title = {Text-To-4D Dynamic Scene Generation},
+  journal = {arXiv:2301.11280},
+  year = {2023},
+}
+
+@article{bah20234dfy,
+  author = {Bahmani, Sherwin and Skorokhodov, Ivan and Rong, Victor and Wetzstein, Gordon and Guibas, Leonidas and Wonka, Peter and Tulyakov, Sergey and Park, Jeong Joon and Tagliasacchi, Andrea and Lindell, David B.},
+  title = {4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling},
+  journal = {arXiv},
+  year = {2023},
+}
+
+@article{zheng2023unified,
+  title={A Unified Approach for Text- and Image-guided 4D Scene Generation},
+  author={Yufeng Zheng and Xueting Li and Koki Nagano and Sifei Liu and Karsten Kreis and Otmar Hilliges and Shalini De Mello},
+  journal = {arXiv:2311.16854},
+  year={2023}
+}
+
+@article{zhao2023animate124,
+  author    = {Zhao, Yuyang and Yan, Zhiwen and Xie, Enze and Hong, Lanqing and Li, Zhenguo and Lee, Gim Hee},
+  title     = {Animate124: Animating One Image to 4D Dynamic Scene},
+  journal   = {arXiv preprint arXiv:2311.14603},
+  year      = {2023},
+}
+
+@article{ling2023alignyourgaussians,
+    title={Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models},
+    author={Ling, Huan and Kim, Seung Wook and Torralba, Antonio and Fidler, Sanja and Kreis, Karsten},
+    title={arXiv preprint arXiv:2312.13763},
+    year={2023}
+}
+
+@article{shao2023control4d,
+title = {Control4D: Efficient 4D Portrait Editing with Text},
+author = {Shao, Ruizhi and Sun, Jingxiang and Peng, Cheng and Zheng, Zerong and Zhou, Boyao and Zhang, Hongwen and Liu, Yebin},
+booktitle = {arxiv},
+year = {2023}
+}
+```
+</details>
+
+--------------
+
 ## Text to Scene
 ### 1. SceneScape: Text-Driven Consistent Scene Generation 
 Rafail Fridman, Amit Abecasis, Yoni Kasten, Tali Dekel (Weizmann Institute of Science, NVIDIA Research)
@@ -88,6 +237,44 @@ We are witnessing significant breakthroughs in the technology for generating 3D 
 | 2023 | **Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2310.03602)          | Coming soon!   | [Link](https://fangchuan.github.io/ctrl-room.github.io/)  |
 | 2023 | **SceneWiz3D: Towards Text-guided 3D Scene Composition**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.08885)          | Coming soon!   | [Link](https://zqh0253.github.io/SceneWiz3D/)  |
 
+### Text to Scene Reference
+<details close>
+<summary>Text to Scene</summary>
+
+```
+% text to scene
+
+@article{SceneScape,
+    author    = {Fridman, Rafail and Abecasis, Amit and Kasten, Yoni and Dekel, Tali},
+    title     = {SceneScape: Text-Driven Consistent Scene Generation},
+    journal   = {arXiv preprint arXiv:2302.01133},
+    year      = {2023},
+}
+
+@InProceedings{hoellein2023text2room,
+    author    = {H\"ollein, Lukas and Cao, Ang and Owens, Andrew and Johnson, Justin and Nie{\ss}ner, Matthias},
+    title     = {Text2Room: Extracting Textured 3D Meshes from 2D Text-to-Image Models},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2023},
+    pages     = {7909-7920}
+}
+
+@article{fang2023ctrl,
+      title={Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints},
+      author={Fang, Chuan and Hu, Xiaotao and Luo, Kunming and Tan, Ping},
+      journal={arXiv preprint arXiv:2310.03602},
+      year={2023}
+}
+
+@inproceedings{zhang2023scenewiz3d,
+        author = {Qihang Zhang and Chaoyang Wang and Aliaksandr Siarohin and Peiye Zhuang and Yinghao Xu and Ceyuan Yang and Dahua Lin and Bo Dai and Bolei Zhou and Sergey Tulyakov and Hsin-Ying Lee},
+        title = {{SceneWiz3D}: Towards Text-guided {3D} Scene Composition},
+        booktitle = {arXiv},
+        year = {2023}
+}
+```
+</details>
 
 --------------
 
@@ -207,15 +394,127 @@ We present En3D, an enhanced generative scheme for sculpting high-quality 3D hum
 | 2023 | **HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation**  | arXiv  |          [Link](https://arxiv.org/abs/2312.07539)          |  [Link](https://github.com/KumapowerLIU/HeadArtist)  | [Link](https://kumapowerliu.github.io/HeadArtist/)  |
 | 2024 | **En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data**  | arXiv 2024  |          [Link](https://arxiv.org/abs/2401.01173)          |  [Link](https://github.com/menyifang/En3D)  | [Link](https://menyifang.github.io/projects/En3D/index.html)  |
 
-### Pretrained Models 
+### Text to 3D Human Reference
+<details close>
+<summary>Text to 3D Human</summary>
+
+```
+% text to 3d human
+
+@article{liu2023humangaussian,
+    title={HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting},
+    author={Liu, Xian and Zhan, Xiaohang and Tang, Jiaxiang and Shan, Ying and Zeng, Gang and Lin, Dahua and Liu, Xihui and Liu, Ziwei},
+    journal={arXiv preprint arXiv:2311.17061},
+    year={2023}
+}
+
+@article{humannorm2023,
+title={HumanNorm: Learning Normal Diffusion Model for High-quality and Realistic 3D Human Generation},
+author={Huang, Xin and Shao, Ruizhi and Zhang, Qi and Zhang, Hongwen and Feng, Ying and Liu, Yebin and Wang, Qing},
+journal={arXiv},
+year={2023}
+}
+
+@inproceedings{huang2024tech,
+  title={{TeCH: Text-guided Reconstruction of Lifelike Clothed Humans}},
+  author={Huang, Yangyi and Yi, Hongwei and Xiu, Yuliang and Liao, Tingting and Tang, Jiaxiang and Cai, Deng and Thies, Justus},
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2024}
+}
+
+@inproceedings{liao2024tada,
+  title={{TADA! Text to Animatable Digital Avatars}},
+  author={Liao, Tingting and Yi, Hongwei and Xiu, Yuliang and Tang, Jiaxiang and Huang, Yangyi and Thies, Justus and Black, Michael J.},
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2024}
+}
+
+@article{huang2023dreamwaltz,
+ title={DreamWaltz: Make a Scene with Complex 3D Animatable Avatars},
+ author={Yukun Huang and Jianan Wang and Ailing Zeng and He Cao and Xianbiao Qi and Yukai Shi and Zheng-Jun Zha and Lei Zhang},
+ year={2023},
+ eprint={2305.12529},
+ archivePrefix={arXiv},
+ primaryClass={cs.CV}
+}
+
+@article{kolotouros2023dreamhuman,
+  title={DreamHuman: Animatable 3D Avatars from Text},
+  author={Kolotouros, Nikos and Alldieck, Thiemo and Zanfir, Andrei and Bazavan, Eduard Gabriel and Fieraru, Mihai and Sminchisescu, Cristian},
+  booktitle={arXiv preprint arxiv:2306.09329},
+  year={2023}
+}
+
+@article{cao2023guide3d,
+  title={Guide3D: Create 3D Avatars from Text and Image Guidance},
+  author={Cao, Yukang and Cao, Yan-Pei and Han, Kai and Shan, Ying and Wong, Kwan-Yee K},
+  journal={arXiv preprint arXiv:2308.09705},
+  year={2023}
+}
+
+@misc{zhang2023avatarverse,
+  title={AvatarVerse: High-quality & Stable 3D Avatar Creation from Text and Pose},
+  author={Huichao Zhang and Bowen Chen and Hao Yang and Liao Qu and Xu Wang and Li Chen and Chao Long and Feida Zhu and Kang Du and Min Zheng},
+  year={2023},
+  eprint={2308.03610},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+
+@article{hong2022avatarclip,
+    title={AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars},
+    author={Hong, Fangzhou and Zhang, Mingyuan and Pan, Liang and Cai, Zhongang and Yang, Lei and Liu, Ziwei},
+    journal={ACM Transactions on Graphics (TOG)},
+    volume={41},
+    number={4},
+    pages={1--19},
+    year={2022},
+    publisher={ACM New York, NY, USA}
+}
+
+@article{xu2023seeavatar,
+  title={SEEAvatar: Photorealistic Text-to-3D Avatar Generation with Constrained Geometry and Appearance},
+  author={Xu, Yuanyou and Yang, Zongxin and Yang, Yi},
+  journal={arXiv preprint arXiv:2312.08889},
+  year={2023}
+}
+
+@article{liu2023HeadArtist,
+  author = {Hongyu Liu, Xuan Wang, Ziyu Wan, Yujun Shen, Yibing Song, Jing Liao, Qifeng Chen},
+  title = {HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation},
+  journal = {arXiv:2312.07539},
+  year = {2023},
+}
+
+@inproceedings{men2024en3d,
+  title={En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data},
+  author={Men, Yifang and Lei, Biwen and Yao, Yuan and Cui, Miaomiao and Lian, Zhouhui and Xie, Xuansong},
+  journal={arXiv preprint arXiv:2401.01173},
+  website={https://menyifang.github.io/projects/En3D/index.html},
+  year={2024}
+}
+```
+</details>
+
+### Additional Info
+<details close>
+<summary>Survey and Awesome Repos</summary>
+ 
+#### Survey
+- [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
+  
+#### Awesome Repos
+- Resource1: [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
+</details>
+
+<details close>
+<summary>Pretrained Models</summary>
 
    | Pretrained Models (human body) | Info |                              URL                              |
    | :-----: | :-----: | :----------------------------------------------------------: |
    |  SMPL  |  smpl model (smpl weights) | [Link](https://smpl.is.tue.mpg.de/) |
    |  SMPL-X  |  smpl model (smpl weights)  | [Link](https://smpl-x.is.tue.mpg.de/) |
    |  human_body_prior  |  vposer model (smpl weights)  | [Link](https://github.com/nghorbani/human_body_prior) |
-
-#### Additional Info
 <details>
 <summary>SMPL</summary>
 
@@ -232,6 +531,7 @@ SMPL is an easy-to-use, realistic, model of the of the human body that is useful
 
 SMPL-X, that extends SMPL with fully articulated hands and facial expressions (55 joints, 10475 vertices)
 
+</details>
 </details>
 
 --------------
@@ -342,254 +642,7 @@ We introduce MoMask, a novel masked modeling framework for text-driven 3D human 
 | 2023 | **Plan, Posture and Go: Towards Open-World Text-to-Motion Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.14828)          | [Link](https://github.com/moonsliu/Pro-Motion) | [Link](https://moonsliu.github.io/Pro-Motion/)  |
 | 2023 | **MoMask: Generative Masked Modeling of 3D Human Motions**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.00063)          | [Link](https://github.com/EricGuo5513/momask-codes) | [Link](https://ericguo5513.github.io/momask/)  |
 
-### Datasets
-   | Motion | Info |                              URL                              |               Others                            | 
-   | :-----: | :-----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-   |  AIST |  AIST Dance Motion Dataset  | [Link](https://aistdancedb.ongaaccel.jp/) |--|
-   |  AIST++  |  AIST++ Dance Motion Dataset | [Link](https://google.github.io/aistplusplus_dataset/) | [dance video database with SMPL annotations](https://google.github.io/aistplusplus_dataset/download.html) |
-   |  AMASS  |  optical marker-based motion capture datasets  | [Link](https://amass.is.tue.mpg.de/) |--|
-
-#### Additional Info
-<details>
-<summary>AMASS</summary>
-
-AMASS is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. AMASS is readily useful for animation, visualization, and generating training data for deep learning.
-  
-</details>
-
---------------
-
-## Text to 4D
-(Text to 3D Video)
-
-### 1. Text-To-4D Dynamic Scene Generation
-Uriel Singer*, Shelly Sheynin*, Adam Polyak*, Oron Ashual, Iurii Makarov, Filippos Kokkinos, Naman Goyal, Andrea Vedaldi, Devi Parikh, Justin Johnson, Yaniv Taigman
-
-(Meta AI)
-<details span>
-<summary><b>Abstract</b></summary>
-We present MAV3D (Make-A-Video3D), a method for generating three-dimensional dynamic scenes from text descriptions. Our approach uses a 4D dynamic Neural Radiance Field (NeRF), which is optimized for scene appearance, density, and motion consistency by querying a Text-to-Video (T2V) diffusion-based model. The dynamic video output generated from the provided text can be viewed from any camera location and angle, and can be composited into any 3D environment. MAV3D does not require any 3D or 4D data and the T2V model is trained only on Text-Image pairs and unlabeled videos. We demonstrate the effectiveness of our approach using comprehensive quantitative and qualitative experiments and show an improvement over previously established internal baselines. To the best of our knowledge, our method is the first to generate 3D dynamic scenes given a text description.
-</details>
-
-### 2. 4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling
-Bahmani, Sherwin, Ivan, Skorokhodov, Victor, Rong, Gordon, Wetzstein, Leonidas, Guibas, Peter, Wonka, Sergey, Tulyakov, Jeong Joon, Park, Andrea, Tagliasacchi, David B., Lindell.
-
-(University of Toronto, Vector Institute, KAUST, Snap Inc., Stanford University, University of Michigan, SFU, Google)
-<details span>
-<summary><b>Abstract</b></summary>
-Recent breakthroughs in text-to-4D generation rely on pre-trained text-to-image and text-to-video models to generate dynamic 3D scenes. However, current text-to-4D methods face a three-way tradeoff between the quality of scene appearance, 3D structure, and motion. For example, text-to-image models and their 3D-aware variants are trained on internet-scale image datasets and can be used to produce scenes with realistic appearance and 3D structure-but no motion. Text-to-video models are trained on relatively smaller video datasets and can produce scenes with motion, but poorer appearance and 3D structure. While these models have complementary strengths, they also have opposing weaknesses, making it difficult to combine them in a way that alleviates this three-way tradeoff. Here, we introduce hybrid score distillation sampling, an alternating optimization procedure that blends supervision signals from multiple pre-trained diffusion models and incorporates benefits of each for high-fidelity text-to-4D generation. Using hybrid SDS, we demonstrate synthesis of 4D scenes with compelling appearance, 3D structure, and motion.
-</details>
-
-### 3. A Unified Approach for Text- and Image-guided 4D Scene Generation
-Yufeng Zheng, Xueting Li, Koki Nagano, Sifei Liu, Karsten Kreis, Otmar Hilliges, Shalini De Mello
-
-(NVIDIA, ETH Zurich, Max Planck Institute for Intelligent Systems)
-<details span>
-<summary><b>Abstract</b></summary>
-Large-scale diffusion generative models are greatly simplifying image, video and 3D asset creation from user-provided text prompts and images. However, the challenging problem of text-to-4D dynamic 3D scene generation with diffusion guidance remains largely unexplored. We propose Dream-in-4D, which features a novel two-stage approach for text-to-4D synthesis, leveraging (1) 3D and 2D diffusion guidance to effectively learn a high-quality static 3D asset in the first stage; (2) a deformable neural radiance field that explicitly disentangles the learned static asset from its deformation, preserving quality during motion learning; and (3) a multi-resolution feature grid for the deformation field with a displacement total variation loss to effectively learn motion with video diffusion guidance in the second stage. Through a user preference study, we demonstrate that our approach significantly advances image and motion quality, 3D consistency and text fidelity for text-to-4D generation compared to baseline approaches. Thanks to its motion-disentangled representation, Dream-in-4D can also be easily adapted for controllable generation where appearance is defined by one or multiple images, without the need to modify the motion learning stage. Thus, our method offers, for the first time, a unified approach for text-to-4D, image-to-4D and personalized 4D generation tasks.
-</details>
-
-
-### 4. Animate124: Animating One Image to 4D Dynamic Scene
-Yuyang Zhao, Zhiwen Yan, Enze Xie, Lanqing Hong, Zhenguo Li, Gim Hee Lee
-
-(National University of Singapore, Huawei Noah's Ark Lab)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce Animate124 (Animate-one-image-to-4D), the first work to animate a single in-the-wild image into 3D video through textual motion descriptions, an underexplored problem with significant applications. Our 4D generation leverages an advanced 4D grid dynamic Neural Radiance Field (NeRF) model, optimized in three distinct stages using multiple diffusion priors. Initially, a static model is optimized using the reference image, guided by 2D and 3D diffusion priors, which serves as the initialization for the dynamic NeRF. Subsequently, a video diffusion model is employed to learn the motion specific to the subject. However, the object in the 3D videos tends to drift away from the reference image over time. This drift is mainly due to the misalignment between the text prompt and the reference image in the video diffusion model. In the final stage, a personalized diffusion prior is therefore utilized to address the semantic drift. As the pioneering image-text-to-4D generation framework, our method demonstrates significant advancements over existing baselines, evidenced by comprehensive quantitative and qualitative assessments.
-</details>
-
-
-### 5. Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models
-Huan Ling, Seung Wook Kim, Antonio Torralba, Sanja Fidler, Karsten Kreis
-
-(NVIDIA, ETH Zurich, Max Planck Institute for Intelligent Systems)
-<details span>
-<summary><b>Abstract</b></summary>
-Text-guided diffusion models have revolutionized image and video generation and have also been successfully used for optimization-based 3D object synthesis. Here, we instead focus on the underexplored text-to-4D setting and synthesize dynamic, animated 3D objects using score distillation methods with an additional temporal dimension. Compared to previous work, we pursue a novel compositional generation-based approach, and combine text-to-image, text-to-video, and 3D-aware multiview diffusion models to provide feedback during 4D object optimization, thereby simultaneously enforcing temporal consistency, high-quality visual appearance and realistic geometry. Our method, called Align Your Gaussians (AYG), leverages dynamic 3D Gaussian Splatting with deformation fields as 4D representation. Crucial to AYG is a novel method to regularize the distribution of the moving 3D Gaussians and thereby stabilize the optimization and induce motion. We also propose a motion amplification mechanism as well as a new autoregressive synthesis scheme to generate and combine multiple 4D sequences for longer generation. These techniques allow us to synthesize vivid dynamic scenes, outperform previous work qualitatively and quantitatively and achieve state-of-the-art text-to-4D performance. Due to the Gaussian 4D representation, different 4D animations can be seamlessly combined, as we demonstrate. AYG opens up promising avenues for animation, simulation and digital content creation as well as synthetic data generation.
-</details>
-
-### 6. Control4D: Efficient 4D Portrait Editing with Text
-Ruizhi Shao, Jingxiang Sun, Cheng Peng, Zerong Zheng, Boyao Zhou, Hongwen Zhang, Yebin Liu (Tsinghua University)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce Control4D, an innovative framework for editing dynamic 4D portraits using text instructions. Our method addresses the prevalent challenges in 4D editing, notably the inefficiencies of existing 4D representations and the inconsistent editing effect caused by diffusion-based editors. We first propose GaussianPlanes, a novel 4D representation that makes Gaussian Splatting more structured by applying plane-based decomposition in 3D space and time. This enhances both efficiency and robustness in 4D editing. Furthermore, we propose to leverage a 4D generator to learn a more continuous generation space from inconsistent edited images produced by the diffusion-based editor, which effectively improves the consistency and quality of 4D editing. Comprehensive evaluation demonstrates the superiority of Control4D, including significantly reduced training time, high-quality rendering, and spatial-temporal consistency in 4D portrait editing.
-</details>
-
-
-
-### Text to 4D Paper lists
-| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2023 | **Text-To-4D Dynamic Scene Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | -  | [Link](https://make-a-video3d.github.io/)  |
-| 2023 | **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.17984)          | [link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
-| 2023 | **A Unified Approach for Text- and Image-guided 4D Scene Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.16854)          | -  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
-| 2023 | **Animate124: Animating One Image to 4D Dynamic Scene**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.14603)          | [link](https://github.com/HeliosZhao/Animate124)  | [Link](https://animate124.github.io/)  |
-| 2023 | **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.13763)          | -  | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
-| 2023 | **Control4D: Efficient 4D Portrait Editing with Text**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2305.20082)          | Coming soon!  | [Link](https://control4darxiv.github.io./)  |
-
---------------
-
-## Text to Texture
-### 1. Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering 
-Kim Youwang, Tae-Hyun Oh, Gerard Pons-Moll
-
-(University of Tübingen, Tübingen AI Center Germany, Max Planck Institute for Informatics Germany, Dept. of Electrical Engineering POSTECH, Grad. School of AI POSTECH, Institute for Convergence Research and Education in Advanced Technology Yonsei University)
-<details span>
-<summary><b>Abstract</b></summary>
-We present Paint-it, a text-driven high-fidelity texture map synthesis method for 3D meshes via neural re-parameterized texture optimization. Paint-it synthesizes texture maps from a text description by synthesis-through-optimization, exploiting the Score-Distillation Sampling (SDS). We observe that directly applying SDS yields undesirable texture quality due to its noisy gradients. We reveal the importance of texture parameterization when using SDS. Specifically, we propose Deep Convolutional Physically-Based Rendering (DC-PBR) parameterization, which re-parameterizes the physically-based rendering (PBR) texture maps with randomly initialized convolution-based neural kernels, instead of a standard pixel-based parameterization. We show that DC-PBR inherently schedules the optimization curriculum according to texture frequency and naturally filters out the noisy signals from SDS. In experiments, Paint-it obtains remarkable quality PBR texture maps within 15 min., given only a text description. We demonstrate the generalizability and practicality of Paint-it by synthesizing high-quality texture maps for large-scale mesh datasets and showing test-time applications such as relighting and material control using a popular graphics engine.
-</details>
-
-### Text to Texture Paper lists
-| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2023 | **Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.11360)          | [Link](https://github.com/postech-ami/paint-it)  | [Link](https://kim-youwang.github.io/paint-it)  |
-
---------------
-
-## Reference
-
-<details close>
-<summary>Text to Scene</summary>
-
-```
-% text to scene
-
-@article{SceneScape,
-    author    = {Fridman, Rafail and Abecasis, Amit and Kasten, Yoni and Dekel, Tali},
-    title     = {SceneScape: Text-Driven Consistent Scene Generation},
-    journal   = {arXiv preprint arXiv:2302.01133},
-    year      = {2023},
-}
-
-@InProceedings{hoellein2023text2room,
-    author    = {H\"ollein, Lukas and Cao, Ang and Owens, Andrew and Johnson, Justin and Nie{\ss}ner, Matthias},
-    title     = {Text2Room: Extracting Textured 3D Meshes from 2D Text-to-Image Models},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2023},
-    pages     = {7909-7920}
-}
-
-@article{fang2023ctrl,
-      title={Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints},
-      author={Fang, Chuan and Hu, Xiaotao and Luo, Kunming and Tan, Ping},
-      journal={arXiv preprint arXiv:2310.03602},
-      year={2023}
-}
-
-@inproceedings{zhang2023scenewiz3d,
-        author = {Qihang Zhang and Chaoyang Wang and Aliaksandr Siarohin and Peiye Zhuang and Yinghao Xu and Ceyuan Yang and Dahua Lin and Bo Dai and Bolei Zhou and Sergey Tulyakov and Hsin-Ying Lee},
-        title = {{SceneWiz3D}: Towards Text-guided {3D} Scene Composition},
-        booktitle = {arXiv},
-        year = {2023}
-}
-```
-</details>
-
-
-<details close>
-<summary>Text to 3D Human</summary>
-
-```
-% text to 3d human
-
-@article{liu2023humangaussian,
-    title={HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting},
-    author={Liu, Xian and Zhan, Xiaohang and Tang, Jiaxiang and Shan, Ying and Zeng, Gang and Lin, Dahua and Liu, Xihui and Liu, Ziwei},
-    journal={arXiv preprint arXiv:2311.17061},
-    year={2023}
-}
-
-@article{humannorm2023,
-title={HumanNorm: Learning Normal Diffusion Model for High-quality and Realistic 3D Human Generation},
-author={Huang, Xin and Shao, Ruizhi and Zhang, Qi and Zhang, Hongwen and Feng, Ying and Liu, Yebin and Wang, Qing},
-journal={arXiv},
-year={2023}
-}
-
-@inproceedings{huang2024tech,
-  title={{TeCH: Text-guided Reconstruction of Lifelike Clothed Humans}},
-  author={Huang, Yangyi and Yi, Hongwei and Xiu, Yuliang and Liao, Tingting and Tang, Jiaxiang and Cai, Deng and Thies, Justus},
-  booktitle={International Conference on 3D Vision (3DV)},
-  year={2024}
-}
-
-@inproceedings{liao2024tada,
-  title={{TADA! Text to Animatable Digital Avatars}},
-  author={Liao, Tingting and Yi, Hongwei and Xiu, Yuliang and Tang, Jiaxiang and Huang, Yangyi and Thies, Justus and Black, Michael J.},
-  booktitle={International Conference on 3D Vision (3DV)},
-  year={2024}
-}
-
-@article{huang2023dreamwaltz,
- title={DreamWaltz: Make a Scene with Complex 3D Animatable Avatars},
- author={Yukun Huang and Jianan Wang and Ailing Zeng and He Cao and Xianbiao Qi and Yukai Shi and Zheng-Jun Zha and Lei Zhang},
- year={2023},
- eprint={2305.12529},
- archivePrefix={arXiv},
- primaryClass={cs.CV}
-}
-
-@article{kolotouros2023dreamhuman,
-  title={DreamHuman: Animatable 3D Avatars from Text},
-  author={Kolotouros, Nikos and Alldieck, Thiemo and Zanfir, Andrei and Bazavan, Eduard Gabriel and Fieraru, Mihai and Sminchisescu, Cristian},
-  booktitle={arXiv preprint arxiv:2306.09329},
-  year={2023}
-}
-
-@article{cao2023guide3d,
-  title={Guide3D: Create 3D Avatars from Text and Image Guidance},
-  author={Cao, Yukang and Cao, Yan-Pei and Han, Kai and Shan, Ying and Wong, Kwan-Yee K},
-  journal={arXiv preprint arXiv:2308.09705},
-  year={2023}
-}
-
-@misc{zhang2023avatarverse,
-  title={AvatarVerse: High-quality & Stable 3D Avatar Creation from Text and Pose},
-  author={Huichao Zhang and Bowen Chen and Hao Yang and Liao Qu and Xu Wang and Li Chen and Chao Long and Feida Zhu and Kang Du and Min Zheng},
-  year={2023},
-  eprint={2308.03610},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
-}
-
-@article{hong2022avatarclip,
-    title={AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars},
-    author={Hong, Fangzhou and Zhang, Mingyuan and Pan, Liang and Cai, Zhongang and Yang, Lei and Liu, Ziwei},
-    journal={ACM Transactions on Graphics (TOG)},
-    volume={41},
-    number={4},
-    pages={1--19},
-    year={2022},
-    publisher={ACM New York, NY, USA}
-}
-
-@article{xu2023seeavatar,
-  title={SEEAvatar: Photorealistic Text-to-3D Avatar Generation with Constrained Geometry and Appearance},
-  author={Xu, Yuanyou and Yang, Zongxin and Yang, Yi},
-  journal={arXiv preprint arXiv:2312.08889},
-  year={2023}
-}
-
-@article{liu2023HeadArtist,
-  author = {Hongyu Liu, Xuan Wang, Ziyu Wan, Yujun Shen, Yibing Song, Jing Liao, Qifeng Chen},
-  title = {HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation},
-  journal = {arXiv:2312.07539},
-  year = {2023},
-}
-
-@inproceedings{men2024en3d,
-  title={En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data},
-  author={Men, Yifang and Lei, Biwen and Yao, Yuan and Cui, Miaomiao and Lian, Zhouhui and Xie, Xuansong},
-  journal={arXiv preprint arXiv:2401.01173},
-  website={https://menyifang.github.io/projects/En3D/index.html},
-  year={2024}
-}
-```
-</details>
-
-
+### Text to Human Motion Reference
 <details close>
 <summary>Text to Human Motion</summary>
 
@@ -683,72 +736,18 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
 </details>
 
 
-<details close>
-<summary>Text to 4D</summary>
+### Datasets
+   | Motion | Info |                              URL                              |               Others                            | 
+   | :-----: | :-----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+   |  AIST |  AIST Dance Motion Dataset  | [Link](https://aistdancedb.ongaaccel.jp/) |--|
+   |  AIST++  |  AIST++ Dance Motion Dataset | [Link](https://google.github.io/aistplusplus_dataset/) | [dance video database with SMPL annotations](https://google.github.io/aistplusplus_dataset/download.html) |
+   |  AMASS  |  optical marker-based motion capture datasets  | [Link](https://amass.is.tue.mpg.de/) |--|
 
-```
-%text to 4D
+#### Additional Info
+<details>
+<summary>AMASS</summary>
 
-@article{singer2023text4d,
-  author = {Singer, Uriel and Sheynin, Shelly and Polyak, Adam and Ashual, Oron and
-           Makarov, Iurii and Kokkinos, Filippos and Goyal, Naman and Vedaldi, Andrea and
-           Parikh, Devi and Johnson, Justin and Taigman, Yaniv},
-  title = {Text-To-4D Dynamic Scene Generation},
-  journal = {arXiv:2301.11280},
-  year = {2023},
-}
-
-@article{bah20234dfy,
-  author = {Bahmani, Sherwin and Skorokhodov, Ivan and Rong, Victor and Wetzstein, Gordon and Guibas, Leonidas and Wonka, Peter and Tulyakov, Sergey and Park, Jeong Joon and Tagliasacchi, Andrea and Lindell, David B.},
-  title = {4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling},
-  journal = {arXiv},
-  year = {2023},
-}
-
-@article{zheng2023unified,
-  title={A Unified Approach for Text- and Image-guided 4D Scene Generation},
-  author={Yufeng Zheng and Xueting Li and Koki Nagano and Sifei Liu and Karsten Kreis and Otmar Hilliges and Shalini De Mello},
-  journal = {arXiv:2311.16854},
-  year={2023}
-}
-
-@article{zhao2023animate124,
-  author    = {Zhao, Yuyang and Yan, Zhiwen and Xie, Enze and Hong, Lanqing and Li, Zhenguo and Lee, Gim Hee},
-  title     = {Animate124: Animating One Image to 4D Dynamic Scene},
-  journal   = {arXiv preprint arXiv:2311.14603},
-  year      = {2023},
-}
-
-@article{ling2023alignyourgaussians,
-    title={Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models},
-    author={Ling, Huan and Kim, Seung Wook and Torralba, Antonio and Fidler, Sanja and Kreis, Karsten},
-    title={arXiv preprint arXiv:2312.13763},
-    year={2023}
-}
-
-@article{shao2023control4d,
-title = {Control4D: Efficient 4D Portrait Editing with Text},
-author = {Shao, Ruizhi and Sun, Jingxiang and Peng, Cheng and Zheng, Zerong and Zhou, Boyao and Zhang, Hongwen and Liu, Yebin},
-booktitle = {arxiv},
-year = {2023}
-}
-```
+AMASS is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. AMASS is readily useful for animation, visualization, and generating training data for deep learning.
+  
 </details>
 
-
-<details close>
-<summary>Text to Texture</summary>
-
-```
-% text to texture
-
-@misc{youwang2023paintit,
-      title={Paint-it: Text-to-Texture Synthesis via Deep Convolutional Texture Map Optimization and Physically-Based Rendering},
-      author={Kim Youwang and Tae-Hyun Oh and Gerard Pons-Moll},
-      year={2023},
-      eprint={2312.11360},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
-</details>
