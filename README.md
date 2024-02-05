@@ -1,7 +1,6 @@
 # Awesome Text2X Resources
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FALEEEHU%2FAwesome-Text2X-Resources%2F&count_bg=%23EAA8EA&title_bg=%233D2549&icon=react.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=true)](https://hits.seeyoufarm.com)
-[![GitHub](https://img.shields.io/github/stars/ALEEEHU/Awesome-Text2X-Resources?style=social)](https://github.com/ALEEEHU/Awesome-Text2X-Resources)
 
 This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can be everything)** methods (papers, codes and datasets), intended to keep pace with the anticipated surge of research in the coming months. 
 
@@ -111,6 +110,15 @@ Gwanghyun Kim, Dong Un Kang, Hoigi Seo, Hayeon Kim, Se Young Chun
 Text-driven large scene image synthesis has made significant progress with diffusion models, but controlling it is challenging. While using additional spatial controls with corresponding texts has improved the controllability of large scene synthesis, it is still challenging to faithfully reflect detailed text descriptions without user-provided controls. Here, we propose DetText2Scene, a novel text-driven large-scale image synthesis with high faithfulness, controllability, and naturalness in a global context for the detailed human-centric text description. Our DetText2Scene consists of 1) hierarchical keypoint-box layout generation from the detailed description by leveraging large language model (LLM), 2) view-wise conditioned joint diffusion process to synthesize a large scene from the given detailed text with LLM-generated grounded keypoint-box layout and 3) pixel perturbation-based pyramidal interpolation to progressively refine the large scene for global coherence. Our DetText2Scene significantly outperforms prior arts in text-to-large scene synthesis qualitatively and quantitatively, demonstrating strong faithfulness with detailed descriptions, superior controllability, and excellent naturalness in a global context.
 </details>
 
+### 6. ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields
+Edward Bartrum, Thu Nguyen-Phuoc, Chris Xie, Zhengqin Li, Numair Khan, Armen Avetisyan, Douglas Lanman, Lei Xiao
+
+(University College London, Alan Turing Institute, Reality Labs Research Meta)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce ReplaceAnything3D model (RAM3D), a novel text-guided 3D scene editing method that enables the replacement of specific objects within a scene. Given multi-view images of a scene, a text prompt describing the object to replace, and a text prompt describing the new object, our Erase-and-Replace approach can effectively swap objects in the scene with newly generated content while maintaining 3D consistency across multiple viewpoints. We demonstrate the versatility of ReplaceAnything3D by applying it to various realistic 3D scenes, showcasing results of modified foreground objects that are well-integrated with the rest of the scene without affecting its overall integrity.
+</details>
+
 ### Text to Scene Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
@@ -119,6 +127,7 @@ Text-driven large scene image synthesis has made significant progress with diffu
 | 2023 | **Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2310.03602)          | Coming soon!   | [Link](https://fangchuan.github.io/ctrl-room.github.io/)  |
 | 2023 | **SceneWiz3D: Towards Text-guided 3D Scene Composition**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.08885)          | Coming soon!   | [Link](https://zqh0253.github.io/SceneWiz3D/)  |
 | 2023 | **Detailed Human-Centric Text Description-Driven Large Scene Synthesis**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.18654)          | --  |-- |
+| 2024 | **ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2401.17895)          | --  |[Link](https://replaceanything3d.github.io/) |
 
 ### Text to Scene Reference
 <details close>
@@ -162,6 +171,18 @@ Text-driven large scene image synthesis has made significant progress with diffu
   author={Kim, Gwanghyun and Kang, Dong Un and Seo, Hoigi and Kim, Hayeon and Chun, Se Young},
   journal={arXiv preprint arXiv:2311.18654},
   year={2023}
+}
+
+@misc{bartrum2024replaceanything3dtextguided,
+            title={ReplaceAnything3D:Text-Guided 3D Scene Editing
+              with Compositional Neural Radiance Fields}, 
+            author={Edward Bartrum and Thu Nguyen-Phuoc and
+              Chris Xie and Zhengqin Li and Numair Khan and
+              Armen Avetisyan and Douglas Lanman and Lei Xiao},
+            year={2024},
+            eprint={2401.17895},
+            archivePrefix={arXiv},
+            primaryClass={cs.CV}
 }
 ```
 </details>
