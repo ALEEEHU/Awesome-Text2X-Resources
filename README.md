@@ -102,6 +102,15 @@ Qihang Zhang, Chaoyang Wang, Aliaksandr Siarohin, Peiye Zhuang, Yinghao Xu, Ceyu
 We are witnessing significant breakthroughs in the technology for generating 3D objects from text. Existing approaches either leverage large text-to-image models to optimize a 3D representation or train 3D generators on object-centric datasets. Generating entire scenes, however, remains very challenging as a scene contains multiple 3D objects, diverse and scattered. In this work, we introduce SceneWiz3D, a novel approach to synthesize high-fidelity 3D scenes from text. We marry the locality of objects with globality of scenes by introducing a hybrid 3D representation: explicit for objects and implicit for scenes. Remarkably, an object, being represented explicitly, can be either generated from text using conventional text-to-3D approaches, or provided by users. To configure the layout of the scene and automatically place objects, we apply the Particle Swarm Optimization technique during the optimization process. Furthermore, it is difficult for certain parts of the scene (e.g., corners, occlusion) to receive multi-view supervision, leading to inferior geometry. We incorporate an RGBD panorama diffusion model to mitigate it, resulting in high-quality geometry. Extensive evaluation supports that our approach achieves superior quality over previous approaches, enabling the generation of detailed and view-consistent 3D scenes.
 </details>
 
+### 5. Detailed Human-Centric Text Description-Driven Large Scene Synthesis
+Gwanghyun Kim, Dong Un Kang, Hoigi Seo, Hayeon Kim, Se Young Chun
+
+(Dept. of Electrical and Computer Engineering, INMC & IPAI, Seoul National University Republic of Korea)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-driven large scene image synthesis has made significant progress with diffusion models, but controlling it is challenging. While using additional spatial controls with corresponding texts has improved the controllability of large scene synthesis, it is still challenging to faithfully reflect detailed text descriptions without user-provided controls. Here, we propose DetText2Scene, a novel text-driven large-scale image synthesis with high faithfulness, controllability, and naturalness in a global context for the detailed human-centric text description. Our DetText2Scene consists of 1) hierarchical keypoint-box layout generation from the detailed description by leveraging large language model (LLM), 2) view-wise conditioned joint diffusion process to synthesize a large scene from the given detailed text with LLM-generated grounded keypoint-box layout and 3) pixel perturbation-based pyramidal interpolation to progressively refine the large scene for global coherence. Our DetText2Scene significantly outperforms prior arts in text-to-large scene synthesis qualitatively and quantitatively, demonstrating strong faithfulness with detailed descriptions, superior controllability, and excellent naturalness in a global context.
+</details>
+
 ### Text to Scene Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
@@ -109,6 +118,7 @@ We are witnessing significant breakthroughs in the technology for generating 3D 
 | 2023 | **Text2Room: Extracting Textured 3D Meshes from 2D Text-to-Image Models**  |  ICCV 2023 (Oral) |          [Link](https://arxiv.org/abs/2303.11989)          | [Link](https://github.com/lukasHoel/text2room)  | [Link](https://lukashoel.github.io/text-to-room/)  |
 | 2023 | **Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2310.03602)          | Coming soon!   | [Link](https://fangchuan.github.io/ctrl-room.github.io/)  |
 | 2023 | **SceneWiz3D: Towards Text-guided 3D Scene Composition**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.08885)          | Coming soon!   | [Link](https://zqh0253.github.io/SceneWiz3D/)  |
+| 2023 | **Detailed Human-Centric Text Description-Driven Large Scene Synthesis**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.18654)          | --  |-- |
 
 ### Text to Scene Reference
 <details close>
@@ -145,6 +155,13 @@ We are witnessing significant breakthroughs in the technology for generating 3D 
         title = {{SceneWiz3D}: Towards Text-guided {3D} Scene Composition},
         booktitle = {arXiv},
         year = {2023}
+}
+
+@article{kim2023detailed,
+  title={Detailed Human-Centric Text Description-Driven Large Scene Synthesis},
+  author={Kim, Gwanghyun and Kang, Dong Un and Seo, Hoigi and Kim, Hayeon and Chun, Se Young},
+  journal={arXiv preprint arXiv:2311.18654},
+  year={2023}
 }
 ```
 </details>
