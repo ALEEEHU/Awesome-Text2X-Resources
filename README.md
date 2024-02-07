@@ -52,7 +52,16 @@ Chuan Fang, Xiaotao Hu, Kunming Luo, Ping Tan
 Text-driven 3D indoor scene generation could be useful for gaming, film industry, and AR/VR applications. However, existing methods cannot faithfully capture the room layout, nor do they allow flexible editing of individual objects in the room. To address these problems, we present Ctrl-Room, which is able to generate convincing 3D rooms with designer-style layouts and high-fidelity textures from just a text prompt. Moreover, Ctrl-Room enables versatile interactive editing operations such as resizing or moving individual furniture items. Our key insight is to separate the modeling of layouts and appearance. %how to model the room that takes into account both scene texture and geometry at the same time. To this end, Our proposed method consists of two stages, a `Layout Generation Stage' and an `Appearance Generation Stage'. The `Layout Generation Stage' trains a text-conditional diffusion model to learn the layout distribution with our holistic scene code parameterization. Next, the `Appearance Generation Stage' employs a fine-tuned ControlNet to produce a vivid panoramic image of the room guided by the 3D scene layout and text prompt. In this way, we achieve a high-quality 3D room with convincing layouts and lively textures. Benefiting from the scene code parameterization, we can easily edit the generated room model through our mask-guided editing module, without expensive editing-specific training. Extensive experiments on the Structured3D dataset demonstrate that our method outperforms existing methods in producing more reasonable, view-consistent, and editable 3D rooms from natural language prompts.
 </details>
 
-### 4. SceneWiz3D: Towards Text-guided 3D Scene Composition 
+### 4. ShowRoom3D: Text to High-Quality 3D Room Generation Using 3D Priors
+Weijia Mao, Yan-Pei Cao, Jia-Wei Liu, Zhongcong Xu, Mike Zheng Shou
+
+(Show Lab National University of Singapore, ARC Lab Tencent PCG)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce ShowRoom3D, a three-stage approach for generating high-quality 3D room-scale scenes from texts. Previous methods using 2D diffusion priors to optimize neural radiance fields for generating room-scale scenes have shown unsatisfactory quality. This is primarily attributed to the limitations of 2D priors lacking 3D awareness and constraints in the training methodology. In this paper, we utilize a 3D diffusion prior, MVDiffusion, to optimize the 3D room-scale scene. Our contributions are in two aspects. Firstly, we propose a progressive view selection process to optimize NeRF. This involves dividing the training process into three stages, gradually expanding the camera sampling scope. Secondly, we propose the pose transformation method in the second stage. It will ensure MVDiffusion provide the accurate view guidance. As a result, ShowRoom3D enables the generation of rooms with improved structural integrity, enhanced clarity from any view, reduced content repetition, and higher consistency across different perspectives. Extensive experiments demonstrate that our method, significantly outperforms state-of-the-art approaches by a large margin in terms of user study.
+</details>
+
+### 5. SceneWiz3D: Towards Text-guided 3D Scene Composition 
 Qihang Zhang, Chaoyang Wang, Aliaksandr Siarohin, Peiye Zhuang, Yinghao Xu, Ceyuan Yang, Dahua Lin, Bolei Zhou, Sergey Tulyakov, Hsin-Ying Lee
 
 (The Chinese University of Hong Kong, Snap Inc., Stanford University, University of California Los Angeles)
@@ -61,7 +70,7 @@ Qihang Zhang, Chaoyang Wang, Aliaksandr Siarohin, Peiye Zhuang, Yinghao Xu, Ceyu
 We are witnessing significant breakthroughs in the technology for generating 3D objects from text. Existing approaches either leverage large text-to-image models to optimize a 3D representation or train 3D generators on object-centric datasets. Generating entire scenes, however, remains very challenging as a scene contains multiple 3D objects, diverse and scattered. In this work, we introduce SceneWiz3D, a novel approach to synthesize high-fidelity 3D scenes from text. We marry the locality of objects with globality of scenes by introducing a hybrid 3D representation: explicit for objects and implicit for scenes. Remarkably, an object, being represented explicitly, can be either generated from text using conventional text-to-3D approaches, or provided by users. To configure the layout of the scene and automatically place objects, we apply the Particle Swarm Optimization technique during the optimization process. Furthermore, it is difficult for certain parts of the scene (e.g., corners, occlusion) to receive multi-view supervision, leading to inferior geometry. We incorporate an RGBD panorama diffusion model to mitigate it, resulting in high-quality geometry. Extensive evaluation supports that our approach achieves superior quality over previous approaches, enabling the generation of detailed and view-consistent 3D scenes.
 </details>
 
-### 5. Detailed Human-Centric Text Description-Driven Large Scene Synthesis
+### 6. Detailed Human-Centric Text Description-Driven Large Scene Synthesis
 Gwanghyun Kim, Dong Un Kang, Hoigi Seo, Hayeon Kim, Se Young Chun
 
 (Dept. of Electrical and Computer Engineering, INMC & IPAI, Seoul National University Republic of Korea)
@@ -70,7 +79,14 @@ Gwanghyun Kim, Dong Un Kang, Hoigi Seo, Hayeon Kim, Se Young Chun
 Text-driven large scene image synthesis has made significant progress with diffusion models, but controlling it is challenging. While using additional spatial controls with corresponding texts has improved the controllability of large scene synthesis, it is still challenging to faithfully reflect detailed text descriptions without user-provided controls. Here, we propose DetText2Scene, a novel text-driven large-scale image synthesis with high faithfulness, controllability, and naturalness in a global context for the detailed human-centric text description. Our DetText2Scene consists of 1) hierarchical keypoint-box layout generation from the detailed description by leveraging large language model (LLM), 2) view-wise conditioned joint diffusion process to synthesize a large scene from the given detailed text with LLM-generated grounded keypoint-box layout and 3) pixel perturbation-based pyramidal interpolation to progressively refine the large scene for global coherence. Our DetText2Scene significantly outperforms prior arts in text-to-large scene synthesis qualitatively and quantitatively, demonstrating strong faithfulness with detailed descriptions, superior controllability, and excellent naturalness in a global context.
 </details>
 
-### 6. ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields
+### 7. Text2Immersion: Generative Immersive Scene with 3D Gaussians
+Hao Ouyang, Kathryn Heal, Stephen Lombardi, Tiancheng Sun (HKUST, Google)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce Text2Immersion, an elegant method for producing high-quality 3D immersive scenes from text prompts. Our proposed pipeline initiates by progressively generating a Gaussian cloud using pre-trained 2D diffusion and depth estimation models. This is followed by a refining stage on the Gaussian cloud, interpolating and refining it to enhance the details of the generated scene. Distinct from prevalent methods that focus on single object or indoor scenes, or employ zoom-out trajectories, our approach generates diverse scenes with various objects, even extending to the creation of imaginary scenes. Consequently, Text2Immersion can have wide-ranging implications for various applications such as virtual reality, game development, and automated content creation. Extensive evaluations demonstrate that our system surpasses other methods in rendering quality and diversity, further progressing towards text-driven 3D scene generation. 
+</details>
+
+### 8. ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields
 Edward Bartrum, Thu Nguyen-Phuoc, Chris Xie, Zhengqin Li, Numair Khan, Armen Avetisyan, Douglas Lanman, Lei Xiao
 
 (University College London, Alan Turing Institute, Reality Labs Research Meta)
@@ -85,8 +101,10 @@ We introduce ReplaceAnything3D model (RAM3D), a novel text-guided 3D scene editi
 | 2023 | **SceneScape: Text-Driven Consistent Scene Generation**  | NeurIPS 2023 |          [Link](https://arxiv.org/abs/2302.01133)          | [Link](https://github.com/RafailFridman/SceneScape)  | [Link](https://scenescape.github.io/)  |
 | 2023 | **Text2Room: Extracting Textured 3D Meshes from 2D Text-to-Image Models**  |  ICCV 2023 (Oral) |          [Link](https://arxiv.org/abs/2303.11989)          | [Link](https://github.com/lukasHoel/text2room)  | [Link](https://lukashoel.github.io/text-to-room/)  |
 | 2023 | **Ctrl-Room: Controllable Text-to-3D Room Meshes Generation with Layout Constraints**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2310.03602)          | Coming soon!   | [Link](https://fangchuan.github.io/ctrl-room.github.io/)  |
+| 2023 | **ShowRoom3D: Text to High-Quality 3D Room Generation Using 3D Priors**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.13324)          | [Link](https://github.com/showlab/ShowRoom3D)  | [Link](https://showroom3d.github.io/)  |
 | 2023 | **SceneWiz3D: Towards Text-guided 3D Scene Composition**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.08885)          | Coming soon!   | [Link](https://zqh0253.github.io/SceneWiz3D/)  |
 | 2023 | **Detailed Human-Centric Text Description-Driven Large Scene Synthesis**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.18654)          | --  |-- |
+| 2023 | **Text2Immersion: Generative Immersive Scene with 3D Gaussians**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.09242)          | Coming soon!   | [Link](https://ken-ouyang.github.io/text2immersion/index.html)  |
 | 2024 | **ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2401.17895)          | --  |[Link](https://replaceanything3d.github.io/) |
 
 ### Text to Scene Reference
@@ -119,6 +137,13 @@ We introduce ReplaceAnything3D model (RAM3D), a novel text-guided 3D scene editi
       year={2023}
 }
 
+@article{mao2023showroom3d,
+  title={ShowRoom3D: Text to High-Quality 3D Room Generation Using 3D Priors},
+  author={Mao, Weijia and Cao, Yan-Pei and Liu, Jia-Wei and Xu, Zhongcong and Shou, Mike Zheng},
+  journal={arXiv preprint arXiv:2312.13324},
+  year={2023}
+}
+
 @inproceedings{zhang2023scenewiz3d,
         author = {Qihang Zhang and Chaoyang Wang and Aliaksandr Siarohin and Peiye Zhuang and Yinghao Xu and Ceyuan Yang and Dahua Lin and Bo Dai and Bolei Zhou and Sergey Tulyakov and Hsin-Ying Lee},
         title = {{SceneWiz3D}: Towards Text-guided {3D} Scene Composition},
@@ -131,6 +156,13 @@ We introduce ReplaceAnything3D model (RAM3D), a novel text-guided 3D scene editi
   author={Kim, Gwanghyun and Kang, Dong Un and Seo, Hoigi and Kim, Hayeon and Chun, Se Young},
   journal={arXiv preprint arXiv:2311.18654},
   year={2023}
+}
+
+@article{ouyang2023text,
+  author    = {Ouyang, Hao and Sun, Tiancheng and Lombardi, Stephen and Heal, Kathryn},
+  title     = {Text2Immersion: Generative Immersive Scene with 3D Gaussians},
+  journal   = {Arxiv},
+  year      = {2023},
 }
 
 @misc{bartrum2024replaceanything3dtextguided,
