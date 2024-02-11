@@ -113,8 +113,8 @@ Remarkable progress has been made in 4D content generation recently. However, ex
 | 2023 | **Animate124: Animating One Image to 4D Dynamic Scene**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.14603)          | [link](https://github.com/HeliosZhao/Animate124)  | [Link](https://animate124.github.io/)  |
 | 2023 | **4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.17225)          | [link](https://github.com/VITA-Group/4DGen)  | [Link](https://vita-group.github.io/4DGen/)  |
 | 2023 | **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.13763)          | -  | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
-| 2023 | **Control4D: Efficient 4D Portrait Editing with Text**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2305.20082)          | Coming soon!  | [Link](https://control4darxiv.github.io./)  |
-| 2024 | **DreamGaussian4D:Generative 4D Gaussian Splatting**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2312.17142)          | [link](https://github.com/jiawei-ren/dreamgaussian4d)  | [Link](https://jiawei-ren.github.io/projects/dreamgaussian4d/)  |
+| 2023 | **Control4D: Efficient 4D Portrait Editing with Text**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2305.20082)          | -  | [Link](https://control4darxiv.github.io./)  |
+| 2023 | **DreamGaussian4D:Generative 4D Gaussian Splatting**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.17142)          | [link](https://github.com/jiawei-ren/dreamgaussian4d)  | [Link](https://jiawei-ren.github.io/projects/dreamgaussian4d/)  |
 
 ### Text to 4D Reference
 
