@@ -821,6 +821,7 @@ AMASS is a large database of human motion unifying different optical marker-base
 <summary>🔥 Topic 1: 3D Gaussian Splatting</summary>
  
 #### Survey
+- [3D Gaussian as a New Vision Era: A Survey](https://arxiv.org/abs/2402.07181), ArXiv Sun, 11 Feb 2024
 - [A Survey on 3D Gaussian Splatting](https://arxiv.org/pdf/2401.03890.pdf), ArXiv 2024
   
 #### Awesome Repos
