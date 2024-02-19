@@ -735,6 +735,14 @@ Chuan Guo, Yuxuan Mu, Muhammad Gohar Javed, Sen Wang, Li Cheng
 We introduce MoMask, a novel masked modeling framework for text-driven 3D human motion generation. In MoMask, a hierarchical quantization scheme is employed to represent human motion as multi-layer discrete motion tokens with high-fidelity details. Starting at the base layer, with a sequence of motion tokens obtained by vector quantization, the residual tokens of increasing orders are derived and stored at the subsequent layers of the hierarchy. This is consequently followed by two distinct bidirectional transformers. For the base-layer motion tokens, a Masked Transformer is designated to predict randomly masked motion tokens conditioned on text input at training stage. During generation (i.e. inference) stage, starting from an empty sequence, our Masked Transformer iteratively fills up the missing tokens; Subsequently, a Residual Transformer learns to progressively predict the next-layer tokens based on the results from current layer. Extensive experiments demonstrate that MoMask outperforms the state-of-art methods on the text-to-motion generation task, with an FID of 0.045 (vs e.g. 0.141 of T2M-GPT) on the HumanML3D dataset, and 0.228 (vs 0.514) on KIT-ML, respectively. MoMask can also be seamlessly applied in related tasks without further model fine-tuning, such as text-guided temporal inpainting.
 </details>
 
+### 11. Self-Correcting Self-Consuming Loops For Generative Model Training
+Nate Gillman, Michael Freeman, Daksh Aggarwal, Chia-Hong Hsu, Calvin Luo, Yonglong Tian, Chen Sun (Brown University, Google Research)
+<details span>
+<summary><b>Abstract</b></summary>
+What happens after iteratively training a text-conditioned generative model for human motion synthesis for 50 generations? We simulate a self-consuming loop by creating synthetic data with the latest generative model, and mixing them with the original data to continue training the next generative model. We observe that by self-correcting the synthetic data with a physics simulator, the model can successfully avoid collapse and generate high-quality human motion. Our paper provides theoretical and empirical justification for the self-correcting self-consuming loop.
+</details>
+
+
 
 ### Text to Human Motion Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
@@ -750,6 +758,7 @@ We introduce MoMask, a novel masked modeling framework for text-driven 3D human 
 | 2023 | **Story-to-Motion: Synthesizing Infinite and Controllable Character Animation from Long Text**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.07446)          | Coming soon! | [Link](https://story2motion.github.io/)  |
 | 2023 | **Plan, Posture and Go: Towards Open-World Text-to-Motion Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.14828)          | [Link](https://github.com/moonsliu/Pro-Motion) | [Link](https://moonsliu.github.io/Pro-Motion/)  |
 | 2023 | **MoMask: Generative Masked Modeling of 3D Human Motions**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.00063)          | [Link](https://github.com/EricGuo5513/momask-codes) | [Link](https://ericguo5513.github.io/momask/)  |
+| 2024 | **Self-Correcting Self-Consuming Loops for Generative Model Training**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.07087)          | [Link](https://github.com/nate-gillman/self-correcting-self-consuming) | [Link](https://cs.brown.edu/people/ngillman//sc-sc.html)  |
 
 ### Text to Human Motion Reference
 <details close>
@@ -840,6 +849,15 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
       eprint={2312.00063},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
+}
+
+@misc{gillman2024selfcorrecting,
+  title={Self-Correcting Self-Consuming Loops for Generative Model Training}, 
+  author={Nate Gillman and Michael Freeman and Daksh Aggarwal and Chia-Hong Hsu and Calvin Luo and Yonglong Tian and Chen Sun},
+  year={2024},
+  eprint={2402.07087},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
 }
 ```
 </details>
