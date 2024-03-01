@@ -7,9 +7,9 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ⭐ If you find this repository useful to your research or work, it is really appreciated to star this repository. 
 
-💗: Continual improvements are being made to this repository. If you come across any relevant papers that should be included, please don't hesitate to submit a pull request (PR) or open an issue. Additional resources like blog posts, videos, etc. are also welcome. 
+💗 Continual improvements are being made to this repository. If you come across any relevant papers that should be included, please don't hesitate to submit a pull request (PR) or open an issue. Additional resources like blog posts, videos, etc. are also welcome. 
 
-✉️: Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
+✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## Table of contents
 
