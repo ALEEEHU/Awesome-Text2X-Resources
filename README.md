@@ -295,6 +295,14 @@ Xiaoyu Zhou, Xingjian Ran, Yajiao Xiong, Jinlin He, Zhiwei Lin, Yongtao Wang, De
 We present GALA3D, generative 3D GAussians with LAyout-guided control, for effective compositional text-to-3D generation. We first utilize large language models (LLMs) to generate the initial layout and introduce a layout-guided 3D Gaussian representation for 3D content generation with adaptive geometric constraints. We then propose an object-scene compositional optimization mechanism with conditioned diffusion to collaboratively generate realistic 3D scenes with consistent geometry, texture, scale, and accurate interactions among multiple objects while simultaneously adjusting the coarse layout priors extracted from the LLMs to align with the generated scene. Experiments show that GALA3D is a user-friendly, end-to-end framework for state-of-the-art scene-level 3D content generation and controllable editing while ensuring the high fidelity of object-level entities within the scene. 
 </details>
 
+### 10. Disentangled 3D Scene Gen­eration with Layout Learning
+Dave Epstein, Ben Poole, Ben Mildenhall, Alexei A. Efros, Aleksander Holynski
+(UC Berkeley, Google Research)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce a method to generate 3D scenes that are disentangled into their component objects. This disentanglement is unsupervised, relying only on the knowledge of a large pretrained text-to-image model. Our key insight is that objects can be discovered by finding parts of a 3D scene that, when rearranged spatially, still produce valid configurations of the same scene. Concretely, our method jointly optimizes multiple NeRFs from scratch - each representing its own object - along with a set of layouts that composite these objects into scenes. We then encourage these composited scenes to be in-distribution according to the image generator. We show that despite its simplicity, our approach successfully generates 3D scenes decomposed into individual objects, enabling new capabilities in text-to-3D content creation. 
+</details>
+
 ### Text to Scene Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
@@ -307,6 +315,7 @@ We present GALA3D, generative 3D GAussians with LAyout-guided control, for effec
 | 2023 | **Text2Immersion: Generative Immersive Scene with 3D Gaussians**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.09242)          | Coming soon!   | [Link](https://ken-ouyang.github.io/text2immersion/index.html)  |
 | 2024 | **ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2401.17895)          | --  |[Link](https://replaceanything3d.github.io/) |
 | 2024 | **GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guidedGenerative Gaussian Splatting**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.07207)          | [Link](https://github.com/VDIGPKU/GALA3D)  |[Link](https://gala3d.github.io/) |
+| 2024 | **Disentangled 3D Scene Generation with Layout Learning**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.16936)          | --  |[Link](https://dave.ml/layoutlearning/) |
 
 ### Text to Scene Reference
 <details close>
@@ -384,6 +393,15 @@ We present GALA3D, generative 3D GAussians with LAyout-guided control, for effec
   journal={arXiv preprint arXiv:2402.07207},
   year={2024}
 }
+
+@misc{epstein2024disentangled,
+      title={Disentangled 3D Scene Generation with Layout Learning},
+      author={Dave Epstein and Ben Poole and Ben Mildenhall and Alexei A. Efros and Aleksander Holynski},
+      year={2024},
+      eprint={2402.16936},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}		
 ```
 </details>
 
