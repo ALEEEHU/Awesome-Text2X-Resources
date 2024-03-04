@@ -11,6 +11,9 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
+## Update Logs
+- update some papers accepted by CVPR 2024! Congratulations🎉
+
 ## Table of contents
 
 - [Text to 4D](#text-to-4d)
