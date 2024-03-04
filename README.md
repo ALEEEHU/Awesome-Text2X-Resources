@@ -133,7 +133,7 @@ Remarkable progress has been made in 4D content generation recently. However, ex
 | 2023 | **Consistent4D: Consistent 360° Dynamic Object Generation from Monocular Video**  | ICLR 2024 |          [Link](https://arxiv.org/abs/2311.02848)          | [link](https://github.com/yanqinJiang/Consistent4D)  | [Link](https://consistent4d.github.io/)  |
 | 2024 | **Fast Dynamic 3D Object Generation from a Single-view Video**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2401.08742)          | [link](https://github.com/fudan-zvg/Efficient4D)  | [Link](https://fudan-zvg.github.io/Efficient4D/)  |
 | 2023 | **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.13763)          | - | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
-| 2023 | **Control4D: Efficient 4D Portrait Editing with Text**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2305.20082)          | -  | [Link](https://control4darxiv.github.io./)  |
+| 2023 | **Control4D: Efficient 4D Portrait Editing with Text**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2305.20082)          | -  | [Link](https://control4darxiv.github.io./)  |
 | 2023 | **DreamGaussian4D:Generative 4D Gaussian Splatting**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.17142)          | [link](https://github.com/jiawei-ren/dreamgaussian4d)  | [Link](https://jiawei-ren.github.io/projects/dreamgaussian4d/)  |
 
 ### Text to 4D Reference
