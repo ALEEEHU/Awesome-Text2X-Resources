@@ -308,6 +308,15 @@ Dave Epstein, Ben Poole, Ben Mildenhall, Alexei A. Efros, Aleksander Holynski
 We introduce a method to generate 3D scenes that are disentangled into their component objects. This disentanglement is unsupervised, relying only on the knowledge of a large pretrained text-to-image model. Our key insight is that objects can be discovered by finding parts of a 3D scene that, when rearranged spatially, still produce valid configurations of the same scene. Concretely, our method jointly optimizes multiple NeRFs from scratch - each representing its own object - along with a set of layouts that composite these objects into scenes. We then encourage these composited scenes to be in-distribution according to the image generator. We show that despite its simplicity, our approach successfully generates 3D scenes decomposed into individual objects, enabling new capabilities in text-to-3D content creation. 
 </details>
 
+### 11. GraphDreamer: Compositional 3D Scene Synthesis from Scene Graphs
+Gege Gao, Weiyang Liu, Anpei Chen, Andreas Geiger, Bernhard Schölkopf
+
+(Max Planck Institute for Intelligent Systems - Tübingen, ETH Zürich, University of Tübingen, Tübingen AI Center, University of Cambridge)
+<details span>
+<summary><b>Abstract</b></summary>
+As pretrained text-to-image diffusion models become increasingly powerful, recent efforts have been made to distill knowledge from these text-to-image pretrained models for optimizing a text-guided 3D model. Most of the existing methods generate a holistic 3D model from a plain text input. This can be problematic when the text describes a complex scene with multiple objects, because the vectorized text embeddings are inherently unable to capture a complex description with multiple entities and relationships. Holistic 3D modeling of the entire scene further prevents accurate grounding of text entities and concepts. To address this limitation, we propose GraphDreamer, a novel framework to generate compositional 3D scenes from scene graphs, where objects are represented as nodes and their interactions as edges. By exploiting node and edge information in scene graphs, our method makes better use of the pretrained text-to-image diffusion model and is able to fully disentangle different objects without image-level supervision. To facilitate modeling of object-wise relationships, we use signed distance fields as representation and impose a constraint to avoid inter-penetration of objects. To avoid manual scene graph creation, we design a text prompt for ChatGPT to generate scene graphs based on text inputs. We conduct both qualitative and quantitative experiments to validate the effectiveness of GraphDreamer in generating high-fidelity compositional 3D scenes with disentangled object entities.
+</details>
+
 ### Text to Scene Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
@@ -321,6 +330,7 @@ We introduce a method to generate 3D scenes that are disentangled into their com
 | 2024 | **ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2401.17895)          | --  |[Link](https://replaceanything3d.github.io/) |
 | 2024 | **GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guidedGenerative Gaussian Splatting**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.07207)          | [Link](https://github.com/VDIGPKU/GALA3D)  |[Link](https://gala3d.github.io/) |
 | 2024 | **Disentangled 3D Scene Generation with Layout Learning**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.16936)          | --  |[Link](https://dave.ml/layoutlearning/) |
+| 2023 | **GraphDreamer: Compositional 3D Scene Synthesis from Scene Graphs**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.00093)          | [Link](https://github.com/GGGHSL/GraphDreamer)  | [Link](https://graphdreamer.github.io/)  |
 
 ### Text to Scene Reference
 <details close>
@@ -406,7 +416,14 @@ We introduce a method to generate 3D scenes that are disentangled into their com
       eprint={2402.16936},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
-}		
+}
+
+@Inproceedings{gao2024graphdreamer,
+  author    = {Gao, Gege and Liu, Weiyang and Chen, Anpei and Geiger, Andreas and Schölkopf, Bernhard},
+  title     = {GraphDreamer: Compositional 3D Scene Synthesis from Scene Graphs},
+  booktitle = {Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year      = {2024},
+}
 ```
 </details>
 
