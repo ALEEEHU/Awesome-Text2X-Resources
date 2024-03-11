@@ -12,7 +12,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## Update Logs
-- update some papers accepted by CVPR 2024! Congratulations🎉
+* `2024.03.12` - CVPR 2024 Accpeted Papers [Link](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers) 
+* update some papers accepted by CVPR 2024! Congratulations🎉
 
 ## Table of contents
 
