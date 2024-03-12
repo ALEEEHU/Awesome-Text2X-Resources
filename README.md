@@ -12,7 +12,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## Update Logs
-* `2024.03.12` - CVPR 2024 Accpeted Papers [Link](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers) 
+* `2024.03.12` - add section "Dynamic Gaussian Splatting" for gathering related papers.
+* `2024.03.11` - CVPR 2024 Accpeted Papers [Link](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers) 
 * update some papers accepted by CVPR 2024! Congratulations🎉
 
 ## Table of contents
@@ -32,6 +33,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [Reference](#text-to-human-motion-reference)
   * [Datasets](#datasets)
 - [Related Resources](#related-resources)
+  * [Dynamic Gaussian Splatting](#dynamic-gaussian-splatting)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
 
@@ -1006,6 +1008,8 @@ AMASS is a large database of human motion unifying different optical marker-base
 --------------
 
 ## Related Resources
+### Dynamic Gaussian Splatting
+
 ### Survey and Awesome Repos 
 <details close>
 <summary>🔥 Topic 1: 3D Gaussian Splatting</summary>
