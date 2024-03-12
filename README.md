@@ -12,7 +12,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## Update Logs
-* `2024.03.12` - add section "Dynamic Gaussian Splatting" for gathering related papers.
+* `2024.03.12` - add a new section "Dynamic Gaussian Splatting", including Neural Deformable 3D Gaussians, 4D Gaussians, Dynamic 3D Gaussians.
 * `2024.03.11` - CVPR 2024 Accpeted Papers [Link](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers) 
 * update some papers accepted by CVPR 2024! Congratulations🎉
 
@@ -1009,6 +1009,20 @@ AMASS is a large database of human motion unifying different optical marker-base
 
 ## Related Resources
 ### Dynamic Gaussian Splatting
+<details close>
+<summary>Neural Deformable 3D Gaussians</summary>
+
+</details>
+
+<details close>
+<summary>4D Gaussians</summary>
+
+</details>
+
+<details close>
+<summary>Dynamic 3D Gaussians</summary>
+
+</details>
 
 ### Survey and Awesome Repos 
 <details close>
