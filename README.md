@@ -1024,6 +1024,8 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
 ```
 </details>
 
+### Survey
+- Survey: [Human Motion Generation: A Survey](https://arxiv.org/abs/2307.10894), ArXiv 2023 Nov
 
 ### Datasets
    | Motion | Info |                              URL                              |               Others                            | 
