@@ -150,7 +150,8 @@ Creating 4D fields of Gaussian Splatting from images or videos is a challenging 
 | 2023 | **Control4D: Efficient 4D Portrait Editing with Text**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2305.20082)          | -  | [Link](https://control4darxiv.github.io./)  |
 | 2023 | **DreamGaussian4D:Generative 4D Gaussian Splatting**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.17142)          | [link](https://github.com/jiawei-ren/dreamgaussian4d)  | [Link](https://jiawei-ren.github.io/projects/dreamgaussian4d/)  |
 | 2024 | **GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation**  | TBD |          TBD          | [link](https://github.com/Zerg-Overmind/GaussianFlow)   | [Link](https://zerg-overmind.github.io/GaussianFlow.github.io/) |
-% need to add gaussianflow paper citation once they release
+
+<!---need to add gaussianflow paper citation once they release-->
 
 ### Text to 4D Reference
 
