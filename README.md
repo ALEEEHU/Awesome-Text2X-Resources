@@ -1115,7 +1115,7 @@ AMASS is a large database of human motion unifying different optical marker-base
 - [A Comprehensive Survey on 3D Content Generation](https://arxiv.org/abs/2402.01166), ArXiv 2024
 
 #### Awesome Repos
-- Resource1: [Awesome 3D AIGC](https://github.com/mdyao/Awesome-3D-AIGC)
+- Resource: [Awesome 3D AIGC 1](https://github.com/mdyao/Awesome-3D-AIGC) and [Awesome 3D AIGC 2](https://github.com/hitcslj/Awesome-AIGC-3D)
 
 
 #### Benchmars
