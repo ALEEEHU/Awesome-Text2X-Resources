@@ -145,6 +145,15 @@ Sherwin Bahmani, Xian Liu, Yifan Wang, Ivan Skorokhodov, Victor Rong, Ziwei Liu,
 Recent techniques for text-to-4D generation synthesize dynamic 3D scenes using supervision from pre-trained text-to-video models. However, existing representations for motion, such as deformation models or time-dependent neural representations, are limited in the amount of motion they can generate-they cannot synthesize motion extending far beyond the bounding box used for volume rendering. The lack of a more flexible motion model contributes to the gap in realism between 4D generation methods and recent, near-photorealistic video generation models. Here, we propose TC4D: trajectory-conditioned text-to-4D generation, which factors motion into global and local components. We represent the global motion of a scene's bounding box using rigid transformation along a trajectory parameterized by a spline. We learn local deformations that conform to the global trajectory using supervision from a text-to-video model. Our approach enables the synthesis of scenes animated along arbitrary trajectories, compositional scene generation, and significant improvements to the realism and amount of generated motion, which we evaluate qualitatively and through a user study. 
 </details>
 
+### 13. Comp4D: LLM-Guided Compositional 4D Scene Generation
+Dejia Xu, Hanwen Liang, Neel P. Bhatt, Hezhen Hu, Hanxue Liang, Konstantinos N. Plataniotis, Zhangyang Wang
+
+(University of Texas at Austin, University of Toronto, University of Cambridge)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in diffusion models for 2D and 3D content creation have sparked a surge of interest in generating 4D content. However, the scarcity of 3D scene datasets constrains current methodologies to primarily object-centric generation. To overcome this limitation, we present Comp4D, a novel framework for Compositional 4D Generation. Unlike conventional methods that generate a singular 4D representation of the entire scene, Comp4D innovatively constructs each 4D object within the scene separately. Utilizing Large Language Models (LLMs), the framework begins by decomposing an input text prompt into distinct entities and maps out their trajectories. It then constructs the compositional 4D scene by accurately positioning these objects along their designated paths. To refine the scene, our method employs a compositional score distillation technique guided by the pre-defined trajectories, utilizing pre-trained diffusion models across text-to-image, text-to-video, and text-to-3D domains. Extensive experiments demonstrate our outstanding 4D content creation capability compared to prior arts, showcasing superior visual quality, motion fidelity, and enhanced object interactions.
+</details>
+
 
 ### Text to 4D Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
@@ -161,6 +170,7 @@ Recent techniques for text-to-4D generation synthesize dynamic 3D scenes using s
 | 2023 | **DreamGaussian4D:Generative 4D Gaussian Splatting**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.17142)          | [link](https://github.com/jiawei-ren/dreamgaussian4d)  | [Link](https://jiawei-ren.github.io/projects/dreamgaussian4d/)  |
 | 2024 | **GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation**  | Arxiv 2024 |         [Link](https://arxiv.org/abs/2403.12365)         | [link](https://github.com/Zerg-Overmind/GaussianFlow)   | [Link](https://zerg-overmind.github.io/GaussianFlow.github.io/) |
 | 2024 | **TC4D: Trajectory-Conditioned Text-to-4D Generation**  | Arxiv 2024 |         [Link](https://arxiv.org/abs/2403.17920)         | [link](https://github.com/sherwinbahmani/tc4d)   | [Link](https://sherwinbahmani.github.io/tc4d/) |
+| 2024 | **Comp4D: LLM-Guided Compositional 4D Scene Generation**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2403.16993)          | [Link](https://github.com/VITA-Group/Comp4D)  |[Link](https://vita-group.github.io/Comp4D/#) |
 
 
 ### Text to 4D Reference
@@ -256,6 +266,15 @@ year = {2023}
   title = {TC4D: Trajectory-Conditioned Text-to-4D Generation},
   journal = {arXiv},
   year = {2024},
+}
+
+@misc{xu2024comp4d,
+      title={Comp4D: LLM-Guided Compositional 4D Scene Generation}, 
+      author={Dejia Xu and Hanwen Liang and Neel P. Bhatt and Hezhen Hu and Hanxue Liang and Konstantinos N. Plataniotis and Zhangyang Wang},
+      year={2024},
+      eprint={2403.16993},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 </details>
@@ -380,6 +399,7 @@ We introduce a method to generate 3D scenes that are disentangled into their com
 | 2024 | **ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2401.17895)          | --  |[Link](https://replaceanything3d.github.io/) |
 | 2024 | **GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guidedGenerative Gaussian Splatting**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.07207)          | [Link](https://github.com/VDIGPKU/GALA3D)  |[Link](https://gala3d.github.io/) |
 | 2024 | **Disentangled 3D Scene Generation with Layout Learning**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.16936)          | --  |[Link](https://dave.ml/layoutlearning/) |
+
 
 ### Text to Scene Reference
 <details close>
