@@ -136,6 +136,15 @@ Quankai Gao, Qiangeng Xu, Zhe Cao, Ben Mildenhall, Wenchao Ma, Le Chen, Danhang 
 Creating 4D fields of Gaussian Splatting from images or videos is a challenging task due to its under-constrained nature. While the optimization can draw photometric reference from the input videos or be regulated by generative models, directly supervising Gaussian motions remains underexplored. In this paper, we introduce a novel concept, Gaussian flow, which connects the dynamics of 3D Gaussians and pixel velocities between consecutive frames. The Gaussian flow can be efficiently obtained by splatting Gaussian dynamics into the image space. This differentiable process enables direct dynamic supervision from optical flow. Our method significantly benefits 4D dynamic content generation and 4D novel view synthesis with Gaussian Splatting, especially for contents with rich motions that are hard to be handled by existing methods. The common color drifting issue that happens in 4D generation is also resolved with improved Guassian dynamics. Superior visual quality on extensive experiments demonstrates our method's effectiveness. Quantitative and qualitative evaluations show that our method achieves state-of-the-art results on both tasks of 4D generation and 4D novel view synthesis.
 </details>
 
+### 12. TC4D: Trajectory-Conditioned Text-to-4D Generation
+Sherwin Bahmani, Xian Liu, Yifan Wang, Ivan Skorokhodov, Victor Rong, Ziwei Liu, Xihui Liu, Jeong Joon Park, Sergey Tulyakov, Gordon Wetzstein, Andrea Tagliasacchi, David B. Lindell
+
+(University of Toronto, Vector Institute, Snap Inc., CUHK, Stanford University, NTU, HKU, University of Michigan, SFU, Google DeepMind)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent techniques for text-to-4D generation synthesize dynamic 3D scenes using supervision from pre-trained text-to-video models. However, existing representations for motion, such as deformation models or time-dependent neural representations, are limited in the amount of motion they can generate-they cannot synthesize motion extending far beyond the bounding box used for volume rendering. The lack of a more flexible motion model contributes to the gap in realism between 4D generation methods and recent, near-photorealistic video generation models. Here, we propose TC4D: trajectory-conditioned text-to-4D generation, which factors motion into global and local components. We represent the global motion of a scene's bounding box using rigid transformation along a trajectory parameterized by a spline. We learn local deformations that conform to the global trajectory using supervision from a text-to-video model. Our approach enables the synthesis of scenes animated along arbitrary trajectories, compositional scene generation, and significant improvements to the realism and amount of generated motion, which we evaluate qualitatively and through a user study. 
+</details>
+
 
 ### Text to 4D Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
@@ -151,6 +160,8 @@ Creating 4D fields of Gaussian Splatting from images or videos is a challenging 
 | 2023 | **Control4D: Efficient 4D Portrait Editing with Text**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2305.20082)          | -  | [Link](https://control4darxiv.github.io./)  |
 | 2023 | **DreamGaussian4D:Generative 4D Gaussian Splatting**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.17142)          | [link](https://github.com/jiawei-ren/dreamgaussian4d)  | [Link](https://jiawei-ren.github.io/projects/dreamgaussian4d/)  |
 | 2024 | **GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation**  | Arxiv 2024 |         [Link](https://arxiv.org/abs/2403.12365)         | [link](https://github.com/Zerg-Overmind/GaussianFlow)   | [Link](https://zerg-overmind.github.io/GaussianFlow.github.io/) |
+| 2024 | **TC4D: Trajectory-Conditioned Text-to-4D Generation**  | Arxiv 2024 |         [Link](https://arxiv.org/abs/2403.17920)         | [link](https://github.com/sherwinbahmani/tc4d)   | [Link](https://sherwinbahmani.github.io/tc4d/) |
+
 
 ### Text to 4D Reference
 
@@ -238,6 +249,13 @@ year = {2023}
   author={Gao, Quankai and Xu, Qiangeng and Cao, Zhe and Mildenhall, Ben and Ma, Wenchao and Chen, Le and Tang, Danhang and Neumann, Ulrich},
   journal={arXiv preprint arXiv:2403.12365},
   year={2024}
+}
+
+@article{bah2024tc4d,
+  author = {Bahmani, Sherwin and Liu, Xian and Yifan, Wang and Skorokhodov, Ivan and Rong, Victor and Liu, Ziwei and Liu, Xihui and Park, Jeong Joon and Tulyakov, Sergey and Wetzstein, Gordon and Tagliasacchi, Andrea and Lindell, David B.},
+  title = {TC4D: Trajectory-Conditioned Text-to-4D Generation},
+  journal = {arXiv},
+  year = {2024},
 }
 ```
 </details>
