@@ -398,6 +398,14 @@ Dave Epstein, Ben Poole, Ben Mildenhall, Alexei A. Efros, Aleksander Holynski
 We introduce a method to generate 3D scenes that are disentangled into their component objects. This disentanglement is unsupervised, relying only on the knowledge of a large pretrained text-to-image model. Our key insight is that objects can be discovered by finding parts of a 3D scene that, when rearranged spatially, still produce valid configurations of the same scene. Concretely, our method jointly optimizes multiple NeRFs from scratch - each representing its own object - along with a set of layouts that composite these objects into scenes. We then encourage these composited scenes to be in-distribution according to the image generator. We show that despite its simplicity, our approach successfully generates 3D scenes decomposed into individual objects, enabling new capabilities in text-to-3D content creation. 
 </details>
 
+### 13. 3D-SceneDreamer: Text-Driven 3D-Consistent Scene Generation
+Frank Zhang, Yibo Zhang, Quan Zheng, Rui Ma, Wei Hua, Hujun Bao, Weiwei Xu, Changqing Zou
+
+(Zhejiang University, Jilin University, Zhejiang Lab, Institute of Software Chinese Academy of Sciences)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-driven 3D scene generation techniques have made rapid progress in recent years. Their success is mainly attributed to using existing generative models to iteratively perform image warping and inpainting to generate 3D scenes. However, these methods heavily rely on the outputs of existing models, leading to error accumulation in geometry and appearance that prevent the models from being used in various scenarios (e.g., outdoor and unreal scenarios). To address this limitation, we generatively refine the newly generated local views by querying and aggregating global 3D information, and then progressively generate the 3D scene. Specifically, we employ a tri-plane features-based NeRF as a unified representation of the 3D scene to constrain global 3D consistency, and propose a generative refinement network to synthesize new contents with higher quality by exploiting the natural image prior from 2D diffusion model as well as the global 3D information of the current scene. Our extensive experiments demonstrate that, in comparison to previous methods, our approach supports wide variety of scene generation and arbitrary camera trajectories with improved visual quality and 3D consistency.
+</details>
 
 ### Text to Scene Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
@@ -414,6 +422,7 @@ We introduce a method to generate 3D scenes that are disentangled into their com
 | 2024 | **ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2401.17895)          | --  |[Link](https://replaceanything3d.github.io/) |
 | 2024 | **GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guidedGenerative Gaussian Splatting**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.07207)          | [Link](https://github.com/VDIGPKU/GALA3D)  |[Link](https://gala3d.github.io/) |
 | 2024 | **Disentangled 3D Scene Generation with Layout Learning**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.16936)          | --  |[Link](https://dave.ml/layoutlearning/) |
+| 2024 | **3D-SceneDreamer: Text-Driven 3D-Consistent Scene Generation**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2403.09439)          | --  | -- |
 
 
 ### Text to Scene Reference
@@ -512,6 +521,15 @@ We introduce a method to generate 3D scenes that are disentangled into their com
       author={Dave Epstein and Ben Poole and Ben Mildenhall and Alexei A. Efros and Aleksander Holynski},
       year={2024},
       eprint={2402.16936},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{zhang20243dscenedreamer,
+      title={3D-SceneDreamer: Text-Driven 3D-Consistent Scene Generation}, 
+      author={Frank Zhang and Yibo Zhang and Quan Zheng and Rui Ma and Wei Hua and Hujun Bao and Weiwei Xu and Changqing Zou},
+      year={2024},
+      eprint={2403.09439},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
