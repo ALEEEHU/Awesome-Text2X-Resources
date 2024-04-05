@@ -11,12 +11,6 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
-## Update Logs
-* `2024.03.25` - add one new survey paper of 3D GS into the section of "Survey and Awesome Repos--Topic 1: 3D Gaussian Splatting".
-* `2024.03.12` - add a new section "Dynamic Gaussian Splatting", including Neural Deformable 3D Gaussians, 4D Gaussians, Dynamic 3D Gaussians.
-* `2024.03.11` - CVPR 2024 Accpeted Papers [Link](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers) 
-* update some papers accepted by CVPR 2024! Congratulations🎉
-
 ## Table of contents
 
 - [Text to 4D](#text-to-4d)
@@ -37,6 +31,19 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [Dynamic Gaussian Splatting](#dynamic-gaussian-splatting)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
+## Update Logs
+<details span>
+<summary><b>Update Logs:</b></summary>
+<br>
+ 
+* `2024.04.05` - an awesome repo for CVPR2024 on 3DGS and NeRF [Link](https://github.com/Yubel426/NeRF-3DGS-at-CVPR-2024) 👍🏻
+* `2024.03.25` - add one new survey paper of 3D GS into the section of "Survey and Awesome Repos--Topic 1: 3D Gaussian Splatting".
+* `2024.03.12` - add a new section "Dynamic Gaussian Splatting", including Neural Deformable 3D Gaussians, 4D Gaussians, Dynamic 3D Gaussians.
+* `2024.03.11` - CVPR 2024 Accpeted Papers [Link](https://cvpr.thecvf.com/Conferences/2024/AcceptedPapers) 
+* update some papers accepted by CVPR 2024! Congratulations🎉
+  
+</details>
+<br>
 
 ## Text to 4D
 (Also, Image to 4D)
