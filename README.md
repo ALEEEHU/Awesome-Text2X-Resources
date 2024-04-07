@@ -974,7 +974,15 @@ Chuan Guo, Yuxuan Mu, Muhammad Gohar Javed, Sen Wang, Li Cheng
 We introduce MoMask, a novel masked modeling framework for text-driven 3D human motion generation. In MoMask, a hierarchical quantization scheme is employed to represent human motion as multi-layer discrete motion tokens with high-fidelity details. Starting at the base layer, with a sequence of motion tokens obtained by vector quantization, the residual tokens of increasing orders are derived and stored at the subsequent layers of the hierarchy. This is consequently followed by two distinct bidirectional transformers. For the base-layer motion tokens, a Masked Transformer is designated to predict randomly masked motion tokens conditioned on text input at training stage. During generation (i.e. inference) stage, starting from an empty sequence, our Masked Transformer iteratively fills up the missing tokens; Subsequently, a Residual Transformer learns to progressively predict the next-layer tokens based on the results from current layer. Extensive experiments demonstrate that MoMask outperforms the state-of-art methods on the text-to-motion generation task, with an FID of 0.045 (vs e.g. 0.141 of T2M-GPT) on the HumanML3D dataset, and 0.228 (vs 0.514) on KIT-ML, respectively. MoMask can also be seamlessly applied in related tasks without further model fine-tuning, such as text-guided temporal inpainting.
 </details>
 
-### 14. Self-Correcting Self-Consuming Loops For Generative Model Training
+### 14. Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer
+Danah Yatim, Rafail Fridman, Omer Bar-Tal, Yoni Kasten, Tali Dekel
+(Weizmann Institute of Science)
+<details span>
+<summary><b>Abstract</b></summary>
+We present a new method for text-driven motion transfer - synthesizing a video that complies with an input text prompt describing the target objects and scene while maintaining an input video's motion and scene layout. Prior methods are confined to transferring motion across two subjects within the same or closely related object categories and are applicable for limited domains (e.g., humans). In this work, we consider a significantly more challenging setting in which the target and source objects differ drastically in shape and fine-grained motion characteristics (e.g., translating a jumping dog into a dolphin). To this end, we leverage a pre-trained and fixed text-to-video diffusion model, which provides us with generative and motion priors. The pillar of our method is a new space-time feature loss derived directly from the model. This loss guides the generation process to preserve the overall motion of the input video while complying with the target object in terms of shape and fine-grained motion traits.
+</details>
+
+### 15. Self-Correcting Self-Consuming Loops For Generative Model Training
 Nate Gillman, Michael Freeman, Daksh Aggarwal, Chia-Hong Hsu, Calvin Luo, Yonglong Tian, Chen Sun (Brown University, Google Research)
 <details span>
 <summary><b>Abstract</b></summary>
@@ -999,6 +1007,7 @@ What happens after iteratively training a text-conditioned generative model for 
 | 2023 | **Story-to-Motion: Synthesizing Infinite and Controllable Character Animation from Long Text**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2311.07446)          | Coming soon! | [Link](https://story2motion.github.io/)  |
 | 2023 | **Plan, Posture and Go: Towards Open-World Text-to-Motion Generation**  | Arxiv 2023 |          [Link](https://arxiv.org/abs/2312.14828)          | [Link](https://github.com/moonsliu/Pro-Motion) | [Link](https://moonsliu.github.io/Pro-Motion/)  |
 | 2023 | **MoMask: Generative Masked Modeling of 3D Human Motions**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.00063)          | [Link](https://github.com/EricGuo5513/momask-codes) | [Link](https://ericguo5513.github.io/momask/)  |
+| 2023 | **Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.17009)          | [Link](https://github.com/diffusion-motion-transfer/diffusion-motion-transfer) | [Link](https://diffusion-motion-transfer.github.io/)  |
 | 2024 | **Self-Correcting Self-Consuming Loops for Generative Model Training**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.07087)          | [Link](https://github.com/nate-gillman/self-correcting-self-consuming) | [Link](https://cs.brown.edu/people/ngillman//sc-sc.html)  |
 
 ### Text to Human Motion Reference
@@ -1106,6 +1115,13 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
       eprint={2312.00063},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
+}
+
+@article{yatim2023spacetime,
+        title = {Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer},
+        author = {Yatim, Danah and Fridman, Rafail and Bar-Tal, Omer and Kasten, Yoni and Dekel, Tali},
+        journal={arXiv preprint arxiv:2311.17009},
+        year={2023}
 }
 
 @misc{gillman2024selfcorrecting,
