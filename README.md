@@ -989,6 +989,14 @@ Nate Gillman, Michael Freeman, Daksh Aggarwal, Chia-Hong Hsu, Calvin Luo, Yonglo
 What happens after iteratively training a text-conditioned generative model for human motion synthesis for 50 generations? We simulate a self-consuming loop by creating synthetic data with the latest generative model, and mixing them with the original data to continue training the next generative model. We observe that by self-correcting the synthetic data with a physics simulator, the model can successfully avoid collapse and generate high-quality human motion. Our paper provides theoretical and empirical justification for the self-correcting self-consuming loop.
 </details>
 
+### 16. Large Motion Model for Unified Multi-Modal Motion Generation
+Mingyuan Zhang, Daisheng Jin, Chenyang Gu, Fangzhou Hong, Zhongang Cai, Jingfang Huang, Chongzhi Zhang, Xinying Guo, Lei Yang, Ying He, Ziwei Liu 
+
+(S-Lab, Nanyang Technological University, SenseTime China)
+<details span>
+<summary><b>Abstract</b></summary>
+Human motion generation, a cornerstone technique in animation and video production, has widespread applications in various tasks like text-to-motion and music-to-dance. Previous works focus on developing specialist models tailored for each task without scalability. In this work, we present Large Motion Model (LMM), a motion-centric, multi-modal framework that unifies mainstream motion generation tasks into a generalist model. A unified motion model is appealing since it can leverage a wide range of motion data to achieve broad generalization beyond a single task. However, it is also challenging due to the heterogeneous nature of substantially different motion data and tasks. LMM tackles these challenges from three principled aspects: 1) Data: We consolidate datasets with different modalities, formats and tasks into a comprehensive yet unified motion generation dataset, MotionVerse, comprising 10 tasks, 16 datasets, a total of 320k sequences, and 100 million frames. 2) Architecture: We design an articulated attention mechanism ArtAttention that incorporates body part-aware modeling into Diffusion Transformer backbone. 3) Pre-Training: We propose a novel pre-training strategy for LMM, which employs variable frame rates and masking forms, to better exploit knowledge from diverse training data. Extensive experiments demonstrate that our generalist LMM achieves competitive performance across various standard motion generation tasks over state-of-the-art specialist models. Notably, LMM exhibits strong generalization capabilities and emerging properties across many unseen tasks. Additionally, our ablation studies reveal valuable insights about training and scaling up large motion models for future research.
+</details>
 
 
 ### Text to Human Motion Paper lists
@@ -1009,6 +1017,7 @@ What happens after iteratively training a text-conditioned generative model for 
 | 2023 | **MoMask: Generative Masked Modeling of 3D Human Motions**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.00063)          | [Link](https://github.com/EricGuo5513/momask-codes) | [Link](https://ericguo5513.github.io/momask/)  |
 | 2023 | **Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.17009)          | [Link](https://github.com/diffusion-motion-transfer/diffusion-motion-transfer) | [Link](https://diffusion-motion-transfer.github.io/)  |
 | 2024 | **Self-Correcting Self-Consuming Loops for Generative Model Training**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.07087)          | [Link](https://github.com/nate-gillman/self-correcting-self-consuming) | [Link](https://cs.brown.edu/people/ngillman//sc-sc.html)  |
+| 2024 | **Large Motion Model for Unified Multi-Modal Motion Generation**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2404.01284)          | [Link](https://github.com/mingyuan-zhang/LMM) | [Link](https://mingyuan-zhang.github.io/projects/LMM.html)  |
 
 ### Text to Human Motion Reference
 <details close>
@@ -1131,6 +1140,23 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
   eprint={2402.07087},
   archivePrefix={arXiv},
   primaryClass={cs.LG}
+}
+
+@article{zhang2024large,
+      title   =   {Large Motion Model for Unified Multi-Modal Motion Generation}, 
+      author  =   {Zhang, Mingyuan and
+                   Jin, Daisheng around
+                   Gu, Chenyang,
+                   Hong, Fangzhou and
+                   Cai, Zhongang and
+                   Huang, Jingfang and
+                   Zhang, Chongzhi and
+                   Guo, Xinying and
+                   Yang, Lei and,
+                   He, Ying and,
+                   Liu, Ziwei},
+      year    =   {2024},
+      journal =   {arXiv preprint arXiv:2404.01284},
 }
 ```
 </details>
