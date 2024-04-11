@@ -438,6 +438,14 @@ Jaidev Shriram, Alex Trevithick, Lingjie Liu, Ravi Ramamoorthi (University of Ca
 We introduce RealmDreamer, a technique for generation of general forward-facing 3D scenes from text descriptions. Our technique optimizes a 3D Gaussian Splatting representation to match complex text prompts. We initialize these splats by utilizing the state-of-the-art text-to-image generators, lifting their samples into 3D, and computing the occlusion volume. We then optimize this representation across multiple views as a 3D inpainting task with image-conditional diffusion models. To learn correct geometric structure, we incorporate a depth diffusion model by conditioning on the samples from the inpainting model, giving rich geometric structure. Finally, we finetune the model using sharpened samples from image generators. Notably, our technique does not require video or multi-view data and can synthesize a variety of high-quality 3D scenes in different styles, consisting of multiple objects. Its generality additionally allows 3D synthesis from a single image.
 </details>
 
+### 15. DreamScene360: Unconstrained Text-to-3D Scene Generation with Panoramic Gaussian Splatting
+Shijie Zhou, Zhiwen Fan, Dejia Xu, Haoran Chang, Pradyumna Chari, Tejas Bharadwaj, Suya You, Zhangyang Wang, Achuta Kadambi
+
+(University of California Los Angeles, University of Texas at Austin, DEVCOM ARL)
+<details span>
+<summary><b>Abstract</b></summary>
+The increasing demand for virtual reality applications has highlighted the significance of crafting immersive 3D assets. We present a text-to-3D 360∘ scene generation pipeline that facilitates the creation of comprehensive 360∘ scenes for in-the-wild environments in a matter of minutes. Our approach utilizes the generative power of a 2D diffusion model and prompt self-refinement to create a high-quality and globally coherent panoramic image. This image acts as a preliminary "flat" (2D) scene representation. Subsequently, it is lifted into 3D Gaussians, employing splatting techniques to enable real-time exploration. To produce consistent 3D geometry, our pipeline constructs a spatially coherent structure by aligning the 2D monocular depth into a globally optimized point cloud. This point cloud serves as the initial state for the centroids of 3D Gaussians. In order to address invisible issues inherent in single-view inputs, we impose semantic and geometric constraints on both synthesized and input camera views as regularizations. These guide the optimization of Gaussians, aiding in the reconstruction of unseen regions. In summary, our method offers a globally consistent 3D scene within a 360∘ perspective, providing an enhanced immersive experience over existing techniques. 
+</details>
 
 ### Text to Scene Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
@@ -456,6 +464,7 @@ We introduce RealmDreamer, a technique for generation of general forward-facing 
 | 2024 | **Disentangled 3D Scene Generation with Layout Learning**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2402.16936)          | --  |[Link](https://dave.ml/layoutlearning/) |
 | 2024 | **3D-SceneDreamer: Text-Driven 3D-Consistent Scene Generation**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2403.09439)          | --  | -- |
 | 2024 | **RealmDreamer: Text-Driven 3D Scene Generation with Inpainting and Depth Diffusion**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2404.07199)          | Coming Soon!  |[Link](https://realmdreamer.github.io/) |
+| 2024 | **DreamScene360: Unconstrained Text-to-3D Scene Generation with Panoramic Gaussian Splatting**  | Arxiv 2024 |          [Link](https://arxiv.org/abs/2404.06903)          | Coming Soon!  |[Link](https://dreamscene360.github.io/) |
 
 ### Text to Scene Reference
 <details close>
@@ -572,6 +581,13 @@ We introduce RealmDreamer, a technique for generation of general forward-facing 
         author={Jaidev Shriram and Alex Trevithick and Lingjie Liu and Ravi Ramamoorthi},
         journal={arXiv},
         year={2024}
+}
+
+@article{zhou2024dreamscene360,
+  author    = {Zhou, Shijie and Fan, Zhiwen and Xu, Dejia and Chang, Haoran and Chari, Pradyumna and Bharadwaj, Tejas You, Suya and Wang, Zhangyang and Kadambi, Achuta},
+  title     = {DreamScene360: Unconstrained Text-to-3D Scene Generation with Panoramic Gaussian Splatting},
+  journal   = {arXiv},
+  year      = {2024},
 }
 ```
 </details>
