@@ -728,6 +728,15 @@ Weijing Tao, Biwen Lei, Kunhao Liu, Shijian Lu, Miaomiao Cui, Xuansong Xie, Chun
 Text-to-Avatar generation has recently made significant strides due to advancements in diffusion models. However, most existing work remains constrained by limited diversity, producing avatars with subtle differences in appearance for a given text prompt. We design DivAvatar, a novel framework that generates diverse avatars, empowering 3D creatives with a multitude of distinct and richly varied 3D avatars from a single text prompt. Different from most existing work that exploits scene-specific 3D representations such as NeRF, DivAvatar finetunes a 3D generative model (i.e., EVA3D), allowing diverse avatar generation from simply noise sampling in inference time. DivAvatar has two key designs that help achieve generation diversity and visual quality. The first is a noise sampling technique during training phase which is critical in generating diverse appearances. The second is a semantic-aware zoom mechanism and a novel depth loss, the former producing appearances of high textual fidelity by separate fine-tuning of specific body parts and the latter improving geometry quality greatly by smoothing the generated mesh in the features space. Extensive experiments show that DivAvatar is highly versatile in generating avatars of diverse appearances.
 </details>
 
+### 17. InstructHumans: Editing Animated 3D Human Textures with Instructions (text to 3d human texture editing)
+Jiayin Zhu, Linlin Yang, Angela Yao
+
+(National University of Singapore, Communication University of China)
+<details span>
+<summary><b>Abstract</b></summary>
+We present InstructHumans, a novel framework for instruction-driven 3D human texture editing. Existing text-based editing methods use Score Distillation Sampling (SDS) to distill guidance from generative models. This work shows that naively using such scores is harmful to editing as they destroy consistency with the source avatar. Instead, we propose an alternate SDS for Editing (SDS-E) that selectively incorporates subterms of SDS across diffusion timesteps. We further enhance SDS-E with spatial smoothness regularization and gradient-based viewpoint sampling to achieve high-quality edits with sharp and high-fidelity detailing. InstructHumans significantly outperforms existing 3D editing methods, consistent with the initial avatar while faithful to the textual instructions.
+</details>
+
 ### Text to 3D Human Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
@@ -747,6 +756,7 @@ Text-to-Avatar generation has recently made significant strides due to advanceme
 | 2024 | **HeadStudio: Text to Animatable Head Avatars with 3D Gaussian Splatting**  | arXiv 2024  |          [Link](https://arxiv.org/abs/2402.06149)          |  [Link](https://github.com/ZhenglinZhou/HeadStudio/)  | [Link](https://zhenglinzhou.github.io/HeadStudio-ProjectPage/)  |
 | 2024 | **En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data**  | arXiv 2024  |          [Link](https://arxiv.org/abs/2401.01173)          |  [Link](https://github.com/menyifang/En3D)  | [Link](https://menyifang.github.io/projects/En3D/index.html)  |
 | 2024 | **DivAvatar: Diverse 3D Avatar Generation with a Single Prompt**  | arXiv 2024  |          [Link](https://arxiv.org/abs/2402.17292)          | --  | --  |
+| 2024 | **InstructHumans: Editing Animated 3D Human Textures with Instructions**  | arXiv 2024  |          [Link](https://arxiv.org/abs/2404.04037)          | [Link](https://github.com/viridityzhu/InstructHumans)  | [Link](https://jyzhu.top/instruct-humans/)  |
 
 ### Text to 3D Human Reference
 <details close>
@@ -875,6 +885,13 @@ year={2023}
   journal={arXiv preprint arXiv:2402.17292},
   year={2024}
 }
+
+@article{zhu2024InstructHumans,
+         author={Zhu, Jiayin and Yang, Linlin and Yao, Angela},
+         title={InstructHumans: Editing Animated 3D Human Textures with Instructions},
+         journal={arXiv preprint arXiv:2404.04037},
+         year={2024}
+} 
 ```
 </details>
 
