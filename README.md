@@ -770,6 +770,15 @@ Jiayin Zhu, Linlin Yang, Angela Yao
 We present InstructHumans, a novel framework for instruction-driven 3D human texture editing. Existing text-based editing methods use Score Distillation Sampling (SDS) to distill guidance from generative models. This work shows that naively using such scores is harmful to editing as they destroy consistency with the source avatar. Instead, we propose an alternate SDS for Editing (SDS-E) that selectively incorporates subterms of SDS across diffusion timesteps. We further enhance SDS-E with spatial smoothness regularization and gradient-based viewpoint sampling to achieve high-quality edits with sharp and high-fidelity detailing. InstructHumans significantly outperforms existing 3D editing methods, consistent with the initial avatar while faithful to the textual instructions.
 </details>
 
+### 18. MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space
+Armand Comas-Massagué, Di Qiu, Menglei Chai, Marcel Bühler, Amit Raj, Ruiqi Gao, Qiangeng Xu, Mark Matthews, Paulo Gotardo, Octavia Camps, Sergio Orts-Escolano, Thabo Beeler
+
+(Google, Northeastern Univeristy, ETH Zurich, Google DeepMind)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce a novel framework for 3D human avatar generation and personalization, leveraging text prompts to enhance user engagement and customization. Central to our approach are key innovations aimed at overcoming the challenges in photo-realistic avatar synthesis. Firstly, we utilize a conditional Neural Radiance Fields (NeRF) model, trained on a large-scale unannotated multi-view dataset, to create a versatile initial solution space that accelerates and diversifies avatar generation. Secondly, we develop a geometric prior, leveraging the capabilities of Text-to-Image Diffusion Models, to ensure superior view invariance and enable direct optimization of avatar geometry. These foundational ideas are complemented by our optimization pipeline built on Variational Score Distillation (VSD), which mitigates texture loss and over-saturation issues. As supported by our extensive experiments, these strategies collectively enable the creation of custom avatars with unparalleled visual quality and better adherence to input text prompts. 
+</details>
+
 ### Text to 3D Human Paper lists
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
@@ -790,6 +799,7 @@ We present InstructHumans, a novel framework for instruction-driven 3D human tex
 | 2024 | **En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data**  | arXiv 2024  |          [Link](https://arxiv.org/abs/2401.01173)          |  [Link](https://github.com/menyifang/En3D)  | [Link](https://menyifang.github.io/projects/En3D/index.html)  |
 | 2024 | **DivAvatar: Diverse 3D Avatar Generation with a Single Prompt**  | arXiv 2024  |          [Link](https://arxiv.org/abs/2402.17292)          | --  | --  |
 | 2024 | **InstructHumans: Editing Animated 3D Human Textures with Instructions**  | arXiv 2024  |          [Link](https://arxiv.org/abs/2404.04037)          | [Link](https://github.com/viridityzhu/InstructHumans)  | [Link](https://jyzhu.top/instruct-humans/)  |
+| 2024 | **MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space**  | arXiv 2024  |          [Link](https://arxiv.org/abs/2404.01296)      | -- | [Link](https://syntec-research.github.io/MagicMirror/)  |
 
 ### Text to 3D Human Reference
 <details close>
@@ -924,7 +934,14 @@ year={2023}
          title={InstructHumans: Editing Animated 3D Human Textures with Instructions},
          journal={arXiv preprint arXiv:2404.04037},
          year={2024}
-} 
+}
+
+@article{comas2024magicmirror,
+  title={MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space},
+  author={Comas-Massagu{\'e}, Armand and Qiu, Di and Chai, Menglei and B{\"u}hler, Marcel and Raj, Amit and Gao, Ruiqi and Xu, Qiangeng and Matthews, Mark and Gotardo, Paulo and Camps, Octavia and others},
+  journal={arXiv preprint arXiv:2404.01296},
+  year={2024}
+}
 ```
 </details>
 
