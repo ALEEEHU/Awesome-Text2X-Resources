@@ -1304,6 +1304,7 @@ AMASS is a large database of human motion unifying different optical marker-base
 
 #### 3D Human
 - Survey: [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
+- Survey: [A Survey on 3D Human Avatar Modeling -- From Reconstruction to Generation](https://arxiv.org/abs/2406.04253), ArXiv 6 June 2024
 - Resource1: [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
 - Resource2: [Awesome-Avatars](https://github.com/pansanity666/Awesome-Avatars)
 
