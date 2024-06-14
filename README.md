@@ -264,6 +264,15 @@ Zenghao Chai, Chen Tang, Yongkang Wong, Mohan Kankanhalli
 The creation of 4D avatars (i.e., animated 3D avatars) from text description typically uses text-to-image (T2I) diffusion models to synthesize 3D avatars in the canonical space and subsequently applies animation with target motions. However, such an optimization-by-animation paradigm has several drawbacks. (1) For pose-agnostic optimization, the rendered images in canonical pose for naive Score Distillation Sampling (SDS) exhibit domain gap and cannot preserve view-consistency using only T2I priors, and (2) For post hoc animation, simply applying the source motions to target 3D avatars yields translation artifacts and misalignment. To address these issues, we propose Skeleton-aware Text-based 4D Avatar generation with in-network motion Retargeting (STAR). STAR considers the geometry and skeleton differences between the template mesh and target avatar, and corrects the mismatched source motion by resorting to the pretrained motion retargeting techniques. With the informatively retargeted and occlusion-aware skeleton, we embrace the skeleton-conditioned T2I and text-to-video (T2V) priors, and propose a hybrid SDS module to coherently provide multi-view and frame-consistent supervision signals. Hence, STAR can progressively optimize the geometry, texture, and motion in an end-to-end manner. The quantitative and qualitative experiments demonstrate our proposed STAR can synthesize high-quality 4D avatars with vivid animations that align well with the text description. Additional ablation studies shows the contributions of each component in STAR.
 </details>
 
+#### 17. 4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models
+Heng Yu, Chaoyang Wang, Peiye Zhuang, Willi Menapace, Aliaksandr Siarohin, Junli Cao, Laszlo A Jeni, Sergey Tulyakov, Hsin-Ying Lee
+
+(Snap Inc., Carnegie Mellon University)
+<details span>
+<summary><b>Abstract</b></summary>
+Existing dynamic scene generation methods mostly rely on distilling knowledge from pre-trained 3D generative models, which are typically fine-tuned on synthetic object datasets. As a result, the generated scenes are often object-centric and lack photorealism. To address these limitations, we introduce a novel pipeline designed for photorealistic text-to-4D scene generation, discarding the dependency on multi-view generative models and instead fully utilizing video generative models trained on diverse real-world datasets. Our method begins by generating a reference video using the video generation model. We then learn the canonical 3D representation of the video using a freeze-time video, delicately generated from the reference video. To handle inconsistencies in the freeze-time video, we jointly learn a per-frame deformation to model these imperfections. We then learn the temporal deformation based on the canonical representation to capture dynamic interactions in the reference video. The pipeline facilitates the generation of dynamic scenes with enhanced photorealism and structural integrity, viewable from multiple perspectives, thereby setting a new standard in 4D scene generation.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -284,6 +293,7 @@ The creation of 4D avatars (i.e., animated 3D avatars) from text description typ
 | 2024 | **4Diffusion: Multi-view Video Diffusion Model for 4D Generation**  | 31 May 2024 |       [link](https://arxiv.org/abs/2405.20674)        | [link](https://github.com/aejion/4Diffusion)  | [Link](https://aejion.github.io/4diffusion/)  |
 | 2024 | **PLA4D: Pixel-Level Alignments for Text-to-4D Gaussian Splatting**  | 4 Jun 2024 |          [Link](https://arxiv.org/abs/2405.19957)          | --  | [Link](https://github.com/MiaoQiaowei/PLA4D.github.io) |
 | 2024 | **STAR: Skeleton-aware Text-based 4D Avatar Generation with In-Network Motion Retargeting**  | 7 Jun 2024 |          [Link](https://arxiv.org/abs/2406.04629)          | [Link](https://github.com/czh-98/STAR)      | [Link](https://star-avatar.github.io/) |
+| 2024 | **4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models**  | 11 Jun 2024 |          [Link](https://arxiv.org/abs/2406.07472)          | -- | [Link](https://snap-research.github.io/4Real/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -406,6 +416,15 @@ The creation of 4D avatars (i.e., animated 3D avatars) from text description typ
   eprint={2406.04629},
   archivePrefix={arXiv},
   year={2024},
+}
+
+@misc{yu20244real,
+      title={4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models}, 
+      author={Heng Yu and Chaoyang Wang and Peiye Zhuang and Willi Menapace and Aliaksandr Siarohin and Junli Cao and Laszlo A Jeni and Sergey Tulyakov and Hsin-Ying Lee},
+      year={2024},
+      eprint={2406.07472},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CV' full_name='Computer Vision and Pattern Recognition' is_active=True alt_name=None in_archive='cs' is_general=False description='Covers image processing, computer vision, pattern recognition, and scene understanding. Roughly includes material in ACM Subject Classes I.2.10, I.4, and I.5.'}
 }
 ```
 </details>
