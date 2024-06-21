@@ -35,7 +35,6 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [ArXiv Papers](#-motion-arxiv-papers)
   * [Datasets](#datasets)
 - [Related Resources](#related-resources)
-  * [Dynamic Gaussian Splatting](#dynamic-gaussian-splatting)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
 ## Update Logs
@@ -43,6 +42,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 <summary><b>Update Logs:</b></summary>
 <br>
 
+* `2024.06.21` - add one hot Topic about _AIGC 4D Generation_ on the section of Suvery and Awesome Repos.
 * `2024.06.17` - an awesome repo for CVPR2024 [Link](https://github.com/52CV/CVPR-2024-Papers) 👍🏻
 * `2024.04.05` - an awesome repo for CVPR2024 on 3DGS and NeRF [Link](https://github.com/Yubel426/NeRF-3DGS-at-CVPR-2024) 👍🏻
 * `2024.03.25` - add one new survey paper of 3D GS into the section of "Survey and Awesome Repos--Topic 1: 3D Gaussian Splatting".
@@ -1318,7 +1318,9 @@ AMASS is a large database of human motion unifying different optical marker-base
 --------------
 
 ## Related Resources
-### Dynamic Gaussian Splatting
+
+<details close>
+<summary>Dynamic Gaussian Splatting</summary>
 <details close>
 <summary>Neural Deformable 3D Gaussians</summary>
  
@@ -1347,6 +1349,8 @@ AMASS is a large database of human motion unifying different optical marker-base
 (CVPR 2024) Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle [Paper](https://arxiv.org/abs/2312.03431) [Page](https://nju-3dv.github.io/projects/Gaussian-Flow/)
  
 (3DV 2024) Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis [Paper](https://arxiv.org/abs/2308.09713) [Code](https://github.com/JonathonLuiten/Dynamic3DGaussians) [Page](https://dynamic3dgaussians.github.io/)
+
+</details>
 
 </details>
 
@@ -1393,6 +1397,13 @@ AMASS is a large database of human motion unifying different optical marker-base
 - Survey: [A Survey on 3D Human Avatar Modeling -- From Reconstruction to Generation](https://arxiv.org/abs/2406.04253), ArXiv 6 June 2024
 - Resource1: [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
 - Resource2: [Awesome-Avatars](https://github.com/pansanity666/Awesome-Avatars)
+
+</details>
+
+<details close>
+<summary>🔥 Topic 4: AIGC 4D </summary>
+#### Awesome Repos
+- Resource1: [Awesome 4D Generation](https://github.com/cwchenwang/awesome-4d-generation)
 
 </details>
 
