@@ -13,6 +13,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## 🔥 News
+
+* `2024.06.30` - add one new section 'text to video'.
 * `2024.04.05` adjusted the layout and added accepted lists and ArXiv lists to each section.
 
 
@@ -34,6 +36,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [Accepted Papers](#-motion-accepted-papers)
   * [ArXiv Papers](#-motion-arxiv-papers)
   * [Datasets](#datasets)
+- [Text to Video](#text-to-video)
+  * [ArXiv Papers](#-video-arxiv-papers)
 - [Related Resources](#related-resources)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
@@ -1368,6 +1372,83 @@ Thanks to the powerful generative capacity of diffusion models, recent years hav
 AMASS is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. AMASS is readily useful for animation, visualization, and generating training data for deep learning.
   
 </details>
+
+--------------
+
+## Text to Video
+
+### 💡 Video ArXiv Papers
+
+#### 1. StreamingT2V: Consistent, Dynamic, and Extendable Long Video Generation from Text  
+Roberto Henschel, Levon Khachatryan, Daniil Hayrapetyan, Hayk Poghosyan, Vahram Tadevosyan, Zhangyang Wang, Shant Navasardyan, Humphrey Shi
+
+(Picsart AI Resarch (PAIR), UT Austin, SHI Labs @ Georgia Tech Oregon & UIUC)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-to-video diffusion models enable the generation of high-quality videos that follow text instructions, making it easy to create diverse and individual content. However, existing approaches mostly focus on high-quality short video generation (typically 16 or 24 frames), ending up with hard-cuts when naively extended to the case of long video synthesis. To overcome these limitations, we introduce StreamingT2V, an autoregressive approach for long video generation of 80, 240, 600, 1200 or more frames with smooth transitions. The key components are:(i) a short-term memory block called conditional attention module (CAM), which conditions the current generation on the features extracted from the previous chunk via an attentional mechanism, leading to consistent chunk transitions, (ii) a long-term memory block called appearance preservation module, which extracts high-level scene and object features from the first video chunk to prevent the model from forgetting the initial scene, and (iii) a randomized blending approach that enables to apply a video enhancer autoregressively for infinitely long videos without inconsistencies between chunks. Experiments show that StreamingT2V generates high motion amount. In contrast, all competing image-to-video methods are prone to video stagnation when applied naively in an autoregressive manner. Thus, we propose with StreamingT2V a high-quality seamless text-to-long video generator that outperforms competitors with consistency and motion.
+</details>
+
+#### 2. Text-Animator: Controllable Visual Text Video Generation
+Lin Liu, Quande Liu, Shengju Qian, Yuan Zhou, Wengang Zhou, Houqiang Li, Lingxi Xie, Qi Tian
+
+(EEIS Department University of Science and Technology of China, Tencent, Nanyang Technical University, Huawei Tech)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-to-video (T2V) generation is a challenging yet pivotal task in various industries, such as gaming, e-commerce, and advertising. One significant unresolved aspect within T2V is the effective visualization of text within generated videos. Despite the progress achieved in T2V generation, current methods still cannot effectively visualize texts in videos directly, as they mainly focus on summarizing semantic scene information, understanding and depicting actions. While recent advances in text-to-image (T2I) visual text generation show promise, transitioning these techniques into the video domain faces problems, notably in preserving textual fidelity and motion coherence. In this paper, we propose an innovative approach termed Text-Animator for text to video visual text generation. Text-Animator contains text embedding injection module to precisely depict the structures of visual text in generated videos. Besides, we develop a camera control module and a text refinement module to improve the stability of generated visual text by controlling the camera movement as well as the motion of visualized text. Quantitative and qualitative experimental results demonstrate the superiority of our approach on the accuracy of generated visual text over state-of-the-art video generation methods.
+</details>
+
+#### 3. MotionBooth: Motion-Aware Customized Text-to-Video Generation
+Jianzong Wu, Xiangtai Li, Yanhong Zeng, Jiangning Zhang, Qianyu Zhou, Yining Li, Yunhai Tong, Kai Chen
+
+(Peking University, S-Lab Nanyang Technological University, Shanghai AI Laboratory, Zhejiang University, Shanghai Jiao Tong University)
+<details span>
+<summary><b>Abstract</b></summary>
+In this work, we present MotionBooth, an innovative framework designed for animating customized subjects with precise control over both object and camera movements. By leveraging a few images of a specific object, we efficiently fine-tune a text-to-video model to capture the object's shape and attributes accurately. Our approach presents subject region loss and video preservation loss to enhance the subject's learning performance, along with a subject token cross-attention loss to integrate the customized subject with motion control signals. Additionally, we propose training-free techniques for managing subject and camera motions during inference. In particular, we utilize cross-attention map manipulation to govern subject motion and introduce a novel latent shift module for camera movement control as well. MotionBooth excels in preserving the appearance of subjects while simultaneously controlling the motions in generated videos. Extensive quantitative and qualitative evaluations demonstrate the superiority and effectiveness of our method. 
+</details>
+
+---
+
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2024 | **StreamingT2V: Consistent, Dynamic, and Extendable Long Video Generation from Text**  | 21 Mar 2024 |          [Link](https://arxiv.org/abs/2403.14773)          | [Link](https://github.com/Picsart-AI-Research/StreamingT2V) | [Link](https://streamingt2v.github.io/)  |
+| 2024 | **Text-Animator: Controllable Visual Text Video Generation**  |25 Jun 2024 |          [Link](https://export.arxiv.org/abs/2406.17777)          | Coming Soon! | [Link](https://laulampaul.github.io/text-animator.html)  |
+| 2024 | **MotionBooth: Motion-Aware Customized Text-to-Video Generation**  | 25 Jun 2024 |          [Link](https://arxiv.org/abs/2406.17758)          | [Link](https://github.com/jianzongwu/MotionBooth) | [Link](https://jianzongwu.github.io/projects/motionbooth/)  |
+
+<details close>
+<summary>ArXiv Papers References</summary>
+
+```
+%axiv papers
+
+@article{henschel2024streamingt2v,
+  title={StreamingT2V: Consistent, Dynamic, and Extendable Long Video Generation from Text},
+  author={Henschel, Roberto and Khachatryan, Levon and Hayrapetyan, Daniil and Poghosyan, Hayk and Tadevosyan, Vahram and Wang, Zhangyang and Navasardyan, Shant and Shi, Humphrey},
+  journal={arXiv preprint arXiv:2403.14773},
+  year={2024}
+}
+
+@misc{liu2024textanimator,
+    title={Text-Animator: Controllable Visual Text Video Generation},
+    author={Lin Liu and Quande Liu and Shengju Qian and Yuan Zhou and Wengang Zhou and Houqiang Li and Lingxi Xie and Qi Tian},
+    year={2024},
+    eprint={2406.17777},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+
+@misc{wu2024motionboothmotionawarecustomizedtexttovideo,
+      title={MotionBooth: Motion-Aware Customized Text-to-Video Generation}, 
+      author={Jianzong Wu and Xiangtai Li and Yanhong Zeng and Jiangning Zhang and Qianyu Zhou and Yining Li and Yunhai Tong and Kai Chen},
+      year={2024},
+      eprint={2406.17758},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2406.17758}, 
+}
+
+```
+</details>
+
 
 --------------
 
