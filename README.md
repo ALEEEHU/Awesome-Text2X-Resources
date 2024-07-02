@@ -1183,6 +1183,16 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2403.18512}, 
 }
+
+@misc{huang2024como,
+      title={CoMo: Controllable Motion Generation through Language Guided Pose Code Editing}, 
+      author={Yiming Huang and Weilin Wan and Yue Yang and Chris Callison-Burch and Mark Yatskar and Lingjie Liu},
+      year={2024},
+      eprint={2403.13900},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
 ```
 </details>
 
