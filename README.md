@@ -13,7 +13,6 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## 🔥 News
-* `2024.07.02` - update several papers status "ECCV 2024"to accepted papers, congrats to all 🎉
 * `2024.06.30` - add one new section 'text to video'.
 * `2024.04.05` adjusted the layout and added accepted lists and ArXiv lists to each section.
 
@@ -45,7 +44,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 <details span>
 <summary><b>Update Logs:</b></summary>
 <br>
-
+	
+* `2024.07.02` - update several papers status "ECCV 2024"to accepted papers, congrats to all 🎉
 * `2024.06.21` - add one hot Topic about _AIGC 4D Generation_ on the section of __Suvery and Awesome Repos__.
 * `2024.06.17` - an awesome repo for CVPR2024 [Link](https://github.com/52CV/CVPR-2024-Papers) 👍🏻
 * `2024.04.05` - an awesome repo for CVPR2024 on 3DGS and NeRF [Link](https://github.com/Yubel426/NeRF-3DGS-at-CVPR-2024) 👍🏻
