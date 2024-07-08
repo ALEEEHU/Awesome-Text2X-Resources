@@ -1550,6 +1550,7 @@ In this work, we present MotionBooth, an innovative framework designed for anima
 #### Survey
 - [Advances in 3D Generation: A Survey](https://arxiv.org/abs/2401.17807), ArXiv 2024
 - [A Comprehensive Survey on 3D Content Generation](https://arxiv.org/abs/2402.01166), ArXiv 2024
+- [A Survey On Text-to-3D Contents Generation In The Wild](https://arxiv.org/pdf/2405.09431), ArXiv 2024
 
 #### Awesome Repos
 - Resource1: [Awesome 3D AIGC 1](https://github.com/mdyao/Awesome-3D-AIGC) and [Awesome 3D AIGC 2](https://github.com/hitcslj/Awesome-AIGC-3D)
