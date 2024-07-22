@@ -502,6 +502,7 @@ Due to the fascinating generative performance of text-to-image diffusion models,
 | 2024 | **DreamScene360: Unconstrained Text-to-3D Scene Generation with Panoramic Gaussian Splatting**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2404.06903)          | Coming Soon!  |[Link](https://dreamscene360.github.io/) |
 | 2024 | **BeyondScene: Higher-Resolution Human-Centric Scene Generation With Pretrained Diffusion**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2404.04544)          | [Link](https://github.com/BeyondScene/BeyondScene) |[Link](https://janeyeon.github.io/beyond-scene/) |
 | 2024 | **DreamScene: 3D Gaussian-based Text-to-3D Scene Generation via Formation Pattern Sampling**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2404.03575)          | [Link](https://github.com/DreamScene-Project/DreamScene)  |[Link](https://dreamscene-project.github.io/) |
+| 2024 | **The Fabrication of Reality and Fantasy: Scene Generation with LLM-Assisted Prompt Interpretation**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2407.12579)          | Coming Soon!  |[Link](https://leo81005.github.io/Reality-and-Fantasy/) |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -595,6 +596,16 @@ Due to the fascinating generative performance of text-to-image diffusion models,
   author={Li, Haoran and Shi, Haolin and Zhang, Wenli and Wu, Wenjun and Liao, Yong and Lin Wang and Lik-hang Lee and Zhou, Pengyuan},
   journal={arXiv preprint arXiv:2404.03575},
   year={2024}
+}
+
+@article{yao2024fabricationrealityfantasyscene,
+    title          = {The Fabrication of Reality and Fantasy: Scene Generation with LLM-Assisted Prompt Interpretation}, 
+    author         = {Yi Yao and Chan-Feng Hsu and Jhe-Hao Lin and Hongxia Xie and Terence Lin and Yi-Ning Huang and Hong-Han Shuai and Wen-Huang Cheng},
+    year           = {2024},
+    eprint         = {2407.12579},
+    archivePrefix  = {arXiv},
+    primaryClass   = {cs.CV},
+    url            = {https://arxiv.org/abs/2407.12579}, 
 }
 		
 ```
