@@ -1037,6 +1037,7 @@ SMPL-X, that extends SMPL with fully articulated hands and facial expressions (5
 | 2024 | **MotionLCM: Real-time Controllable Motion Generation via Latent Consistency Model**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2404.19759)          | [Link](https://github.com/Dai-Wenxun/MotionLCM) | [Link](https://dai-wenxun.github.io/MotionLCM-page/)  |
 | 2024 | **ParCo: Part-Coordinating Text-to-Motion Synthesis**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2403.18512)          | [Link](https://github.com/qrzou/ParCo) | -- |
 | 2024 | **CoMo: Controllable Motion Generation through Language Guided Pose Code Editing**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2403.13900)          | Coming Soon! | [Link](https://yh2371.github.io/como/) |
+| 2024 | **SMooDi: Stylized Motion Diffusion Model**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2407.12783)          | [Link](https://github.com/neu-vi/SMooDi)  | [Link](https://neu-vi.github.io/SMooDi/) |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -1198,6 +1199,15 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
       primaryClass={cs.CV}
 }
 
+@misc{zhong2024smoodistylizedmotiondiffusion,
+      title={SMooDi: Stylized Motion Diffusion Model}, 
+      author={Lei Zhong and Yiming Xie and Varun Jampani and Deqing Sun and Huaizu Jiang},
+      year={2024},
+      eprint={2407.12783},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.12783}, 
+}
 ```
 </details>
 
