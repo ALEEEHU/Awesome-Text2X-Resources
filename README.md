@@ -540,6 +540,7 @@ year={2024},
 | 2024 | **BeyondScene: Higher-Resolution Human-Centric Scene Generation With Pretrained Diffusion**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2404.04544)          | [Link](https://github.com/BeyondScene/BeyondScene) |[Link](https://janeyeon.github.io/beyond-scene/) |
 | 2024 | **DreamScene: 3D Gaussian-based Text-to-3D Scene Generation via Formation Pattern Sampling**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2404.03575)          | [Link](https://github.com/DreamScene-Project/DreamScene)  |[Link](https://dreamscene-project.github.io/) |
 | 2024 | **The Fabrication of Reality and Fantasy: Scene Generation with LLM-Assisted Prompt Interpretation**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2407.12579)          | Coming Soon!  |[Link](https://leo81005.github.io/Reality-and-Fantasy/) |
+| 2024 | **SceneTeller: Language-to-3D Scene Generation**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2407.20727)          | Coming Soon!  |[Link](https://sceneteller.github.io/) |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -644,7 +645,16 @@ year={2024},
     primaryClass   = {cs.CV},
     url            = {https://arxiv.org/abs/2407.12579}, 
 }
-		
+
+@misc{öcal2024scenetellerlanguageto3dscenegeneration,
+      title={SceneTeller: Language-to-3D Scene Generation}, 
+      author={Başak Melis Öcal and Maxim Tatarchenko and Sezer Karaoglu and Theo Gevers},
+      year={2024},
+      eprint={2407.20727},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.20727}, 
+}		
 ```
 </details>
 
