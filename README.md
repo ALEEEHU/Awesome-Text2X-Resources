@@ -1634,6 +1634,22 @@ In this work, we present MotionBooth, an innovative framework designed for anima
 ```
 </details>
 
+### Additional Info
+#### Dataset Works
+
+#### 1. VidGen-1M: A Large-Scale Dataset for Text-to-video Generation
+Zhiyu Tan, Xiaomeng Yang, Luozheng Qin, Hao Li
+
+(Fudan University, ShangHai Academy of AI for Science)
+<details span>
+<summary><b>Abstract</b></summary>
+The quality of video-text pairs fundamentally determines the upper bound of text-to-video models. Currently, the datasets used for training these models suffer from significant shortcomings, including low temporal consistency, poor-quality captions, substandard video quality, and imbalanced data distribution. The prevailing video curation process, which depends on image models for tagging and manual rule-based curation, leads to a high computational load and leaves behind unclean data. As a result, there is a lack of appropriate training datasets for text-to-video models. To address this problem, we present VidGen-1M, a superior training dataset for text-to-video models. Produced through a coarse-to-fine curation strategy, this dataset guarantees high-quality videos and detailed captions with excellent temporal consistency. When used to train the video generation model, this dataset has led to experimental results that surpass those obtained with other models.
+</details>
+
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2024 | **VidGen-1M: A Large-Scale Dataset for Text-to-video Generation**  | 5 Aug 2024  |          [Link](https://arxiv.org/abs/2408.02629)          | [Link](https://github.com/SAIS-FUXI/VidGen) | [Link](https://sais-fuxi.github.io/projects/vidgen-1m/)  |
+
 
 --------------
 
