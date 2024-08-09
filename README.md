@@ -1634,8 +1634,46 @@ In this work, we present MotionBooth, an innovative framework designed for anima
 ```
 </details>
 
+--------------
+
 ### Additional Info
-#### Dataset Works
+#### ✨ Awesome Work
+
+#### [Technical Report] CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer
+Zhuoyi Yang, Jiayan Teng, Wendi Zheng, Ming Ding, Shiyu Huang, Jiazheng Xu, Yuanming Yang, Xiaohan Zhang, Xiaotao Gu, Guanyu Feng, Da Yin, Wenyi Hong, Weihan Wang, Yean Cheng, Yuxuan Zhang, Ting Liu, Bin Xu, Yuxiao Dong, Jie Tang
+
+(Zhipu AI, Tsinghua University)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce CogVideoX, a large-scale diffusion transformer model designed for generating videos based on text prompts. To efficently model video data, we propose to levearge a 3D Variational Autoencoder (VAE) to compresses videos along both spatial and temporal dimensions. To improve the text-video alignment,we propose an expert transformer with the expert adaptive LayerNorm to facilitate the deep fusion between the two modalities. By employing a progressive training technique, CogVideoX is adept at producing coherent, long-duration videos characterized by significant motion. In addition, we develop an effectively text-video data processing pipeline that includes various data preprocessing strategies and a video captioning method. It significantly helps enhance the performance of CogVideoX,
+improving both generation quality and semantic alignment. Results show that CogVideoX demonstrates state-of-the-art performance across both multiple machine metrics and human evaluations.
+</details>
+
+| Year | Title                                                        | Runpod: please try it👍🏻  |                           Paper                            |                      Code                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | 
+| 2024 | **CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer**  | [Link](https://www.runpod.io/console/deploy?template=prrn5bfs02) |          [Link](https://github.com/THUDM/CogVideo/blob/main/resources/CogVideoX.pdf)          | [Link](https://github.com/THUDM/CogVideo) |
+
+<details close>
+<summary>Citation</summary>
+
+🌟 If you find their work helpful, please leave them a star and cite their paper.
+
+```
+@article{yang2024cogvideox,
+      title={CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer}, 
+      author={Zhuoyi Yang and Jiayan Teng and Wendi Zheng and Ming Ding and Shiyu Huang and JiaZheng Xu and Yuanming Yang and Xiaohan Zhang and Xiaotao Gu and Guanyu Feng and Da Yin and Wenyi Hong and Weihan Wang and Yean Cheng and Yuxuan Zhang and Ting Liu and Bin Xu and Yuxiao Dong and Jie Tang},
+      year={2024},
+}
+@article{hong2022cogvideo,
+  title={CogVideo: Large-scale Pretraining for Text-to-Video Generation via Transformers},
+  author={Hong, Wenyi and Ding, Ming and Zheng, Wendi and Liu, Xinghan and Tang, Jie},
+  journal={arXiv preprint arXiv:2205.15868},
+  year={2022}
+}
+```
+</details>
+
+#### 📚 Dataset Works
 
 #### 1. VidGen-1M: A Large-Scale Dataset for Text-to-video Generation
 Zhiyu Tan, Xiaomeng Yang, Luozheng Qin, Hao Li
