@@ -37,6 +37,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [Datasets](#datasets)
 - [Text to Video](#text-to-video)
   * [ArXiv Papers](#-video-arxiv-papers)
+  * [Additional Info](#additional-info)
 - [Related Resources](#related-resources)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
