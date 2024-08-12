@@ -37,7 +37,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [Datasets](#datasets)
 - [Text to Video](#text-to-video)
   * [ArXiv Papers](#-video-arxiv-papers)
-  * [Additional Info](#additional-info)
+  * [Additional Info](#other-additional-info)
 - [Related Resources](#related-resources)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
@@ -1637,7 +1637,7 @@ In this work, we present MotionBooth, an innovative framework designed for anima
 
 --------------
 
-### Additional Info
+### Other Additional Info
 #### ✨ Awesome Work
 
 #### [Technical Report] CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer
