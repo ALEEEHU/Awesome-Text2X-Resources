@@ -1673,6 +1673,8 @@ improving both generation quality and semantic alignment. Results show that CogV
 ```
 </details>
 
+---
+
 #### 📚 Dataset Works
 
 #### 1. VidGen-1M: A Large-Scale Dataset for Text-to-video Generation
