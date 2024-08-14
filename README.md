@@ -1544,6 +1544,7 @@ AMASS is a large database of human motion unifying different optical marker-base
 
 | Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2024 | **MicroCinema:A Divide-and-Conquer Approach for Text-to-Video Generation**  | CVPR 2024 (Highlight) |          [Link](https://arxiv.org/abs/2311.18829)          | -- | [Link](https://wangyanhui666.github.io/MicroCinema.github.io/)  |
 | 2024 | **LivePhoto: Real Image Animation with Text-guided Motion Control**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2312.02928)          | [Link](https://github.com/XavierCHEN34/LivePhoto)  | [Link](https://xavierchen34.github.io/LivePhoto-Page/)  |
 
 <details close>
@@ -1551,6 +1552,14 @@ AMASS is a large database of human motion unifying different optical marker-base
 
 ```
 %accepted papers
+
+@inproceedings{wang2024microcinema,
+  title={Microcinema: A divide-and-conquer approach for text-to-video generation},
+  author={Wang, Yanhui and Bao, Jianmin and Weng, Wenming and Feng, Ruoyu and Yin, Dacheng and Yang, Tao and Zhang, Jingxu and Dai, Qi and Zhao, Zhiyuan and Wang, Chunyu and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={8414--8424},
+  year={2024}
+}
 
 @article{chen2023livephoto,
     title={LivePhoto: Real Image Animation with Text-guided Motion Control},
