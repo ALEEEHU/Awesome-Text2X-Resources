@@ -1601,6 +1601,15 @@ Jianzong Wu, Xiangtai Li, Yanhong Zeng, Jiangning Zhang, Qianyu Zhou, Yining Li,
 In this work, we present MotionBooth, an innovative framework designed for animating customized subjects with precise control over both object and camera movements. By leveraging a few images of a specific object, we efficiently fine-tune a text-to-video model to capture the object's shape and attributes accurately. Our approach presents subject region loss and video preservation loss to enhance the subject's learning performance, along with a subject token cross-attention loss to integrate the customized subject with motion control signals. Additionally, we propose training-free techniques for managing subject and camera motions during inference. In particular, we utilize cross-attention map manipulation to govern subject motion and introduce a novel latent shift module for camera movement control as well. MotionBooth excels in preserving the appearance of subjects while simultaneously controlling the motions in generated videos. Extensive quantitative and qualitative evaluations demonstrate the superiority and effectiveness of our method. 
 </details>
 
+#### 4. Text-Animator: Controllable Visual Text Video Generation
+Lin Liu, Quande Liu, Shengju Qian, Yuan Zhou, Wengang Zhou, Houqiang Li, Lingxi Xie, Qi Tian
+
+(University of Science and Technology of China, Tencent, Nanyang Technical University, Huawei Tech)
+<details span>
+<summary><b>Abstract</b></summary>
+Video generation is a challenging yet pivotal task in various industries, such as gaming, e-commerce, and advertising. One significant unresolved aspect within T2V is the effective visualization of text within generated videos. Despite the progress achieved in Text-to-Video~(T2V) generation, current methods still cannot effectively visualize texts in videos directly, as they mainly focus on summarizing semantic scene information, understanding, and depicting actions. While recent advances in image-level visual text generation show promise, transitioning these techniques into the video domain faces problems, notably in preserving textual fidelity and motion coherence. In this paper, we propose an innovative approach termed Text-Animator for visual text video generation. Text-Animator contains a text embedding injection module to precisely depict the structures of visual text in generated videos. Besides, we develop a camera control module and a text refinement module to improve the stability of generated visual text by controlling the camera movement as well as the motion of visualized text. Quantitative and qualitative experimental results demonstrate the superiority of our approach to the accuracy of generated visual text over state-of-the-art video generation methods. 
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -1608,6 +1617,7 @@ In this work, we present MotionBooth, an innovative framework designed for anima
 | 2024 | **StreamingT2V: Consistent, Dynamic, and Extendable Long Video Generation from Text**  | 21 Mar 2024 |          [Link](https://arxiv.org/abs/2403.14773)          | [Link](https://github.com/Picsart-AI-Research/StreamingT2V) | [Link](https://streamingt2v.github.io/)  |
 | 2024 | **Text-Animator: Controllable Visual Text Video Generation**  |25 Jun 2024 |          [Link](https://export.arxiv.org/abs/2406.17777)          | Coming Soon! | [Link](https://laulampaul.github.io/text-animator.html)  |
 | 2024 | **MotionBooth: Motion-Aware Customized Text-to-Video Generation**  | 25 Jun 2024 |          [Link](https://arxiv.org/abs/2406.17758)          | [Link](https://github.com/jianzongwu/MotionBooth) | [Link](https://jianzongwu.github.io/projects/motionbooth/)  |
+| 2024 | **Text-Animator: Controllable Visual Text Video Generation**  | 25 Jun 2024 |          [Link](https://arxiv.org/abs/2406.17777)          | [Link](https://github.com/laulampaul/text-animator) | [Link](https://laulampaul.github.io/text-animator.html)  |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -1641,6 +1651,15 @@ In this work, we present MotionBooth, an innovative framework designed for anima
       url={https://arxiv.org/abs/2406.17758}, 
 }
 
+@misc{liu2024textanimatorcontrollablevisualtext,
+      title={Text-Animator: Controllable Visual Text Video Generation}, 
+      author={Lin Liu and Quande Liu and Shengju Qian and Yuan Zhou and Wengang Zhou and Houqiang Li and Lingxi Xie and Qi Tian},
+      year={2024},
+      eprint={2406.17777},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2406.17777}, 
+}
 ```
 </details>
 
