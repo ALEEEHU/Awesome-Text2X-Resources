@@ -328,6 +328,14 @@ Yiming Xie, Chun-Han Yao, Vikram Voleti, Huaizu Jiang, Varun Jampani
 We present Stable Video 4D (SV4D), a latent video diffusion model for multi-frame and multi-view consistent dynamic 3D content generation. Unlike previous methods that rely on separately trained generative models for video generation and novel view synthesis, we design a unified diffusion model to generate novel view videos of dynamic 3D objects. Specifically, given a monocular reference video, SV4D generates novel views for each video frame that are temporally consistent. We then use the generated novel view videos to optimize an implicit 4D representation (dynamic NeRF) efficiently, without the need for cumbersome SDS-based optimization used in most prior works. To train our unified novel view video generation model, we curated a dynamic 3D object dataset from the existing Objaverse dataset. Extensive experimental results on multiple datasets and user studies demonstrate SV4D's state-of-the-art performance on novel-view video synthesis as well as 4D generation compared to prior works.
 </details>
 
+#### 22. CT4D: Consistent Text-to-4D Generation with Animatable Meshes
+Ce Chen, Shaoli Huang, Xuelin Chen, Guangyi Chen, Xiaoguang Han, Kun Zhang, Mingming Gong
+
+(Mohamed bin Zayed University of Artificial Intelligence, Tencent AI Lab, Carnegie Mellon University, FNii CUHKSZ, SSE CUHKSZ, University of Melbourne)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-to-4D generation has recently been demonstrated viable by integrating a 2D image diffusion model with a video diffusion model. However, existing models tend to produce results with inconsistent motions and geometric structures over time. To this end, we present a novel framework, coined CT4D, which directly operates on animatable meshes for generating consistent 4D content from arbitrary user-supplied prompts. The primary challenges of our mesh-based framework involve stably generating a mesh with details that align with the text prompt while directly driving it and maintaining surface continuity. Our CT4D framework incorporates a unique Generate-Refine-Animate (GRA) algorithm to enhance the creation of text-aligned meshes. To improve surface continuity, we divide a mesh into several smaller regions and implement a uniform driving function within each area. Additionally, we constrain the animating stage with a rigidity regulation to ensure cross-region continuity. Our experimental results, both qualitative and quantitative, demonstrate that our CT4D framework surpasses existing text-to-4D techniques in maintaining interframe consistency and preserving global geometry. Furthermore, we showcase that this enhanced representation inherently possesses the capability for combinational 4D generation and texture editing.
+</details>
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -353,6 +361,7 @@ We present Stable Video 4D (SV4D), a latent video diffusion model for multi-fram
 | 2024 | **Shape of Motion: 4D Reconstruction from a Single Video**  | 18 Jul 2024 |          [Link](https://arxiv.org/abs/2407.13764)          | [Link](https://github.com/vye16/shape-of-motion/) | [Link](https://shape-of-motion.github.io/) |
 | 2024 | **4Dynamic: Text-to-4D Generation with Hybrid Priors**  | 17 Jul 2024 |          [Link](https://arxiv.org/abs/2407.12684)          | -- | -- |
 | 2024 | **SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency**  | 24 Jul 2024 |          [Link](https://arxiv.org/abs/2407.17470)          | [Link](https://github.com/Stability-AI/generative-models) | [Link](https://sv4d.github.io/) |
+| 2024 | **CT4D: Consistent Text-to-4D Generation with Animatable Meshes**  | 15 Aug 2024 |          [Link](https://arxiv.org/abs/2408.08342)          | -- | -- |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -520,7 +529,17 @@ year={2024},
 	    journal={arXiv preprint arXiv:2407.17470},
 	    year={2024},
 }
-    
+
+@misc{chen2024ct4dconsistenttextto4dgeneration,
+      title={CT4D: Consistent Text-to-4D Generation with Animatable Meshes}, 
+      author={Ce Chen and Shaoli Huang and Xuelin Chen and Guangyi Chen and Xiaoguang Han and Kun Zhang and Mingming Gong},
+      year={2024},
+      eprint={2408.08342},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR},
+      url={https://arxiv.org/abs/2408.08342}, 
+}
+ 
 ```
 </details>
 
