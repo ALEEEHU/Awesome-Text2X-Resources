@@ -1586,6 +1586,7 @@ AMASS is a large database of human motion unifying different optical marker-base
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
 | 2024 | **MicroCinema:A Divide-and-Conquer Approach for Text-to-Video Generation**  | CVPR 2024 (Highlight) |          [Link](https://arxiv.org/abs/2311.18829)          | -- | [Link](https://wangyanhui666.github.io/MicroCinema.github.io/)  |
 | 2024 | **LivePhoto: Real Image Animation with Text-guided Motion Control**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2312.02928)          | [Link](https://github.com/XavierCHEN34/LivePhoto)  | [Link](https://xavierchen34.github.io/LivePhoto-Page/)  |
+| 2024 | **xGen-VideoSyn-1: High-fidelity Text-to-Video Synthesis with Compressed Representations**  |  ECCV 2024 AI4VA |          [Link](https://arxiv.org/abs/2408.12590)          | [Link](https://github.com/SalesforceAIResearch/xgen-videosyn)  | -- |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -1606,6 +1607,16 @@ AMASS is a large database of human motion unifying different optical marker-base
     author={Chen, Xi and Liu, Zhiheng and Chen, Mengting and Feng, Yutong and Liu, Yu and Shen, Yujun and Zhao, Hengshuang},
     journal={arXiv preprint arXiv:2312.02928},
     year={2023}
+}
+
+@misc{qin2024xgenvideosyn1highfidelitytexttovideosynthesis,
+      title={xGen-VideoSyn-1: High-fidelity Text-to-Video Synthesis with Compressed Representations}, 
+      author={Can Qin and Congying Xia and Krithika Ramakrishnan and Michael Ryoo and Lifu Tu and Yihao Feng and Manli Shu and Honglu Zhou and Anas Awadalla and Jun Wang and Senthil Purushwalkam and Le Xue and Yingbo Zhou and Huan Wang and Silvio Savarese and Juan Carlos Niebles and Zeyuan Chen and Ran Xu and Caiming Xiong},
+      year={2024},
+      eprint={2408.12590},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.12590}, 
 }
 ```
 </details>
