@@ -13,6 +13,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## 🔥 News
+* `2024.09.03` - add one new section 'text to model'.
 * `2024.06.30` - add one new section 'text to video'.
 * `2024.04.05` adjusted the layout and added accepted lists and ArXiv lists to each section.
 
@@ -38,6 +39,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to Video](#text-to-video)
   * [ArXiv Papers](#-video-arxiv-papers)
   * [Additional Info](#other-additional-info)
+- [Text to Model](#text-to-model)
+  * [ArXiv Papers](#-model-arxiv-papers)
 - [Related Resources](#related-resources)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
@@ -1855,6 +1858,62 @@ The quality of video-text pairs fundamentally determines the upper bound of text
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
 | 2024 | **VidGen-1M: A Large-Scale Dataset for Text-to-video Generation**  | 5 Aug 2024  |          [Link](https://arxiv.org/abs/2408.02629)          | [Link](https://github.com/SAIS-FUXI/VidGen) | [Link](https://sais-fuxi.github.io/projects/vidgen-1m/)  |
 
+<details close>
+<summary>References</summary>
+
+```
+%axiv papers
+
+@article{tan2024vidgen,
+  title={VidGen-1M: A Large-Scale Dataset for Text-to-video Generation},
+  author={Tan, Zhiyu and Yang, Xiaomeng, and Qin, Luozheng and Li Hao},
+  booktitle={arXiv preprint arxiv:2408.02629},
+  year={2024}
+}
+
+
+```
+</details>
+
+
+--------------
+
+## Text to Model
+
+### 💡 Model ArXiv Papers
+
+#### 1. Text-to-Model: Text-Conditioned Neural Network Diffusion for Train-Once-for-All Personalization
+Zexi Li, Lingzhi Gao, Chao Wu (Zhejiang University)
+
+<details span>
+<summary><b>Abstract</b></summary>
+Generative artificial intelligence (GenAI) has made significant progress in understanding world knowledge and generating content from human languages across various modalities, like text-to-text large language models, text-to-image stable diffusion, and text-to-video Sora. While in this paper, we investigate the capability of GenAI for text-to-model generation, to see whether GenAI can comprehend hyper-level knowledge embedded within AI itself parameters. Specifically, we study a practical scenario termed train-once-for-all personalization, aiming to generate personalized models for diverse end-users and tasks using text prompts. Inspired by the recent emergence of neural network diffusion, we present Tina, a text-conditioned neural network diffusion for train-once-for-all personalization. Tina leverages a diffusion transformer model conditioned on task descriptions embedded using a CLIP model. Despite the astronomical number of potential personalized tasks (e.g., 1.73×10^13), by our design, Tina demonstrates remarkable in-distribution and out-of-distribution generalization even trained on small datasets (∼1000). We further verify whether and how \Tina understands world knowledge by analyzing its capabilities under zero-shot/few-shot image prompts, different numbers of personalized classes, prompts of natural language descriptions, and predicting unseen entities.
+</details>
+
+
+
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2024 | **Text-to-Model: Text-Conditioned Neural Network Diffusion for Train-Once-for-All Personalization**  |23 May 2024|          [Link](https://arxiv.org/abs/2405.14132)          | -- | -- |
+
+<details close>
+<summary>ArXiv Papers References</summary>
+
+```
+%axiv papers
+
+@misc{li2024texttomodeltextconditionedneuralnetwork,
+      title={Text-to-Model: Text-Conditioned Neural Network Diffusion for Train-Once-for-All Personalization}, 
+      author={Zexi Li and Lingzhi Gao and Chao Wu},
+      year={2024},
+      eprint={2405.14132},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2405.14132}, 
+}
+
+```
+</details>
 
 --------------
 
