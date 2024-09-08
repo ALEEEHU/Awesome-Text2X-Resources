@@ -1755,7 +1755,16 @@ We introduce CogVideoX, a large-scale diffusion transformer model designed for g
 improving both generation quality and semantic alignment. Results show that CogVideoX demonstrates state-of-the-art performance across both multiple machine metrics and human evaluations.
 </details>
 
-#### 7. CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities
+#### 7. MotionBooth: Motion-Aware Customized Text-to-Video Generation
+Jianzong Wu, Xiangtai Li, Yanhong Zeng, Jiangning Zhang, Qianyu Zhou, Yining Li, Yunhai Tong, Kai Chen
+
+(Peking University, Nanyang Technological University, Shanghai AI Laboratory, Zhejiang University, Shanghai Jiao Tong University)
+<details span>
+<summary><b>Abstract</b></summary>
+In this work, we present MotionBooth, an innovative framework designed for animating customized subjects with precise control over both object and camera movements. By leveraging a few images of a specific object, we efficiently fine-tune a text-to-video model to capture the object's shape and attributes accurately. Our approach presents subject region loss and video preservation loss to enhance the subject's learning performance, along with a subject token cross-attention loss to integrate the customized subject with motion control signals. Additionally, we propose training-free techniques for managing subject and camera motions during inference. In particular, we utilize cross-attention map manipulation to govern subject motion and introduce a novel latent shift module for camera movement control as well. MotionBooth excels in preserving the appearance of subjects while simultaneously controlling the motions in generated videos. Extensive quantitative and qualitative evaluations demonstrate the superiority and effectiveness of our method. 
+</details>
+
+#### 8. CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities
 Tao Wu, Yong Zhang, Xintao Wang, Xianpan Zhou, Guangcong Zheng, Zhongang Qi, Ying Shan, Xi Li
 
 (Zhejiang University, Tencent AI Lab, ARC Lab Tencent PCG)
@@ -1774,6 +1783,7 @@ Customized video generation aims to generate high-quality videos guided by text 
 | 2024 | **Text-Animator: Controllable Visual Text Video Generation**  | 25 Jun 2024 |          [Link](https://arxiv.org/abs/2406.17777)          | [Link](https://github.com/laulampaul/text-animator) | [Link](https://laulampaul.github.io/text-animator.html)  |
 | 2024 | **Still-Moving: Customized Video Generation without Customized Video Data**  | 11 Jul 2024  | [Link](https://arxiv.org/abs/2407.08674) |          --         | [Link](https://still-moving.github.io/) |
 | 2024 | **CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer**  | 12 Aug 2024  | [Link](https://arxiv.org/abs/2408.06072) |          [Link](https://github.com/THUDM/CogVideo)          | [Hugging Face](https://huggingface.co/docs/diffusers/main/en/api/pipelines/cogvideox) |
+| 2024 | **MotionBooth: Motion-Aware Customized Text-to-Video Generation**  | 21 Aug 2024  | [Link](https://arxiv.org/abs/2406.17758) |         [Link](https://github.com/jianzongwu/MotionBooth)         | [Link](https://jianzongwu.github.io/projects/motionbooth/) |
 | 2024 | **CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities**  | 23 Aug 2024  | [Link](https://arxiv.org/abs/2408.13239) |          --         | [Link](https://customcrafter.github.io/) |
 
 <details close>
