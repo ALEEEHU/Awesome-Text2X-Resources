@@ -40,6 +40,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [ArXiv Papers](#-human-arxiv-papers)
 - [Text to Model](#text-to-model)
   * [ArXiv Papers](#-model-arxiv-papers)
+- [Text to Music](#text-to-music)
+  * [ArXiv Papers](#-music-arxiv-papers)
 - [Related Resources](#related-resources)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
@@ -1941,6 +1943,45 @@ Generative artificial intelligence (GenAI) has made significant progress in unde
 
 ```
 </details>
+
+
+## Text to Music🎶
+
+### 💡 Music ArXiv Papers
+
+#### 1. FLUX that Plays Music
+Zhengcong Fei, Mingyuan Fan, Changqian Yu, Junshi Huang (Kunlun Inc.)
+
+<details span>
+<summary><b>Abstract</b></summary>
+This paper explores a simple extension of diffusion-based rectified flow Transformers for text-to-music generation, termed as FluxMusic. Generally, along with design in advanced Flux model, we transfers it into a latent VAE space of mel-spectrum. It involves first applying a sequence of independent attention to the double text-music stream, followed by a stacked single music stream for denoised patch prediction. We employ multiple pre-trained text encoders to sufficiently capture caption semantic information as well as inference flexibility. In between, coarse textual information, in conjunction with time step embeddings, is utilized in a modulation mechanism, while fine-grained textual details are concatenated with the music patch sequence as inputs. Through an in-depth study, we demonstrate that rectified flow training with an optimized architecture significantly outperforms established diffusion methods for the text-to-music task, as evidenced by various automatic metrics and human preference evaluations. 
+</details>
+
+
+
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2024 | **FLUX that Plays Music**  |1 Sep 2024|          [Link](https://arxiv.org/abs/2409.00587)          |  [Link](https://github.com/feizc/FluxMusic)  | [Hugging Face](https://huggingface.co/feizhengcong/FluxMusic) |
+
+<details close>
+<summary>ArXiv Papers References</summary>
+
+```
+%axiv papers
+
+@misc{fei2024fluxplaysmusic,
+      title={FLUX that Plays Music}, 
+      author={Zhengcong Fei and Mingyuan Fan and Changqian Yu and Junshi Huang},
+      year={2024},
+      eprint={2409.00587},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2409.00587}, 
+}
+
+```
+</details>
+
 
 --------------
 
