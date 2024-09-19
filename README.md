@@ -690,6 +690,15 @@ Haoxuan Che, Xuanhua He, Quande Liu, Shengju Qian, Cheng Jin, Xin Wang, Hao Chen
 We introduce GameGen-O, the first diffusion transformer model tailored for the generation of open-world video games. This model facilitates high-quality, open-domain generation by simulating a wide array of game engine features, such as innovative characters, dynamic environments, complex actions, and diverse events. Additionally, it provides interactive controllability, thus allowing for the gameplay simulation. The development of GameGen-O involves a comprehensive data collection and processing effort from scratch. We collect and build the first Open-World Video Game Dataset (OGameData), amassed extensive data from over a hundred of next-generation open-world games, employing a proprietary data pipeline for efficient sorting, scoring, filtering, and decoupled captioning. This robust and extensive OGameData forms the foundation of our model's training process. GameGen-O undergoes a two-stage training process, consisting of foundation model pretraining and instruction tuning. In the first phase, the model is pre-trained on the OGameData via the text-to-video and video continuation, endowing GameGen-O with the capability for open-domain video game generation. In the second phase, the pre-trained model is frozen, and we fine-tuned using a trainable InstructNet, which enables the production of subsequent frames based on multimodal structural instructions. This whole training process imparts the model with the ability to generate and interactively control content. In summary, GameGen-O represents a notable initial step forward in the realm of open-world video game generation via generative models. It underscores the potential of generative models to serve as an alternative to rendering techniques, which can efficiently combine creative generation with interactive capabilities.
 </details>
 
+#### 10. Tora: Trajectory-oriented Diffusion Transformer for Video Generation
+Zhenghao Zhang, Junchao Liao, Menghao Li, Zuozhuo Dai, Bingxue Qiu, Siyu Zhu, Long Qin, Weizhi Wang
+
+(Alibaba Group, Fudan University)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in Diffusion Transformer (DiT) have demonstrated remarkable proficiency in producing high-quality video content. Nonetheless, the potential of transformer-based diffusion models for effectively generating videos with controllable motion remains an area of limited exploration. This paper introduces Tora, the first trajectory-oriented DiT framework that concurrently integrates textual, visual, and trajectory conditions, thereby enabling scalable video generation with effective motion guidance. Specifically, Tora consists of a Trajectory Extractor(TE), a Spatial-Temporal DiT, and a Motion-guidance Fuser(MGF). The TE encodes arbitrary trajectories into hierarchical spacetime motion patches with a 3D video compression network. The MGF integrates the motion patches into the DiT blocks to generate consistent videos that accurately follow designated trajectories. Our design aligns seamlessly with DiT's scalability, allowing precise control of video content's dynamics with diverse durations, aspect ratios, and resolutions. Extensive experiments demonstrate Tora's excellence in achieving high motion fidelity, while also meticulously simulating the intricate movement of the physical world.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -703,6 +712,7 @@ We introduce GameGen-O, the first diffusion transformer model tailored for the g
 | 2024 | **MotionBooth: Motion-Aware Customized Text-to-Video Generation**  | 21 Aug 2024  | [Link](https://arxiv.org/abs/2406.17758) |         [Link](https://github.com/jianzongwu/MotionBooth)         | [Link](https://jianzongwu.github.io/projects/motionbooth/) |
 | 2024 | **CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities**  | 23 Aug 2024  | [Link](https://arxiv.org/abs/2408.13239) |          [Link](https://github.com/WuTao-CS/CustomCrafter)        | [Link](https://customcrafter.github.io/) |
 | 2024 | **GameGen-O: Open-world Video Game Generation**  | Coming Soon!  | Coming Soon!  |          [Link](https://github.com/GameGen-O/GameGen-O)        | [Link](https://gamegen-o.github.io/) |
+| 2024 | **Tora: Trajectory-oriented Diffusion Transformer for Video Generation**  | 27 Aug 2024  | [Link](https://arxiv.org/abs/2407.21705)  |      --      | [Link](https://ali-videoai.github.io/tora_video/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -781,6 +791,16 @@ We introduce GameGen-O, the first diffusion transformer model tailored for the g
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2408.13239}, 
+}
+
+@misc{tora,
+        title={Tora: Trajectory-oriented Diffusion Transformer for Video Generation}, 
+        author={Zhenghao Zhang and Junchao Liao and Menghao Li and Long Qin and Weizhi Wang},   
+        year={2024},
+        eprint={2407.21705},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2407.21705}, 
 }
 
 ```
