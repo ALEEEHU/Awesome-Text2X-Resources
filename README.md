@@ -1531,6 +1531,15 @@ Yuxuan Bian, Ailing Zeng, Xuan Ju, Xian Liu, Zhaoyang Zhang, Wei Liu, Qiang Xu
 Whole-body multi-modal motion generation, controlled by text, speech, or music, has numerous applications including video generation and character animation. However, employing a unified model to accomplish various generation tasks with different condition modalities presents two main challenges: motion distribution drifts across different generation scenarios and the complex optimization of mixed conditions with varying granularity. Furthermore, inconsistent motion formats in existing datasets further hinder effective multi-modal motion generation. In this paper, we propose ControlMM, a unified framework to Control whole-body Multi-modal Motion generation in a plug-and-play manner. To effectively learn and transfer motion knowledge across different motion distributions, we propose ControlMM-Attn, for parallel modeling of static and dynamic human topology graphs. To handle conditions with varying granularity, ControlMM employs a coarse-to-fine training strategy, including stage-1 text-to-motion pre-training for semantic generation and stage-2 multi-modal control adaptation for conditions of varying low-level granularity. To address existing benchmarks' varying motion format limitations, we introduce ControlMM-Bench, the first publicly available multi-modal whole-body human motion generation benchmark based on the unified whole-body SMPL-X format. Extensive experiments show that ControlMM achieves state-of-the-art performance across various standard motion generation tasks. 
 </details>
 
+#### 12. MoRAG -- Multi-Fusion Retrieval Augmented Generation for Human Motion
+Kalakonda Sai Shashank, Shubh Maheshwari, Ravi Kiran Sarvadevabhatla
+
+(IIIT Hyderabad, University of California San Diego)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce MoRAG, a novel multi-part fusion based retrieval-augmented generation strategy for text-based human motion generation. The method enhances motion diffusion models by leveraging additional knowledge obtained through an improved motion retrieval process. By effectively prompting large language models (LLMs), we address spelling errors and rephrasing issues in motion retrieval. Our approach utilizes a multi-part retrieval strategy to improve the generalizability of motion retrieval across the language space. We create diverse samples through the spatial composition of the retrieved motions. Furthermore, by utilizing low-level, part-specific motion information, we can construct motion samples for unseen text descriptions. Our experiments demonstrate that our framework can serve as a plug-and-play module, improving the performance of motion diffusion models.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -1546,6 +1555,7 @@ Whole-body multi-modal motion generation, controlled by text, speech, or music, 
 | 2024 | **CrowdMoGen: Zero-Shot Text-Driven Collective Motion Generation**  | 8 Jul 2024 |          [Link](https://arxiv.org/abs/2407.06188)          | [Link](https://github.com/gxyes/CrowdMoGen) | [Link](https://gxyes.github.io/projects/CrowdMoGen.html)  |
 | 2024 | **Infinite Motion: Extended Motion Generation via Long Text Instructions**  | 11 Jul 2024 |          [Link](https://arxiv.org/abs/2407.08443)          | [Link](https://github.com/shuochengzhai/Infinite-Motion) | [Link](https://shuochengzhai.github.io/Infinite-motion.github.io/)  |
 | 2024 | **Adding Multi-modal Controls to Whole-body Human Motion Generation**  | 30 Jul 2024 |          [Link](https://arxiv.org/abs/2407.21136)          | [Link](https://github.com/yxbian23/ControlMM) | [Link](https://yxbian23.github.io/ControlMM/)  |
+| 2024 | **MoRAG -- Multi-Fusion Retrieval Augmented Generation for Human Motion**  | 18 Sep 2024 |          [Link](https://arxiv.org/abs/2409.12140)          | [Link](https://github.com/Motion-RAG/MoRAG) | [Link](https://motion-rag.github.io/)  |
 
 
 <details close>
@@ -1649,6 +1659,13 @@ Whole-body multi-modal motion generation, controlled by text, speech, or music, 
   author={Bian, Yuxuan, Zeng Ailing, Ju Xuan, Liu Xian, Zhang Zhaoyang, Liu Wei, and Xu Qiang},
   journal={arxiv},
   year={2024}
+}
+
+@InProceedings{MoRAG,
+  author    = {Kalakonda, Sai Shashank and Maheshwari, Shubh and Sarvadevabhatla, Ravi Kiran},
+  title     = {MoRAG - Multi-Fusion Retrieval Augmented Generation for Human Motion},
+  booktitle   = {arXiv preprint},
+  year      = {2024},
 }
 ```
 </details>
