@@ -1244,6 +1244,7 @@ Text-driven 3D scene generation has seen significant advancements recently. Howe
 | 2024 | **ParCo: Part-Coordinating Text-to-Motion Synthesis**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2403.18512)          | [Link](https://github.com/qrzou/ParCo) | -- |
 | 2024 | **CoMo: Controllable Motion Generation through Language Guided Pose Code Editing**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2403.13900)          | Coming Soon! | [Link](https://yh2371.github.io/como/) |
 | 2024 | **SMooDi: Stylized Motion Diffusion Model**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2407.12783)          | [Link](https://github.com/neu-vi/SMooDi)  | [Link](https://neu-vi.github.io/SMooDi/) |
+| 2024 | **MotionFix: Text-Driven 3D Human Motion Editing**  | SIGGRAPH Asia 2024 |          [Link](https://arxiv.org/abs/2408.00712)          | [Link](https://github.com/athn-nik/motionfix) | [Link](https://motionfix.is.tue.mpg.de/)  |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -1433,6 +1434,13 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2407.12783}, 
 }
+
+@inproceedings{athanasiou2024motionfix,
+  title = {{MotionFix}: Text-Driven 3D Human Motion Editing},
+  author = {Athanasiou, Nikos and Ceske, Alpar and Diomataris, Markos and Black, Michael J. and Varol, G{\"u}l},
+  booktitle = {SIGGRAPH Asia 2024 Conference Papers},
+  year = {2024}
+}
 ```
 </details>
 
@@ -1557,7 +1565,6 @@ We introduce MoRAG, a novel multi-part fusion based retrieval-augmented generati
 | 2024 | **Adding Multi-modal Controls to Whole-body Human Motion Generation**  | 30 Jul 2024 |          [Link](https://arxiv.org/abs/2407.21136)          | [Link](https://github.com/yxbian23/ControlMM) | [Link](https://yxbian23.github.io/ControlMM/)  |
 | 2024 | **MoRAG -- Multi-Fusion Retrieval Augmented Generation for Human Motion**  | 18 Sep 2024 |          [Link](https://arxiv.org/abs/2409.12140)          | [Link](https://github.com/Motion-RAG/MoRAG) | [Link](https://motion-rag.github.io/)  |
 
-
 <details close>
 <summary>ArXiv Papers References</summary>
 
@@ -1667,6 +1674,7 @@ We introduce MoRAG, a novel multi-part fusion based retrieval-augmented generati
   booktitle   = {arXiv preprint},
   year      = {2024},
 }
+
 ```
 </details>
 
