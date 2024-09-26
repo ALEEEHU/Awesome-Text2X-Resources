@@ -38,6 +38,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to 3D Human](#text-to-3d-human)
   * [Accepted Papers](#-human-accepted-papers)
   * [ArXiv Papers](#-human-arxiv-papers)
+- [Text to CAD](#text-to-cad)
+  * [Accepted Papers](#-cad-accepted-papers)
 - [Text to Model](#text-to-model)
   * [ArXiv Papers](#-model-arxiv-papers)
 - [Text to Music](#text-to-music)
@@ -49,7 +51,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 <details span>
 <summary><b>Update Logs:</b></summary>
 <br>
-	
+
+* `2024.09.26` - add one new section 'text to CAD'.
 * `2024.09.26` - update several papers status "NeurIPS 2024" to accepted papers, congrats to all 🎉
 * `2024.09.03` - add one new section 'text to model'.
 * `2024.06.30` - add one new section 'text to video'.	
@@ -1878,7 +1881,32 @@ SMPL-X, that extends SMPL with fully articulated hands and facial expressions (5
 </details>
 </details>
 
+## Text to CAD
 
+### 🎉 CAD Accepted Papers
+
+| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2024 | **Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts**  | NeurIPS 2024 Spotlight |          [Link](https://arxiv.org/abs/2409.17106)          |  --  | [Link](https://sadilkhan.github.io/text2cad-project/)  |
+
+<details close>
+<summary>Accepted Papers References</summary>
+
+```
+%accepted papers
+    
+@misc{khan2024text2cadgeneratingsequentialcad, 
+	title={Text2CAD: Generating Sequential CAD Models from Beginner-to-Expert Level Text Prompts}, 
+	author={Mohammad Sadil Khan and Sankalp Sinha and Talha Uddin Sheikh and Didier Stricker and Sk Aziz Ali and Muhammad Zeshan Afzal}, 
+	year={2024}, 
+	eprint={2409.17106}, 
+	archivePrefix={arXiv}, 
+	primaryClass={cs.CV}, 
+	url={https://arxiv.org/abs/2409.17106}, 
+}
+        
+```
+</details>
 
 
 ## Text to Model
