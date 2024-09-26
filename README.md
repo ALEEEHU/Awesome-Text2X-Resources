@@ -555,6 +555,7 @@ year={2024},
 | 2024 | **MicroCinema:A Divide-and-Conquer Approach for Text-to-Video Generation**  | CVPR 2024 (Highlight) |          [Link](https://arxiv.org/abs/2311.18829)          | -- | [Link](https://wangyanhui666.github.io/MicroCinema.github.io/)  |
 | 2024 | **LivePhoto: Real Image Animation with Text-guided Motion Control**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2312.02928)          | [Link](https://github.com/XavierCHEN34/LivePhoto)  | [Link](https://xavierchen34.github.io/LivePhoto-Page/)  |
 | 2024 | **xGen-VideoSyn-1: High-fidelity Text-to-Video Synthesis with Compressed Representations**  |  ECCV 2024 AI4VA |          [Link](https://arxiv.org/abs/2408.12590)          | [Link](https://github.com/SalesforceAIResearch/xgen-videosyn)  | -- |
+| 2024 | **MotionBooth: Motion-Aware Customized Text-to-Video Generation**  | NeurIPS 2024 Spotlight  | [Link](https://arxiv.org/abs/2406.17758) |         [Link](https://github.com/jianzongwu/MotionBooth)         | [Link](https://jianzongwu.github.io/projects/motionbooth/) |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -585,6 +586,13 @@ year={2024},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2408.12590}, 
+}
+
+@article{wu2024motionbooth,
+  title={MotionBooth: Motion-Aware Customized Text-to-Video Generation},
+  author={Jianzong Wu and Xiangtai Li and Yanhong Zeng and Jiangning Zhang and Qianyu Zhou and Yining Li and Yunhai Tong and Kai Chen},
+  journal={arXiv pre-print arXiv:2406.17758},
+  year={2024},
 }
 ```
 </details>
@@ -630,16 +638,7 @@ We introduce CogVideoX, a large-scale diffusion transformer model designed for g
 improving both generation quality and semantic alignment. Results show that CogVideoX demonstrates state-of-the-art performance across both multiple machine metrics and human evaluations.
 </details>
 
-#### 5. MotionBooth: Motion-Aware Customized Text-to-Video Generation
-Jianzong Wu, Xiangtai Li, Yanhong Zeng, Jiangning Zhang, Qianyu Zhou, Yining Li, Yunhai Tong, Kai Chen
-
-(Peking University, Nanyang Technological University, Shanghai AI Laboratory, Zhejiang University, Shanghai Jiao Tong University)
-<details span>
-<summary><b>Abstract</b></summary>
-In this work, we present MotionBooth, an innovative framework designed for animating customized subjects with precise control over both object and camera movements. By leveraging a few images of a specific object, we efficiently fine-tune a text-to-video model to capture the object's shape and attributes accurately. Our approach presents subject region loss and video preservation loss to enhance the subject's learning performance, along with a subject token cross-attention loss to integrate the customized subject with motion control signals. Additionally, we propose training-free techniques for managing subject and camera motions during inference. In particular, we utilize cross-attention map manipulation to govern subject motion and introduce a novel latent shift module for camera movement control as well. MotionBooth excels in preserving the appearance of subjects while simultaneously controlling the motions in generated videos. Extensive quantitative and qualitative evaluations demonstrate the superiority and effectiveness of our method. 
-</details>
-
-#### 6. CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities
+#### 5. CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities
 Tao Wu, Yong Zhang, Xintao Wang, Xianpan Zhou, Guangcong Zheng, Zhongang Qi, Ying Shan, Xi Li
 
 (Zhejiang University, Tencent AI Lab, ARC Lab Tencent PCG)
@@ -648,7 +647,7 @@ Tao Wu, Yong Zhang, Xintao Wang, Xianpan Zhou, Guangcong Zheng, Zhongang Qi, Yin
 Customized video generation aims to generate high-quality videos guided by text prompts and subject's reference images. However, since it is only trained on static images, the fine-tuning process of subject learning disrupts abilities of video diffusion models (VDMs) to combine concepts and generate motions. To restore these abilities, some methods use additional video similar to the prompt to fine-tune or guide the model. This requires frequent changes of guiding videos and even re-tuning of the model when generating different motions, which is very inconvenient for users. In this paper, we propose CustomCrafter, a novel framework that preserves the model's motion generation and conceptual combination abilities without additional video and fine-tuning to recovery. For preserving conceptual combination ability, we design a plug-and-play module to update few parameters in VDMs, enhancing the model's ability to capture the appearance details and the ability of concept combinations for new subjects. For motion generation, we observed that VDMs tend to restore the motion of video in the early stage of denoising, while focusing on the recovery of subject details in the later stage. Therefore, we propose Dynamic Weighted Video Sampling Strategy. Using the pluggability of our subject learning modules, we reduce the impact of this module on motion generation in the early stage of denoising, preserving the ability to generate motion of VDMs. In the later stage of denoising, we restore this module to repair the appearance details of the specified subject, thereby ensuring the fidelity of the subject's appearance. Experimental results show that our method has a significant improvement compared to previous methods.
 </details>
 
-#### 7. GameGen-O: Open-world Video Game Generation
+#### 6. GameGen-O: Open-world Video Game Generation
 Haoxuan Che, Xuanhua He, Quande Liu, Shengju Qian, Cheng Jin, Xin Wang, Hao Chen
 
 (The Hong Kong Univerity of Science and Technology, Univerity of Science and Technology of China, LightSpeed Studios Tencent)
@@ -657,7 +656,7 @@ Haoxuan Che, Xuanhua He, Quande Liu, Shengju Qian, Cheng Jin, Xin Wang, Hao Chen
 We introduce GameGen-O, the first diffusion transformer model tailored for the generation of open-world video games. This model facilitates high-quality, open-domain generation by simulating a wide array of game engine features, such as innovative characters, dynamic environments, complex actions, and diverse events. Additionally, it provides interactive controllability, thus allowing for the gameplay simulation. The development of GameGen-O involves a comprehensive data collection and processing effort from scratch. We collect and build the first Open-World Video Game Dataset (OGameData), amassed extensive data from over a hundred of next-generation open-world games, employing a proprietary data pipeline for efficient sorting, scoring, filtering, and decoupled captioning. This robust and extensive OGameData forms the foundation of our model's training process. GameGen-O undergoes a two-stage training process, consisting of foundation model pretraining and instruction tuning. In the first phase, the model is pre-trained on the OGameData via the text-to-video and video continuation, endowing GameGen-O with the capability for open-domain video game generation. In the second phase, the pre-trained model is frozen, and we fine-tuned using a trainable InstructNet, which enables the production of subsequent frames based on multimodal structural instructions. This whole training process imparts the model with the ability to generate and interactively control content. In summary, GameGen-O represents a notable initial step forward in the realm of open-world video game generation via generative models. It underscores the potential of generative models to serve as an alternative to rendering techniques, which can efficiently combine creative generation with interactive capabilities.
 </details>
 
-#### 8. Tora: Trajectory-oriented Diffusion Transformer for Video Generation
+#### 7. Tora: Trajectory-oriented Diffusion Transformer for Video Generation
 Zhenghao Zhang, Junchao Liao, Menghao Li, Zuozhuo Dai, Bingxue Qiu, Siyu Zhu, Long Qin, Weizhi Wang
 
 (Alibaba Group, Fudan University)
@@ -674,7 +673,6 @@ Recent advancements in Diffusion Transformer (DiT) have demonstrated remarkable 
 | 2024 | **Text-Animator: Controllable Visual Text Video Generation**  | 25 Jun 2024 |          [Link](https://arxiv.org/abs/2406.17777)          | [Link](https://github.com/laulampaul/text-animator) | [Link](https://laulampaul.github.io/text-animator.html)  |
 | 2024 | **Still-Moving: Customized Video Generation without Customized Video Data**  | 11 Jul 2024  | [Link](https://arxiv.org/abs/2407.08674) |          --         | [Link](https://still-moving.github.io/) |
 | 2024 | **CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer**  | 12 Aug 2024  | [Link](https://arxiv.org/abs/2408.06072) |          [Link](https://github.com/THUDM/CogVideo)          | [Hugging Face](https://huggingface.co/docs/diffusers/main/en/api/pipelines/cogvideox) |
-| 2024 | **MotionBooth: Motion-Aware Customized Text-to-Video Generation**  | 21 Aug 2024  | [Link](https://arxiv.org/abs/2406.17758) |         [Link](https://github.com/jianzongwu/MotionBooth)         | [Link](https://jianzongwu.github.io/projects/motionbooth/) |
 | 2024 | **CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities**  | 23 Aug 2024  | [Link](https://arxiv.org/abs/2408.13239) |          [Link](https://github.com/WuTao-CS/CustomCrafter)        | [Link](https://customcrafter.github.io/) |
 | 2024 | **GameGen-O: Open-world Video Game Generation**  | Coming Soon!  | Coming Soon!  |          [Link](https://github.com/GameGen-O/GameGen-O)        | [Link](https://gamegen-o.github.io/) |
 | 2024 | **Tora: Trajectory-oriented Diffusion Transformer for Video Generation**  | 27 Aug 2024  | [Link](https://arxiv.org/abs/2407.21705)  |      --      | [Link](https://ali-videoai.github.io/tora_video/) |
@@ -720,13 +718,6 @@ Recent advancements in Diffusion Transformer (DiT) have demonstrated remarkable 
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2408.06072}, 
-}
-
-@article{wu2024motionbooth,
-  title={MotionBooth: Motion-Aware Customized Text-to-Video Generation},
-  author={Jianzong Wu and Xiangtai Li and Yanhong Zeng and Jiangning Zhang and Qianyu Zhou and Yining Li and Yunhai Tong and Kai Chen},
-  journal={arXiv pre-print arXiv:2406.17758},
-  year={2024},
 }
 
 @misc{wu2024customcraftercustomizedvideogeneration,
