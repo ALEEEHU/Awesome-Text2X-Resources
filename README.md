@@ -559,6 +559,7 @@ year={2024},
 | 2024 | **LivePhoto: Real Image Animation with Text-guided Motion Control**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2312.02928)          | [Link](https://github.com/XavierCHEN34/LivePhoto)  | [Link](https://xavierchen34.github.io/LivePhoto-Page/)  |
 | 2024 | **xGen-VideoSyn-1: High-fidelity Text-to-Video Synthesis with Compressed Representations**  |  ECCV 2024 AI4VA |          [Link](https://arxiv.org/abs/2408.12590)          | [Link](https://github.com/SalesforceAIResearch/xgen-videosyn)  | -- |
 | 2024 | **MotionBooth: Motion-Aware Customized Text-to-Video Generation**  | NeurIPS 2024 Spotlight  | [Link](https://arxiv.org/abs/2406.17758) |         [Link](https://github.com/jianzongwu/MotionBooth)         | [Link](https://jianzongwu.github.io/projects/motionbooth/) |
+| 2024 | **Vivid-ZOO: Multi-View Video Generation with Diffusion Model**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2406.08659) |         [Link](https://github.com/hi-zhengcheng/vividzoo)         | [Link](https://hi-zhengcheng.github.io/vividzoo/) |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -596,6 +597,14 @@ year={2024},
   author={Jianzong Wu and Xiangtai Li and Yanhong Zeng and Jiangning Zhang and Qianyu Zhou and Yining Li and Yunhai Tong and Kai Chen},
   journal={arXiv pre-print arXiv:2406.17758},
   year={2024},
+}
+
+@misc{li2024vividzoo,
+  title={Vivid-ZOO: Multi-View Video Generation with Diffusion Model}, 
+  author={Bing Li and Cheng Zheng and Wenxuan Zhu and Jinjie Mai and Biao Zhang and Peter Wonka and Bernard Ghanem},
+  year={2024},
+  eprint={2406.08659},
+  archivePrefix={arXiv},
 }
 ```
 </details>
