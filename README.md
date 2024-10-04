@@ -355,6 +355,16 @@ Ce Chen, Shaoli Huang, Xuelin Chen, Guangyi Chen, Xiaoguang Han, Kun Zhang, Ming
 Text-to-4D generation has recently been demonstrated viable by integrating a 2D image diffusion model with a video diffusion model. However, existing models tend to produce results with inconsistent motions and geometric structures over time. To this end, we present a novel framework, coined CT4D, which directly operates on animatable meshes for generating consistent 4D content from arbitrary user-supplied prompts. The primary challenges of our mesh-based framework involve stably generating a mesh with details that align with the text prompt while directly driving it and maintaining surface continuity. Our CT4D framework incorporates a unique Generate-Refine-Animate (GRA) algorithm to enhance the creation of text-aligned meshes. To improve surface continuity, we divide a mesh into several smaller regions and implement a uniform driving function within each area. Additionally, we constrain the animating stage with a rigidity regulation to ensure cross-region continuity. Our experimental results, both qualitative and quantitative, demonstrate that our CT4D framework surpasses existing text-to-4D techniques in maintaining interframe consistency and preserving global geometry. Furthermore, we showcase that this enhanced representation inherently possesses the capability for combinational 4D generation and texture editing.
 </details>
 
+
+#### 19. Disco4D: Disentangled 4D Human Generation and Animation from a Single Image
+Hui En Pang, Shuai Liu, Zhongang Cai, Lei Yang, Tianwei Zhang, Ziwei Liu
+
+(Nanyang Technological University, Sensetime Research, Shanghai AI Lab)
+<details span>
+<summary><b>Abstract</b></summary>
+We present Disco4D, a novel Gaussian Splatting framework for 4D human genera- tion and animation from a single image. Different from existing methods, Disco4D distinctively disentangles clothings (with Gaussian models) from the human body (with SMPL-X model), significantly enhancing the generation details and flexibility. It has the following technical innovations. 1) Disco4D learns to efficiently fit the clothing Gaussians over the SMPL-X Gaussians. 2) It adopts diffusion models to enhance the 3D generation process, e.g., modeling occluded parts not visible in the input image. 3) It learns an identity encoding for each clothing Gaussian to facilitate the separation and extraction of clothing assets. Furthermore, Disco4D naturally supports 4D human animation with vivid dynamics. Extensive experiments demonstrate the superiority of Disco4D on 4D human generation and animation tasks.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -377,6 +387,7 @@ Text-to-4D generation has recently been demonstrated viable by integrating a 2D 
 | 2024 | **4Dynamic: Text-to-4D Generation with Hybrid Priors**  | 17 Jul 2024 |          [Link](https://arxiv.org/abs/2407.12684)          | -- | -- |
 | 2024 | **SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency**  | 24 Jul 2024 |          [Link](https://arxiv.org/abs/2407.17470)          | [Link](https://github.com/Stability-AI/generative-models) | [Link](https://sv4d.github.io/) |
 | 2024 | **CT4D: Consistent Text-to-4D Generation with Animatable Meshes**  | 15 Aug 2024 |          [Link](https://arxiv.org/abs/2408.08342)          | -- | -- |
+| 2024 | **Disco4D: Disentangled 4D Human Generation and Animation from a Single Image**  | 25 Sep 2024 |          [Link](https://arxiv.org/abs/2409.17280)          | -- |  [Link](https://disco-4d.github.io/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -526,7 +537,16 @@ year={2024},
       primaryClass={cs.GR},
       url={https://arxiv.org/abs/2408.08342}, 
 }
- 
+
+@misc{pang2024disco4ddisentangled4dhuman,
+      title={Disco4D: Disentangled 4D Human Generation and Animation from a Single Image}, 
+      author={Hui En Pang and Shuai Liu and Zhongang Cai and Lei Yang and Tianwei Zhang and Ziwei Liu},
+      year={2024},
+      eprint={2409.17280},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2409.17280}, 
+} 
 ```
 </details>
 
