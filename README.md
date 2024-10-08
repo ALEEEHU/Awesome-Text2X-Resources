@@ -1857,6 +1857,8 @@ Recent advancements in Diffusion Transformer (DiT) have demonstrated remarkable 
 
 ### Other Additional Info
 
+- Survey: The Dawn of Video Generation: Preliminary Explorations with SORA-like Models, [arXiv](https://arxiv.org/abs/2410.05227), [Project Page](https://ailab-cvc.github.io/VideoGen-Eval/), [GitHub Repo](https://github.com/AILab-CVC/VideoGen-Eval)
+
 #### 📚 Dataset Works
 
 #### 1. VidGen-1M: A Large-Scale Dataset for Text-to-video Generation
