@@ -38,8 +38,6 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [Accepted Papers](#-video-accepted-papers)
   * [ArXiv Papers](#-video-arxiv-papers)
   * [Additional Info](#other-additional-info)
-- [Text to CAD](#text-to-cad)
-  * [Accepted Papers](#-cad-accepted-papers)
 - [Text to Model](#text-to-model)
   * [ArXiv Papers](#-model-arxiv-papers)
 - [Text to Music](#text-to-music)
@@ -88,6 +86,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 | 2024 | **4Diffusion: Multi-view Video Diffusion Model for 4D Generation**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.20674)        | [Link](https://github.com/aejion/4Diffusion)  | [Link](https://aejion.github.io/4diffusion/)  |
 | 2024 | **4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.07472)          | -- | [Link](https://snap-research.github.io/4Real/) |
 | 2024 | **Compositional 3D-aware Video Generation with LLM Director**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2409.00558) |          --         | [Link](https://www.microsoft.com/en-us/research/project/compositional-3d-aware-video-generation/) |
+| 2024 | **DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2410.06756) |         [Link](https://github.com/WU-CVGL/DreamMesh4D)         | [Link](https://lizhiqi49.github.io/DreamMesh4D/) |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -192,6 +191,13 @@ year = {2024}
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2409.00558}, 
+}
+
+@inproceedings{li2024dreammesh4d,
+    title={DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation},
+    author={Zhiqi Li and Yiming Chen and Peidong Liu},
+    booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+    year={2024}
 }
 ```
 </details>
