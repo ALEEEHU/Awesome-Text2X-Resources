@@ -13,6 +13,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## 🔥 News
+* `2024.10.11` adjusted the layout of the `4D Accepted Papers Section`.
 * `2024.04.05` adjusted the layout and added accepted lists and ArXiv lists to each section.
 
 
@@ -49,8 +50,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 <details span>
 <summary><b>Update Logs:</b></summary>
 <br>
-
-* `2024.09.26` - add one new section 'text to CAD'.
+	
 * `2024.09.26` - update several papers status "NeurIPS 2024" to accepted papers, congrats to all 🎉
 * `2024.09.03` - add one new section 'text to model'.
 * `2024.06.30` - add one new section 'text to video'.	
@@ -71,22 +71,25 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ### 🎉 4D Accepted Papers
 
-| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2023 | **Text-To-4D Dynamic Scene Generation**  | ICML 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | --  | [Link](https://make-a-video3d.github.io/)  |
-| 2023 | **Consistent4D: Consistent 360° Dynamic Object Generation from Monocular Video**  | ICLR 2024 |          [Link](https://arxiv.org/abs/2311.02848)          | [Link](https://github.com/yanqinJiang/Consistent4D)  | [Link](https://consistent4d.github.io/)  |
-| 2023 | **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.17984)          | [Link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
-| 2023 | **Dream-in-4D: A Unified Approach for Text- and Image-guided 4D Scene Generation**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.16854)          | [Link](https://github.com/NVlabs/dream-in-4d)  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
-| 2023 | **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.13763)          | -- | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
-| 2023 | **Control4D: Efficient 4D Portrait Editing with Text**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2305.20082)          | --  | [Link](https://control4darxiv.github.io./)  |
-| 2024 | **TC4D: Trajectory-Conditioned Text-to-4D Generation**  | ECCV 2024 |         [Link](https://arxiv.org/abs/2403.17920)         | [Link](https://github.com/sherwinbahmani/tc4d)   | [Link](https://sherwinbahmani.github.io/tc4d/) |
-| 2024 | **SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2404.03736)          | [Link](https://github.com/JarrentWu1031/SC4D)  |[Link](https://sc4d.github.io/) |
-| 2024 | **STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians**  | ECCV 2024  |           [Link](https://arxiv.org/abs/2403.14939)          | [Link](https://github.com/zeng-yifei/STAG4D)  |[Link](https://nju-3dv.github.io/projects/STAG4D/) |
-| 2024 | **Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.16822)        | [Link](https://github.com/yikaiw/vidu4d)  | [Link](https://vidu4d-dgs.github.io/)  |
-| 2024 | **4Diffusion: Multi-view Video Diffusion Model for 4D Generation**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.20674)        | [Link](https://github.com/aejion/4Diffusion)  | [Link](https://aejion.github.io/4diffusion/)  |
-| 2024 | **4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.07472)          | -- | [Link](https://snap-research.github.io/4Real/) |
-| 2024 | **Compositional 3D-aware Video Generation with LLM Director**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2409.00558) |          --         | [Link](https://www.microsoft.com/en-us/research/project/compositional-3d-aware-video-generation/) |
-| 2024 | **DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2410.06756) |         [Link](https://github.com/WU-CVGL/DreamMesh4D)         | [Link](https://lizhiqi49.github.io/DreamMesh4D/) |
+
+
+| Task | Year | Title             | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ---- | ----------------- | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :-------------------------------: |
+|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 | **Text-To-4D Dynamic Scene Generation**  | ICML 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | --  | [Link](https://make-a-video3d.github.io/)  |
+|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.17984)          | [Link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
+|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **Dream-in-4D: A Unified Approach for Text- and Image-guided 4D Scene Generation**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.16854)          | [Link](https://github.com/NVlabs/dream-in-4d)  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
+|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.13763)          | -- | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
+|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **TC4D: Trajectory-Conditioned Text-to-4D Generation**  | ECCV 2024 |         [Link](https://arxiv.org/abs/2403.17920)         | [Link](https://github.com/sherwinbahmani/tc4d)   | [Link](https://sherwinbahmani.github.io/tc4d/) |
+|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.07472)          | -- | [Link](https://snap-research.github.io/4Real/) |
+|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **Compositional 3D-aware Video Generation with LLM Director**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2409.00558) |     --   | [Link](https://www.microsoft.com/en-us/research/project/compositional-3d-aware-video-generation/) |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **Consistent4D: Consistent 360° Dynamic Object Generation from Monocular Video**  | ICLR 2024 |          [Link](https://arxiv.org/abs/2311.02848)          | [Link](https://github.com/yanqinJiang/Consistent4D)  | [Link](https://consistent4d.github.io/)  |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2404.03736)          | [Link](https://github.com/JarrentWu1031/SC4D)  |[Link](https://sc4d.github.io/) |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians**  | ECCV 2024  |           [Link](https://arxiv.org/abs/2403.14939) | [Link](https://github.com/zeng-yifei/STAG4D)  |[Link](https://nju-3dv.github.io/projects/STAG4D/) |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.16822)        | [Link](https://github.com/yikaiw/vidu4d)  | [Link](https://vidu4d-dgs.github.io/)  |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **4Diffusion: Multi-view Video Diffusion Model for 4D Generation**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.20674)        | [Link](https://github.com/aejion/4Diffusion)  | [Link](https://aejion.github.io/4diffusion/)  |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2410.06756) |         [Link](https://github.com/WU-CVGL/DreamMesh4D)         | [Link](https://lizhiqi49.github.io/DreamMesh4D/) |
+|<img src="https://img.shields.io/badge/4D Human-FFC78E" /> | 2023 |  **Control4D: Efficient 4D Portrait Editing with Text**  | CVPR 2024 |    [Link](https://arxiv.org/abs/2305.20082)          | --  | [Link](https://control4darxiv.github.io./)  |
+
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -94,6 +97,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ```
 %accepted papers
 
+%4d scene
 @article{singer2023text4d,
   author = {Singer, Uriel and Sheynin, Shelly and Polyak, Adam and Ashual, Oron and
            Makarov, Iurii and Kokkinos, Filippos and Goyal, Naman and Vedaldi, Andrea and
@@ -101,15 +105,6 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   title = {Text-To-4D Dynamic Scene Generation},
   journal = {arXiv:2301.11280},
   year = {2023},
-}
-
-@inproceedings{
-jiang2024consistentd,
-title={Consistent4D: Consistent 360{\textdegree} Dynamic Object Generation from Monocular Video},
-author={Yanqin Jiang and Li Zhang and Jin Gao and Weiming Hu and Yao Yao},
-booktitle={The Twelfth International Conference on Learning Representations},
-year={2024},
-url={https://openreview.net/forum?id=sPUrdFGepF}
 }
 
 @article{bah20244dfy,
@@ -133,18 +128,40 @@ url={https://openreview.net/forum?id=sPUrdFGepF}
     year={2023}
 }
 
-@article{shao2023control4d,
-title = {Control4D: Efficient 4D Portrait Editing with Text},
-author = {Shao, Ruizhi and Sun, Jingxiang and Peng, Cheng and Zheng, Zerong and Zhou, Boyao and Zhang, Hongwen and Liu, Yebin},
-booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-year = {2024}
-}
-
 @article{bah2024tc4d,
   author = {Bahmani, Sherwin and Liu, Xian and Yifan, Wang and Skorokhodov, Ivan and Rong, Victor and Liu, Ziwei and Liu, Xihui and Park, Jeong Joon and Tulyakov, Sergey and Wetzstein, Gordon and Tagliasacchi, Andrea and Lindell, David B.},
   title = {TC4D: Trajectory-Conditioned Text-to-4D Generation},
   journal = {arXiv},
   year = {2024},
+}
+
+@misc{yu20244real,
+      title={4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models}, 
+      author={Heng Yu and Chaoyang Wang and Peiye Zhuang and Willi Menapace and Aliaksandr Siarohin and Junli Cao and Laszlo A Jeni and Sergey Tulyakov and Hsin-Ying Lee},
+      year={2024},
+      eprint={2406.07472},
+      archivePrefix={arXiv},
+      primaryClass={id='cs.CV' full_name='Computer Vision and Pattern Recognition' is_active=True alt_name=None in_archive='cs' is_general=False description='Covers image processing, computer vision, pattern recognition, and scene understanding. Roughly includes material in ACM Subject Classes I.2.10, I.4, and I.5.'}
+}
+
+@misc{zhu2024compositional3dawarevideogeneration,
+      title={Compositional 3D-aware Video Generation with LLM Director}, 
+      author={Hanxin Zhu and Tianyu He and Anni Tang and Junliang Guo and Zhibo Chen and Jiang Bian},
+      year={2024},
+      eprint={2409.00558},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2409.00558}, 
+}
+
+% video to 4d
+@inproceedings{
+jiang2024consistentd,
+title={Consistent4D: Consistent 360{\textdegree} Dynamic Object Generation from Monocular Video},
+author={Yanqin Jiang and Li Zhang and Jin Gao and Weiming Hu and Yao Yao},
+booktitle={The Twelfth International Conference on Learning Representations},
+year={2024},
+url={https://openreview.net/forum?id=sPUrdFGepF}
 }
 
 @article{wu2024sc4d,
@@ -174,30 +191,19 @@ year = {2024}
     year={2024}
 }
 
-@misc{yu20244real,
-      title={4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models}, 
-      author={Heng Yu and Chaoyang Wang and Peiye Zhuang and Willi Menapace and Aliaksandr Siarohin and Junli Cao and Laszlo A Jeni and Sergey Tulyakov and Hsin-Ying Lee},
-      year={2024},
-      eprint={2406.07472},
-      archivePrefix={arXiv},
-      primaryClass={id='cs.CV' full_name='Computer Vision and Pattern Recognition' is_active=True alt_name=None in_archive='cs' is_general=False description='Covers image processing, computer vision, pattern recognition, and scene understanding. Roughly includes material in ACM Subject Classes I.2.10, I.4, and I.5.'}
-}
-
-@misc{zhu2024compositional3dawarevideogeneration,
-      title={Compositional 3D-aware Video Generation with LLM Director}, 
-      author={Hanxin Zhu and Tianyu He and Anni Tang and Junliang Guo and Zhibo Chen and Jiang Bian},
-      year={2024},
-      eprint={2409.00558},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2409.00558}, 
-}
-
 @inproceedings{li2024dreammesh4d,
     title={DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation},
     author={Zhiqi Li and Yiming Chen and Peidong Liu},
     booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
     year={2024}
+}
+
+% 4d human
+@article{shao2023control4d,
+title = {Control4D: Efficient 4D Portrait Editing with Text},
+author = {Shao, Ruizhi and Sun, Jingxiang and Peng, Cheng and Zheng, Zerong and Zhou, Boyao and Zhang, Hongwen and Liu, Yebin},
+booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+year = {2024}
 }
 ```
 </details>
