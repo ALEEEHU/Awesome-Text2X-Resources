@@ -1840,6 +1840,15 @@ Zhenghao Zhang, Junchao Liao, Menghao Li, Zuozhuo Dai, Bingxue Qiu, Siyu Zhu, Lo
 Recent advancements in Diffusion Transformer (DiT) have demonstrated remarkable proficiency in producing high-quality video content. Nonetheless, the potential of transformer-based diffusion models for effectively generating videos with controllable motion remains an area of limited exploration. This paper introduces Tora, the first trajectory-oriented DiT framework that concurrently integrates textual, visual, and trajectory conditions, thereby enabling scalable video generation with effective motion guidance. Specifically, Tora consists of a Trajectory Extractor(TE), a Spatial-Temporal DiT, and a Motion-guidance Fuser(MGF). The TE encodes arbitrary trajectories into hierarchical spacetime motion patches with a 3D video compression network. The MGF integrates the motion patches into the DiT blocks to generate consistent videos that accurately follow designated trajectories. Our design aligns seamlessly with DiT's scalability, allowing precise control of video content's dynamics with diverse durations, aspect ratios, and resolutions. Extensive experiments demonstrate Tora's excellence in achieving high motion fidelity, while also meticulously simulating the intricate movement of the physical world.
 </details>
 
+#### 8. BroadWay: Boost Your Text-to-Video Generation Model in a Training-free Way
+Jiazi Bu, Pengyang Ling, Pan Zhang, Tong Wu, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Dahua Lin, Jiaqi Wang
+
+(Shanghai Jiao Tong University, University of Science and Technology of China, The Chinese University of Hong Kong, Shanghai Artificial Intelligence Laboratory)
+<details span>
+<summary><b>Abstract</b></summary>
+The text-to-video (T2V) generation models, offering convenient visual creation, have recently garnered increasing attention. Despite their substantial potential, the generated videos may present artifacts, including structural implausibility, temporal inconsistency, and a lack of motion, often resulting in near-static video. In this work, we have identified a correlation between the disparity of temporal attention maps across different blocks and the occurrence of temporal inconsistencies. Additionally, we have observed that the energy contained within the temporal attention maps is directly related to the magnitude of motion amplitude in the generated videos. Based on these observations, we present BroadWay, a training-free method to improve the quality of text-to-video generation without introducing additional parameters, augmenting memory or sampling time. Specifically, BroadWay is composed of two principal components: 1) Temporal Self-Guidance improves the structural plausibility and temporal consistency of generated videos by reducing the disparity between the temporal attention maps across various decoder blocks. 2) Fourier-based Motion Enhancement enhances the magnitude and richness of motion by amplifying the energy of the map. Extensive experiments demonstrate that BroadWay significantly improves the quality of text-to-video generation with negligible additional cost.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -1851,6 +1860,7 @@ Recent advancements in Diffusion Transformer (DiT) have demonstrated remarkable 
 | 2024 | **CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities**  | 23 Aug 2024  | [Link](https://arxiv.org/abs/2408.13239) |          [Link](https://github.com/WuTao-CS/CustomCrafter)        | [Link](https://customcrafter.github.io/) |
 | 2024 | **GameGen-O: Open-world Video Game Generation**  | Coming Soon!  | Coming Soon!  |          [Link](https://github.com/GameGen-O/GameGen-O)        | [Link](https://gamegen-o.github.io/) |
 | 2024 | **Tora: Trajectory-oriented Diffusion Transformer for Video Generation**  | 27 Aug 2024  | [Link](https://arxiv.org/abs/2407.21705)  |      --      | [Link](https://ali-videoai.github.io/tora_video/) |
+| 2024 | **BroadWay: Boost Your Text-to-Video Generation Model in a Training-free Way**  | 8 Oct 2024  | [Link](https://arxiv.org/abs/2410.06241)  |      --      | -- |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -1915,6 +1925,15 @@ Recent advancements in Diffusion Transformer (DiT) have demonstrated remarkable 
         url={https://arxiv.org/abs/2407.21705}, 
 }
 
+@misc{bu2024broadwayboosttexttovideogeneration,
+      title={BroadWay: Boost Your Text-to-Video Generation Model in a Training-free Way}, 
+      author={Jiazi Bu and Pengyang Ling and Pan Zhang and Tong Wu and Xiaoyi Dong and Yuhang Zang and Yuhang Cao and Dahua Lin and Jiaqi Wang},
+      year={2024},
+      eprint={2410.06241},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.06241}, 
+}
 ```
 </details>
 
