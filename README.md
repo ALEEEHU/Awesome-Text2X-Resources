@@ -1859,7 +1859,7 @@ The text-to-video (T2V) generation models, offering convenient visual creation, 
 | 2024 | **CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer**  | 12 Aug 2024  | [Link](https://arxiv.org/abs/2408.06072) |          [Link](https://github.com/THUDM/CogVideo)          | [Hugging Face](https://huggingface.co/docs/diffusers/main/en/api/pipelines/cogvideox) |
 | 2024 | **CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities**  | 23 Aug 2024  | [Link](https://arxiv.org/abs/2408.13239) |          [Link](https://github.com/WuTao-CS/CustomCrafter)        | [Link](https://customcrafter.github.io/) |
 | 2024 | **GameGen-O: Open-world Video Game Generation**  | Coming Soon!  | Coming Soon!  |          [Link](https://github.com/GameGen-O/GameGen-O)        | [Link](https://gamegen-o.github.io/) |
-| 2024 | **Tora: Trajectory-oriented Diffusion Transformer for Video Generation**  | 27 Aug 2024  | [Link](https://arxiv.org/abs/2407.21705)  |      --      | [Link](https://ali-videoai.github.io/tora_video/) |
+| 2024 | **Tora: Trajectory-oriented Diffusion Transformer for Video Generation**  | 27 Aug 2024  | [Link](https://arxiv.org/abs/2407.21705)  |      [Link](https://github.com/alibaba/Tora)      | [Link](https://ali-videoai.github.io/tora_video/) |
 | 2024 | **BroadWay: Boost Your Text-to-Video Generation Model in a Training-free Way**  | 8 Oct 2024  | [Link](https://arxiv.org/abs/2410.06241)  |      --      | -- |
 
 <details close>
