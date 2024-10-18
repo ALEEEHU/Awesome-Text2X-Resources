@@ -980,6 +980,7 @@ Text-driven 3D scene generation has seen significant advancements recently. Howe
 | 2024 | **Generating Human Interaction Motions in Scenes with Text Control**  | ECCV 2024  |       [Link](https://arxiv.org/abs/2404.10685)          | -- | [Link](https://research.nvidia.com/labs/toronto-ai/tesmo/)  |
 | 2024 | **SATO: Stable Text-to-Motion Framework**  | ACM MULTIMEDIA 2024 |          [Link](https://arxiv.org/abs/2405.01461)          | [Link](https://github.com/sato-team/Stable-Text-to-motion-Framework) | [Link](https://sato-team.github.io/Stable-Text-to-Motion-Framework/)  |
 | 2024 | **MotionFix: Text-Driven 3D Human Motion Editing**  | SIGGRAPH Asia 2024 |          [Link](https://arxiv.org/abs/2408.00712)          | [Link](https://github.com/athn-nik/motionfix) | [Link](https://motionfix.is.tue.mpg.de/)  |
+| 2024 | **Autonomous Character-Scene Interaction Synthesis from Text Instruction**  | SIGGRAPH Asia 2024 |          [Link](https://arxiv.org/abs/2410.03187)          | -- | [Link](https://lingomotions.com/)  |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -1205,6 +1206,16 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
   author = {Athanasiou, Nikos and Ceske, Alpar and Diomataris, Markos and Black, Michael J. and Varol, G{\"u}l},
   booktitle = {SIGGRAPH Asia 2024 Conference Papers},
   year = {2024}
+}
+
+@misc{jiang2024autonomouscharactersceneinteractionsynthesis,
+      title={Autonomous Character-Scene Interaction Synthesis from Text Instruction}, 
+      author={Nan Jiang and Zimo He and Zi Wang and Hongjie Li and Yixin Chen and Siyuan Huang and Yixin Zhu},
+      year={2024},
+      eprint={2410.03187},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.03187}, 
 }
 ```
 </details>
