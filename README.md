@@ -377,7 +377,16 @@ Hui En Pang, Shuai Liu, Zhongang Cai, Lei Yang, Tianwei Zhang, Ziwei Liu
 We present Disco4D, a novel Gaussian Splatting framework for 4D human genera- tion and animation from a single image. Different from existing methods, Disco4D distinctively disentangles clothings (with Gaussian models) from the human body (with SMPL-X model), significantly enhancing the generation details and flexibility. It has the following technical innovations. 1) Disco4D learns to efficiently fit the clothing Gaussians over the SMPL-X Gaussians. 2) It adopts diffusion models to enhance the 3D generation process, e.g., modeling occluded parts not visible in the input image. 3) It learns an identity encoding for each clothing Gaussian to facilitate the separation and extraction of clothing assets. Furthermore, Disco4D naturally supports 4D human animation with vivid dynamics. Extensive experiments demonstrate the superiority of Disco4D on 4D human generation and animation tasks.
 </details>
 
-#### 20. AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation
+#### 20. MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion
+Junyi Zhang, Charles Herrmann, Junhwa Hur, Varun Jampani, Trevor Darrell, Forrester Cole, Deqing Sun, Ming-Hsuan Yang
+
+(UC Berkeley, Google DeepMind, Stability AI, UC Merced)
+<details span>
+<summary><b>Abstract</b></summary>
+Estimating geometry from dynamic scenes, where objects move and deform over time, remains a core challenge in computer vision. Current approaches often rely on multi-stage pipelines or global optimizations that decompose the problem into subtasks, like depth and flow, leading to complex systems prone to errors. In this paper, we present Motion DUSt3R (MonST3R), a novel geometry-first approach that directly estimates per-timestep geometry from dynamic scenes. Our key insight is that by simply estimating a pointmap for each timestep, we can effectively adapt DUST3R's representation, previously only used for static scenes, to dynamic scenes. However, this approach presents a significant challenge: the scarcity of suitable training data, namely dynamic, posed videos with depth labels. Despite this, we show that by posing the problem as a fine-tuning task, identifying several suitable datasets, and strategically training the model on this limited data, we can surprisingly enable the model to handle dynamics, even without an explicit motion representation. Based on this, we introduce new optimizations for several downstream video-specific tasks and demonstrate strong performance on video depth and camera pose estimation, outperforming prior work in terms of robustness and efficiency. Moreover, MonST3R shows promising results for primarily feed-forward 4D reconstruction.
+</details>
+
+#### 21. AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation
 Yukang Cao, Liang Pan, Kai Han, Kwan-Yee K. Wong, Ziwei Liu
 
 (Nanyang Technological University, Shanghai AI Lab, The University of Hong Kong)
@@ -386,6 +395,14 @@ Yukang Cao, Liang Pan, Kai Han, Kwan-Yee K. Wong, Ziwei Liu
 Recent advancements in diffusion models have led to significant improvements in the generation and animation of 4D full-body human-object interactions (HOI). Nevertheless, existing methods primarily focus on SMPL-based motion generation, which is limited by the scarcity of realistic large-scale interaction data. This constraint affects their ability to create everyday HOI scenes. This paper addresses this challenge using a zero-shot approach with a pre-trained diffusion model.Despite this potential, achieving our goals is difficult due to the diffusion model's lack of understanding of "where" and "how" objects interact with the human body. To tackle these issues, we introduce AvatarGO, a novel framework designed to generate animatable 4D HOI scenes directly from textual inputs. Specifically, 1) for the "where" challenge, we propose LLM-guided contact retargeting, which employs Lang-SAM to identify the contact body part from text prompts, ensuring precise representation of human-object spatial relations. 2) For the "how" challenge, we introduce correspondence-aware motion optimization that constructs motion fields for both human and object models using the linear blend skinning function from SMPL-X. Our framework not only generates coherent compositional motions, but also exhibits greater robustness in handling penetration issues. Extensive experiments with existing methods validate AvatarGO's superior generation and animation capabilities on a variety of human-object pairs and diverse poses. As the first attempt to synthesize 4D avatars with object interactions, we hope AvatarGO could open new doors for human-centric 4D content creation.
 </details>
 
+#### 22. 4-LEGS: 4D Language Embedded Gaussian Splatting
+Gal Fiebelman, Tamir Cohen, Ayellet Morgenstern, Peter Hedman, Hadar Averbuch-Elor
+
+(Tel Aviv University, Google Research)
+<details span>
+<summary><b>Abstract</b></summary>
+The emergence of neural representations has revolutionized our means for digitally viewing a wide range of 3D scenes, enabling the synthesis of photorealistic images rendered from novel views. Recently, several techniques have been proposed for connecting these low-level representations with the high-level semantics understanding embodied within the scene. These methods elevate the rich semantic understanding from 2D imagery to 3D representations, distilling high-dimensional spatial features onto 3D space. In our work, we are interested in connecting language with a dynamic modeling of the world. We show how to lift spatio-temporal features to a 4D representation based on 3D Gaussian Splatting. This enables an interactive interface where the user can spatiotemporally localize events in the video from text prompts. We demonstrate our system on public 3D video datasets of people and animals performing various actions.
+</details>
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -409,7 +426,9 @@ Recent advancements in diffusion models have led to significant improvements in 
 | 2024 | **SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency**  | 24 Jul 2024 |          [Link](https://arxiv.org/abs/2407.17470)          | [Link](https://github.com/Stability-AI/generative-models) | [Link](https://sv4d.github.io/) |
 | 2024 | **CT4D: Consistent Text-to-4D Generation with Animatable Meshes**  | 15 Aug 2024 |          [Link](https://arxiv.org/abs/2408.08342)          | -- | -- |
 | 2024 | **Disco4D: Disentangled 4D Human Generation and Animation from a Single Image**  | 25 Sep 2024 |          [Link](https://arxiv.org/abs/2409.17280)          | -- |  [Link](https://disco-4d.github.io/) |
+| 2024 | **MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion**  | 4 Oct 2024 |          [Link](https://arxiv.org/abs/2410.03825)          | [Link](https://github.com/Junyi42/monst3r)     |  [Link](https://monst3r-project.github.io/) |
 | 2024 | **AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation**  | 9 Oct 2024 |          [Link](https://arxiv.org/abs/2410.07164)          | [Link](https://github.com/yukangcao/AvatarGO)     |  [Link](https://yukangcao.github.io/AvatarGO/) |
+| 2024 | **4-LEGS: 4D Language Embedded Gaussian Splatting**  | 15 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10719)          |  --   |  [Link](https://tau-vailab.github.io/4-LEGS/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -570,6 +589,13 @@ year={2024},
       url={https://arxiv.org/abs/2409.17280}, 
 }
 
+@article{zhang2024monst3r,
+  title={MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion},
+  author={Zhang, Junyi and Herrmann, Charles and Hur, Junhwa and Jampani, Varun and Darrell, Trevor and Cole, Forrester and Sun, Deqing and Yang, Ming-Hsuan},
+  journal={arXiv preprint arxiv:2410.03825},
+  year={2024}
+}
+
 @misc{cao2024avatargozeroshot4dhumanobject,
       title={AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation}, 
       author={Yukang Cao and Liang Pan and Kai Han and Kwan-Yee K. Wong and Ziwei Liu},
@@ -578,6 +604,15 @@ year={2024},
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2410.07164}, 
+}
+
+@misc{fiebelman20244legs4dlanguageembedded,
+    title={4-LEGS: 4D Language Embedded Gaussian Splatting},
+    author={Gal Fiebelman and Tamir Cohen and Ayellet Morgenstern and Peter Hedman and Hadar Averbuch-Elor},
+    year={2024},
+    eprint={2410.10719},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```
 </details>
