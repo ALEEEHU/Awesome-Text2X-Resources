@@ -1342,6 +1342,15 @@ Kaifeng Zhao, Gen Li, Siyu Tang (ETH Zürich)
 Text-conditioned human motion generation, which allows for user interaction through natural language, has become increasingly popular. Existing methods typically generate short, isolated motions based on a single input sentence. However, human motions are continuous and can extend over long periods, carrying rich semantics. Creating long, complex motions that precisely respond to streams of text descriptions, particularly in an online and real-time setting, remains a significant challenge. Furthermore, incorporating spatial constraints into text-conditioned motion generation presents additional challenges, as it requires aligning the motion semantics specified by text descriptions with geometric information, such as goal locations and 3D scene geometry. To address these limitations, we propose DART, a Diffusion-based Autoregressive motion primitive model for Real-time Text-driven motion control. Our model, DART, effectively learns a compact motion primitive space jointly conditioned on motion history and text inputs using latent diffusion models. By autoregressively generating motion primitives based on the preceding history and current text input, DART enables real-time, sequential motion generation driven by natural language descriptions. Additionally, the learned motion primitive space allows for precise spatial motion control, which we formulate either as a latent noise optimization problem or as a Markov decision process addressed through reinforcement learning. We present effective algorithms for both approaches, demonstrating our model's versatility and superior performance in various motion synthesis tasks. Experiments show our method outperforms existing baselines in motion realism, efficiency, and controllability.
 </details>
 
+#### 11. ControlMM: Controllable Masked Motion Generation
+Ekkasit Pinyoanuntapong, Muhammad Usama Saleem, Korrawe Karunratanakul, Pu Wang, Hongfei Xue, Chen Chen, Chuan Guo, Junli Cao, Jian Ren, Sergey Tulyakov
+
+(University of North Carolina at Charlotte, ETH Zurich, University of Central Florida, Snap Inc.)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in motion diffusion models have enabled spatially controllable text-to-motion generation. However, despite achieving acceptable control precision, these models suffer from generation speed and fidelity limitations. To address these challenges, we propose ControlMM, a novel approach incorporating spatial control signals into the generative masked motion model. ControlMM achieves real-time, high-fidelity, and high-precision controllable motion generation simultaneously. Our approach introduces two key innovations. First, we propose masked consistency modeling, which ensures high-fidelity motion generation via random masking and reconstruction, while minimizing the inconsistency between the input control signals and the extracted control signals from the generated motion. To further enhance control precision, we introduce inference-time logit editing, which manipulates the predicted conditional motion distribution so that the generated motion, sampled from the adjusted distribution, closely adheres to the input control signals. During inference, ControlMM enables parallel and iterative decoding of multiple motion tokens, allowing for high-speed motion generation. Extensive experiments show that, compared to the state of the art, ControlMM delivers superior results in motion quality, with better FID scores (0.061 vs 0.271), and higher control precision (average error 0.0091 vs 0.0108). ControlMM generates motions 20 times faster than diffusion-based methods. Additionally, ControlMM unlocks diverse applications such as any joint any frame control, body part timeline control, and obstacle avoidance.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -1356,6 +1365,7 @@ Text-conditioned human motion generation, which allows for user interaction thro
 | 2024 | **MoRAG -- Multi-Fusion Retrieval Augmented Generation for Human Motion**  | 18 Sep 2024 |          [Link](https://arxiv.org/abs/2409.12140)          | [Link](https://github.com/Motion-RAG/MoRAG) | [Link](https://motion-rag.github.io/)  |
 | 2024 | **UniMuMo: Unified Text, Music, and Motion Generation**  | 6 Oct 2024 |          [Link](https://arxiv.org/abs/2410.04534)          | [Link](https://github.com/hanyangclarence/UniMuMo) | [Link](https://hanyangclarence.github.io/unimumo_demo/)  |
 | 2024 | **DART: A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control**  | 7 Oct 2024 |          [Link](https://arxiv.org/abs/2410.05260)          | -- | [Link](https://zkf1997.github.io/DART/)  |
+| 2024 | **ControlMM: Controllable Masked Motion Generation**  | 14 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10780)          | [Link](https://github.com/exitudio/ControlMM/) | [Link](https://exitudio.github.io/ControlMM-page/)  |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -1451,6 +1461,16 @@ Text-conditioned human motion generation, which allows for user interaction thro
    title = {A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control},
    author = {Zhao, Kaifeng and Li, Gen and Tang, Siyu},
    year = {2024}
+}
+
+@misc{pinyoanuntapong2024controlmmcontrollablemaskedmotion,
+      title={ControlMM: Controllable Masked Motion Generation}, 
+      author={Ekkasit Pinyoanuntapong and Muhammad Usama Saleem and Korrawe Karunratanakul and Pu Wang and Hongfei Xue and Chen Chen and Chuan Guo and Junli Cao and Jian Ren and Sergey Tulyakov},
+      year={2024},
+      eprint={2410.10780},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.10780}, 
 }
 ```
 </details>
