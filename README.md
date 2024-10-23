@@ -1513,6 +1513,7 @@ AMASS is a large database of human motion unifying different optical marker-base
 | 2024 | **HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation**  | SIGGRAPH 2024  |          [Link](https://arxiv.org/abs/2312.07539)          |  [Link](https://github.com/KumapowerLIU/HeadArtist)  | [Link](https://kumapowerliu.github.io/HeadArtist/)  |
 | 2024 | **HeadStudio: Text to Animatable Head Avatars with 3D Gaussian Splatting**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2402.06149)          |  [Link](https://github.com/ZhenglinZhou/HeadStudio/)  | [Link](https://zhenglinzhou.github.io/HeadStudio-ProjectPage/)  |
 | 2024 | **Instant 3D Human Avatar Generation using Image Diffusion Models**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2406.07516)          | -- | [Link](https://www.nikoskolot.com/avatarpopup/)  |
+| 2024 | **Disentangled Clothed Avatar Generation from Text Descriptions**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2312.05295)          | [Link](https://github.com/shanemankiw/SO-SMPL) | [Link](https://shanemankiw.github.io/SO-SMPL/)  |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -1607,6 +1608,15 @@ year={2024}
   title     = {Instant 3D Human Avatar Generation using Image Diffusion Models},
   booktitle   = {European Conference on Computer Vision (ECCV)},
   year      = {2024},
+}
+
+@misc{wang2023disentangled,
+      title={Disentangled Clothed Avatar Generation from Text Descriptions}, 
+      author={Jionghao Wang and Yuan Liu and Zhiyang Dou and Zhengming Yu and Yongqing Liang and Xin Li and Wenping Wang and Rong Xie and Li Song},
+      year={2023},
+      eprint={2312.05295},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 </details>
