@@ -1386,6 +1386,15 @@ Ekkasit Pinyoanuntapong, Muhammad Usama Saleem, Korrawe Karunratanakul, Pu Wang,
 Recent advances in motion diffusion models have enabled spatially controllable text-to-motion generation. However, despite achieving acceptable control precision, these models suffer from generation speed and fidelity limitations. To address these challenges, we propose ControlMM, a novel approach incorporating spatial control signals into the generative masked motion model. ControlMM achieves real-time, high-fidelity, and high-precision controllable motion generation simultaneously. Our approach introduces two key innovations. First, we propose masked consistency modeling, which ensures high-fidelity motion generation via random masking and reconstruction, while minimizing the inconsistency between the input control signals and the extracted control signals from the generated motion. To further enhance control precision, we introduce inference-time logit editing, which manipulates the predicted conditional motion distribution so that the generated motion, sampled from the adjusted distribution, closely adheres to the input control signals. During inference, ControlMM enables parallel and iterative decoding of multiple motion tokens, allowing for high-speed motion generation. Extensive experiments show that, compared to the state of the art, ControlMM delivers superior results in motion quality, with better FID scores (0.061 vs 0.271), and higher control precision (average error 0.0091 vs 0.0108). ControlMM generates motions 20 times faster than diffusion-based methods. Additionally, ControlMM unlocks diverse applications such as any joint any frame control, body part timeline control, and obstacle avoidance.
 </details>
 
+#### 12. MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms
+Ling-Hao Chen, Wenxun Dai, Xuan Ju, Shunlin Lu, Lei Zhang
+
+(Tsinghua University, International Digital Economy Academy (IDEA), The Chinese University of Hong Kong, The Chinese University of Hong Kong Shenzhen)
+<details span>
+<summary><b>Abstract</b></summary>
+This research delves into the problem of interactive editing of human motion generation. Previous motion diffusion models lack explicit modeling of the word-level text-motion correspondence and good explainability, hence restricting their fine-grained editing ability. To address this issue, we propose an attention-based motion diffusion model, namely MotionCLR, with CLeaR modeling of attention mechanisms. Technically, MotionCLR models the in-modality and cross-modality interactions with self-attention and cross-attention, respectively. More specifically, the self-attention mechanism aims to measure the sequential similarity between frames and impacts the order of motion features. By contrast, the cross-attention mechanism works to find the fine-grained word-sequence correspondence and activate the corresponding timesteps in the motion sequence. Based on these key properties, we develop a versatile set of simple yet effective motion editing methods via manipulating attention maps, such as motion (de-)emphasizing, in-place motion replacement, and example-based motion generation, etc. For further verification of the explainability of the attention mechanism, we additionally explore the potential of action-counting and grounded motion generation ability via attention maps. Our experimental results show that our method enjoys good generation and editing ability with good explainability.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -1401,6 +1410,7 @@ Recent advances in motion diffusion models have enabled spatially controllable t
 | 2024 | **UniMuMo: Unified Text, Music, and Motion Generation**  | 6 Oct 2024 |          [Link](https://arxiv.org/abs/2410.04534)          | [Link](https://github.com/hanyangclarence/UniMuMo) | [Link](https://hanyangclarence.github.io/unimumo_demo/)  |
 | 2024 | **DART: A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control**  | 7 Oct 2024 |          [Link](https://arxiv.org/abs/2410.05260)          | -- | [Link](https://zkf1997.github.io/DART/)  |
 | 2024 | **ControlMM: Controllable Masked Motion Generation**  | 14 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10780)          | [Link](https://github.com/exitudio/ControlMM/) | [Link](https://exitudio.github.io/ControlMM-page/)  |
+| 2024 | **MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms**  | 24 Oct 2024 |          [Link](https://arxiv.org/abs/2410.18977)          | [Link](https://github.com/IDEA-Research/MotionCLR) | [Link](https://lhchen.top/MotionCLR/)  |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -1506,6 +1516,13 @@ Recent advances in motion diffusion models have enabled spatially controllable t
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2410.10780}, 
+}
+
+@article{motionclr,
+  title={MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms},
+  author={Chen, Ling-Hao and Dai, Wenxun and Ju, Xuan and Lu, Shunlin and Zhang, Lei},
+  journal={arxiv:2410.18977},
+  year={2024}
 }
 ```
 </details>
