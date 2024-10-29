@@ -871,7 +871,16 @@ Wenrui Li, Yapeng Mi, Fucheng Cai, Zhe Yang, Wangmeng Zuo, Xingtao Wang, Xiaopen
 Text-driven 3D scene generation has seen significant advancements recently. However, most existing methods generate single-view images using generative models and then stitch them together in 3D space. This independent generation for each view often results in spatial inconsistency and implausibility in the 3D scenes. To address this challenge, we proposed a novel text-driven 3D-consistent scene generation model: SceneDreamer360. Our proposed method leverages a text-driven panoramic image generation model as a prior for 3D scene generation and employs 3D Gaussian Splatting (3DGS) to ensure consistency across multi-view panoramic images. Specifically, SceneDreamer360 enhances the fine-tuned Panfusion generator with a three-stage panoramic enhancement, enabling the generation of high-resolution, detail-rich panoramic images. During the 3D scene construction, a novel point cloud fusion initialization method is used, producing higher quality and spatially consistent point clouds. Our extensive experiments demonstrate that compared to other methods, SceneDreamer360 with its panoramic image generation and 3DGS can produce higher quality, spatially consistent, and visually appealing 3D scenes from any text prompt. 
 </details>
 
-#### 13. The Scene Language: Representing Scenes with Programs, Words, and Embeddings
+#### 13. Semantic Score Distillation Sampling for Compositional Text-to-3D Generation
+Ling Yang, Zixiang Zhang, Junlin Han, Bohan Zeng, Runjia Li, Philip Torr, Wentao Zhang
+
+(Peking University, University of Oxford)
+<details span>
+<summary><b>Abstract</b></summary>
+Generating high-quality 3D assets from textual descriptions remains a pivotal challenge in computer graphics and vision research. Due to the scarcity of 3D data, state-of-the-art approaches utilize pre-trained 2D diffusion priors, optimized through Score Distillation Sampling (SDS). Despite progress, crafting complex 3D scenes featuring multiple objects or intricate interactions is still difficult. To tackle this, recent methods have incorporated box or layout guidance. However, these layout-guided compositional methods often struggle to provide fine-grained control, as they are generally coarse and lack expressiveness. To overcome these challenges, we introduce a novel SDS approach, Semantic Score Distillation Sampling (SemanticSDS), designed to effectively improve the expressiveness and accuracy of compositional text-to-3D generation. Our approach integrates new semantic embeddings that maintain consistency across different rendering views and clearly differentiate between various objects and parts. These embeddings are transformed into a semantic map, which directs a region-specific SDS process, enabling precise optimization and compositional generation. By leveraging explicit semantic guidance, our method unlocks the compositional capabilities of existing pre-trained diffusion models, thereby achieving superior quality in 3D content generation, particularly for complex objects and scenes. Experimental results demonstrate that our SemanticSDS framework is highly effective for generating state-of-the-art complex 3D content.
+</details>
+
+#### 14. The Scene Language: Representing Scenes with Programs, Words, and Embeddings
 Yunzhi Zhang, Zizhang Li, Matt Zhou, Shangzhe Wu, Jiajun Wu (Stanford University, UC Berkeley)
 <details span>
 <summary><b>Abstract</b></summary>
@@ -894,7 +903,8 @@ We introduce the Scene Language, a visual scene representation that concisely an
 | 2024 | **Scene123: One Prompt to 3D Scene Generation via Video-Assisted and Consistency-Enhanced MAE**  | 10 Aug 2024 |          [Link](https://www.arxiv.org/abs/2408.05477)          | [Link](https://github.com/YiyingYang12/Scene123)  |[Link](https://yiyingyang12.github.io/Scene123.github.io/) |
 | 2024 | **LayerPano3D: Layered 3D Panorama for Hyper-Immersive Scene Generation**  | 23 Aug 2024 |          [Link](https://arxiv.org/abs/2408.13252)          | [Link](https://github.com/YS-IMTech/LayerPano3D)  |[Link](https://ys-imtech.github.io/projects/LayerPano3D/) |
 | 2024 | **SceneDreamer360: Text-Driven 3D-Consistent Scene Generation with Panoramic Gaussian Splatting**  | 25 Aug 2024 |          [Link](https://arxiv.org/abs/5811784)          | [Link](https://github.com/liwrui/SceneDreamer360)  | [Link](https://scenedreamer360.github.io/)|
-| 2024 | **The Scene Language: Representing Scenes with Programs, Words, and Embeddings**  | 22 Oct 2024 |          [Link](https://arxiv.org/abs/2410.16770)          | --  | [Link](https://ai.stanford.edu/~yzzhang/projects/scene-language/)|
+| 2024 | **Semantic Score Distillation Sampling for Compositional Text-to-3D Generation**  | 11 Oct 2024 |          [Link](https://arxiv.org/abs/2410.09009)          | [Link](https://github.com/YangLing0818/SemanticSDS-3D)  | -- |
+| 2024 | **The Scene Language: Representing Scenes with Programs, Words, and Embeddings**  | 22 Oct 2024 |          [Link](https://arxiv.org/abs/2410.16770)          | [Link](https://github.com/zzyunzhi/scene-language)  | [Link](https://ai.stanford.edu/~yzzhang/projects/scene-language/)|
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -1004,6 +1014,13 @@ inproceedings{zhang20243DitScene,
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2408.13711}, 
+}
+
+@article{yang2024semanticsds,
+  title={Semantic Score Distillation Sampling for Compositional Text-to-3D Generation},
+  author={Yang, Ling and Zhang, Zixiang and Han, Junlin and Zeng, Bohan and Li, Runjia and Torr, Philip and Zhang, Wentao},
+  journal={arXiv preprint arXiv:2410.09009},
+  year={2024}
 }
 
 @misc{zhang2024scenelanguagerepresentingscenes,
