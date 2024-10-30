@@ -13,7 +13,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## 🔥 News
-* `2024.10.11` adjusted the layout of the `4D Accepted Papers Section`.
+* `2024.10.30` adjusted the layout of the `Text to 4D` section.
 * `2024.04.05` adjusted the layout and added accepted lists and ArXiv lists to each section.
 
 
@@ -25,6 +25,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to 4D](#text-to-4d)
   * [Accepted Papers](#-4d-accepted-papers)
   * [ArXiv Papers](#-4d-arxiv-papers)
+  * [Additional Info](#other-4d-additional-info)
 - [Text to Scene](#text-to-scene)
   * [Accepted Papers](#-scene-accepted-papers)
   * [ArXiv Papers](#-scene-arxiv-papers)
@@ -350,16 +351,7 @@ Yu-Jie Yuan, Leif Kobbelt, Jiwen Liu, Yuan Zhang, Pengfei Wan, Yu-Kun Lai, Lin G
 Due to the fascinating generative performance of text-to-image diffusion models, growing text-to-3D generation works explore distilling the 2D generative priors into 3D, using the score distillation sampling (SDS) loss, to bypass the data scarcity problem. The existing text-to-3D methods have achieved promising results in realism and 3D consistency, but text-to-4D generation still faces challenges, including lack of realism and insufficient dynamic motions. In this paper, we propose a novel method for text-to-4D generation, which ensures the dynamic amplitude and authenticity through direct supervision provided by a video prior. Specifically, we adopt a text-to-video diffusion model to generate a reference video and divide 4D generation into two stages: static generation and dynamic generation. The static 3D generation is achieved under the guidance of the input text and the first frame of the reference video, while in the dynamic generation stage, we introduce a customized SDS loss to ensure multi-view consistency, a video-based SDS loss to improve temporal consistency, and most importantly, direct priors from the reference video to ensure the quality of geometry and texture. Moreover, we design a prior-switching training strategy to avoid conflicts between different priors and fully leverage the benefits of each prior. In addition, to enrich the generated motion, we further introduce a dynamic modeling representation composed of a deformation network and a topology network, which ensures dynamic continuity while modeling topological changes. Our method not only supports text-to-4D generation but also enables 4D generation from monocular videos. The comparison experiments demonstrate the superiority of our method compared to existing methods.
 </details>
 
-#### 15. SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency
-Yiming Xie, Chun-Han Yao, Vikram Voleti, Huaizu Jiang, Varun Jampani
-
-(Stability AI, Northeastern University)
-<details span>
-<summary><b>Abstract</b></summary>
-We present Stable Video 4D (SV4D), a latent video diffusion model for multi-frame and multi-view consistent dynamic 3D content generation. Unlike previous methods that rely on separately trained generative models for video generation and novel view synthesis, we design a unified diffusion model to generate novel view videos of dynamic 3D objects. Specifically, given a monocular reference video, SV4D generates novel views for each video frame that are temporally consistent. We then use the generated novel view videos to optimize an implicit 4D representation (dynamic NeRF) efficiently, without the need for cumbersome SDS-based optimization used in most prior works. To train our unified novel view video generation model, we curated a dynamic 3D object dataset from the existing Objaverse dataset. Extensive experimental results on multiple datasets and user studies demonstrate SV4D's state-of-the-art performance on novel-view video synthesis as well as 4D generation compared to prior works.
-</details>
-
-#### 16. CT4D: Consistent Text-to-4D Generation with Animatable Meshes
+#### 15. CT4D: Consistent Text-to-4D Generation with Animatable Meshes
 Ce Chen, Shaoli Huang, Xuelin Chen, Guangyi Chen, Xiaoguang Han, Kun Zhang, Mingming Gong
 
 (Mohamed bin Zayed University of Artificial Intelligence, Tencent AI Lab, Carnegie Mellon University, FNii CUHKSZ, SSE CUHKSZ, University of Melbourne)
@@ -369,7 +361,7 @@ Text-to-4D generation has recently been demonstrated viable by integrating a 2D 
 </details>
 
 
-#### 17. Disco4D: Disentangled 4D Human Generation and Animation from a Single Image
+#### 16. Disco4D: Disentangled 4D Human Generation and Animation from a Single Image
 Hui En Pang, Shuai Liu, Zhongang Cai, Lei Yang, Tianwei Zhang, Ziwei Liu
 
 (Nanyang Technological University, Sensetime Research, Shanghai AI Lab)
@@ -378,7 +370,7 @@ Hui En Pang, Shuai Liu, Zhongang Cai, Lei Yang, Tianwei Zhang, Ziwei Liu
 We present Disco4D, a novel Gaussian Splatting framework for 4D human genera- tion and animation from a single image. Different from existing methods, Disco4D distinctively disentangles clothings (with Gaussian models) from the human body (with SMPL-X model), significantly enhancing the generation details and flexibility. It has the following technical innovations. 1) Disco4D learns to efficiently fit the clothing Gaussians over the SMPL-X Gaussians. 2) It adopts diffusion models to enhance the 3D generation process, e.g., modeling occluded parts not visible in the input image. 3) It learns an identity encoding for each clothing Gaussian to facilitate the separation and extraction of clothing assets. Furthermore, Disco4D naturally supports 4D human animation with vivid dynamics. Extensive experiments demonstrate the superiority of Disco4D on 4D human generation and animation tasks.
 </details>
 
-#### 18. MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion
+#### 17. MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion
 Junyi Zhang, Charles Herrmann, Junhwa Hur, Varun Jampani, Trevor Darrell, Forrester Cole, Deqing Sun, Ming-Hsuan Yang
 
 (UC Berkeley, Google DeepMind, Stability AI, UC Merced)
@@ -387,7 +379,7 @@ Junyi Zhang, Charles Herrmann, Junhwa Hur, Varun Jampani, Trevor Darrell, Forres
 Estimating geometry from dynamic scenes, where objects move and deform over time, remains a core challenge in computer vision. Current approaches often rely on multi-stage pipelines or global optimizations that decompose the problem into subtasks, like depth and flow, leading to complex systems prone to errors. In this paper, we present Motion DUSt3R (MonST3R), a novel geometry-first approach that directly estimates per-timestep geometry from dynamic scenes. Our key insight is that by simply estimating a pointmap for each timestep, we can effectively adapt DUST3R's representation, previously only used for static scenes, to dynamic scenes. However, this approach presents a significant challenge: the scarcity of suitable training data, namely dynamic, posed videos with depth labels. Despite this, we show that by posing the problem as a fine-tuning task, identifying several suitable datasets, and strategically training the model on this limited data, we can surprisingly enable the model to handle dynamics, even without an explicit motion representation. Based on this, we introduce new optimizations for several downstream video-specific tasks and demonstrate strong performance on video depth and camera pose estimation, outperforming prior work in terms of robustness and efficiency. Moreover, MonST3R shows promising results for primarily feed-forward 4D reconstruction.
 </details>
 
-#### 19. AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation
+#### 18. AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation
 Yukang Cao, Liang Pan, Kai Han, Kwan-Yee K. Wong, Ziwei Liu
 
 (Nanyang Technological University, Shanghai AI Lab, The University of Hong Kong)
@@ -396,7 +388,7 @@ Yukang Cao, Liang Pan, Kai Han, Kwan-Yee K. Wong, Ziwei Liu
 Recent advancements in diffusion models have led to significant improvements in the generation and animation of 4D full-body human-object interactions (HOI). Nevertheless, existing methods primarily focus on SMPL-based motion generation, which is limited by the scarcity of realistic large-scale interaction data. This constraint affects their ability to create everyday HOI scenes. This paper addresses this challenge using a zero-shot approach with a pre-trained diffusion model.Despite this potential, achieving our goals is difficult due to the diffusion model's lack of understanding of "where" and "how" objects interact with the human body. To tackle these issues, we introduce AvatarGO, a novel framework designed to generate animatable 4D HOI scenes directly from textual inputs. Specifically, 1) for the "where" challenge, we propose LLM-guided contact retargeting, which employs Lang-SAM to identify the contact body part from text prompts, ensuring precise representation of human-object spatial relations. 2) For the "how" challenge, we introduce correspondence-aware motion optimization that constructs motion fields for both human and object models using the linear blend skinning function from SMPL-X. Our framework not only generates coherent compositional motions, but also exhibits greater robustness in handling penetration issues. Extensive experiments with existing methods validate AvatarGO's superior generation and animation capabilities on a variety of human-object pairs and diverse poses. As the first attempt to synthesize 4D avatars with object interactions, we hope AvatarGO could open new doors for human-centric 4D content creation.
 </details>
 
-#### 20. 4-LEGS: 4D Language Embedded Gaussian Splatting
+#### 19. 4-LEGS: 4D Language Embedded Gaussian Splatting
 Gal Fiebelman, Tamir Cohen, Ayellet Morgenstern, Peter Hedman, Hadar Averbuch-Elor
 
 (Tel Aviv University, Google Research)
@@ -423,7 +415,6 @@ The emergence of neural representations has revolutionized our means for digital
 | 2024 | **4K4DGen: Panoramic 4D Generation at 4K Resolution**  | 19 Jun 2024 |          [Link](https://arxiv.org/abs/2406.13527)          | -- | [Link](https://4k4dgen.github.io/index.html) |
 | 2024 | **Shape of Motion: 4D Reconstruction from a Single Video**  | 18 Jul 2024 |          [Link](https://arxiv.org/abs/2407.13764)          | [Link](https://github.com/vye16/shape-of-motion/) | [Link](https://shape-of-motion.github.io/) |
 | 2024 | **4Dynamic: Text-to-4D Generation with Hybrid Priors**  | 17 Jul 2024 |          [Link](https://arxiv.org/abs/2407.12684)          | -- | -- |
-| 2024 | **SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency**  | 24 Jul 2024 |          [Link](https://arxiv.org/abs/2407.17470)          | [Link](https://github.com/Stability-AI/generative-models) | [Link](https://sv4d.github.io/) |
 | 2024 | **CT4D: Consistent Text-to-4D Generation with Animatable Meshes**  | 15 Aug 2024 |          [Link](https://arxiv.org/abs/2408.08342)          | -- | -- |
 | 2024 | **Disco4D: Disentangled 4D Human Generation and Animation from a Single Image**  | 25 Sep 2024 |          [Link](https://arxiv.org/abs/2409.17280)          | -- |  [Link](https://disco-4d.github.io/) |
 | 2024 | **MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion**  | 4 Oct 2024 |          [Link](https://arxiv.org/abs/2410.03825)          | [Link](https://github.com/Junyi42/monst3r)     |  [Link](https://monst3r-project.github.io/) |
@@ -546,14 +537,6 @@ The emergence of neural representations has revolutionized our means for digital
       url={https://arxiv.org/abs/2407.12684}, 
 }
 
-
-@article{xie2024sv4d,
-	    title={{SV4D}: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency}, 
-	    author={Yiming Xie and Chun-Han Yao and Vikram Voleti and Huaizu Jiang and Varun Jampani},
-	    journal={arXiv preprint arXiv:2407.17470},
-	    year={2024},
-}
-
 @misc{chen2024ct4dconsistenttextto4dgeneration,
       title={CT4D: Consistent Text-to-4D Generation with Animatable Meshes}, 
       author={Ce Chen and Shaoli Huang and Xuelin Chen and Guangyi Chen and Xiaoguang Han and Kun Zhang and Mingming Gong},
@@ -602,6 +585,23 @@ The emergence of neural representations has revolutionized our means for digital
 ```
 </details>
 
+---
+
+### Other 4D Additional Info
+```Video-to-4D diffusion model for novel-view video synthesis```
+**1. SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency**
+
+Yiming Xie, Chun-Han Yao, Vikram Voleti, Huaizu Jiang, Varun Jampani
+
+(Stability AI, Northeastern University)
+<details span>
+<summary><b>Abstract</b></summary>
+We present Stable Video 4D (SV4D), a latent video diffusion model for multi-frame and multi-view consistent dynamic 3D content generation. Unlike previous methods that rely on separately trained generative models for video generation and novel view synthesis, we design a unified diffusion model to generate novel view videos of dynamic 3D objects. Specifically, given a monocular reference video, SV4D generates novel views for each video frame that are temporally consistent. We then use the generated novel view videos to optimize an implicit 4D representation (dynamic NeRF) efficiently, without the need for cumbersome SDS-based optimization used in most prior works. To train our unified novel view video generation model, we curated a dynamic 3D object dataset from the existing Objaverse dataset. Extensive experimental results on multiple datasets and user studies demonstrate SV4D's state-of-the-art performance on novel-view video synthesis as well as 4D generation compared to prior works.
+</details>
+
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2024 | **SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency**  | 24 Jul 2024 |          [Link](https://arxiv.org/abs/2407.17470)          | [Link](https://github.com/Stability-AI/generative-models) | [Link](https://sv4d.github.io/) |
 
 ## Text to Scene
 
