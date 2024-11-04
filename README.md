@@ -1858,6 +1858,7 @@ SMPL-X, that extends SMPL with fully articulated hands and facial expressions (5
 | 2024 | **xGen-VideoSyn-1: High-fidelity Text-to-Video Synthesis with Compressed Representations**  |  ECCV 2024 AI4VA |          [Link](https://arxiv.org/abs/2408.12590)          | [Link](https://github.com/SalesforceAIResearch/xgen-videosyn)  | -- |
 | 2024 | **MotionBooth: Motion-Aware Customized Text-to-Video Generation**  | NeurIPS 2024 Spotlight  | [Link](https://arxiv.org/abs/2406.17758) |         [Link](https://github.com/jianzongwu/MotionBooth)         | [Link](https://jianzongwu.github.io/projects/motionbooth/) |
 | 2024 | **Vivid-ZOO: Multi-View Video Generation with Diffusion Model**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2406.08659) |         [Link](https://github.com/hi-zhengcheng/vividzoo)         | [Link](https://hi-zhengcheng.github.io/vividzoo/) |
+| 2024 | **Enhancing Motion in Text-to-Video Generation with Decomposed Encoding and Conditioning**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2410.24219) |         [Link](https://github.com/PR-Ryan/DEMO)    | [Link](https://pr-ryan.github.io/DEMO-project/) |
 | 2024 | **VideoDirectorGPT: Consistent Multi-scene Video Generation via LLM-Guided Planning**  | COLM 2024  | [Link](https://arxiv.org/abs/2309.15091) |         [Link](https://github.com/HL-hanlin/VideoDirectorGPT)         | [Link](https://videodirectorgpt.github.io/) |
 
 <details close>
@@ -1904,6 +1905,16 @@ SMPL-X, that extends SMPL with fully articulated hands and facial expressions (5
   year={2024},
   eprint={2406.08659},
   archivePrefix={arXiv},
+}
+
+@misc{ruan2024enhancingmotiontexttovideogeneration,
+      title={Enhancing Motion in Text-to-Video Generation with Decomposed Encoding and Conditioning}, 
+      author={Penghui Ruan and Pichao Wang and Divya Saxena and Jiannong Cao and Yuhui Shi},
+      year={2024},
+      eprint={2410.24219},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.24219}, 
 }
 
 @article{Lin2023VideoDirectorGPT,
