@@ -397,6 +397,15 @@ Gal Fiebelman, Tamir Cohen, Ayellet Morgenstern, Peter Hedman, Hadar Averbuch-El
 The emergence of neural representations has revolutionized our means for digitally viewing a wide range of 3D scenes, enabling the synthesis of photorealistic images rendered from novel views. Recently, several techniques have been proposed for connecting these low-level representations with the high-level semantics understanding embodied within the scene. These methods elevate the rich semantic understanding from 2D imagery to 3D representations, distilling high-dimensional spatial features onto 3D space. In our work, we are interested in connecting language with a dynamic modeling of the world. We show how to lift spatio-temporal features to a 4D representation based on 3D Gaussian Splatting. This enables an interactive interface where the user can spatiotemporally localize events in the video from text prompts. We demonstrate our system on public 3D video datasets of people and animals performing various actions.
 </details>
 
+#### 20. GenXD: Generating Any 3D and 4D Scenes
+Yuyang Zhao, Chung-Ching Lin, Kevin Lin, Zhiwen Yan, Linjie Li, Zhengyuan Yang, Jianfeng Wang, Gim Hee Lee, Lijuan Wang
+
+(National University of Singapore, Microsoft)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent developments in 2D visual generation have been remarkably successful. However, 3D and 4D generation remain challenging in real-world applications due to the lack of large-scale 4D data and effective model design. In this paper, we propose to jointly investigate general 3D and 4D generation by leveraging camera and object movements commonly observed in daily life. Due to the lack of real-world 4D data in the community, we first propose a data curation pipeline to obtain camera poses and object motion strength from videos. Based on this pipeline, we introduce a large-scale real-world 4D scene dataset: CamVid-30K. By leveraging all the 3D and 4D data, we develop our framework, GenXD, which allows us to produce any 3D or 4D scene. We propose multiview-temporal modules, which disentangle camera and object movements, to seamlessly learn from both 3D and 4D data. Additionally, GenXD employs masked latent conditions to support a variety of conditioning views. GenXD can generate videos that follow the camera trajectory as well as consistent 3D views that can be lifted into 3D representations. We perform extensive evaluations across various real-world and synthetic datasets, demonstrating GenXD's effectiveness and versatility compared to previous methods in 3D and 4D generation.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -420,6 +429,7 @@ The emergence of neural representations has revolutionized our means for digital
 | 2024 | **MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion**  | 4 Oct 2024 |          [Link](https://arxiv.org/abs/2410.03825)          | [Link](https://github.com/Junyi42/monst3r)     |  [Link](https://monst3r-project.github.io/) |
 | 2024 | **AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation**  | 9 Oct 2024 |          [Link](https://arxiv.org/abs/2410.07164)          | [Link](https://github.com/yukangcao/AvatarGO)     |  [Link](https://yukangcao.github.io/AvatarGO/) |
 | 2024 | **4-LEGS: 4D Language Embedded Gaussian Splatting**  | 15 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10719)          |  --   |  [Link](https://tau-vailab.github.io/4-LEGS/) |
+| 2024 | **GenXD: Generating Any 3D and 4D Scenes**  | 5 Nov 2024 |          [Link](https://arxiv.org/abs/2411.02319)          |  [Link](https://github.com/HeliosZhao/GenXD)   |  [Link](https://gen-x-d.github.io/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -581,6 +591,13 @@ The emergence of neural representations has revolutionized our means for digital
     eprint={2410.10719},
     archivePrefix={arXiv},
     primaryClass={cs.CV}
+}
+
+@article{zhao2024genxd,
+  author={Zhao, Yuyang and Lin, Chung-Ching and Lin, Kevin and Yan, Zhiwen and Li, Linjie and Yang, Zhengyuan and Wang, Jianfeng and Lee, Gim Hee and Wang, Lijuan},
+  title={GenXD: Generating Any 3D and 4D Scenes},
+  journal={arXiv preprint arXiv:2411.02319},
+  year={2024}
 }
 ```
 </details>
