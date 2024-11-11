@@ -406,6 +406,15 @@ Yuyang Zhao, Chung-Ching Lin, Kevin Lin, Zhiwen Yan, Linjie Li, Zhengyuan Yang, 
 Recent developments in 2D visual generation have been remarkably successful. However, 3D and 4D generation remain challenging in real-world applications due to the lack of large-scale 4D data and effective model design. In this paper, we propose to jointly investigate general 3D and 4D generation by leveraging camera and object movements commonly observed in daily life. Due to the lack of real-world 4D data in the community, we first propose a data curation pipeline to obtain camera poses and object motion strength from videos. Based on this pipeline, we introduce a large-scale real-world 4D scene dataset: CamVid-30K. By leveraging all the 3D and 4D data, we develop our framework, GenXD, which allows us to produce any 3D or 4D scene. We propose multiview-temporal modules, which disentangle camera and object movements, to seamlessly learn from both 3D and 4D data. Additionally, GenXD employs masked latent conditions to support a variety of conditioning views. GenXD can generate videos that follow the camera trajectory as well as consistent 3D views that can be lifted into 3D representations. We perform extensive evaluations across various real-world and synthetic datasets, demonstrating GenXD's effectiveness and versatility compared to previous methods in 3D and 4D generation.
 </details>
 
+#### 21. DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion
+Wenqiang Sun, Shuo Chen, Fangfu Liu, Zilong Chen, Yueqi Duan, Jun Zhang, Yikai Wang
+
+(HKUST, Tsinghua University, ShengShu)
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we introduce \textbf{DimensionX}, a framework designed to generate photorealistic 3D and 4D scenes from just a single image with video diffusion. Our approach begins with the insight that both the spatial structure of a 3D scene and the temporal evolution of a 4D scene can be effectively represented through sequences of video frames. While recent video diffusion models have shown remarkable success in producing vivid visuals, they face limitations in directly recovering 3D/4D scenes due to limited spatial and temporal controllability during generation. To overcome this, we propose ST-Director, which decouples spatial and temporal factors in video diffusion by learning dimension-aware LoRAs from dimension-variant data. This controllable video diffusion approach enables precise manipulation of spatial structure and temporal dynamics, allowing us to reconstruct both 3D and 4D representations from sequential frames with the combination of spatial and temporal dimensions. Additionally, to bridge the gap between generated videos and real-world scenes, we introduce a trajectory-aware mechanism for 3D generation and an identity-preserving denoising strategy for 4D generation. Extensive experiments on various real-world and synthetic datasets demonstrate that DimensionX achieves superior results in controllable video generation, as well as in 3D and 4D scene generation, compared with previous methods.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -430,6 +439,7 @@ Recent developments in 2D visual generation have been remarkably successful. How
 | 2024 | **AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation**  | 9 Oct 2024 |          [Link](https://arxiv.org/abs/2410.07164)          | [Link](https://github.com/yukangcao/AvatarGO)     |  [Link](https://yukangcao.github.io/AvatarGO/) |
 | 2024 | **4-LEGS: 4D Language Embedded Gaussian Splatting**  | 15 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10719)          |  --   |  [Link](https://tau-vailab.github.io/4-LEGS/) |
 | 2024 | **GenXD: Generating Any 3D and 4D Scenes**  | 5 Nov 2024 |          [Link](https://arxiv.org/abs/2411.02319)          |  [Link](https://github.com/HeliosZhao/GenXD)   |  [Link](https://gen-x-d.github.io/) |
+| 2024 | **DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion**  | 7 Nov 2024 |          [Link](https://arxiv.org/abs/2411.04928)          |  [Link](https://github.com/wenqsun/DimensionX)   |  [Link](https://chenshuo20.github.io/DimensionX/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -598,6 +608,16 @@ Recent developments in 2D visual generation have been remarkably successful. How
   title={GenXD: Generating Any 3D and 4D Scenes},
   journal={arXiv preprint arXiv:2411.02319},
   year={2024}
+}
+
+@misc{sun2024dimensionxcreate3d4d,
+    title={DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion}, 
+    author={Wenqiang Sun and Shuo Chen and Fangfu Liu and Zilong Chen and Yueqi Duan and Jun Zhang and Yikai Wang},
+    year={2024},
+    eprint={2411.04928},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV},
+    url={https://arxiv.org/abs/2411.04928}, 
 }
 ```
 </details>
