@@ -2068,6 +2068,14 @@ Haoxuan Che, Xuanhua He, Quande Liu, Cheng Jin, Hao Chen
 We introduce GameGen-X, the first diffusion transformer model specifically designed for both generating and interactively controlling open-world game videos. This model facilitates high-quality, open-domain generation by simulating an extensive array of game engine features, such as innovative characters, dynamic environments, complex actions, and diverse events. Additionally, it provides interactive controllability, predicting and altering future content based on the current clip, thus allowing for gameplay simulation. To realize this vision, we first collected and built an Open-World Video Game Dataset from scratch. It is the first and largest dataset for open-world game video generation and control, which comprises over a million diverse gameplay video clips sampling from over 150 games with informative captions from GPT-4o. GameGen-X undergoes a two-stage training process, consisting of foundation model pre-training and instruction tuning. Firstly, the model was pre-trained via text-to-video generation and video continuation, endowing it with the capability for long-sequence, high-quality open-domain game video generation. Further, to achieve interactive controllability, we designed InstructNet to incorporate game-related multi-modal control signal experts. This allows the model to adjust latent representations based on user inputs, unifying character interaction and scene content control for the first time in video generation. During instruction tuning, only the InstructNet is updated while the pre-trained foundation model is frozen, enabling the integration of interactive controllability without loss of diversity and quality of generated video content.
 </details>
 
+#### 10. Motion Control for Enhanced Complex Action Video Generation
+Qiang Zhou, Shaofeng Zhang, Nianzu Yang, Ye Qian, Hao Li
+
+(INF Tech., Shanghai Jiao Tong University, Fudan University)
+<details span>
+<summary><b>Abstract</b></summary>
+Existing text-to-video (T2V) models often struggle with generating videos with sufficiently pronounced or complex actions. A key limitation lies in the text prompt's inability to precisely convey intricate motion details. To address this, we propose a novel framework, MVideo, designed to produce long-duration videos with precise, fluid actions. MVideo overcomes the limitations of text prompts by incorporating mask sequences as an additional motion condition input, providing a clearer, more accurate representation of intended actions. Leveraging foundational vision models such as GroundingDINO and SAM2, MVideo automatically generates mask sequences, enhancing both efficiency and robustness. Our results demonstrate that, after training, MVideo effectively aligns text prompts with motion conditions to produce videos that simultaneously meet both criteria. This dual control mechanism allows for more dynamic video generation by enabling alterations to either the text prompt or motion condition independently, or both in tandem. Furthermore, MVideo supports motion condition editing and composition, facilitating the generation of videos with more complex actions. MVideo thus advances T2V motion generation, setting a strong benchmark for improved action depiction in current video diffusion models.
+</details>
 
 ---
 
@@ -2082,6 +2090,7 @@ We introduce GameGen-X, the first diffusion transformer model specifically desig
 | 2024 | **BroadWay: Boost Your Text-to-Video Generation Model in a Training-free Way**  | 8 Oct 2024  | [Link](https://arxiv.org/abs/2410.06241)  |      --      | -- |
 | 2024 | **Pyramidal Flow Matching for Efficient Video Generative Modeling**  | 8 Oct 2024  | [Link](https://arxiv.org/abs/2410.05954)  |      [Link](https://github.com/jy0205/Pyramid-Flow)      | [Link](https://pyramid-flow.github.io/) |
 | 2024 | **GameGen-X: Interactive Open-world Game Video Generation**  |  1 Nov 2024  | [Link](https://arxiv.org/abs/2411.00769)  |          [Link](https://github.com/GameGen-X/GameGen-X)        | [Link](https://gamegen-x.github.io/) |
+| 2024 | **MVideo: Motion Control for Enhanced Complex Action Video Generation**  |  13 Nov 2024  | [Link](https://arxiv.org/abs/2411.08328)  |     --      | [Link](https://mvideo-v1.github.io/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -2172,6 +2181,17 @@ We introduce GameGen-X, the first diffusion transformer model specifically desig
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2411.00769}, 
 }
+
+@misc{zhou2024motioncontrolenhancedcomplex,
+      title={Motion Control for Enhanced Complex Action Video Generation}, 
+      author={Qiang Zhou and Shaofeng Zhang and Nianzu Yang and Ye Qian and Hao Li},
+      year={2024},
+      eprint={2411.08328},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.08328}, 
+}
+
 ```
 </details>
 
