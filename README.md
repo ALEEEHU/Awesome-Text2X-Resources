@@ -40,11 +40,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   * [Accepted Papers](#-video-accepted-papers)
   * [ArXiv Papers](#-video-arxiv-papers)
   * [Additional Info](#other-additional-info)
-- [Text to Model](#text-to-model)
-  * [ArXiv Papers](#-model-arxiv-papers)
-- [Text to Music](#text-to-music)
-  * [ArXiv Papers](#-music-arxiv-papers)
 - [Related Resources](#related-resources)
+  * [Text to Other Tasks](#text-to-other-tasks)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
 
 ## Update Logs
@@ -2195,8 +2192,6 @@ Existing text-to-video (T2V) models often struggle with generating videos with s
 ```
 </details>
 
---------------
-
 ### Other Additional Info
 
 - OSS video generation models: [Mochi 1](https://github.com/genmoai/models) preview is an open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence.
@@ -2234,148 +2229,24 @@ The quality of video-text pairs fundamentally determines the upper bound of text
 ```
 </details>
 
-## Text to CAD
-
-### 🎉 CAD Accepted Papers
-
-| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2024 | **Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts**  | NeurIPS 2024 Spotlight |          [Link](https://arxiv.org/abs/2409.17106)          |  --  | [Link](https://sadilkhan.github.io/text2cad-project/)  |
-
-<details close>
-<summary>Accepted Papers References</summary>
-
-```
-%accepted papers
-    
-@misc{khan2024text2cadgeneratingsequentialcad, 
-	title={Text2CAD: Generating Sequential CAD Models from Beginner-to-Expert Level Text Prompts}, 
-	author={Mohammad Sadil Khan and Sankalp Sinha and Talha Uddin Sheikh and Didier Stricker and Sk Aziz Ali and Muhammad Zeshan Afzal}, 
-	year={2024}, 
-	eprint={2409.17106}, 
-	archivePrefix={arXiv}, 
-	primaryClass={cs.CV}, 
-	url={https://arxiv.org/abs/2409.17106}, 
-}
-        
-```
-</details>
-
-
-## Text to Model
-
-### 💡 Model ArXiv Papers
-
-#### 1. Text-to-Model: Text-Conditioned Neural Network Diffusion for Train-Once-for-All Personalization
-Zexi Li, Lingzhi Gao, Chao Wu (Zhejiang University)
-
-<details span>
-<summary><b>Abstract</b></summary>
-Generative artificial intelligence (GenAI) has made significant progress in understanding world knowledge and generating content from human languages across various modalities, like text-to-text large language models, text-to-image stable diffusion, and text-to-video Sora. While in this paper, we investigate the capability of GenAI for text-to-model generation, to see whether GenAI can comprehend hyper-level knowledge embedded within AI itself parameters. Specifically, we study a practical scenario termed train-once-for-all personalization, aiming to generate personalized models for diverse end-users and tasks using text prompts. Inspired by the recent emergence of neural network diffusion, we present Tina, a text-conditioned neural network diffusion for train-once-for-all personalization. Tina leverages a diffusion transformer model conditioned on task descriptions embedded using a CLIP model. Despite the astronomical number of potential personalized tasks (e.g., 1.73×10^13), by our design, Tina demonstrates remarkable in-distribution and out-of-distribution generalization even trained on small datasets (∼1000). We further verify whether and how \Tina understands world knowledge by analyzing its capabilities under zero-shot/few-shot image prompts, different numbers of personalized classes, prompts of natural language descriptions, and predicting unseen entities.
-</details>
-
-
-
-| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2024 | **Text-to-Model: Text-Conditioned Neural Network Diffusion for Train-Once-for-All Personalization**  |23 May 2024|          [Link](https://arxiv.org/abs/2405.14132)          | -- | -- |
-
-<details close>
-<summary>ArXiv Papers References</summary>
-
-```
-%axiv papers
-
-@misc{li2024texttomodeltextconditionedneuralnetwork,
-      title={Text-to-Model: Text-Conditioned Neural Network Diffusion for Train-Once-for-All Personalization}, 
-      author={Zexi Li and Lingzhi Gao and Chao Wu},
-      year={2024},
-      eprint={2405.14132},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2405.14132}, 
-}
-
-```
-</details>
-
-
-## Text to Music🎶
-
-### 💡 Music ArXiv Papers
-
-#### 1. FLUX that Plays Music
-Zhengcong Fei, Mingyuan Fan, Changqian Yu, Junshi Huang (Kunlun Inc.)
-
-<details span>
-<summary><b>Abstract</b></summary>
-This paper explores a simple extension of diffusion-based rectified flow Transformers for text-to-music generation, termed as FluxMusic. Generally, along with design in advanced Flux model, we transfers it into a latent VAE space of mel-spectrum. It involves first applying a sequence of independent attention to the double text-music stream, followed by a stacked single music stream for denoised patch prediction. We employ multiple pre-trained text encoders to sufficiently capture caption semantic information as well as inference flexibility. In between, coarse textual information, in conjunction with time step embeddings, is utilized in a modulation mechanism, while fine-grained textual details are concatenated with the music patch sequence as inputs. Through an in-depth study, we demonstrate that rectified flow training with an optimized architecture significantly outperforms established diffusion methods for the text-to-music task, as evidenced by various automatic metrics and human preference evaluations. 
-</details>
-
-
-
-| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2024 | **FLUX that Plays Music**  |1 Sep 2024|          [Link](https://arxiv.org/abs/2409.00587)          |  [Link](https://github.com/feizc/FluxMusic)  | [Hugging Face](https://huggingface.co/feizhengcong/FluxMusic) |
-
-<details close>
-<summary>ArXiv Papers References</summary>
-
-```
-%axiv papers
-
-@misc{fei2024fluxplaysmusic,
-      title={FLUX that Plays Music}, 
-      author={Zhengcong Fei and Mingyuan Fan and Changqian Yu and Junshi Huang},
-      year={2024},
-      eprint={2409.00587},
-      archivePrefix={arXiv},
-      primaryClass={cs.SD},
-      url={https://arxiv.org/abs/2409.00587}, 
-}
-
-```
-</details>
-
-
 --------------
 
 ## Related Resources
 
-<details close>
-<summary>Dynamic Gaussian Splatting</summary>
-<details close>
-<summary>Neural Deformable 3D Gaussians</summary>
- 
-(CVPR 2024) Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction [Paper](https://arxiv.org/abs/2309.13101) [Code](https://github.com/ingra14m/Deformable-3D-Gaussians) [Page](https://ingra14m.github.io/Deformable-Gaussians/)
- 
-(CVPR 2024) 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering [Paper](https://arxiv.org/abs/2310.08528) [Code](https://github.com/hustvl/4DGaussians) [Page](https://guanjunwu.github.io/4dgs/index.html)
+### Text to 'other tasks'
+(Here other tasks refer to *CAD*, *Model* and *Music* etc.)
 
-(CVPR 2024) SC-GS: Sparse-Controlled Gaussian Splatting for Editable Dynamic Scenes [Paper](https://arxiv.org/abs/2312.14937) [Code](https://github.com/yihua7/SC-GS) [Page](https://yihua7.github.io/SC-GS-web/)
+#### Text to CAD
++ 2024 | Text2CAD: Generating Sequential CAD Designs from Beginner-to-Expert Level Text Prompts | NeurIPS 2024 Spotlight | [Paper](https://arxiv.org/abs/2409.17106)  | [Project Page](https://sadilkhan.github.io/text2cad-project/)
 
-(CVPR 2024, Highlight) 3DGStream: On-the-Fly Training of 3D Gaussians for Efficient Streaming of Photo-Realistic Free-Viewpoint Videos [Paper](https://arxiv.org/abs/2403.01444) [Code](https://github.com/SJoJoK/3DGStream) [Page](https://sjojok.github.io/3dgstream/)
-
+#### Text to Music
++ 2024 | FLUX that Plays Music | arXiv 1 Sep 2024 | [Paper](https://arxiv.org/abs/2409.00587) | [Code](https://github.com/feizc/FluxMusic) | [Hugging Face](https://huggingface.co/feizhengcong/FluxMusic)
 </details>
 
-<details close>
-<summary>4D Gaussians</summary>
+#### Text to Model
++ 2024 | Text-to-Model: Text-Conditioned Neural Network Diffusion for Train-Once-for-All Personalization | arXiv 23 May 2024 | [Paper](https://arxiv.org/abs/2405.14132)
 
-(ArXiv 2024.02.07) 4D Gaussian Splatting: Towards Efficient Novel View Synthesis for Dynamic Scenes [Paper](https://arxiv.org/abs/2402.03307)
- 
-(ICLR 2024) Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting [Paper](https://arxiv.org/abs/2310.10642) [Code](https://github.com/fudan-zvg/4d-gaussian-splatting) [Page](https://fudan-zvg.github.io/4d-gaussian-splatting/)
 
-</details>
-
-<details close>
-<summary>Dynamic 3D Gaussians</summary>
-
-(CVPR 2024) Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle [Paper](https://arxiv.org/abs/2312.03431) [Page](https://nju-3dv.github.io/projects/Gaussian-Flow/)
- 
-(3DV 2024) Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis [Paper](https://arxiv.org/abs/2308.09713) [Code](https://github.com/JonathonLuiten/Dynamic3DGaussians) [Page](https://dynamic3dgaussians.github.io/)
-
-</details>
-
-</details>
 
 ### Survey and Awesome Repos 
 <details close>
@@ -2430,6 +2301,41 @@ This paper explores a simple extension of diffusion-based rectified flow Transfo
 	
 #### Awesome Repos
 - Resource1: [Awesome 4D Generation](https://github.com/cwchenwang/awesome-4d-generation)
+
+</details>
+
+<details close>
+<summary>Dynamic Gaussian Splatting</summary>
+<details close>
+<summary>Neural Deformable 3D Gaussians</summary>
+ 
+(CVPR 2024) Deformable 3D Gaussians for High-Fidelity Monocular Dynamic Scene Reconstruction [Paper](https://arxiv.org/abs/2309.13101) [Code](https://github.com/ingra14m/Deformable-3D-Gaussians) [Page](https://ingra14m.github.io/Deformable-Gaussians/)
+ 
+(CVPR 2024) 4D Gaussian Splatting for Real-Time Dynamic Scene Rendering [Paper](https://arxiv.org/abs/2310.08528) [Code](https://github.com/hustvl/4DGaussians) [Page](https://guanjunwu.github.io/4dgs/index.html)
+
+(CVPR 2024) SC-GS: Sparse-Controlled Gaussian Splatting for Editable Dynamic Scenes [Paper](https://arxiv.org/abs/2312.14937) [Code](https://github.com/yihua7/SC-GS) [Page](https://yihua7.github.io/SC-GS-web/)
+
+(CVPR 2024, Highlight) 3DGStream: On-the-Fly Training of 3D Gaussians for Efficient Streaming of Photo-Realistic Free-Viewpoint Videos [Paper](https://arxiv.org/abs/2403.01444) [Code](https://github.com/SJoJoK/3DGStream) [Page](https://sjojok.github.io/3dgstream/)
+
+</details>
+
+<details close>
+<summary>4D Gaussians</summary>
+
+(ArXiv 2024.02.07) 4D Gaussian Splatting: Towards Efficient Novel View Synthesis for Dynamic Scenes [Paper](https://arxiv.org/abs/2402.03307)
+ 
+(ICLR 2024) Real-time Photorealistic Dynamic Scene Representation and Rendering with 4D Gaussian Splatting [Paper](https://arxiv.org/abs/2310.10642) [Code](https://github.com/fudan-zvg/4d-gaussian-splatting) [Page](https://fudan-zvg.github.io/4d-gaussian-splatting/)
+
+</details>
+
+<details close>
+<summary>Dynamic 3D Gaussians</summary>
+
+(CVPR 2024) Gaussian-Flow: 4D Reconstruction with Dynamic 3D Gaussian Particle [Paper](https://arxiv.org/abs/2312.03431) [Page](https://nju-3dv.github.io/projects/Gaussian-Flow/)
+ 
+(3DV 2024) Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis [Paper](https://arxiv.org/abs/2308.09713) [Code](https://github.com/JonathonLuiten/Dynamic3DGaussians) [Page](https://dynamic3dgaussians.github.io/)
+
+</details>
 
 </details>
 
