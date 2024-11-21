@@ -657,6 +657,7 @@ We present Stable Video 4D (SV4D), a latent video diffusion model for multi-fram
 | 2024 | **The Fabrication of Reality and Fantasy: Scene Generation with LLM-Assisted Prompt Interpretation**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2407.12579)          | [Link](https://github.com/leo81005/Reality-and-Fantasy)  |[Link](https://leo81005.github.io/Reality-and-Fantasy/) |
 | 2024 | **SceneTeller: Language-to-3D Scene Generation**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2407.20727)          | [Link](https://github.com/sceneteller/SceneTeller)  |[Link](https://sceneteller.github.io/) |
 | 2024 | **Director3D: Real-world Camera Trajectory and 3D Scene Generation from Text**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.17601)          | [Link](https://github.com/imlixinyang/director3d)  |[Link](https://imlixinyang.github.io/director3d-page/) |
+| 2024 | **ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2401.17895)          | --  |[Link](https://replaceanything3d.github.io/) |
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -777,7 +778,19 @@ We present Stable Video 4D (SV4D), a latent video diffusion model for multi-fram
   title = {Director3D: Real-world Camera Trajectory and 3D Scene Generation from Text},
   journal = {arXiv:2406.17601},
   year = {2024},
-}		
+}
+
+@misc{bartrum2024replaceanything3dtextguided,
+            title={ReplaceAnything3D:Text-Guided 3D Scene Editing
+              with Compositional Neural Radiance Fields}, 
+            author={Edward Bartrum and Thu Nguyen-Phuoc and
+              Chris Xie and Zhengqin Li and Numair Khan and
+              Armen Avetisyan and Douglas Lanman and Lei Xiao},
+            year={2024},
+            eprint={2401.17895},
+            archivePrefix={arXiv},
+            primaryClass={cs.CV}
+}	
 ```
 </details>
 
@@ -819,16 +832,7 @@ Gwanghyun Kim, Dong Un Kang, Hoigi Seo, Hayeon Kim, Se Young Chun
 Text-driven large scene image synthesis has made significant progress with diffusion models, but controlling it is challenging. While using additional spatial controls with corresponding texts has improved the controllability of large scene synthesis, it is still challenging to faithfully reflect detailed text descriptions without user-provided controls. Here, we propose DetText2Scene, a novel text-driven large-scale image synthesis with high faithfulness, controllability, and naturalness in a global context for the detailed human-centric text description. Our DetText2Scene consists of 1) hierarchical keypoint-box layout generation from the detailed description by leveraging large language model (LLM), 2) view-wise conditioned joint diffusion process to synthesize a large scene from the given detailed text with LLM-generated grounded keypoint-box layout and 3) pixel perturbation-based pyramidal interpolation to progressively refine the large scene for global coherence. Our DetText2Scene significantly outperforms prior arts in text-to-large scene synthesis qualitatively and quantitatively, demonstrating strong faithfulness with detailed descriptions, superior controllability, and excellent naturalness in a global context.
 </details>
 
-#### 5. ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields
-Edward Bartrum, Thu Nguyen-Phuoc, Chris Xie, Zhengqin Li, Numair Khan, Armen Avetisyan, Douglas Lanman, Lei Xiao
-
-(University College London, Alan Turing Institute, Reality Labs Research Meta)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce ReplaceAnything3D model (RAM3D), a novel text-guided 3D scene editing method that enables the replacement of specific objects within a scene. Given multi-view images of a scene, a text prompt describing the object to replace, and a text prompt describing the new object, our Erase-and-Replace approach can effectively swap objects in the scene with newly generated content while maintaining 3D consistency across multiple viewpoints. We demonstrate the versatility of ReplaceAnything3D by applying it to various realistic 3D scenes, showcasing results of modified foreground objects that are well-integrated with the rest of the scene without affecting its overall integrity.
-</details>
-
-#### 6. 3D-SceneDreamer: Text-Driven 3D-Consistent Scene Generation
+#### 5. 3D-SceneDreamer: Text-Driven 3D-Consistent Scene Generation
 Frank Zhang, Yibo Zhang, Quan Zheng, Rui Ma, Wei Hua, Hujun Bao, Weiwei Xu, Changqing Zou
 
 (Zhejiang University, Jilin University, Zhejiang Lab, Institute of Software Chinese Academy of Sciences)
@@ -837,14 +841,14 @@ Frank Zhang, Yibo Zhang, Quan Zheng, Rui Ma, Wei Hua, Hujun Bao, Weiwei Xu, Chan
 Text-driven 3D scene generation techniques have made rapid progress in recent years. Their success is mainly attributed to using existing generative models to iteratively perform image warping and inpainting to generate 3D scenes. However, these methods heavily rely on the outputs of existing models, leading to error accumulation in geometry and appearance that prevent the models from being used in various scenarios (e.g., outdoor and unreal scenarios). To address this limitation, we generatively refine the newly generated local views by querying and aggregating global 3D information, and then progressively generate the 3D scene. Specifically, we employ a tri-plane features-based NeRF as a unified representation of the 3D scene to constrain global 3D consistency, and propose a generative refinement network to synthesize new contents with higher quality by exploiting the natural image prior from 2D diffusion model as well as the global 3D information of the current scene. Our extensive experiments demonstrate that, in comparison to previous methods, our approach supports wide variety of scene generation and arbitrary camera trajectories with improved visual quality and 3D consistency.
 </details>
 
-#### 7. RealmDreamer: Text-Driven 3D Scene Generation with Inpainting and Depth Diffusion
+#### 6. RealmDreamer: Text-Driven 3D Scene Generation with Inpainting and Depth Diffusion
 Jaidev Shriram, Alex Trevithick, Lingjie Liu, Ravi Ramamoorthi (University of California San Diego, University of Pennsylvania)
 <details span>
 <summary><b>Abstract</b></summary>
 We introduce RealmDreamer, a technique for generation of general forward-facing 3D scenes from text descriptions. Our technique optimizes a 3D Gaussian Splatting representation to match complex text prompts. We initialize these splats by utilizing the state-of-the-art text-to-image generators, lifting their samples into 3D, and computing the occlusion volume. We then optimize this representation across multiple views as a 3D inpainting task with image-conditional diffusion models. To learn correct geometric structure, we incorporate a depth diffusion model by conditioning on the samples from the inpainting model, giving rich geometric structure. Finally, we finetune the model using sharpened samples from image generators. Notably, our technique does not require video or multi-view data and can synthesize a variety of high-quality 3D scenes in different styles, consisting of multiple objects. Its generality additionally allows 3D synthesis from a single image.
 </details>
 
-#### 8. 3DitScene: Editing Any Scene via Language-guided Disentangled Gaussian Splatting
+#### 7. 3DitScene: Editing Any Scene via Language-guided Disentangled Gaussian Splatting
 Qihang Zhang, Yinghao Xu, Chaoyang Wang, Hsin-Ying Lee, Gordon Wetzstein, Bolei Zhou, Ceyuan Yang
 
 (The Chinese University of Hong Kong, Stanford University, Snap Inc., University of California Los Angeles, ByteDance)
@@ -853,7 +857,7 @@ Qihang Zhang, Yinghao Xu, Chaoyang Wang, Hsin-Ying Lee, Gordon Wetzstein, Bolei 
 Scene image editing is crucial for entertainment, photography, and advertising design. Existing methods solely focus on either 2D individual object or 3D global scene editing. This results in a lack of a unified approach to effectively control and manipulate scenes at the 3D level with different levels of granularity. In this work, we propose 3DitScene, a novel and unified scene editing framework leveraging language-guided disentangled Gaussian Splatting that enables seamless editing from 2D to 3D, allowing precise control over scene composition and individual objects. We first incorporate 3D Gaussians that are refined through generative priors and optimization techniques. Language features from CLIP then introduce semantics into 3D geometry for object disentanglement. With the disentangled Gaussians, 3DitScene allows for manipulation at both the global and individual levels, revolutionizing creative expression and empowering control over scenes and objects. Experimental results demonstrate the effectiveness and versatility of 3DitScene in scene image editing.
 </details>
 
-#### 9. HoloDreamer: Holistic 3D Panoramic World Generation from Text Descriptions
+#### 8. HoloDreamer: Holistic 3D Panoramic World Generation from Text Descriptions
 Haiyang Zhou, Xinhua Cheng, Wangbo Yu, Yonghong Tian, Li Yuan
 
 (Peking University, Peng Cheng Laboratory)
@@ -862,7 +866,7 @@ Haiyang Zhou, Xinhua Cheng, Wangbo Yu, Yonghong Tian, Li Yuan
 3D scene generation is in high demand across various domains, including virtual reality, gaming, and the film industry. Owing to the powerful generative capabilities of text-to-image diffusion models that provide reliable priors, the creation of 3D scenes using only text prompts has become viable, thereby significantly advancing researches in text-driven 3D scene generation. In order to obtain multiple-view supervision from 2D diffusion models, prevailing methods typically employ the diffusion model to generate an initial local image, followed by iteratively outpainting the local image using diffusion models to gradually generate scenes. Nevertheless, these outpainting-based approaches prone to produce global inconsistent scene generation results without high degree of completeness, restricting their broader applications. To tackle these problems, we introduce HoloDreamer, a framework that first generates high-definition panorama as a holistic initialization of the full 3D scene, then leverage 3D Gaussian Splatting (3D-GS) to quickly reconstruct the 3D scene, thereby facilitating the creation of view-consistent and fully enclosed 3D scenes. Specifically, we propose Stylized Equirectangular Panorama Generation, a pipeline that combines multiple diffusion models to enable stylized and detailed equirectangular panorama generation from complex text prompts. Subsequently, Enhanced Two-Stage Panorama Reconstruction is introduced, conducting a two-stage optimization of 3D-GS to inpaint the missing region and enhance the integrity of the scene. Comprehensive experiments demonstrated that our method outperforms prior works in terms of overall visual consistency and harmony as well as reconstruction quality and rendering robustness when generating fully enclosed scenes.
 </details>
 
-#### 10. Scene123: One Prompt to 3D Scene Generation via Video-Assisted and Consistency-Enhanced MAE
+#### 9. Scene123: One Prompt to 3D Scene Generation via Video-Assisted and Consistency-Enhanced MAE
 Yiying Yang, Fukun Yin, Jiayuan Fan, Xin Chen, Wanzhang Li, Gang Yu
 
 (Fudan University, Tencent PCG)
@@ -872,7 +876,7 @@ As Artificial Intelligence Generated Content (AIGC) advances, a variety of metho
 Moreover, to further enhance the details and texture fidelity of generated views, we employ a GAN-based Loss against images derived from the input image through the video generation model. Extensive experiments demonstrate that our method can generate realistic and consistent scenes from a single prompt. Both qualitative and quantitative results indicate that our approach surpasses existing state-of-the-art methods.
 </details>
 
-#### 11. LayerPano3D: Layered 3D Panorama for Hyper-Immersive Scene Generation
+#### 10. LayerPano3D: Layered 3D Panorama for Hyper-Immersive Scene Generation
 Shuai Yang, Jing Tan, Mengchen Zhang, Tong Wu, Yixuan Li, Gordon Wetzstein, Ziwei Liu, Dahua Lin
 
 (Shanghai Jiao Tong University, The Chinese University of Hong Kong, Zhejiang University, Shanghai AI Laboratory, Stanford University, S-Lab, Nanyang Technological University)
@@ -881,7 +885,7 @@ Shuai Yang, Jing Tan, Mengchen Zhang, Tong Wu, Yixuan Li, Gordon Wetzstein, Ziwe
 3D immersive scene generation is a challenging yet critical task in computer vision and graphics. A desired virtual 3D scene should 1) exhibit omnidirectional view consistency, and 2) allow for free exploration in complex scene hierarchies. Existing methods either rely on successive scene expansion via inpainting or employ panorama representation to represent large FOV scene environments. However, the generated scene suffers from semantic drift during expansion and is unable to handle occlusion among scene hierarchies. To tackle these challenges, we introduce LayerPano3D, a novel framework for full-view, explorable panoramic 3D scene generation from a single text prompt. Our key insight is to decompose a reference 2D panorama into multiple layers at different depth levels, where each layer reveals the unseen space from the reference views via diffusion prior. LayerPano3D comprises multiple dedicated designs: 1) we introduce a novel text-guided anchor view synthesis pipeline for high-quality, consistent panorama generation. 2) We pioneer the Layered 3D Panorama as underlying representation to manage complex scene hierarchies and lift it into 3D Gaussians to splat detailed 360-degree omnidirectional scenes with unconstrained viewing paths. Extensive experiments demonstrate that our framework generates state-of-the-art 3D panoramic scene in both full view consistency and immersive exploratory experience. We believe that LayerPano3D holds promise for advancing 3D panoramic scene creation with numerous applications.
 </details>
 
-#### 12. SceneDreamer360: Text-Driven 3D-Consistent Scene Generation with Panoramic Gaussian Splatting
+#### 11. SceneDreamer360: Text-Driven 3D-Consistent Scene Generation with Panoramic Gaussian Splatting
 Wenrui Li, Yapeng Mi, Fucheng Cai, Zhe Yang, Wangmeng Zuo, Xingtao Wang, Xiaopeng Fan
 
 (Harbin Institute of Technology, University of Electronic Science and Technology of China)
@@ -890,7 +894,7 @@ Wenrui Li, Yapeng Mi, Fucheng Cai, Zhe Yang, Wangmeng Zuo, Xingtao Wang, Xiaopen
 Text-driven 3D scene generation has seen significant advancements recently. However, most existing methods generate single-view images using generative models and then stitch them together in 3D space. This independent generation for each view often results in spatial inconsistency and implausibility in the 3D scenes. To address this challenge, we proposed a novel text-driven 3D-consistent scene generation model: SceneDreamer360. Our proposed method leverages a text-driven panoramic image generation model as a prior for 3D scene generation and employs 3D Gaussian Splatting (3DGS) to ensure consistency across multi-view panoramic images. Specifically, SceneDreamer360 enhances the fine-tuned Panfusion generator with a three-stage panoramic enhancement, enabling the generation of high-resolution, detail-rich panoramic images. During the 3D scene construction, a novel point cloud fusion initialization method is used, producing higher quality and spatially consistent point clouds. Our extensive experiments demonstrate that compared to other methods, SceneDreamer360 with its panoramic image generation and 3DGS can produce higher quality, spatially consistent, and visually appealing 3D scenes from any text prompt. 
 </details>
 
-#### 13. Semantic Score Distillation Sampling for Compositional Text-to-3D Generation
+#### 12. Semantic Score Distillation Sampling for Compositional Text-to-3D Generation
 Ling Yang, Zixiang Zhang, Junlin Han, Bohan Zeng, Runjia Li, Philip Torr, Wentao Zhang
 
 (Peking University, University of Oxford)
@@ -899,7 +903,7 @@ Ling Yang, Zixiang Zhang, Junlin Han, Bohan Zeng, Runjia Li, Philip Torr, Wentao
 Generating high-quality 3D assets from textual descriptions remains a pivotal challenge in computer graphics and vision research. Due to the scarcity of 3D data, state-of-the-art approaches utilize pre-trained 2D diffusion priors, optimized through Score Distillation Sampling (SDS). Despite progress, crafting complex 3D scenes featuring multiple objects or intricate interactions is still difficult. To tackle this, recent methods have incorporated box or layout guidance. However, these layout-guided compositional methods often struggle to provide fine-grained control, as they are generally coarse and lack expressiveness. To overcome these challenges, we introduce a novel SDS approach, Semantic Score Distillation Sampling (SemanticSDS), designed to effectively improve the expressiveness and accuracy of compositional text-to-3D generation. Our approach integrates new semantic embeddings that maintain consistency across different rendering views and clearly differentiate between various objects and parts. These embeddings are transformed into a semantic map, which directs a region-specific SDS process, enabling precise optimization and compositional generation. By leveraging explicit semantic guidance, our method unlocks the compositional capabilities of existing pre-trained diffusion models, thereby achieving superior quality in 3D content generation, particularly for complex objects and scenes. Experimental results demonstrate that our SemanticSDS framework is highly effective for generating state-of-the-art complex 3D content.
 </details>
 
-#### 14. The Scene Language: Representing Scenes with Programs, Words, and Embeddings
+#### 13. The Scene Language: Representing Scenes with Programs, Words, and Embeddings
 Yunzhi Zhang, Zizhang Li, Matt Zhou, Shangzhe Wu, Jiajun Wu (Stanford University, UC Berkeley)
 <details span>
 <summary><b>Abstract</b></summary>
@@ -914,7 +918,6 @@ We introduce the Scene Language, a visual scene representation that concisely an
 | 2023 | **Text2Immersion: Generative Immersive Scene with 3D Gaussians**  | 14 Dec 2023 |          [Link](https://arxiv.org/abs/2312.09242)          | --   | [Link](https://ken-ouyang.github.io/text2immersion/index.html)  |
 | 2023 | **ShowRoom3D: Text to High-Quality 3D Room Generation Using 3D Priors**  | 20 Dec 2023 |          [Link](https://arxiv.org/abs/2312.13324)          | [Link](https://github.com/showlab/ShowRoom3D)  | [Link](https://showroom3d.github.io/)  |
 | 2023 | **Detailed Human-Centric Text Description-Driven Large Scene Synthesis**  | 30 Nov 2023 |          [Link](https://arxiv.org/abs/2311.18654)          | --  |-- |
-| 2024 | **ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields**  | 31 Jan 2024 |          [Link](https://arxiv.org/abs/2401.17895)          | --  |[Link](https://replaceanything3d.github.io/) |
 | 2024 | **3D-SceneDreamer: Text-Driven 3D-Consistent Scene Generation**  | 14 Mar 2024 |          [Link](https://arxiv.org/abs/2403.09439)          | --  | -- |
 | 2024 | **RealmDreamer: Text-Driven 3D Scene Generation with Inpainting and Depth Diffusion**  | 10 Apr 2024 |          [Link](https://arxiv.org/abs/2404.07199)          | [Link](https://github.com/jaidevshriram/realmdreamer)  |[Link](https://realmdreamer.github.io/) |
 | 2024 | **3DitScene: Editing Any Scene via Language-guided Disentangled Gaussian Splatting**  | 28 May 2024 |          [Link](https://arxiv.org/abs/2405.18424)          | [Link](https://github.com/zqh0253/3DitScene)  |[Link](https://zqh0253.github.io/3DitScene/) |
@@ -957,18 +960,6 @@ We introduce the Scene Language, a visual scene representation that concisely an
   author={Kim, Gwanghyun and Kang, Dong Un and Seo, Hoigi and Kim, Hayeon and Chun, Se Young},
   journal={arXiv preprint arXiv:2311.18654},
   year={2023}
-}
-
-@misc{bartrum2024replaceanything3dtextguided,
-            title={ReplaceAnything3D:Text-Guided 3D Scene Editing
-              with Compositional Neural Radiance Fields}, 
-            author={Edward Bartrum and Thu Nguyen-Phuoc and
-              Chris Xie and Zhengqin Li and Numair Khan and
-              Armen Avetisyan and Douglas Lanman and Lei Xiao},
-            year={2024},
-            eprint={2401.17895},
-            archivePrefix={arXiv},
-            primaryClass={cs.CV}
 }
 
 @misc{zhang20243dscenedreamer,
