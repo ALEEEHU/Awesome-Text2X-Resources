@@ -2065,6 +2065,15 @@ Qiang Zhou, Shaofeng Zhang, Nianzu Yang, Ye Qian, Hao Li
 Existing text-to-video (T2V) models often struggle with generating videos with sufficiently pronounced or complex actions. A key limitation lies in the text prompt's inability to precisely convey intricate motion details. To address this, we propose a novel framework, MVideo, designed to produce long-duration videos with precise, fluid actions. MVideo overcomes the limitations of text prompts by incorporating mask sequences as an additional motion condition input, providing a clearer, more accurate representation of intended actions. Leveraging foundational vision models such as GroundingDINO and SAM2, MVideo automatically generates mask sequences, enhancing both efficiency and robustness. Our results demonstrate that, after training, MVideo effectively aligns text prompts with motion conditions to produce videos that simultaneously meet both criteria. This dual control mechanism allows for more dynamic video generation by enabling alterations to either the text prompt or motion condition independently, or both in tandem. Furthermore, MVideo supports motion condition editing and composition, facilitating the generation of videos with more complex actions. MVideo thus advances T2V motion generation, setting a strong benchmark for improved action depiction in current video diffusion models.
 </details>
 
+#### 11. AnimateAnything: Consistent and Controllable Animation for video generation
+Guojun Lei, Chi Wang, Hong Li, Rong Zhang, Yikai Wang, Weiwei Xu
+
+(State Key Lab of CAD&CG Zhejiang University, Tsinghua University, Beihang University, Zhejiang Gongshang University, ShengShu)
+<details span>
+<summary><b>Abstract</b></summary>
+We present a unified controllable video generation approach AnimateAnything that facilitates precise and consistent video manipulation across various conditions, including camera trajectories, text prompts, and user motion annotations. Specifically, we carefully design a multi-scale control feature fusion network to construct a common motion representation for different conditions. It explicitly converts all control information into frame-by-frame optical flows. Then we incorporate the optical flows as motion priors to guide final video generation. In addition, to reduce the flickering issues caused by large-scale motion, we propose a frequency-based stabilization module. It can enhance temporal coherence by ensuring the video's frequency domain consistency. Experiments demonstrate that our method outperforms the state-of-the-art approaches. 
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -2079,6 +2088,7 @@ Existing text-to-video (T2V) models often struggle with generating videos with s
 | 2024 | **Pyramidal Flow Matching for Efficient Video Generative Modeling**  | 8 Oct 2024  | [Link](https://arxiv.org/abs/2410.05954)  |      [Link](https://github.com/jy0205/Pyramid-Flow)      | [Link](https://pyramid-flow.github.io/) |
 | 2024 | **GameGen-X: Interactive Open-world Game Video Generation**  |  1 Nov 2024  | [Link](https://arxiv.org/abs/2411.00769)  |          [Link](https://github.com/GameGen-X/GameGen-X)        | [Link](https://gamegen-x.github.io/) |
 | 2024 | **MVideo: Motion Control for Enhanced Complex Action Video Generation**  |  13 Nov 2024  | [Link](https://arxiv.org/abs/2411.08328)  |     --      | [Link](https://mvideo-v1.github.io/) |
+| 2024 | **AnimateAnything: Consistent and Controllable Animation for video generation**  |  16 Nov 2024  | [Link](https://arxiv.org/abs/2411.10836)  |     [Link](https://github.com/yu-shaonian/AnimateAnything)      | [Link](https://yu-shaonian.github.io/Animate_Anything/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -2180,6 +2190,15 @@ Existing text-to-video (T2V) models often struggle with generating videos with s
       url={https://arxiv.org/abs/2411.08328}, 
 }
 
+@misc{lei2024animateanythingconsistentcontrollableanimation,
+      title={AnimateAnything: Consistent and Controllable Animation for Video Generation}, 
+      author={Guojun Lei and Chi Wang and Hong Li and Rong Zhang and Yikai Wang and Weiwei Xu},
+      year={2024},
+      eprint={2411.10836},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.10836}, 
+}
 ```
 </details>
 
