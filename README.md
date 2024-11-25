@@ -2074,6 +2074,15 @@ Guojun Lei, Chi Wang, Hong Li, Rong Zhang, Yikai Wang, Weiwei Xu
 We present a unified controllable video generation approach AnimateAnything that facilitates precise and consistent video manipulation across various conditions, including camera trajectories, text prompts, and user motion annotations. Specifically, we carefully design a multi-scale control feature fusion network to construct a common motion representation for different conditions. It explicitly converts all control information into frame-by-frame optical flows. Then we incorporate the optical flows as motion priors to guide final video generation. In addition, to reduce the flickering issues caused by large-scale motion, we propose a frequency-based stabilization module. It can enhance temporal coherence by ensuring the video's frequency domain consistency. Experiments demonstrate that our method outperforms the state-of-the-art approaches. 
 </details>
 
+#### 12. FlipSketch: Flipping Static Drawings to Text-Guided Sketch Animations (Text-to-Video Finetuning)
+Hmrishav Bandyopadhyay, Yi-Zhe Song
+
+(SketchX CVSSP University of Surrey, United Kingdom)
+<details span>
+<summary><b>Abstract</b></summary>
+Sketch animations offer a powerful medium for visual storytelling, from simple flip-book doodles to professional studio productions. While traditional animation requires teams of skilled artists to draw key frames and in-between frames, existing automation attempts still demand significant artistic effort through precise motion paths or keyframe specification. We present FlipSketch, a system that brings back the magic of flip-book animation -- just draw your idea and describe how you want it to move! Our approach harnesses motion priors from text-to-video diffusion models, adapting them to generate sketch animations through three key innovations: (i) fine-tuning for sketch-style frame generation, (ii) a reference frame mechanism that preserves visual integrity of input sketch through noise refinement, and (iii) a dual-attention composition that enables fluid motion without losing visual consistency. Unlike constrained vector animations, our raster frames support dynamic sketch transformations, capturing the expressive freedom of traditional animation. The result is an intuitive system that makes sketch animation as simple as doodling and describing, while maintaining the artistic essence of hand-drawn animation.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -2089,6 +2098,7 @@ We present a unified controllable video generation approach AnimateAnything that
 | 2024 | **GameGen-X: Interactive Open-world Game Video Generation**  |  1 Nov 2024  | [Link](https://arxiv.org/abs/2411.00769)  |          [Link](https://github.com/GameGen-X/GameGen-X)        | [Link](https://gamegen-x.github.io/) |
 | 2024 | **MVideo: Motion Control for Enhanced Complex Action Video Generation**  |  13 Nov 2024  | [Link](https://arxiv.org/abs/2411.08328)  |     --      | [Link](https://mvideo-v1.github.io/) |
 | 2024 | **AnimateAnything: Consistent and Controllable Animation for video generation**  |  16 Nov 2024  | [Link](https://arxiv.org/abs/2411.10836)  |     [Link](https://github.com/yu-shaonian/AnimateAnything)      | [Link](https://yu-shaonian.github.io/Animate_Anything/) |
+| 2024 | **FlipSketch: Flipping Static Drawings to Text-Guided Sketch Animations**  |  16 Nov 2024  | [Link](https://arxiv.org/abs/2411.10818)  |    --      | [Link](https://github.com/hmrishavbandy/FlipSketch) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
