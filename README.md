@@ -2083,6 +2083,15 @@ Hmrishav Bandyopadhyay, Yi-Zhe Song
 Sketch animations offer a powerful medium for visual storytelling, from simple flip-book doodles to professional studio productions. While traditional animation requires teams of skilled artists to draw key frames and in-between frames, existing automation attempts still demand significant artistic effort through precise motion paths or keyframe specification. We present FlipSketch, a system that brings back the magic of flip-book animation -- just draw your idea and describe how you want it to move! Our approach harnesses motion priors from text-to-video diffusion models, adapting them to generate sketch animations through three key innovations: (i) fine-tuning for sketch-style frame generation, (ii) a reference frame mechanism that preserves visual integrity of input sketch through noise refinement, and (iii) a dual-attention composition that enables fluid motion without losing visual consistency. Unlike constrained vector animations, our raster frames support dynamic sketch transformations, capturing the expressive freedom of traditional animation. The result is an intuitive system that makes sketch animation as simple as doodling and describing, while maintaining the artistic essence of hand-drawn animation.
 </details>
 
+#### 13. DreamRunner: Fine-Grained Storytelling Video Generation with Retrieval-Augmented Motion Adaptation
+Zun Wang, Jialu Li, Han Lin, Jaehong Yoon, Mohit Bansal
+
+(University of North Carolina, Chapel Hill)
+<details span>
+<summary><b>Abstract</b></summary>
+Storytelling video generation (SVG) has recently emerged as a task to create long, multi-motion, multi-scene videos that consistently represent the story described in the input text script. SVG holds great potential for diverse content creation in media and entertainment; however, it also presents significant challenges: (1) objects must exhibit a range of fine-grained, complex motions, (2) multiple objects need to appear consistently across scenes, and (3) subjects may require multiple motions with seamless transitions within a single scene. To address these challenges, we propose DreamRunner, a novel story-to-video generation method: First, we structure the input script using a large language model (LLM) to facilitate both coarse-grained scene planning as well as fine-grained object-level layout and motion planning. Next, DreamRunner presents retrieval-augmented test-time adaptation to capture target motion priors for objects in each scene, supporting diverse motion customization based on retrieved videos, thus facilitating the generation of new videos with complex, scripted motions. Lastly, we propose a novel spatial-temporal region-based 3D attention and prior injection module SR3AI for fine-grained object-motion binding and frame-by-frame semantic control. We compare DreamRunner with various SVG baselines, demonstrating state-of-the-art performance in character consistency, text alignment, and smooth transitions. Additionally, DreamRunner exhibits strong fine-grained condition-following ability in compositional text-to-video generation, significantly outperforming baselines on T2V-ComBench. Finally, we validate DreamRunner's robust ability to generate multi-object interactions with qualitative examples.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -2099,6 +2108,7 @@ Sketch animations offer a powerful medium for visual storytelling, from simple f
 | 2024 | **MVideo: Motion Control for Enhanced Complex Action Video Generation**  |  13 Nov 2024  | [Link](https://arxiv.org/abs/2411.08328)  |     --      | [Link](https://mvideo-v1.github.io/) |
 | 2024 | **AnimateAnything: Consistent and Controllable Animation for video generation**  |  16 Nov 2024  | [Link](https://arxiv.org/abs/2411.10836)  |     [Link](https://github.com/yu-shaonian/AnimateAnything)      | [Link](https://yu-shaonian.github.io/Animate_Anything/) |
 | 2024 | **FlipSketch: Flipping Static Drawings to Text-Guided Sketch Animations**  |  16 Nov 2024  | [Link](https://arxiv.org/abs/2411.10818)  |    --      | [Link](https://github.com/hmrishavbandy/FlipSketch) |
+| 2024 | **DreamRunner: Fine-Grained Storytelling Video Generation with Retrieval-Augmented Motion Adaptation**  |  25 Nov 2024  | [Link](https://arxiv.org/abs/2411.16657)  |    [Link](https://github.com/wz0919/DreamRunner)      | [Link](https://dreamrunner-story2video.github.io/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -2208,6 +2218,24 @@ Sketch animations offer a powerful medium for visual storytelling, from simple f
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2411.10836}, 
+}
+
+@misc{bandyopadhyay2024flipsketch,
+  title={FlipSketch: Flipping assets Drawings to Text-Guided Sketch Animations}, 
+  author={Hmrishav Bandyopadhyay and Yi-Zhe Song},
+  year={2024},
+  eprint={2411.10818},
+  archivePrefix={arXiv},
+  primaryClass={cs.GR},
+  url={https://arxiv.org/abs/2411.10818}, 
+}
+
+@article{zun2024dreamrunner,
+    author = {Zun Wang and Jialu Li and Han Lin and Jaehong Yoon and Mohit Bansal},
+    title  = {DreamRunner: Fine-Grained Storytelling Video Generation with Retrieval-Augmented Motion Adaptation},
+    journal   = {arxiv},
+    year      = {2024},
+    url       = {https://arxiv.org/abs/2411.16657}
 }
 ```
 </details>
