@@ -412,6 +412,15 @@ Wenqiang Sun, Shuo Chen, Fangfu Liu, Zilong Chen, Yueqi Duan, Jun Zhang, Yikai W
 In this paper, we introduce \textbf{DimensionX}, a framework designed to generate photorealistic 3D and 4D scenes from just a single image with video diffusion. Our approach begins with the insight that both the spatial structure of a 3D scene and the temporal evolution of a 4D scene can be effectively represented through sequences of video frames. While recent video diffusion models have shown remarkable success in producing vivid visuals, they face limitations in directly recovering 3D/4D scenes due to limited spatial and temporal controllability during generation. To overcome this, we propose ST-Director, which decouples spatial and temporal factors in video diffusion by learning dimension-aware LoRAs from dimension-variant data. This controllable video diffusion approach enables precise manipulation of spatial structure and temporal dynamics, allowing us to reconstruct both 3D and 4D representations from sequential frames with the combination of spatial and temporal dimensions. Additionally, to bridge the gap between generated videos and real-world scenes, we introduce a trajectory-aware mechanism for 3D generation and an identity-preserving denoising strategy for 4D generation. Extensive experiments on various real-world and synthetic datasets demonstrate that DimensionX achieves superior results in controllable video generation, as well as in 3D and 4D scene generation, compared with previous methods.
 </details>
 
+#### 22. CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
+Rundi Wu, Ruiqi Gao, Ben Poole, Alex Trevithick, Changxi Zheng, Jonathan T. Barron, Aleksander Holynski
+
+(Google DeepMind, Columbia University, UC San Diego)
+<details span>
+<summary><b>Abstract</b></summary>
+We present CAT4D, a method for creating 4D (dynamic 3D) scenes from monocular video. CAT4D leverages a multi-view video diffusion model trained on a diverse combination of datasets to enable novel view synthesis at any specified camera poses and timestamps. Combined with a novel sampling approach, this model can transform a single monocular video into a multi-view video, enabling robust 4D reconstruction via optimization of a deformable 3D Gaussian representation. We demonstrate competitive performance on novel view synthesis and dynamic scene reconstruction benchmarks, and highlight the creative capabilities for 4D scene generation from real or generated videos. 
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -437,6 +446,7 @@ In this paper, we introduce \textbf{DimensionX}, a framework designed to generat
 | 2024 | **4-LEGS: 4D Language Embedded Gaussian Splatting**  | 15 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10719)          |  --   |  [Link](https://tau-vailab.github.io/4-LEGS/) |
 | 2024 | **GenXD: Generating Any 3D and 4D Scenes**  | 5 Nov 2024 |          [Link](https://arxiv.org/abs/2411.02319)          |  [Link](https://github.com/HeliosZhao/GenXD)   |  [Link](https://gen-x-d.github.io/) |
 | 2024 | **DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion**  | 7 Nov 2024 |          [Link](https://arxiv.org/abs/2411.04928)          |  [Link](https://github.com/wenqsun/DimensionX)   |  [Link](https://chenshuo20.github.io/DimensionX/) |
+| 2024 | **CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models**  | 27 Nov 2024 |          [Link](https://arxiv.org/abs/2411.18613)          | --  |  [Link](https://cat-4d.github.io/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -615,6 +625,16 @@ In this paper, we introduce \textbf{DimensionX}, a framework designed to generat
     archivePrefix={arXiv},
     primaryClass={cs.CV},
     url={https://arxiv.org/abs/2411.04928}, 
+}
+
+@misc{wu2024cat4dcreate4dmultiview,
+      title={CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models}, 
+      author={Rundi Wu and Ruiqi Gao and Ben Poole and Alex Trevithick and Changxi Zheng and Jonathan T. Barron and Aleksander Holynski},
+      year={2024},
+      eprint={2411.18613},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.18613}, 
 }
 ```
 </details>
