@@ -1460,6 +1460,15 @@ Zeyu Zhang, Hang Gao, Akide Liu, Qi Chen, Feng Chen, Yiran Wang, Danning Li, Hao
 Human motion generation is a cut-edge area of research in generative computer vision, with promising applications in video creation, game development, and robotic manipulation. The recent Mamba architecture shows promising results in efficiently modeling long and complex sequences, yet two significant challenges remain: Firstly, directly applying Mamba to extended motion generation is ineffective, as the limited capacity of the implicit memory leads to memory decay. Secondly, Mamba struggles with multimodal fusion compared to Transformers, and lack alignment with textual queries, often confusing directions (left or right) or omitting parts of longer text queries. To address these challenges, our paper presents three key contributions: Firstly, we introduce KMM, a novel architecture featuring Key frame Masking Modeling, designed to enhance Mamba's focus on key actions in motion segments. This approach addresses the memory decay problem and represents a pioneering method in customizing strategic frame-level masking in SSMs. Additionally, we designed a contrastive learning paradigm for addressing the multimodal fusion problem in Mamba and improving the motion-text alignment. Finally, we conducted extensive experiments on the go-to dataset, BABEL, achieving state-of-the-art performance with a reduction of more than 57% in FID and 70% parameters compared to previous state-of-the-art methods. 
 </details>
 
+#### 15. KinMo: Kinematic-aware Human Motion Understanding and Generation
+Pengfei Zhang, Pinxin Liu, Hyeongwoo Kim, Pablo Garrido, Bindita Chaudhuri
+
+(University of California Irvine, University of Rochester, Imperial College London, FlawlessAI)
+<details span>
+<summary><b>Abstract</b></summary>
+Controlling human motion based on text presents an important challenge in computer vision. Traditional approaches often rely on holistic action descriptions for motion synthesis, which struggle to capture subtle movements of local body parts. This limitation restricts the ability to isolate and manipulate specific movements. To address this, we propose a novel motion representation that decomposes motion into distinct body joint group movements and interactions from a kinematic perspective. We design an automatic dataset collection pipeline that enhances the existing text-motion benchmark by incorporating fine-grained local joint-group motion and interaction descriptions. To bridge the gap between text and motion domains, we introduce a hierarchical motion semantics approach that progressively fuses joint-level interaction information into the global action-level semantics for modality alignment. With this hierarchy, we introduce a coarse-to-fine motion synthesis procedure for various generation and editing downstream applications. Our quantitative and qualitative experiments demonstrate that the proposed formulation enhances text-motion retrieval by improving joint-spatial understanding, and enables more precise joint-motion generation and control.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -1478,6 +1487,7 @@ Human motion generation is a cut-edge area of research in generative computer vi
 | 2024 | **ControlMM: Controllable Masked Motion Generation**  | 14 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10780)          | [Link](https://github.com/exitudio/ControlMM/) | [Link](https://exitudio.github.io/ControlMM-page/)  |
 | 2024 | **MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms**  | 24 Oct 2024 |          [Link](https://arxiv.org/abs/2410.18977)          | [Link](https://github.com/IDEA-Research/MotionCLR) | [Link](https://lhchen.top/MotionCLR/)  |
 | 2024 | **KMM: Key Frame Mask Mamba for Extended Motion Generation**  | 10 Nov 2024 |          [Link](https://arxiv.org/abs/2411.06481)          | [Link](https://github.com/steve-zeyu-zhang/KMM) | [Link](https://steve-zeyu-zhang.github.io/KMM/)  |
+| 2024 | **KinMo: Kinematic-aware Human Motion Understanding and Generation**  | 23 Nov 2024 |          [Link](https://arxiv.org/abs/2411.15472)          | -- | [Link](https://andypinxinliu.github.io/KinMo/)  |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -1610,6 +1620,16 @@ Human motion generation is a cut-edge area of research in generative computer vi
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2411.06481}, 
+}
+
+@misc{zhang2024kinmokinematicawarehumanmotion,
+      title={KinMo: Kinematic-aware Human Motion Understanding and Generation}, 
+      author={Pengfei Zhang and Pinxin Liu and Hyeongwoo Kim and Pablo Garrido and Bindita Chaudhuri},
+      year={2024},
+      eprint={2411.15472},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.15472}, 
 }
 ```
 </details>
