@@ -2148,6 +2148,15 @@ Zun Wang, Jialu Li, Han Lin, Jaehong Yoon, Mohit Bansal
 Storytelling video generation (SVG) has recently emerged as a task to create long, multi-motion, multi-scene videos that consistently represent the story described in the input text script. SVG holds great potential for diverse content creation in media and entertainment; however, it also presents significant challenges: (1) objects must exhibit a range of fine-grained, complex motions, (2) multiple objects need to appear consistently across scenes, and (3) subjects may require multiple motions with seamless transitions within a single scene. To address these challenges, we propose DreamRunner, a novel story-to-video generation method: First, we structure the input script using a large language model (LLM) to facilitate both coarse-grained scene planning as well as fine-grained object-level layout and motion planning. Next, DreamRunner presents retrieval-augmented test-time adaptation to capture target motion priors for objects in each scene, supporting diverse motion customization based on retrieved videos, thus facilitating the generation of new videos with complex, scripted motions. Lastly, we propose a novel spatial-temporal region-based 3D attention and prior injection module SR3AI for fine-grained object-motion binding and frame-by-frame semantic control. We compare DreamRunner with various SVG baselines, demonstrating state-of-the-art performance in character consistency, text alignment, and smooth transitions. Additionally, DreamRunner exhibits strong fine-grained condition-following ability in compositional text-to-video generation, significantly outperforming baselines on T2V-ComBench. Finally, we validate DreamRunner's robust ability to generate multi-object interactions with qualitative examples.
 </details>
 
+#### 14. Motion Prompting: Controlling Video Generation with Motion Trajectories
+Daniel Geng, Charles Herrmann, Junhwa Hur, Forrester Cole, Serena Zhang, Tobias Pfaff, Tatiana Lopez-Guevara, Carl Doersch, Yusuf Aytar, Michael Rubinstein, Chen Sun, Oliver Wang, Andrew Owens, Deqing Sun
+
+(Google DeepMind, University of Michigan, Brown University)
+<details span>
+<summary><b>Abstract</b></summary>
+Motion control is crucial for generating expressive and compelling video content; however, most existing video generation models rely mainly on text prompts for control, which struggle to capture the nuances of dynamic actions and temporal compositions. To this end, we train a video generation model conditioned on spatio-temporally sparse or dense motion trajectories. In contrast to prior motion conditioning work, this flexible representation can encode any number of trajectories, object-specific or global scene motion, and temporally sparse motion; due to its flexibility we refer to this conditioning as motion prompts. While users may directly specify sparse trajectories, we also show how to translate high-level user requests into detailed, semi-dense motion prompts, a process we term motion prompt expansion. We demonstrate the versatility of our approach through various applications, including camera and object motion control, "interacting" with an image, motion transfer, and image editing. Our results showcase emergent behaviors, such as realistic physics, suggesting the potential of motion prompts for probing video models and interacting with future generative world models. Finally, we evaluate quantitatively, conduct a human study, and demonstrate strong performance. 
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -2165,6 +2174,7 @@ Storytelling video generation (SVG) has recently emerged as a task to create lon
 | 2024 | **AnimateAnything: Consistent and Controllable Animation for video generation**  |  16 Nov 2024  | [Link](https://arxiv.org/abs/2411.10836)  |     [Link](https://github.com/yu-shaonian/AnimateAnything)      | [Link](https://yu-shaonian.github.io/Animate_Anything/) |
 | 2024 | **FlipSketch: Flipping Static Drawings to Text-Guided Sketch Animations**  |  16 Nov 2024  | [Link](https://arxiv.org/abs/2411.10818)  |    --      | [Link](https://github.com/hmrishavbandy/FlipSketch) |
 | 2024 | **DreamRunner: Fine-Grained Storytelling Video Generation with Retrieval-Augmented Motion Adaptation**  |  25 Nov 2024  | [Link](https://arxiv.org/abs/2411.16657)  |    [Link](https://github.com/wz0919/DreamRunner)      | [Link](https://dreamrunner-story2video.github.io/) |
+| 2024 | **Motion Prompting: Controlling Video Generation with Motion Trajectories**  |  3 Dec 2024  | [Link](https://arxiv.org/abs/2412.02700)  |    --     | [Link](https://motion-prompting.github.io/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -2292,6 +2302,13 @@ Storytelling video generation (SVG) has recently emerged as a task to create lon
     journal   = {arxiv},
     year      = {2024},
     url       = {https://arxiv.org/abs/2411.16657}
+}
+
+@article{geng2024motionprompting,
+  author    = {Geng, Daniel and Herrmann, Charles and Hur, Junhwa and Cole, Forrester and Zhang, Serena and Pfaff, Tobias and Lopez-Guevara, Tatiana and Doersch, Carl and Aytar, Yusuf and Rubinstein, Michael and Sun, Chen and Wang, Oliver and Owens, Andrew and Sun, Deqing},
+  title     = {Motion Prompting: Controlling Video Generation with Motion Trajectories},
+  journal   = {arXiv preprint arXiv:2412.02700},
+  year      = {2024},
 }
 ```
 </details>
