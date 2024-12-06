@@ -421,6 +421,15 @@ Rundi Wu, Ruiqi Gao, Ben Poole, Alex Trevithick, Changxi Zheng, Jonathan T. Barr
 We present CAT4D, a method for creating 4D (dynamic 3D) scenes from monocular video. CAT4D leverages a multi-view video diffusion model trained on a diverse combination of datasets to enable novel view synthesis at any specified camera poses and timestamps. Combined with a novel sampling approach, this model can transform a single monocular video into a multi-view video, enabling robust 4D reconstruction via optimization of a deformable 3D Gaussian representation. We demonstrate competitive performance on novel view synthesis and dynamic scene reconstruction benchmarks, and highlight the creative capabilities for 4D scene generation from real or generated videos. 
 </details>
 
+#### 23. PaintScene4D: Consistent 4D Scene Generation from Text Prompts
+Vinayak Gupta, Yunze Man, Yu-Xiong Wang
+
+(Indian Institute of Technology Madras, University of Illinois Urbana-Champaign)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in diffusion models have revolutionized 2D and 3D content creation, yet generating photorealistic dynamic 4D scenes remains a significant challenge. Existing dynamic 4D generation methods typically rely on distilling knowledge from pre-trained 3D generative models, often fine-tuned on synthetic object datasets. Consequently, the resulting scenes tend to be object-centric and lack photorealism. While text-to-video models can generate more realistic scenes with motion, they often struggle with spatial understanding and provide limited control over camera viewpoints during rendering. To address these limitations, we present PaintScene4D, a novel text-to-4D scene generation framework that departs from conventional multi-view generative models in favor of a streamlined architecture that harnesses video generative models trained on diverse real-world datasets. Our method first generates a reference video using a video generation model, and then employs a strategic camera array selection for rendering. We apply a progressive warping and inpainting technique to ensure both spatial and temporal consistency across multiple viewpoints. Finally, we optimize multi-view images using a dynamic renderer, enabling flexible camera control based on user preferences. Adopting a training-free architecture, our PaintScene4D efficiently produces realistic 4D scenes that can be viewed from arbitrary trajectories. 
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -447,6 +456,7 @@ We present CAT4D, a method for creating 4D (dynamic 3D) scenes from monocular vi
 | 2024 | **GenXD: Generating Any 3D and 4D Scenes**  | 5 Nov 2024 |          [Link](https://arxiv.org/abs/2411.02319)          |  [Link](https://github.com/HeliosZhao/GenXD)   |  [Link](https://gen-x-d.github.io/) |
 | 2024 | **DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion**  | 7 Nov 2024 |          [Link](https://arxiv.org/abs/2411.04928)          |  [Link](https://github.com/wenqsun/DimensionX)   |  [Link](https://chenshuo20.github.io/DimensionX/) |
 | 2024 | **CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models**  | 27 Nov 2024 |          [Link](https://arxiv.org/abs/2411.18613)          | --  |  [Link](https://cat-4d.github.io/) |
+| 2024 | **PaintScene4D: Consistent 4D Scene Generation from Text Prompts**  | 5 Dec 2024 |          [Link](https://arxiv.org/abs/2412.04471)          | [Link](https://github.com/paintscene4d/paintscene4d.github.io)  |  [Link](https://paintscene4d.github.io/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -635,6 +645,13 @@ We present CAT4D, a method for creating 4D (dynamic 3D) scenes from monocular vi
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2411.18613}, 
+}
+
+@article{gupta2024paintscene4d,
+title={PaintScene4D: Consistent 4D Scene Generation from Text Prompts},
+author={Gupta, Vinayak and Man, Yunze and Wang, Yuxiong},
+journal={https://arxiv.org/abs/2412.04471},
+year={2024}
 }
 ```
 </details>
