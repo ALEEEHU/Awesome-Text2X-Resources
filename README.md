@@ -429,6 +429,14 @@ Vinayak Gupta, Yunze Man, Yu-Xiong Wang
 Recent advances in diffusion models have revolutionized 2D and 3D content creation, yet generating photorealistic dynamic 4D scenes remains a significant challenge. Existing dynamic 4D generation methods typically rely on distilling knowledge from pre-trained 3D generative models, often fine-tuned on synthetic object datasets. Consequently, the resulting scenes tend to be object-centric and lack photorealism. While text-to-video models can generate more realistic scenes with motion, they often struggle with spatial understanding and provide limited control over camera viewpoints during rendering. To address these limitations, we present PaintScene4D, a novel text-to-4D scene generation framework that departs from conventional multi-view generative models in favor of a streamlined architecture that harnesses video generative models trained on diverse real-world datasets. Our method first generates a reference video using a video generation model, and then employs a strategic camera array selection for rendering. We apply a progressive warping and inpainting technique to ensure both spatial and temporal consistency across multiple viewpoints. Finally, we optimize multi-view images using a dynamic renderer, enabling flexible camera control based on user preferences. Adopting a training-free architecture, our PaintScene4D efficiently produces realistic 4D scenes that can be viewed from arbitrary trajectories. 
 </details>
 
+#### 23. 4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion
+Chaoyang Wang, Peiye Zhuang, Tuan Duc Ngo, Willi Menapace, Aliaksandr Siarohin, Michael Vasilkovsky, Ivan Skorokhodov, Sergey Tulyakov, Peter Wonka, Hsin-Ying Lee
+
+(Snap Inc., Umass Amherst, KAUST)
+<details span>
+<summary><b>Abstract</b></summary>
+We propose 4Real-Video, a novel framework for generating 4D videos, organized as a grid of video frames with both time and viewpoint axes. In this grid, each row contains frames sharing the same timestep, while each column contains frames from the same viewpoint. We propose a novel two-stream architecture. One stream performs viewpoint updates on columns, and the other stream performs temporal updates on rows. After each diffusion transformer layer, a synchronization layer exchanges information between the two token streams. We propose two implementations of the synchronization layer, using either hard or soft synchronization. This feedforward architecture improves upon previous work in three ways: higher inference speed, enhanced visual quality (measured by FVD, CLIP, and VideoScore), and improved temporal and viewpoint consistency (measured by VideoScore and Dust3R-Confidence).
+</details>
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -456,6 +464,7 @@ Recent advances in diffusion models have revolutionized 2D and 3D content creati
 | 2024 | **DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion**  | 7 Nov 2024 |          [Link](https://arxiv.org/abs/2411.04928)          |  [Link](https://github.com/wenqsun/DimensionX)   |  [Link](https://chenshuo20.github.io/DimensionX/) |
 | 2024 | **CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models**  | 27 Nov 2024 |          [Link](https://arxiv.org/abs/2411.18613)          | --  |  [Link](https://cat-4d.github.io/) |
 | 2024 | **PaintScene4D: Consistent 4D Scene Generation from Text Prompts**  | 5 Dec 2024 |          [Link](https://arxiv.org/abs/2412.04471)          | [Link](https://github.com/paintscene4d/paintscene4d.github.io)  |  [Link](https://paintscene4d.github.io/) |
+| 2024 | **4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion**  | 5 Dec 2024 |  [Link](https://arxiv.org/abs/2412.04462) | -- |  [Link](https://snap-research.github.io/4Real-Video/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -644,6 +653,16 @@ title={PaintScene4D: Consistent 4D Scene Generation from Text Prompts},
 author={Gupta, Vinayak and Man, Yunze and Wang, Yuxiong},
 journal={https://arxiv.org/abs/2412.04471},
 year={2024}
+}
+
+@misc{wang20244realvideolearninggeneralizablephotorealistic,
+      title={4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion}, 
+      author={Chaoyang Wang and Peiye Zhuang and Tuan Duc Ngo and Willi Menapace and Aliaksandr Siarohin and Michael Vasilkovsky and Ivan Skorokhodov and Sergey Tulyakov and Peter Wonka and Hsin-Ying Lee},
+      year={2024},
+      eprint={2412.04462},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.04462}, 
 }
 ```
 </details>
