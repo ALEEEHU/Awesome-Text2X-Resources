@@ -71,8 +71,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 
 
-| Year | Title             | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ----------------- | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :-------------------------------: |
+| Task | Year | Title             | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ---- | ----------------- | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :-------------------------------: |
 |<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 | **Text-To-4D Dynamic Scene Generation**  | ICML 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | --  | [Link](https://make-a-video3d.github.io/)  |
 |<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.17984)          | [Link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
 |<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **Dream-in-4D: A Unified Approach for Text- and Image-guided 4D Scene Generation**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.16854)          | [Link](https://github.com/NVlabs/dream-in-4d)  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
