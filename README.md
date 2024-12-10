@@ -71,8 +71,8 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 
 
-| Task | Year | Title             | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ---- | ----------------- | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :-------------------------------: |
+| Year | Title             | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ----------------- | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :-------------------------------: |
 |<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 | **Text-To-4D Dynamic Scene Generation**  | ICML 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | --  | [Link](https://make-a-video3d.github.io/)  |
 |<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.17984)          | [Link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
 |<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **Dream-in-4D: A Unified Approach for Text- and Image-guided 4D Scene Generation**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.16854)          | [Link](https://github.com/NVlabs/dream-in-4d)  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
@@ -80,6 +80,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 |<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **TC4D: Trajectory-Conditioned Text-to-4D Generation**  | ECCV 2024 |         [Link](https://arxiv.org/abs/2403.17920)         | [Link](https://github.com/sherwinbahmani/tc4d)   | [Link](https://sherwinbahmani.github.io/tc4d/) |
 |<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.07472)          | -- | [Link](https://snap-research.github.io/4Real/) |
 |<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **Compositional 3D-aware Video Generation with LLM Director**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2409.00558) |     --   | [Link](https://www.microsoft.com/en-us/research/project/compositional-3d-aware-video-generation/) |
+|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2405.16645)          | [Link](https://github.com/VITA-Group/Diffusion4D)  |[Link](https://vita-group.github.io/Diffusion4D/) |
 |<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **Consistent4D: Consistent 360° Dynamic Object Generation from Monocular Video**  | ICLR 2024 |          [Link](https://arxiv.org/abs/2311.02848)          | [Link](https://github.com/yanqinJiang/Consistent4D)  | [Link](https://consistent4d.github.io/)  |
 |<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2404.03736)          | [Link](https://github.com/JarrentWu1031/SC4D)  |[Link](https://sc4d.github.io/) |
 |<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians**  | ECCV 2024  |           [Link](https://arxiv.org/abs/2403.14939) | [Link](https://github.com/zeng-yifei/STAG4D)  |[Link](https://nju-3dv.github.io/projects/STAG4D/) |
@@ -153,6 +154,15 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2409.00558}, 
+}
+
+@misc{liang2024diffusion4d,
+      title={Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models}, 
+      author={Hanwen Liang and Yuyang Yin and Dejia Xu and Hanxue Liang and Zhangyang Wang and Konstantinos N. Plataniotis and Yao Zhao and Yunchao Wei},
+      year={2024},
+      eprint={2405.16645},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 
 % video to 4d
@@ -287,16 +297,7 @@ Dejia Xu, Hanwen Liang, Neel P. Bhatt, Hezhen Hu, Hanxue Liang, Konstantinos N. 
 Recent advancements in diffusion models for 2D and 3D content creation have sparked a surge of interest in generating 4D content. However, the scarcity of 3D scene datasets constrains current methodologies to primarily object-centric generation. To overcome this limitation, we present Comp4D, a novel framework for Compositional 4D Generation. Unlike conventional methods that generate a singular 4D representation of the entire scene, Comp4D innovatively constructs each 4D object within the scene separately. Utilizing Large Language Models (LLMs), the framework begins by decomposing an input text prompt into distinct entities and maps out their trajectories. It then constructs the compositional 4D scene by accurately positioning these objects along their designated paths. To refine the scene, our method employs a compositional score distillation technique guided by the pre-defined trajectories, utilizing pre-trained diffusion models across text-to-image, text-to-video, and text-to-3D domains. Extensive experiments demonstrate our outstanding 4D content creation capability compared to prior arts, showcasing superior visual quality, motion fidelity, and enhanced object interactions.
 </details>
 
-#### 7. Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models
-Hanwen Liang, Yuyang Yin, Dejia Xu, Hanxue Liang, Zhangyang Wang, Konstantinos N. Plataniotis, Yao Zhao, Yunchao Wei
-
-(University of Toronto, Beijing Jiaotong University, University of Texas at Austin, University of Cambridge)
-<details span>
-<summary><b>Abstract</b></summary>
-The availability of large-scale multimodal datasets and advancements in diffusion models have significantly accelerated progress in 4D content generation. Most prior approaches rely on multiple image or video diffusion models, utilizing score distillation sampling for optimization or generating pseudo novel views for direct supervision. However, these methods are hindered by slow optimization speeds and multi-view inconsistency issues. Spatial and temporal consistency in 4D geometry has been extensively explored respectively in 3D-aware diffusion models and traditional monocular video diffusion models. Building on this foundation, we propose a strategy to migrate the temporal consistency in video diffusion models to the spatial-temporal consistency required for 4D generation. Specifically, we present a novel framework, Diffusion4D, for efficient and scalable 4D content generation. Leveraging a meticulously curated dynamic 3D dataset, we develop a 4D-aware video diffusion model capable of synthesizing orbital views of dynamic 3D assets. To control the dynamic strength of these assets, we introduce a 3D-to-4D motion magnitude metric as guidance. Additionally, we propose a novel motion magnitude reconstruction loss and 3D-aware classifier-free guidance to refine the learning and generation of motion dynamics. After obtaining orbital views of the 4D asset, we perform explicit 4D construction with Gaussian splatting in a coarse-to-fine manner. The synthesized multi-view consistent 4D image set enables us to swiftly generate high-fidelity and diverse 4D assets within just several minutes. Extensive experiments demonstrate that our method surpasses prior state-of-the-art techniques in terms of generation efficiency and 4D geometry consistency across various prompt modalities.
-</details>
-
-#### 8. EG4D: Explicit Generation of 4D Object without Score Distillation
+#### 7. EG4D: Explicit Generation of 4D Object without Score Distillation
 Qi Sun, Zhiyang Guo, Ziyu Wan, Jing Nathan Yan, Shengming Yin, Wengang Zhou, Jing Liao, Houqiang Li
 
 (USTC, City University of Hong Kong, Cornell University)
@@ -305,14 +306,14 @@ Qi Sun, Zhiyang Guo, Ziyu Wan, Jing Nathan Yan, Shengming Yin, Wengang Zhou, Jin
 In recent years, the increasing demand for dynamic 3D assets in design and gaming applications has given rise to powerful generative pipelines capable of synthesizing high-quality 4D objects. Previous methods generally rely on score distillation sampling (SDS) algorithm to infer the unseen views and motion of 4D objects, thus leading to unsatisfactory results with defects like over-saturation and Janus problem. Therefore, inspired by recent progress of video diffusion models, we propose to optimize a 4D representation by explicitly generating multi-view videos from one input image. However, it is far from trivial to handle practical challenges faced by such a pipeline, including dramatic temporal inconsistency, inter-frame geometry and texture diversity, and semantic defects brought by video generation results. To address these issues, we propose DG4D, a novel multi-stage framework that generates high-quality and consistent 4D assets without score distillation. Specifically, collaborative techniques and solutions are developed, including an attention injection strategy to synthesize temporal-consistent multi-view videos, a robust and efficient dynamic reconstruction method based on Gaussian Splatting, and a refinement stage with diffusion prior for semantic restoration. The qualitative results and user preference study demonstrate that our framework outperforms the baselines in generation quality by a considerable margin.
 </details>
 
-#### 9. PLA4D: Pixel-Level Alignments for Text-to-4D Gaussian Splatting
+#### 8. PLA4D: Pixel-Level Alignments for Text-to-4D Gaussian Splatting
 Qiaowei Miao, Yawei Luo, Yi Yang (Zhejiang University)
 <details span>
 <summary><b>Abstract</b></summary>
 As text-conditioned diffusion models (DMs) achieve breakthroughs in image, video, and 3D generation, the research community's focus has shifted to the more challenging task of text-to-4D synthesis, which introduces a temporal dimension to generate dynamic 3D objects. In this context, we identify Score Distillation Sampling (SDS), a widely used technique for text-to-3D synthesis, as a significant hindrance to text-to-4D performance due to its Janus-faced and texture-unrealistic problems coupled with high computational costs. In this paper, we propose Pixel-Level Alignments for Text-to-4D Gaussian Splatting (PLA4D), a novel method that utilizes text-to-video frames as explicit pixel alignment targets to generate static 3D objects and inject motion into them. Specifically, we introduce Focal Alignment to calibrate camera poses for rendering and GS-Mesh Contrastive Learning to distill geometry priors from rendered image contrasts at the pixel level. Additionally, we develop Motion Alignment using a deformation network to drive changes in Gaussians and implement Reference Refinement for smooth 4D object surfaces. These techniques enable 4D Gaussian Splatting to align geometry, texture, and motion with generated videos at the pixel level. Compared to previous methods, PLA4D produces synthesized outputs with better texture details in less time and effectively mitigates the Janus-faced problem. PLA4D is fully implemented using open-source models, offering an accessible, user-friendly, and promising direction for 4D digital content creation.
 </details>
 
-#### 10. STAR: Skeleton-aware Text-based 4D Avatar Generation with In-Network Motion Retargeting
+#### 9. STAR: Skeleton-aware Text-based 4D Avatar Generation with In-Network Motion Retargeting
 Zenghao Chai, Chen Tang, Yongkang Wong, Mohan Kankanhalli
 
 (National University of Singapore, Tsinghua University)
@@ -321,7 +322,7 @@ Zenghao Chai, Chen Tang, Yongkang Wong, Mohan Kankanhalli
 The creation of 4D avatars (i.e., animated 3D avatars) from text description typically uses text-to-image (T2I) diffusion models to synthesize 3D avatars in the canonical space and subsequently applies animation with target motions. However, such an optimization-by-animation paradigm has several drawbacks. (1) For pose-agnostic optimization, the rendered images in canonical pose for naive Score Distillation Sampling (SDS) exhibit domain gap and cannot preserve view-consistency using only T2I priors, and (2) For post hoc animation, simply applying the source motions to target 3D avatars yields translation artifacts and misalignment. To address these issues, we propose Skeleton-aware Text-based 4D Avatar generation with in-network motion Retargeting (STAR). STAR considers the geometry and skeleton differences between the template mesh and target avatar, and corrects the mismatched source motion by resorting to the pretrained motion retargeting techniques. With the informatively retargeted and occlusion-aware skeleton, we embrace the skeleton-conditioned T2I and text-to-video (T2V) priors, and propose a hybrid SDS module to coherently provide multi-view and frame-consistent supervision signals. Hence, STAR can progressively optimize the geometry, texture, and motion in an end-to-end manner. The quantitative and qualitative experiments demonstrate our proposed STAR can synthesize high-quality 4D avatars with vivid animations that align well with the text description. Additional ablation studies shows the contributions of each component in STAR.
 </details>
 
-#### 11. 4K4DGen: Panoramic 4D Generation at 4K Resolution
+#### 10. 4K4DGen: Panoramic 4D Generation at 4K Resolution
 Renjie Li, Panwang Pan, Bangbang Yang, Dejia Xu, Shijie Zhou, Xuanyang Zhang, Zeming Li, Achuta Kadambi, Zhangyang Wang, Zhiwen Fan
 
 (Pico, UT Austin, UCLA)
@@ -330,7 +331,7 @@ Renjie Li, Panwang Pan, Bangbang Yang, Dejia Xu, Shijie Zhou, Xuanyang Zhang, Ze
 The blooming of virtual reality and augmented reality (VR/AR) technologies has driven an increasing demand for the creation of high-quality, immersive, and dynamic environments. However, existing generative techniques either focus solely on dynamic objects or perform outpainting from a single perspective image, failing to meet the needs of VR/AR applications. In this work, we tackle the challenging task of elevating a single panorama to an immersive 4D experience. For the first time, we demonstrate the capability to generate omnidirectional dynamic scenes with 360-degree views at 4K resolution, thereby providing an immersive user experience. Our method introduces a pipeline that facilitates natural scene animations and optimizes a set of 4D Gaussians using efficient splatting techniques for real-time exploration. To overcome the lack of scene-scale annotated 4D data and models, especially in panoramic formats, we propose a novel Panoramic Denoiser that adapts generic 2D diffusion priors to animate consistently in 360-degree images, transforming them into panoramic videos with dynamic scenes at targeted regions. Subsequently, we elevate the panoramic video into a 4D immersive environment while preserving spatial and temporal consistency. By transferring prior knowledge from 2D models in the perspective domain to the panoramic domain and the 4D lifting with spatial appearance and geometry regularization, we achieve high-quality Panorama-to-4D generation at a resolution of (4096 × 2048) for the first time.
 </details>
 
-#### 12. Shape of Motion: 4D Reconstruction from a Single Video
+#### 11. Shape of Motion: 4D Reconstruction from a Single Video
 Qianqian Wang, Vickie Ye, Hang Gao, Jake Austin, Zhengqi Li, Angjoo Kanazawa
 
 (UC Berkeley, Google Research)
@@ -339,7 +340,7 @@ Qianqian Wang, Vickie Ye, Hang Gao, Jake Austin, Zhengqi Li, Angjoo Kanazawa
 Monocular dynamic reconstruction is a challenging and long-standing vision problem due to the highly ill-posed nature of the task. Existing approaches are limited in that they either depend on templates, are effective only in quasi-static scenes, or fail to model 3D motion explicitly. In this work, we introduce a method capable of reconstructing generic dynamic scenes, featuring explicit, full-sequence-long 3D motion, from casually captured monocular videos. We tackle the under-constrained nature of the problem with two key insights: First, we exploit the low-dimensional structure of 3D motion by representing scene motion with a compact set of SE3 motion bases. Each point's motion is expressed as a linear combination of these bases, facilitating soft decomposition of the scene into multiple rigidly-moving groups. Second, we utilize a comprehensive set of data-driven priors, including monocular depth maps and long-range 2D tracks, and devise a method to effectively consolidate these noisy supervisory signals, resulting in a globally consistent representation of the dynamic scene. Experiments show that our method achieves state-of-the-art performance for both long-range 3D/2D motion estimation and novel view synthesis on dynamic scenes.
 </details>
 
-#### 13. 4Dynamic: Text-to-4D Generation with Hybrid Priors
+#### 12. 4Dynamic: Text-to-4D Generation with Hybrid Priors
 Yu-Jie Yuan, Leif Kobbelt, Jiwen Liu, Yuan Zhang, Pengfei Wan, Yu-Kun Lai, Lin Gao
 
 <details span>
@@ -347,7 +348,7 @@ Yu-Jie Yuan, Leif Kobbelt, Jiwen Liu, Yuan Zhang, Pengfei Wan, Yu-Kun Lai, Lin G
 Due to the fascinating generative performance of text-to-image diffusion models, growing text-to-3D generation works explore distilling the 2D generative priors into 3D, using the score distillation sampling (SDS) loss, to bypass the data scarcity problem. The existing text-to-3D methods have achieved promising results in realism and 3D consistency, but text-to-4D generation still faces challenges, including lack of realism and insufficient dynamic motions. In this paper, we propose a novel method for text-to-4D generation, which ensures the dynamic amplitude and authenticity through direct supervision provided by a video prior. Specifically, we adopt a text-to-video diffusion model to generate a reference video and divide 4D generation into two stages: static generation and dynamic generation. The static 3D generation is achieved under the guidance of the input text and the first frame of the reference video, while in the dynamic generation stage, we introduce a customized SDS loss to ensure multi-view consistency, a video-based SDS loss to improve temporal consistency, and most importantly, direct priors from the reference video to ensure the quality of geometry and texture. Moreover, we design a prior-switching training strategy to avoid conflicts between different priors and fully leverage the benefits of each prior. In addition, to enrich the generated motion, we further introduce a dynamic modeling representation composed of a deformation network and a topology network, which ensures dynamic continuity while modeling topological changes. Our method not only supports text-to-4D generation but also enables 4D generation from monocular videos. The comparison experiments demonstrate the superiority of our method compared to existing methods.
 </details>
 
-#### 14. CT4D: Consistent Text-to-4D Generation with Animatable Meshes
+#### 13. CT4D: Consistent Text-to-4D Generation with Animatable Meshes
 Ce Chen, Shaoli Huang, Xuelin Chen, Guangyi Chen, Xiaoguang Han, Kun Zhang, Mingming Gong
 
 (Mohamed bin Zayed University of Artificial Intelligence, Tencent AI Lab, Carnegie Mellon University, FNii CUHKSZ, SSE CUHKSZ, University of Melbourne)
@@ -357,7 +358,7 @@ Text-to-4D generation has recently been demonstrated viable by integrating a 2D 
 </details>
 
 
-#### 15. Disco4D: Disentangled 4D Human Generation and Animation from a Single Image
+#### 14. Disco4D: Disentangled 4D Human Generation and Animation from a Single Image
 Hui En Pang, Shuai Liu, Zhongang Cai, Lei Yang, Tianwei Zhang, Ziwei Liu
 
 (Nanyang Technological University, Sensetime Research, Shanghai AI Lab)
@@ -366,7 +367,7 @@ Hui En Pang, Shuai Liu, Zhongang Cai, Lei Yang, Tianwei Zhang, Ziwei Liu
 We present Disco4D, a novel Gaussian Splatting framework for 4D human genera- tion and animation from a single image. Different from existing methods, Disco4D distinctively disentangles clothings (with Gaussian models) from the human body (with SMPL-X model), significantly enhancing the generation details and flexibility. It has the following technical innovations. 1) Disco4D learns to efficiently fit the clothing Gaussians over the SMPL-X Gaussians. 2) It adopts diffusion models to enhance the 3D generation process, e.g., modeling occluded parts not visible in the input image. 3) It learns an identity encoding for each clothing Gaussian to facilitate the separation and extraction of clothing assets. Furthermore, Disco4D naturally supports 4D human animation with vivid dynamics. Extensive experiments demonstrate the superiority of Disco4D on 4D human generation and animation tasks.
 </details>
 
-#### 16. MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion
+#### 15. MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion
 Junyi Zhang, Charles Herrmann, Junhwa Hur, Varun Jampani, Trevor Darrell, Forrester Cole, Deqing Sun, Ming-Hsuan Yang
 
 (UC Berkeley, Google DeepMind, Stability AI, UC Merced)
@@ -375,7 +376,7 @@ Junyi Zhang, Charles Herrmann, Junhwa Hur, Varun Jampani, Trevor Darrell, Forres
 Estimating geometry from dynamic scenes, where objects move and deform over time, remains a core challenge in computer vision. Current approaches often rely on multi-stage pipelines or global optimizations that decompose the problem into subtasks, like depth and flow, leading to complex systems prone to errors. In this paper, we present Motion DUSt3R (MonST3R), a novel geometry-first approach that directly estimates per-timestep geometry from dynamic scenes. Our key insight is that by simply estimating a pointmap for each timestep, we can effectively adapt DUST3R's representation, previously only used for static scenes, to dynamic scenes. However, this approach presents a significant challenge: the scarcity of suitable training data, namely dynamic, posed videos with depth labels. Despite this, we show that by posing the problem as a fine-tuning task, identifying several suitable datasets, and strategically training the model on this limited data, we can surprisingly enable the model to handle dynamics, even without an explicit motion representation. Based on this, we introduce new optimizations for several downstream video-specific tasks and demonstrate strong performance on video depth and camera pose estimation, outperforming prior work in terms of robustness and efficiency. Moreover, MonST3R shows promising results for primarily feed-forward 4D reconstruction.
 </details>
 
-#### 17. AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation
+#### 16. AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation
 Yukang Cao, Liang Pan, Kai Han, Kwan-Yee K. Wong, Ziwei Liu
 
 (Nanyang Technological University, Shanghai AI Lab, The University of Hong Kong)
@@ -384,7 +385,7 @@ Yukang Cao, Liang Pan, Kai Han, Kwan-Yee K. Wong, Ziwei Liu
 Recent advancements in diffusion models have led to significant improvements in the generation and animation of 4D full-body human-object interactions (HOI). Nevertheless, existing methods primarily focus on SMPL-based motion generation, which is limited by the scarcity of realistic large-scale interaction data. This constraint affects their ability to create everyday HOI scenes. This paper addresses this challenge using a zero-shot approach with a pre-trained diffusion model.Despite this potential, achieving our goals is difficult due to the diffusion model's lack of understanding of "where" and "how" objects interact with the human body. To tackle these issues, we introduce AvatarGO, a novel framework designed to generate animatable 4D HOI scenes directly from textual inputs. Specifically, 1) for the "where" challenge, we propose LLM-guided contact retargeting, which employs Lang-SAM to identify the contact body part from text prompts, ensuring precise representation of human-object spatial relations. 2) For the "how" challenge, we introduce correspondence-aware motion optimization that constructs motion fields for both human and object models using the linear blend skinning function from SMPL-X. Our framework not only generates coherent compositional motions, but also exhibits greater robustness in handling penetration issues. Extensive experiments with existing methods validate AvatarGO's superior generation and animation capabilities on a variety of human-object pairs and diverse poses. As the first attempt to synthesize 4D avatars with object interactions, we hope AvatarGO could open new doors for human-centric 4D content creation.
 </details>
 
-#### 18. 4-LEGS: 4D Language Embedded Gaussian Splatting
+#### 17. 4-LEGS: 4D Language Embedded Gaussian Splatting
 Gal Fiebelman, Tamir Cohen, Ayellet Morgenstern, Peter Hedman, Hadar Averbuch-Elor
 
 (Tel Aviv University, Google Research)
@@ -393,7 +394,7 @@ Gal Fiebelman, Tamir Cohen, Ayellet Morgenstern, Peter Hedman, Hadar Averbuch-El
 The emergence of neural representations has revolutionized our means for digitally viewing a wide range of 3D scenes, enabling the synthesis of photorealistic images rendered from novel views. Recently, several techniques have been proposed for connecting these low-level representations with the high-level semantics understanding embodied within the scene. These methods elevate the rich semantic understanding from 2D imagery to 3D representations, distilling high-dimensional spatial features onto 3D space. In our work, we are interested in connecting language with a dynamic modeling of the world. We show how to lift spatio-temporal features to a 4D representation based on 3D Gaussian Splatting. This enables an interactive interface where the user can spatiotemporally localize events in the video from text prompts. We demonstrate our system on public 3D video datasets of people and animals performing various actions.
 </details>
 
-#### 19. GenXD: Generating Any 3D and 4D Scenes
+#### 18. GenXD: Generating Any 3D and 4D Scenes
 Yuyang Zhao, Chung-Ching Lin, Kevin Lin, Zhiwen Yan, Linjie Li, Zhengyuan Yang, Jianfeng Wang, Gim Hee Lee, Lijuan Wang
 
 (National University of Singapore, Microsoft)
@@ -402,7 +403,7 @@ Yuyang Zhao, Chung-Ching Lin, Kevin Lin, Zhiwen Yan, Linjie Li, Zhengyuan Yang, 
 Recent developments in 2D visual generation have been remarkably successful. However, 3D and 4D generation remain challenging in real-world applications due to the lack of large-scale 4D data and effective model design. In this paper, we propose to jointly investigate general 3D and 4D generation by leveraging camera and object movements commonly observed in daily life. Due to the lack of real-world 4D data in the community, we first propose a data curation pipeline to obtain camera poses and object motion strength from videos. Based on this pipeline, we introduce a large-scale real-world 4D scene dataset: CamVid-30K. By leveraging all the 3D and 4D data, we develop our framework, GenXD, which allows us to produce any 3D or 4D scene. We propose multiview-temporal modules, which disentangle camera and object movements, to seamlessly learn from both 3D and 4D data. Additionally, GenXD employs masked latent conditions to support a variety of conditioning views. GenXD can generate videos that follow the camera trajectory as well as consistent 3D views that can be lifted into 3D representations. We perform extensive evaluations across various real-world and synthetic datasets, demonstrating GenXD's effectiveness and versatility compared to previous methods in 3D and 4D generation.
 </details>
 
-#### 20. DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion
+#### 19. DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion
 Wenqiang Sun, Shuo Chen, Fangfu Liu, Zilong Chen, Yueqi Duan, Jun Zhang, Yikai Wang
 
 (HKUST, Tsinghua University, ShengShu)
@@ -411,7 +412,7 @@ Wenqiang Sun, Shuo Chen, Fangfu Liu, Zilong Chen, Yueqi Duan, Jun Zhang, Yikai W
 In this paper, we introduce \textbf{DimensionX}, a framework designed to generate photorealistic 3D and 4D scenes from just a single image with video diffusion. Our approach begins with the insight that both the spatial structure of a 3D scene and the temporal evolution of a 4D scene can be effectively represented through sequences of video frames. While recent video diffusion models have shown remarkable success in producing vivid visuals, they face limitations in directly recovering 3D/4D scenes due to limited spatial and temporal controllability during generation. To overcome this, we propose ST-Director, which decouples spatial and temporal factors in video diffusion by learning dimension-aware LoRAs from dimension-variant data. This controllable video diffusion approach enables precise manipulation of spatial structure and temporal dynamics, allowing us to reconstruct both 3D and 4D representations from sequential frames with the combination of spatial and temporal dimensions. Additionally, to bridge the gap between generated videos and real-world scenes, we introduce a trajectory-aware mechanism for 3D generation and an identity-preserving denoising strategy for 4D generation. Extensive experiments on various real-world and synthetic datasets demonstrate that DimensionX achieves superior results in controllable video generation, as well as in 3D and 4D scene generation, compared with previous methods.
 </details>
 
-#### 21. CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
+#### 20. CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
 Rundi Wu, Ruiqi Gao, Ben Poole, Alex Trevithick, Changxi Zheng, Jonathan T. Barron, Aleksander Holynski
 
 (Google DeepMind, Columbia University, UC San Diego)
@@ -420,7 +421,7 @@ Rundi Wu, Ruiqi Gao, Ben Poole, Alex Trevithick, Changxi Zheng, Jonathan T. Barr
 We present CAT4D, a method for creating 4D (dynamic 3D) scenes from monocular video. CAT4D leverages a multi-view video diffusion model trained on a diverse combination of datasets to enable novel view synthesis at any specified camera poses and timestamps. Combined with a novel sampling approach, this model can transform a single monocular video into a multi-view video, enabling robust 4D reconstruction via optimization of a deformable 3D Gaussian representation. We demonstrate competitive performance on novel view synthesis and dynamic scene reconstruction benchmarks, and highlight the creative capabilities for 4D scene generation from real or generated videos. 
 </details>
 
-#### 22. PaintScene4D: Consistent 4D Scene Generation from Text Prompts
+#### 21. PaintScene4D: Consistent 4D Scene Generation from Text Prompts
 Vinayak Gupta, Yunze Man, Yu-Xiong Wang
 
 (Indian Institute of Technology Madras, University of Illinois Urbana-Champaign)
@@ -429,7 +430,7 @@ Vinayak Gupta, Yunze Man, Yu-Xiong Wang
 Recent advances in diffusion models have revolutionized 2D and 3D content creation, yet generating photorealistic dynamic 4D scenes remains a significant challenge. Existing dynamic 4D generation methods typically rely on distilling knowledge from pre-trained 3D generative models, often fine-tuned on synthetic object datasets. Consequently, the resulting scenes tend to be object-centric and lack photorealism. While text-to-video models can generate more realistic scenes with motion, they often struggle with spatial understanding and provide limited control over camera viewpoints during rendering. To address these limitations, we present PaintScene4D, a novel text-to-4D scene generation framework that departs from conventional multi-view generative models in favor of a streamlined architecture that harnesses video generative models trained on diverse real-world datasets. Our method first generates a reference video using a video generation model, and then employs a strategic camera array selection for rendering. We apply a progressive warping and inpainting technique to ensure both spatial and temporal consistency across multiple viewpoints. Finally, we optimize multi-view images using a dynamic renderer, enabling flexible camera control based on user preferences. Adopting a training-free architecture, our PaintScene4D efficiently produces realistic 4D scenes that can be viewed from arbitrary trajectories. 
 </details>
 
-#### 23. 4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion
+#### 22. 4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion
 Chaoyang Wang, Peiye Zhuang, Tuan Duc Ngo, Willi Menapace, Aliaksandr Siarohin, Michael Vasilkovsky, Ivan Skorokhodov, Sergey Tulyakov, Peter Wonka, Hsin-Ying Lee
 
 (Snap Inc., Umass Amherst, KAUST)
@@ -437,6 +438,7 @@ Chaoyang Wang, Peiye Zhuang, Tuan Duc Ngo, Willi Menapace, Aliaksandr Siarohin, 
 <summary><b>Abstract</b></summary>
 We propose 4Real-Video, a novel framework for generating 4D videos, organized as a grid of video frames with both time and viewpoint axes. In this grid, each row contains frames sharing the same timestep, while each column contains frames from the same viewpoint. We propose a novel two-stream architecture. One stream performs viewpoint updates on columns, and the other stream performs temporal updates on rows. After each diffusion transformer layer, a synchronization layer exchanges information between the two token streams. We propose two implementations of the synchronization layer, using either hard or soft synchronization. This feedforward architecture improves upon previous work in three ways: higher inference speed, enhanced visual quality (measured by FVD, CLIP, and VideoScore), and improved temporal and viewpoint consistency (measured by VideoScore and Dust3R-Confidence).
 </details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -447,11 +449,9 @@ We propose 4Real-Video, a novel framework for generating 4D videos, organized as
 | 2024 | **Fast Dynamic 3D Object Generation from a Single-view Video**  | 16 Jan 2024 |          [Link](https://arxiv.org/abs/2401.08742)          | [Link](https://github.com/fudan-zvg/Efficient4D)  | [Link](https://fudan-zvg.github.io/Efficient4D/)  |
 | 2024 | **GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation**  | 19 Mar 2024 |         [Link](https://arxiv.org/abs/2403.12365)         | [Link](https://github.com/Zerg-Overmind/GaussianFlow)   | [Link](https://zerg-overmind.github.io/GaussianFlow.github.io/) |
 | 2024 | **Comp4D: LLM-Guided Compositional 4D Scene Generation**  |  25 Mar 2024 |          [Link](https://arxiv.org/abs/2403.16993)          | [Link](https://github.com/VITA-Group/Comp4D)  |[Link](https://vita-group.github.io/Comp4D/#) |
-| 2024 | **Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models**  | 26 May 2024 |          [Link](https://arxiv.org/abs/2405.16645)          | [Link](https://github.com/VITA-Group/Diffusion4D)  |[Link](https://vita-group.github.io/Diffusion4D/) |
 | 2024 | **EG4D: Explicit Generation of 4D Object without Score Distillation**  | 28 May 2024 |         [Link](https://arxiv.org/abs/2405.18132)          | [Link](https://github.com/jasongzy/EG4D)  | -- |
 | 2024 | **PLA4D: Pixel-Level Alignments for Text-to-4D Gaussian Splatting**  | 4 Jun 2024 |          [Link](https://arxiv.org/abs/2405.19957)          | --  | [Link](https://github.com/MiaoQiaowei/PLA4D.github.io) |
 | 2024 | **STAR: Skeleton-aware Text-based 4D Avatar Generation with In-Network Motion Retargeting**  | 7 Jun 2024 |          [Link](https://arxiv.org/abs/2406.04629)          | [Link](https://github.com/czh-98/STAR)      | [Link](https://star-avatar.github.io/) |
-| 2024 | **L4GM: Large 4D Gaussian Reconstruction Model**  | 14 Jun 2024 |          [Link](https://arxiv.org/abs/2406.10324)          | -- | [Link](https://research.nvidia.com/labs/toronto-ai/l4gm/) |
 | 2024 | **4K4DGen: Panoramic 4D Generation at 4K Resolution**  | 19 Jun 2024 |          [Link](https://arxiv.org/abs/2406.13527)          | -- | [Link](https://4k4dgen.github.io/index.html) |
 | 2024 | **Shape of Motion: 4D Reconstruction from a Single Video**  | 18 Jul 2024 |          [Link](https://arxiv.org/abs/2407.13764)          | [Link](https://github.com/vye16/shape-of-motion/) | [Link](https://shape-of-motion.github.io/) |
 | 2024 | **4Dynamic: Text-to-4D Generation with Hybrid Priors**  | 17 Jul 2024 |          [Link](https://arxiv.org/abs/2407.12684)          | -- | -- |
@@ -512,15 +512,6 @@ We propose 4Real-Video, a novel framework for generating 4D videos, organized as
       author={Dejia Xu and Hanwen Liang and Neel P. Bhatt and Hezhen Hu and Hanxue Liang and Konstantinos N. Plataniotis and Zhangyang Wang},
       year={2024},
       eprint={2403.16993},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-
-@misc{liang2024diffusion4d,
-      title={Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models}, 
-      author={Hanwen Liang and Yuyang Yin and Dejia Xu and Hanxue Liang and Zhangyang Wang and Konstantinos N. Plataniotis and Yao Zhao and Yunchao Wei},
-      year={2024},
-      eprint={2405.16645},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
