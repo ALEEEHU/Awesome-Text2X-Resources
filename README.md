@@ -2203,6 +2203,15 @@ Daniel Geng, Charles Herrmann, Junhwa Hur, Forrester Cole, Serena Zhang, Tobias 
 Motion control is crucial for generating expressive and compelling video content; however, most existing video generation models rely mainly on text prompts for control, which struggle to capture the nuances of dynamic actions and temporal compositions. To this end, we train a video generation model conditioned on spatio-temporally sparse or dense motion trajectories. In contrast to prior motion conditioning work, this flexible representation can encode any number of trajectories, object-specific or global scene motion, and temporally sparse motion; due to its flexibility we refer to this conditioning as motion prompts. While users may directly specify sparse trajectories, we also show how to translate high-level user requests into detailed, semi-dense motion prompts, a process we term motion prompt expansion. We demonstrate the versatility of our approach through various applications, including camera and object motion control, "interacting" with an image, motion transfer, and image editing. Our results showcase emergent behaviors, such as realistic physics, suggesting the potential of motion prompts for probing video models and interacting with future generative world models. Finally, we evaluate quantitatively, conduct a human study, and demonstrate strong performance. 
 </details>
 
+#### 16. STIV: Scalable Text and Image Conditioned Video Generation
+Zongyu Lin, Wei Liu, Chen Chen, Jiasen Lu, Wenze Hu, Tsu-Jui Fu, Jesse Allardice, Zhengfeng Lai, Liangchen Song, Bowen Zhang, Cha Chen, Yiran Fei, Yifan Jiang, Lezhi Li, Yizhou Sun, Kai-Wei Chang, Yinfei Yang
+
+(Apple, UCLA)
+<details span>
+<summary><b>Abstract</b></summary>
+The field of video generation has made remarkable advancements, yet there remains a pressing need for a clear, systematic recipe that can guide the development of robust and scalable models. In this work, we present a comprehensive study that systematically explores the interplay of model architectures, training recipes, and data curation strategies, culminating in a simple and scalable text-image-conditioned video generation method, named STIV. Our framework integrates image condition into a Diffusion Transformer (DiT) through frame replacement, while incorporating text conditioning via a joint image-text conditional classifier-free guidance. This design enables STIV to perform both text-to-video (T2V) and text-image-to-video (TI2V) tasks simultaneously. Additionally, STIV can be easily extended to various applications, such as video prediction, frame interpolation, multi-view generation, and long video generation, etc. With comprehensive ablation studies on T2I, T2V, and TI2V, STIV demonstrate strong performance, despite its simple design. An 8.7B model with 512 resolution achieves 83.1 on VBench T2V, surpassing both leading open and closed-source models like CogVideoX-5B, Pika, Kling, and Gen-3. The same-sized model also achieves a state-of-the-art result of 90.1 on VBench I2V task at 512 resolution. By providing a transparent and extensible recipe for building cutting-edge video generation models, we aim to empower future research and accelerate progress toward more versatile and reliable video generation solutions.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -2222,6 +2231,7 @@ Motion control is crucial for generating expressive and compelling video content
 | 2024 | **DreamRunner: Fine-Grained Storytelling Video Generation with Retrieval-Augmented Motion Adaptation**  |  25 Nov 2024  | [Link](https://arxiv.org/abs/2411.16657)  |    [Link](https://github.com/wz0919/DreamRunner)      | [Link](https://dreamrunner-story2video.github.io/) |
 | 2024 | **PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation**  |  30 Nov 2024  | [Link](https://arxiv.org/abs/2412.00596)  |    [Link](https://github.com/pittisl/PhyT2V)      | -- |
 | 2024 | **Motion Prompting: Controlling Video Generation with Motion Trajectories**  |  3 Dec 2024  | [Link](https://arxiv.org/abs/2412.02700)  |    --     | [Link](https://motion-prompting.github.io/) |
+| 2024 | **STIV: Scalable Text and Image Conditioned Video Generation**  |  10 Dec 2024  | [Link](https://www.arxiv.org/abs/2412.07730)  |    --     | -- |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -2366,6 +2376,16 @@ Motion control is crucial for generating expressive and compelling video content
   title     = {Motion Prompting: Controlling Video Generation with Motion Trajectories},
   journal   = {arXiv preprint arXiv:2412.02700},
   year      = {2024},
+}
+
+@misc{lin2024stivscalabletextimage,
+      title={STIV: Scalable Text and Image Conditioned Video Generation}, 
+      author={Zongyu Lin and Wei Liu and Chen Chen and Jiasen Lu and Wenze Hu and Tsu-Jui Fu and Jesse Allardice and Zhengfeng Lai and Liangchen Song and Bowen Zhang and Cha Chen and Yiran Fei and Yifan Jiang and Lezhi Li and Yizhou Sun and Kai-Wei Chang and Yinfei Yang},
+      year={2024},
+      eprint={2412.07730},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.07730}, 
 }
 ```
 </details>
