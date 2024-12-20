@@ -1488,6 +1488,14 @@ Pengfei Zhang, Pinxin Liu, Hyeongwoo Kim, Pablo Garrido, Bindita Chaudhuri
 Controlling human motion based on text presents an important challenge in computer vision. Traditional approaches often rely on holistic action descriptions for motion synthesis, which struggle to capture subtle movements of local body parts. This limitation restricts the ability to isolate and manipulate specific movements. To address this, we propose a novel motion representation that decomposes motion into distinct body joint group movements and interactions from a kinematic perspective. We design an automatic dataset collection pipeline that enhances the existing text-motion benchmark by incorporating fine-grained local joint-group motion and interaction descriptions. To bridge the gap between text and motion domains, we introduce a hierarchical motion semantics approach that progressively fuses joint-level interaction information into the global action-level semantics for modality alignment. With this hierarchy, we introduce a coarse-to-fine motion synthesis procedure for various generation and editing downstream applications. Our quantitative and qualitative experiments demonstrate that the proposed formulation enhances text-motion retrieval by improving joint-spatial understanding, and enables more precise joint-motion generation and control.
 </details>
 
+#### 16. The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion
+Changan Chen, Juze Zhang, Shrinidhi K. Lakshmikanth, Yusu Fang, Ruizhi Shao, Gordon Wetzstein, Li Fei-Fei, Ehsan Adeli (Stanford University)
+
+<details span>
+<summary><b>Abstract</b></summary>
+Human communication is inherently multimodal, involving a combination of verbal and non-verbal cues such as speech, facial expressions, and body gestures. Modeling these behaviors is essential for understanding human interaction and for creating virtual characters that can communicate naturally in applications like games, films, and virtual reality. However, existing motion generation models are typically limited to specific input modalities -- either speech, text, or motion data -- and cannot fully leverage the diversity of available data. In this paper, we propose a novel framework that unifies verbal and non-verbal language using multimodal language models for human motion understanding and generation. This model is flexible in taking text, speech, and motion or any combination of them as input. Coupled with our novel pre-training strategy, our model not only achieves state-of-the-art performance on co-speech gesture generation but also requires much less data for training. Our model also unlocks an array of novel tasks such as editable gesture generation and emotion prediction from motion. We believe unifying the verbal and non-verbal language of human motion is essential for real-world applications, and language models offer a powerful approach to achieving this goal. 
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -1507,6 +1515,7 @@ Controlling human motion based on text presents an important challenge in comput
 | 2024 | **MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms**  | 24 Oct 2024 |          [Link](https://arxiv.org/abs/2410.18977)          | [Link](https://github.com/IDEA-Research/MotionCLR) | [Link](https://lhchen.top/MotionCLR/)  |
 | 2024 | **KMM: Key Frame Mask Mamba for Extended Motion Generation**  | 10 Nov 2024 |          [Link](https://arxiv.org/abs/2411.06481)          | [Link](https://github.com/steve-zeyu-zhang/KMM) | [Link](https://steve-zeyu-zhang.github.io/KMM/)  |
 | 2024 | **KinMo: Kinematic-aware Human Motion Understanding and Generation**  | 23 Nov 2024 |          [Link](https://arxiv.org/abs/2411.15472)          | -- | [Link](https://andypinxinliu.github.io/KinMo/)  |
+| 2024 | **The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion**  | 13 Dec 2024 |          [Link](https://arxiv.org/abs/2412.10523)          | -- | [Link](https://languageofmotion.github.io/)  |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -1649,6 +1658,16 @@ Controlling human motion based on text presents an important challenge in comput
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2411.15472}, 
+}
+
+@misc{chen2024languagemotionunifyingverbal,
+      title={The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion}, 
+      author={Changan Chen and Juze Zhang and Shrinidhi K. Lakshmikanth and Yusu Fang and Ruizhi Shao and Gordon Wetzstein and Li Fei-Fei and Ehsan Adeli},
+      year={2024},
+      eprint={2412.10523},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.10523}, 
 }
 ```
 </details>
