@@ -13,7 +13,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## 🔥 News
-* `2024.10.30` adjusted the layout of the `Text to 4D` section.
+* `2024.12.21` adjusted the layouts of several sections and _Happy Winter Solstice_ ⚪🥣.
 * `2024.04.05` adjusted the layout and added accepted lists and ArXiv lists to each section.
 
 
@@ -23,12 +23,13 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ## Table of Contents
 
 - [Text to 4D](#text-to-4d)
-  * [Accepted Papers](#-4d-accepted-papers)
-  * [ArXiv Papers](#-4d-arxiv-papers)
+  * [2023](#year-2023)
+     * [2023 Accepted Papers](#-2023-accepted)
+     * [2023 ArXiv Papers](#-2023-arxiv)
+  * [2024](#year-2024)
+     * [2024 Accepted Papers](#-2024-accepted)
+     * [2024 ArXiv Papers](#-2024-arxiv)
   * [Additional Info](#other-4d-additional-info)
-- [Text to Scene](#text-to-scene)
-  * [Accepted Papers](#-scene-accepted-papers)
-  * [ArXiv Papers](#-scene-arxiv-papers)
 - [Text to Human Motion](#text-to-human-motion)
   * [Accepted Papers](#-motion-accepted-papers)
   * [ArXiv Papers](#-motion-arxiv-papers)
@@ -36,6 +37,9 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to 3D Human](#text-to-3d-human)
   * [Accepted Papers](#-human-accepted-papers)
   * [ArXiv Papers](#-human-arxiv-papers)
+- [Text to 3D Scene](#text-to-scene)
+  * [Accepted Papers](#-scene-accepted-papers)
+  * [ArXiv Papers](#-scene-arxiv-papers)
 - [Text to Video](#text-to-video)
   * [Accepted Papers](#-video-accepted-papers)
   * [ArXiv Papers](#-video-arxiv-papers)
@@ -67,31 +71,19 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ## Text to 4D
 (Also, Image to 4D)
 
-### 🎉 4D Accepted Papers
+### Year 2023
+In 2023, tasks classified as text/Image to 4D and video to 4D generally involve producing four-dimensional data from text/Image or video input.
 
-
+#### 🎉 2023 Accepted
 
 | Task | Year | Title             | Venue  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ---- | ----------------- | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :-------------------------------: |
-|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 | **Text-To-4D Dynamic Scene Generation**  | ICML 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | --  | [Link](https://make-a-video3d.github.io/)  |
-|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.17984)          | [Link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
-|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **Dream-in-4D: A Unified Approach for Text- and Image-guided 4D Scene Generation**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.16854)          | [Link](https://github.com/NVlabs/dream-in-4d)  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
-|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2023 |  **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.13763)          | -- | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
-|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **TC4D: Trajectory-Conditioned Text-to-4D Generation**  | ECCV 2024 |         [Link](https://arxiv.org/abs/2403.17920)         | [Link](https://github.com/sherwinbahmani/tc4d)   | [Link](https://sherwinbahmani.github.io/tc4d/) |
-|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.07472)          | -- | [Link](https://snap-research.github.io/4Real/) |
-|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **Compositional 3D-aware Video Generation with LLM Director**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2409.00558) |     --   | [Link](https://www.microsoft.com/en-us/research/project/compositional-3d-aware-video-generation/) |
-|<img src="https://img.shields.io/badge/4D Scene-FFFF93" /> | 2024 | **Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2405.16645)          | [Link](https://github.com/VITA-Group/Diffusion4D)  |[Link](https://vita-group.github.io/Diffusion4D/) |
+|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2023 | **Text-To-4D Dynamic Scene Generation**  | ICML 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | --  | [Link](https://make-a-video3d.github.io/)  |
+|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2023 |  **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.17984)          | [Link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
+|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2023 |  **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.13763)          | -- | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
+| <img src="https://img.shields.io/badge/Text/Image to 4D-orange" /> | 2023 |  **Dream-in-4D: A Unified Approach for Text- and Image-guided 4D Scene Generation**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.16854)          | [Link](https://github.com/NVlabs/dream-in-4d)  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
+|<img src="https://img.shields.io/badge/Text to 4D Editing-gray" /> | 2023 |  **Control4D: Efficient 4D Portrait Editing with Text**  | CVPR 2024 |    [Link](https://arxiv.org/abs/2305.20082)          | --  | [Link](https://control4darxiv.github.io./)  |
 |<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **Consistent4D: Consistent 360° Dynamic Object Generation from Monocular Video**  | ICLR 2024 |          [Link](https://arxiv.org/abs/2311.02848)          | [Link](https://github.com/yanqinJiang/Consistent4D)  | [Link](https://consistent4d.github.io/)  |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2404.03736)          | [Link](https://github.com/JarrentWu1031/SC4D)  |[Link](https://sc4d.github.io/) |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians**  | ECCV 2024  |           [Link](https://arxiv.org/abs/2403.14939) | [Link](https://github.com/zeng-yifei/STAG4D)  |[Link](https://nju-3dv.github.io/projects/STAG4D/) |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **Animate3D: Animating Any 3D Model with Multi-view Video Diffusion**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2407.11398)          | [Link](https://github.com/yanqinJiang/Animate3D) | [Link](https://animate3d.github.io/) |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.16822)        | [Link](https://github.com/yikaiw/vidu4d)  | [Link](https://vidu4d-dgs.github.io/)  |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **4Diffusion: Multi-view Video Diffusion Model for 4D Generation**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.20674)        | [Link](https://github.com/aejion/4Diffusion)  | [Link](https://aejion.github.io/4diffusion/)  |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2410.06756) |         [Link](https://github.com/WU-CVGL/DreamMesh4D)         | [Link](https://lizhiqi49.github.io/DreamMesh4D/) |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2405.02280)          | [Link](https://github.com/dreamscene4d/dreamscene4d)  |[Link](https://dreamscene4d.github.io/) |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **L4GM: Large 4D Gaussian Reconstruction Model**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.10324)          | [Link](https://github.com/nv-tlabs/L4GM-official)  |[Link](https://research.nvidia.com/labs/toronto-ai/l4gm/) |
-|<img src="https://img.shields.io/badge/4D Human-FFC78E" /> | 2023 |  **Control4D: Efficient 4D Portrait Editing with Text**  | CVPR 2024 |    [Link](https://arxiv.org/abs/2305.20082)          | --  | [Link](https://control4darxiv.github.io./)  |
-
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -99,7 +91,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ```
 %accepted papers
 
-%4d scene
+%text to 4d
 @article{singer2023text4d,
   author = {Singer, Uriel and Sheynin, Shelly and Polyak, Adam and Ashual, Oron and
            Makarov, Iurii and Kokkinos, Filippos and Goyal, Naman and Vedaldi, Andrea and
@@ -116,13 +108,6 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
   year = {2024},
 }
 
-@InProceedings{zheng2024unified,
-    title     = {A Unified Approach for Text- and Image-guided 4D Scene Generation},
-    author    = {Yufeng Zheng and Xueting Li and Koki Nagano and Sifei Liu and Otmar Hilliges and Shalini De Mello},
-    booktitle = {CVPR},
-    year      = {2024}
-}
-
 @article{ling2023alignyourgaussians,
     title={Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models},
     author={Ling, Huan and Kim, Seung Wook and Torralba, Antonio and Fidler, Sanja and Kreis, Karsten},
@@ -130,39 +115,21 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
     year={2023}
 }
 
-@article{bah2024tc4d,
-  author = {Bahmani, Sherwin and Liu, Xian and Yifan, Wang and Skorokhodov, Ivan and Rong, Victor and Liu, Ziwei and Liu, Xihui and Park, Jeong Joon and Tulyakov, Sergey and Wetzstein, Gordon and Tagliasacchi, Andrea and Lindell, David B.},
-  title = {TC4D: Trajectory-Conditioned Text-to-4D Generation},
-  journal = {arXiv},
-  year = {2024},
+%text/Image to 4d
+@InProceedings{zheng2024unified,
+    title     = {A Unified Approach for Text- and Image-guided 4D Scene Generation},
+    author    = {Yufeng Zheng and Xueting Li and Koki Nagano and Sifei Liu and Otmar Hilliges and Shalini De Mello},
+    booktitle = {CVPR},
+    year      = {2024}
 }
 
-@misc{yu20244real,
-      title={4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models}, 
-      author={Heng Yu and Chaoyang Wang and Peiye Zhuang and Willi Menapace and Aliaksandr Siarohin and Junli Cao and Laszlo A Jeni and Sergey Tulyakov and Hsin-Ying Lee},
-      year={2024},
-      eprint={2406.07472},
-      archivePrefix={arXiv},
-      primaryClass={id='cs.CV' full_name='Computer Vision and Pattern Recognition' is_active=True alt_name=None in_archive='cs' is_general=False description='Covers image processing, computer vision, pattern recognition, and scene understanding. Roughly includes material in ACM Subject Classes I.2.10, I.4, and I.5.'}
-}
-
-@misc{zhu2024compositional3dawarevideogeneration,
-      title={Compositional 3D-aware Video Generation with LLM Director}, 
-      author={Hanxin Zhu and Tianyu He and Anni Tang and Junliang Guo and Zhibo Chen and Jiang Bian},
-      year={2024},
-      eprint={2409.00558},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2409.00558}, 
-}
-
-@misc{liang2024diffusion4d,
-      title={Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models}, 
-      author={Hanwen Liang and Yuyang Yin and Dejia Xu and Hanxue Liang and Zhangyang Wang and Konstantinos N. Plataniotis and Yao Zhao and Yunchao Wei},
-      year={2024},
-      eprint={2405.16645},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+% Text to 4D Editing
+@inproceedings{shao2024control4d,
+  title={Control4d: Efficient 4d portrait editing with text},
+  author={Shao, Ruizhi and Sun, Jingxiang and Peng, Cheng and Zheng, Zerong and Zhou, Boyao and Zhang, Hongwen and Liu, Yebin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={4556--4567},
+  year={2024}
 }
 
 % video to 4d
@@ -174,33 +141,111 @@ booktitle={The Twelfth International Conference on Learning Representations},
 year={2024},
 url={https://openreview.net/forum?id=sPUrdFGepF}
 }
+```
+</details>
 
-@article{wu2024sc4d,
-    author = {Wu, Zijie and Yu, Chaohui and Jiang, Yanqin and Cao, Chenjie and Wang Fan and Bai, Xiang.},
-    title  = {SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer},
-    journal = {arxiv:2404.03736},
-    year   = {2024}
+#### 💡 2023 ArXiv
+
+| Task | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| <img src="https://img.shields.io/badge/Single Image to 4D-blue" /> | 2023 | **Animate124: Animating One Image to 4D Dynamic Scene**  | 24 Nov 2023 |          [Link](https://arxiv.org/abs/2311.14603)  | [Link](https://github.com/HeliosZhao/Animate124)  | [Link](https://animate124.github.io/)  |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" /> | 2023 | **4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency**  | 28 Dec 2023 |          [Link](https://arxiv.org/abs/2312.17225)          | [Link](https://github.com/VITA-Group/4DGen)  | [Link](https://vita-group.github.io/4DGen/)  |
+| <img src="https://img.shields.io/badge/Single Image/Video to 4D-orange" /> | 2023 | **DreamGaussian4D:Generative 4D Gaussian Splatting**  | 28 Dec 2023 |          [Link](https://arxiv.org/abs/2312.17142)     | [Link](https://github.com/jiawei-ren/dreamgaussian4d)  | [Link](https://jiawei-ren.github.io/projects/dreamgaussian4d/)  |
+
+
+<details close>
+<summary>ArXiv Papers References</summary>
+
+```
+%axiv papers
+
+% single image to 4d
+@article{zhao2023animate124,
+  author    = {Zhao, Yuyang and Yan, Zhiwen and Xie, Enze and Hong, Lanqing and Li, Zhenguo and Lee, Gim Hee},
+  title     = {Animate124: Animating One Image to 4D Dynamic Scene},
+  journal   = {arXiv preprint arXiv:2311.14603},
+  year      = {2023},
 }
 
-@article{zeng2024stag4d,
+% video to 4d
+@article{yin20234dgen,
+  title={4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency},
+  author={},
+  journal={arXiv preprint: 2312.17225},
+  year={2023}
+}
+
+% single image/video to 4d
+@article{ren2023dreamgaussian4d,
+  title={DreamGaussian4D: Generative 4D Gaussian Splatting},
+  author={Ren, Jiawei and Pan, Liang and Tang, Jiaxiang and Zhang, Chi and Cao, Ang and Zeng, Gang and Liu, Ziwei},
+  journal={arXiv preprint arXiv:2312.17142},
+  year={2023}
+}
+```
+</details>
+
+---
+
+### Year 2024
+
+#### 🎉 2024 Accepted
+
+| Task | Year | Title             | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ---- | ----------------- | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :-------------------------------: |
+|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2024 | **TC4D: Trajectory-Conditioned Text-to-4D Generation**  | ECCV 2024 |         [Link](https://arxiv.org/abs/2403.17920)         | [Link](https://github.com/sherwinbahmani/tc4d)   | [Link](https://sherwinbahmani.github.io/tc4d/) |
+|<img src="https://img.shields.io/badge/Video/Text&Image to 4D-orange" />| 2024 | **STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians**  | ECCV 2024  |           [Link](https://arxiv.org/abs/2403.14939) | [Link](https://github.com/zeng-yifei/STAG4D)  |[Link](https://nju-3dv.github.io/projects/STAG4D/) |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2404.03736)          | [Link](https://github.com/JarrentWu1031/SC4D)  |[Link](https://sc4d.github.io/) |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2405.02280)          | [Link](https://github.com/dreamscene4d/dreamscene4d)  |[Link](https://dreamscene4d.github.io/) |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **4Diffusion: Multi-view Video Diffusion Model for 4D Generation**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.20674)        | [Link](https://github.com/aejion/4Diffusion)  | [Link](https://aejion.github.io/4diffusion/)  |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2410.06756) |         [Link](https://github.com/WU-CVGL/DreamMesh4D)         | [Link](https://lizhiqi49.github.io/DreamMesh4D/) |
+|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **L4GM: Large 4D Gaussian Reconstruction Model**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.10324)          | [Link](https://github.com/nv-tlabs/L4GM-official)  |[Link](https://research.nvidia.com/labs/toronto-ai/l4gm/) |
+|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" />| 2024 | **4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.07472)          | -- | [Link](https://snap-research.github.io/4Real/) |
+|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2024 | **Animate3D: Animating Any 3D Model with Multi-view Video Diffusion**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2407.11398)          | [Link](https://github.com/yanqinJiang/Animate3D) | [Link](https://animate3d.github.io/) |
+|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2024 | **Compositional 3D-aware Video Generation with LLM Director**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2409.00558) |     --   | [Link](https://www.microsoft.com/en-us/research/project/compositional-3d-aware-video-generation/) |
+|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" />| 2024 | **Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.16822)        | [Link](https://github.com/yikaiw/vidu4d)  | [Link](https://vidu4d-dgs.github.io/)  |
+| <img src="https://img.shields.io/badge/Text/Image to 4D-orange" /> | 2024 | **Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2405.16645)          | [Link](https://github.com/VITA-Group/Diffusion4D)  |[Link](https://vita-group.github.io/Diffusion4D/) |
+
+<details close>
+<summary>Accepted Papers References</summary>
+
+```
+%accepted papers
+
+%text to 4d (ECCV24)
+@inproceedings{bahmani2025tc4d,
+  title={Tc4d: Trajectory-conditioned text-to-4d generation},
+  author={Bahmani, Sherwin and Liu, Xian and Yifan, Wang and Skorokhodov, Ivan and Rong, Victor and Liu, Ziwei and Liu, Xihui and Park, Jeong Joon and Tulyakov, Sergey and Wetzstein, Gordon and others},
+  booktitle={European Conference on Computer Vision},
+  pages={53--72},
+  year={2025},
+  organization={Springer}
+}
+
+%text/Image and video to 4d (ECCV24)
+@inproceedings{zeng2025stag4d,
   title={Stag4d: Spatial-temporal anchored generative 4d gaussians},
   author={Zeng, Yifei and Jiang, Yanqin and Zhu, Siyu and Lu, Yuanxun and Lin, Youtian and Zhu, Hao and Hu, Weiming and Cao, Xun and Yao, Yao},
-  journal={arXiv preprint arXiv:2403.14939},
-  year={2024}
+  booktitle={European Conference on Computer Vision},
+  pages={163--179},
+  year={2025},
+  organization={Springer}
 }
 
-@article{
-jiang2024animate3d,
-title={Animate3D: Animating Any 3D Model with Multi-view Video Diffusion},
-author={Yanqin Jiang and Chaohui Yu and Chenjie Cao and Fan Wang and Weiming Hu and Jin Gao},
-booktitle={arXiv},
-year={2024},
+%video to 4d (ECCV24 and NIPS24)
+@inproceedings{wu2025sc4d,
+  title={Sc4d: Sparse-controlled video-to-4d generation and motion transfer},
+  author={Wu, Zijie and Yu, Chaohui and Jiang, Yanqin and Cao, Chenjie and Wang, Fan and Bai, Xiang},
+  booktitle={European Conference on Computer Vision},
+  pages={361--379},
+  year={2025},
+  organization={Springer}
 }
 
-@article{wang2024vidu4d,
-  title={Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels},
-  author={Yikai Wang and Xinzhou Wang and Zilong Chen and Zhengyi Wang and Fuchun Sun and Jun Zhu},
-  journal={arXiv preprint arXiv},
+@inproceedings{dreamscene4d,
+  title={DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos},
+  author={Chu, Wen-Hsuan and Ke, Lei and Fragkiadaki, Katerina},
+  booktitle={NeurIPS},
   year={2024}
 }
 
@@ -217,13 +262,6 @@ year={2024},
     year={2024}
 }
 
-@inproceedings{dreamscene4d,
-  title={DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos},
-  author={Chu, Wen-Hsuan and Ke, Lei and Fragkiadaki, Katerina},
-  booktitle={NeurIPS},
-  year={2024}
-}
-
 @article{ren2024l4gm,
     title={L4GM: Large 4D Gaussian Reconstruction Model},
     author={Ren, Jiawei and Xie, Kevin and Mirzaei, Ashkan and Liang, Hanxue and Zeng, Xiaohui and Kreis, Karsten and Liu, Ziwei and Torralba, Antonio and Fidler, Sanja and Kim, Seung Wook and Ling, Huan},
@@ -231,432 +269,47 @@ year={2024},
     year={2024}
 }
 
-% 4d human
-@article{shao2023control4d,
-title = {Control4D: Efficient 4D Portrait Editing with Text},
-author = {Shao, Ruizhi and Sun, Jingxiang and Peng, Cheng and Zheng, Zerong and Zhou, Boyao and Zhang, Hongwen and Liu, Yebin},
-booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-year = {2024}
+%text to 4d (NIPS24)
+@article{yu20244real,
+  title={4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models},
+  author={Yu, Heng and Wang, Chaoyang and Zhuang, Peiye and Menapace, Willi and Siarohin, Aliaksandr and Cao, Junli and Jeni, Laszlo A and Tulyakov, Sergey and Lee, Hsin-Ying},
+  journal={arXiv preprint arXiv:2406.07472},
+  year={2024}
+}
+
+@article{jiang2024animate3d,
+  title={Animate3d: Animating any 3d model with multi-view video diffusion},
+  author={Jiang, Yanqin and Yu, Chaohui and Cao, Chenjie and Wang, Fan and Hu, Weiming and Gao, Jin},
+  journal={arXiv preprint arXiv:2407.11398},
+  year={2024}
+}
+
+@article{zhu2024compositional,
+  title={Compositional 3d-aware video generation with llm director},
+  author={Zhu, Hanxin and He, Tianyu and Tang, Anni and Guo, Junliang and Chen, Zhibo and Bian, Jiang},
+  journal={arXiv preprint arXiv:2409.00558},
+  year={2024}
+}
+
+@article{wang2024vidu4d,
+  title={Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels},
+  author={Wang, Yikai and Wang, Xinzhou and Chen, Zilong and Wang, Zhengyi and Sun, Fuchun and Zhu, Jun},
+  journal={arXiv preprint arXiv:2405.16822},
+  year={2024}
+}
+
+@article{liang2024diffusion4d,
+  title={Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models},
+  author={Liang, Hanwen and Yin, Yuyang and Xu, Dejia and Liang, Hanxue and Wang, Zhangyang and Plataniotis, Konstantinos N and Zhao, Yao and Wei, Yunchao},
+  journal={arXiv preprint arXiv:2405.16645},
+  year={2024}
 }
 ```
 </details>
 
----
 
-### 💡 4D ArXiv Papers
-
-#### 1. Animate124: Animating One Image to 4D Dynamic Scene
-Yuyang Zhao, Zhiwen Yan, Enze Xie, Lanqing Hong, Zhenguo Li, Gim Hee Lee
-
-(National University of Singapore, Huawei Noah's Ark Lab)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce Animate124 (Animate-one-image-to-4D), the first work to animate a single in-the-wild image into 3D video through textual motion descriptions, an underexplored problem with significant applications. Our 4D generation leverages an advanced 4D grid dynamic Neural Radiance Field (NeRF) model, optimized in three distinct stages using multiple diffusion priors. Initially, a static model is optimized using the reference image, guided by 2D and 3D diffusion priors, which serves as the initialization for the dynamic NeRF. Subsequently, a video diffusion model is employed to learn the motion specific to the subject. However, the object in the 3D videos tends to drift away from the reference image over time. This drift is mainly due to the misalignment between the text prompt and the reference image in the video diffusion model. In the final stage, a personalized diffusion prior is therefore utilized to address the semantic drift. As the pioneering image-text-to-4D generation framework, our method demonstrates significant advancements over existing baselines, evidenced by comprehensive quantitative and qualitative assessments.
-</details>
-
-#### 2. 4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency
-Yuyang Yin, Dejia Xu, Zhangyang Wang, Yao Zhao, Yunchao Wei
-
-(Beijing Jiaotong University, University of Texas at Austin)
-<details span>
-<summary><b>Abstract</b></summary>
-Aided by text-to-image and text-to-video diffusion models, existing 4D content creation pipelines utilize score distillation sampling to optimize the entire dynamic 3D scene. However, as these pipelines generate 4D content from text or image inputs, they incur significant time and effort in prompt engineering through trial and error. This work introduces 4DGen, a novel, holistic framework for grounded 4D content creation that decomposes the 4D generation task into multiple stages. We identify static 3D assets and monocular video sequences as key components in constructing the 4D content. Our pipeline facilitates conditional 4D generation, enabling users to specify geometry (3D assets) and motion (monocular videos), thus offering superior control over content creation. Furthermore, we construct our 4D representation using dynamic 3D Gaussians, which permits efficient, high-resolution supervision through rendering during training, thereby facilitating high-quality 4D generation. Additionally, we employ spatial-temporal pseudo labels on anchor frames, along with seamless consistency priors implemented through 3D-aware score distillation sampling and smoothness regularizations. Compared to existing baselines, our approach yields competitive results in faithfully reconstructing input signals and realistically inferring renderings from novel viewpoints and timesteps. Most importantly, our method supports grounded generation, offering users enhanced control, a feature difficult to achieve with previous methods.
-</details>
-
-#### 3. DreamGaussian4D: Generative 4D Gaussian Splatting
-Jiawei Ren, Liang Pan, Jiaxiang Tang, Chi Zhang, Ang Cao, Gang Zeng, Ziwei Liu
-
-(S-Lab, Nanyang Technological University, Shanghai AI Laboratory, Peking University, University of Michigan)
-<details span>
-<summary><b>Abstract</b></summary>
-Remarkable progress has been made in 4D content generation recently. However, existing methods suffer from long optimization time, lack of motion controllability, and a low level of detail. In this paper, we introduce DreamGaussian4D, an efficient 4D generation framework that builds on 4D Gaussian Splatting representation. Our key insight is that the explicit modeling of spatial transformations in Gaussian Splatting makes it more suitable for the 4D generation setting compared with implicit representations. DreamGaussian4D reduces the optimization time from several hours to just a few minutes, allows flexible control of the generated 3D motion, and produces animated meshes that can be efficiently rendered in 3D engines.
-</details>
-
-#### 4. Fast Dynamic 3D Object Generation from a Single-view Video
-Zijie Pan, Zeyu Yang, Xiatian Zhu, Li Zhang (Fudan University, University of Surrey)
-<details span>
-<summary><b>Abstract</b></summary>
-Generating dynamic three-dimensional (3D) object from a single-view video is challenging due to the lack of 4D labeled data. Existing methods extend text-to-3D pipelines by transferring off-the-shelf image generation models such as score distillation sampling, but they are slow and expensive to scale (e.g., 150 minutes per object) due to the need for back-propagating the information-limited supervision signals through a large pretrained model. To address this limitation, we propose an efficient video-to-4D object generation framework called Efficient4D. It generates high-quality spacetime-consistent images under different camera views, and then uses them as labeled data to directly train a novel 4D Gaussian splatting model with explicit point cloud geometry, enabling real-time rendering under continuous camera trajectories. Extensive experiments on synthetic and real videos show that Efficient4D offers a remarkable 10-fold increase in speed when compared to prior art alternatives while preserving the same level of innovative view synthesis quality. For example, Efficient4D takes only 14 minutes to model a dynamic object.
-</details>
-
-#### 5. GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation
-Quankai Gao, Qiangeng Xu, Zhe Cao, Ben Mildenhall, Wenchao Ma, Le Chen, Danhang Tang, Ulrich Neumann
-
-(University of Southern California, Google, Pennsylvania State University, Max Planck Institute for Intelligent Systems)
-<details span>
-<summary><b>Abstract</b></summary>
-Creating 4D fields of Gaussian Splatting from images or videos is a challenging task due to its under-constrained nature. While the optimization can draw photometric reference from the input videos or be regulated by generative models, directly supervising Gaussian motions remains underexplored. In this paper, we introduce a novel concept, Gaussian flow, which connects the dynamics of 3D Gaussians and pixel velocities between consecutive frames. The Gaussian flow can be efficiently obtained by splatting Gaussian dynamics into the image space. This differentiable process enables direct dynamic supervision from optical flow. Our method significantly benefits 4D dynamic content generation and 4D novel view synthesis with Gaussian Splatting, especially for contents with rich motions that are hard to be handled by existing methods. The common color drifting issue that happens in 4D generation is also resolved with improved Guassian dynamics. Superior visual quality on extensive experiments demonstrates our method's effectiveness. Quantitative and qualitative evaluations show that our method achieves state-of-the-art results on both tasks of 4D generation and 4D novel view synthesis.
-</details>
-
-#### 6. Comp4D: LLM-Guided Compositional 4D Scene Generation
-Dejia Xu, Hanwen Liang, Neel P. Bhatt, Hezhen Hu, Hanxue Liang, Konstantinos N. Plataniotis, Zhangyang Wang
-
-(University of Texas at Austin, University of Toronto, University of Cambridge)
-<details span>
-<summary><b>Abstract</b></summary>
-Recent advancements in diffusion models for 2D and 3D content creation have sparked a surge of interest in generating 4D content. However, the scarcity of 3D scene datasets constrains current methodologies to primarily object-centric generation. To overcome this limitation, we present Comp4D, a novel framework for Compositional 4D Generation. Unlike conventional methods that generate a singular 4D representation of the entire scene, Comp4D innovatively constructs each 4D object within the scene separately. Utilizing Large Language Models (LLMs), the framework begins by decomposing an input text prompt into distinct entities and maps out their trajectories. It then constructs the compositional 4D scene by accurately positioning these objects along their designated paths. To refine the scene, our method employs a compositional score distillation technique guided by the pre-defined trajectories, utilizing pre-trained diffusion models across text-to-image, text-to-video, and text-to-3D domains. Extensive experiments demonstrate our outstanding 4D content creation capability compared to prior arts, showcasing superior visual quality, motion fidelity, and enhanced object interactions.
-</details>
-
-#### 7. EG4D: Explicit Generation of 4D Object without Score Distillation
-Qi Sun, Zhiyang Guo, Ziyu Wan, Jing Nathan Yan, Shengming Yin, Wengang Zhou, Jing Liao, Houqiang Li
-
-(USTC, City University of Hong Kong, Cornell University)
-<details span>
-<summary><b>Abstract</b></summary>
-In recent years, the increasing demand for dynamic 3D assets in design and gaming applications has given rise to powerful generative pipelines capable of synthesizing high-quality 4D objects. Previous methods generally rely on score distillation sampling (SDS) algorithm to infer the unseen views and motion of 4D objects, thus leading to unsatisfactory results with defects like over-saturation and Janus problem. Therefore, inspired by recent progress of video diffusion models, we propose to optimize a 4D representation by explicitly generating multi-view videos from one input image. However, it is far from trivial to handle practical challenges faced by such a pipeline, including dramatic temporal inconsistency, inter-frame geometry and texture diversity, and semantic defects brought by video generation results. To address these issues, we propose DG4D, a novel multi-stage framework that generates high-quality and consistent 4D assets without score distillation. Specifically, collaborative techniques and solutions are developed, including an attention injection strategy to synthesize temporal-consistent multi-view videos, a robust and efficient dynamic reconstruction method based on Gaussian Splatting, and a refinement stage with diffusion prior for semantic restoration. The qualitative results and user preference study demonstrate that our framework outperforms the baselines in generation quality by a considerable margin.
-</details>
-
-#### 8. PLA4D: Pixel-Level Alignments for Text-to-4D Gaussian Splatting
-Qiaowei Miao, Yawei Luo, Yi Yang (Zhejiang University)
-<details span>
-<summary><b>Abstract</b></summary>
-As text-conditioned diffusion models (DMs) achieve breakthroughs in image, video, and 3D generation, the research community's focus has shifted to the more challenging task of text-to-4D synthesis, which introduces a temporal dimension to generate dynamic 3D objects. In this context, we identify Score Distillation Sampling (SDS), a widely used technique for text-to-3D synthesis, as a significant hindrance to text-to-4D performance due to its Janus-faced and texture-unrealistic problems coupled with high computational costs. In this paper, we propose Pixel-Level Alignments for Text-to-4D Gaussian Splatting (PLA4D), a novel method that utilizes text-to-video frames as explicit pixel alignment targets to generate static 3D objects and inject motion into them. Specifically, we introduce Focal Alignment to calibrate camera poses for rendering and GS-Mesh Contrastive Learning to distill geometry priors from rendered image contrasts at the pixel level. Additionally, we develop Motion Alignment using a deformation network to drive changes in Gaussians and implement Reference Refinement for smooth 4D object surfaces. These techniques enable 4D Gaussian Splatting to align geometry, texture, and motion with generated videos at the pixel level. Compared to previous methods, PLA4D produces synthesized outputs with better texture details in less time and effectively mitigates the Janus-faced problem. PLA4D is fully implemented using open-source models, offering an accessible, user-friendly, and promising direction for 4D digital content creation.
-</details>
-
-#### 9. STAR: Skeleton-aware Text-based 4D Avatar Generation with In-Network Motion Retargeting
-Zenghao Chai, Chen Tang, Yongkang Wong, Mohan Kankanhalli
-
-(National University of Singapore, Tsinghua University)
-<details span>
-<summary><b>Abstract</b></summary>
-The creation of 4D avatars (i.e., animated 3D avatars) from text description typically uses text-to-image (T2I) diffusion models to synthesize 3D avatars in the canonical space and subsequently applies animation with target motions. However, such an optimization-by-animation paradigm has several drawbacks. (1) For pose-agnostic optimization, the rendered images in canonical pose for naive Score Distillation Sampling (SDS) exhibit domain gap and cannot preserve view-consistency using only T2I priors, and (2) For post hoc animation, simply applying the source motions to target 3D avatars yields translation artifacts and misalignment. To address these issues, we propose Skeleton-aware Text-based 4D Avatar generation with in-network motion Retargeting (STAR). STAR considers the geometry and skeleton differences between the template mesh and target avatar, and corrects the mismatched source motion by resorting to the pretrained motion retargeting techniques. With the informatively retargeted and occlusion-aware skeleton, we embrace the skeleton-conditioned T2I and text-to-video (T2V) priors, and propose a hybrid SDS module to coherently provide multi-view and frame-consistent supervision signals. Hence, STAR can progressively optimize the geometry, texture, and motion in an end-to-end manner. The quantitative and qualitative experiments demonstrate our proposed STAR can synthesize high-quality 4D avatars with vivid animations that align well with the text description. Additional ablation studies shows the contributions of each component in STAR.
-</details>
-
-#### 10. 4K4DGen: Panoramic 4D Generation at 4K Resolution
-Renjie Li, Panwang Pan, Bangbang Yang, Dejia Xu, Shijie Zhou, Xuanyang Zhang, Zeming Li, Achuta Kadambi, Zhangyang Wang, Zhiwen Fan
-
-(Pico, UT Austin, UCLA)
-<details span>
-<summary><b>Abstract</b></summary>
-The blooming of virtual reality and augmented reality (VR/AR) technologies has driven an increasing demand for the creation of high-quality, immersive, and dynamic environments. However, existing generative techniques either focus solely on dynamic objects or perform outpainting from a single perspective image, failing to meet the needs of VR/AR applications. In this work, we tackle the challenging task of elevating a single panorama to an immersive 4D experience. For the first time, we demonstrate the capability to generate omnidirectional dynamic scenes with 360-degree views at 4K resolution, thereby providing an immersive user experience. Our method introduces a pipeline that facilitates natural scene animations and optimizes a set of 4D Gaussians using efficient splatting techniques for real-time exploration. To overcome the lack of scene-scale annotated 4D data and models, especially in panoramic formats, we propose a novel Panoramic Denoiser that adapts generic 2D diffusion priors to animate consistently in 360-degree images, transforming them into panoramic videos with dynamic scenes at targeted regions. Subsequently, we elevate the panoramic video into a 4D immersive environment while preserving spatial and temporal consistency. By transferring prior knowledge from 2D models in the perspective domain to the panoramic domain and the 4D lifting with spatial appearance and geometry regularization, we achieve high-quality Panorama-to-4D generation at a resolution of (4096 × 2048) for the first time.
-</details>
-
-#### 11. Shape of Motion: 4D Reconstruction from a Single Video
-Qianqian Wang, Vickie Ye, Hang Gao, Jake Austin, Zhengqi Li, Angjoo Kanazawa
-
-(UC Berkeley, Google Research)
-<details span>
-<summary><b>Abstract</b></summary>
-Monocular dynamic reconstruction is a challenging and long-standing vision problem due to the highly ill-posed nature of the task. Existing approaches are limited in that they either depend on templates, are effective only in quasi-static scenes, or fail to model 3D motion explicitly. In this work, we introduce a method capable of reconstructing generic dynamic scenes, featuring explicit, full-sequence-long 3D motion, from casually captured monocular videos. We tackle the under-constrained nature of the problem with two key insights: First, we exploit the low-dimensional structure of 3D motion by representing scene motion with a compact set of SE3 motion bases. Each point's motion is expressed as a linear combination of these bases, facilitating soft decomposition of the scene into multiple rigidly-moving groups. Second, we utilize a comprehensive set of data-driven priors, including monocular depth maps and long-range 2D tracks, and devise a method to effectively consolidate these noisy supervisory signals, resulting in a globally consistent representation of the dynamic scene. Experiments show that our method achieves state-of-the-art performance for both long-range 3D/2D motion estimation and novel view synthesis on dynamic scenes.
-</details>
-
-#### 12. 4Dynamic: Text-to-4D Generation with Hybrid Priors
-Yu-Jie Yuan, Leif Kobbelt, Jiwen Liu, Yuan Zhang, Pengfei Wan, Yu-Kun Lai, Lin Gao
-
-<details span>
-<summary><b>Abstract</b></summary>
-Due to the fascinating generative performance of text-to-image diffusion models, growing text-to-3D generation works explore distilling the 2D generative priors into 3D, using the score distillation sampling (SDS) loss, to bypass the data scarcity problem. The existing text-to-3D methods have achieved promising results in realism and 3D consistency, but text-to-4D generation still faces challenges, including lack of realism and insufficient dynamic motions. In this paper, we propose a novel method for text-to-4D generation, which ensures the dynamic amplitude and authenticity through direct supervision provided by a video prior. Specifically, we adopt a text-to-video diffusion model to generate a reference video and divide 4D generation into two stages: static generation and dynamic generation. The static 3D generation is achieved under the guidance of the input text and the first frame of the reference video, while in the dynamic generation stage, we introduce a customized SDS loss to ensure multi-view consistency, a video-based SDS loss to improve temporal consistency, and most importantly, direct priors from the reference video to ensure the quality of geometry and texture. Moreover, we design a prior-switching training strategy to avoid conflicts between different priors and fully leverage the benefits of each prior. In addition, to enrich the generated motion, we further introduce a dynamic modeling representation composed of a deformation network and a topology network, which ensures dynamic continuity while modeling topological changes. Our method not only supports text-to-4D generation but also enables 4D generation from monocular videos. The comparison experiments demonstrate the superiority of our method compared to existing methods.
-</details>
-
-#### 13. CT4D: Consistent Text-to-4D Generation with Animatable Meshes
-Ce Chen, Shaoli Huang, Xuelin Chen, Guangyi Chen, Xiaoguang Han, Kun Zhang, Mingming Gong
-
-(Mohamed bin Zayed University of Artificial Intelligence, Tencent AI Lab, Carnegie Mellon University, FNii CUHKSZ, SSE CUHKSZ, University of Melbourne)
-<details span>
-<summary><b>Abstract</b></summary>
-Text-to-4D generation has recently been demonstrated viable by integrating a 2D image diffusion model with a video diffusion model. However, existing models tend to produce results with inconsistent motions and geometric structures over time. To this end, we present a novel framework, coined CT4D, which directly operates on animatable meshes for generating consistent 4D content from arbitrary user-supplied prompts. The primary challenges of our mesh-based framework involve stably generating a mesh with details that align with the text prompt while directly driving it and maintaining surface continuity. Our CT4D framework incorporates a unique Generate-Refine-Animate (GRA) algorithm to enhance the creation of text-aligned meshes. To improve surface continuity, we divide a mesh into several smaller regions and implement a uniform driving function within each area. Additionally, we constrain the animating stage with a rigidity regulation to ensure cross-region continuity. Our experimental results, both qualitative and quantitative, demonstrate that our CT4D framework surpasses existing text-to-4D techniques in maintaining interframe consistency and preserving global geometry. Furthermore, we showcase that this enhanced representation inherently possesses the capability for combinational 4D generation and texture editing.
-</details>
-
-
-#### 14. Disco4D: Disentangled 4D Human Generation and Animation from a Single Image
-Hui En Pang, Shuai Liu, Zhongang Cai, Lei Yang, Tianwei Zhang, Ziwei Liu
-
-(Nanyang Technological University, Sensetime Research, Shanghai AI Lab)
-<details span>
-<summary><b>Abstract</b></summary>
-We present Disco4D, a novel Gaussian Splatting framework for 4D human genera- tion and animation from a single image. Different from existing methods, Disco4D distinctively disentangles clothings (with Gaussian models) from the human body (with SMPL-X model), significantly enhancing the generation details and flexibility. It has the following technical innovations. 1) Disco4D learns to efficiently fit the clothing Gaussians over the SMPL-X Gaussians. 2) It adopts diffusion models to enhance the 3D generation process, e.g., modeling occluded parts not visible in the input image. 3) It learns an identity encoding for each clothing Gaussian to facilitate the separation and extraction of clothing assets. Furthermore, Disco4D naturally supports 4D human animation with vivid dynamics. Extensive experiments demonstrate the superiority of Disco4D on 4D human generation and animation tasks.
-</details>
-
-#### 15. MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion
-Junyi Zhang, Charles Herrmann, Junhwa Hur, Varun Jampani, Trevor Darrell, Forrester Cole, Deqing Sun, Ming-Hsuan Yang
-
-(UC Berkeley, Google DeepMind, Stability AI, UC Merced)
-<details span>
-<summary><b>Abstract</b></summary>
-Estimating geometry from dynamic scenes, where objects move and deform over time, remains a core challenge in computer vision. Current approaches often rely on multi-stage pipelines or global optimizations that decompose the problem into subtasks, like depth and flow, leading to complex systems prone to errors. In this paper, we present Motion DUSt3R (MonST3R), a novel geometry-first approach that directly estimates per-timestep geometry from dynamic scenes. Our key insight is that by simply estimating a pointmap for each timestep, we can effectively adapt DUST3R's representation, previously only used for static scenes, to dynamic scenes. However, this approach presents a significant challenge: the scarcity of suitable training data, namely dynamic, posed videos with depth labels. Despite this, we show that by posing the problem as a fine-tuning task, identifying several suitable datasets, and strategically training the model on this limited data, we can surprisingly enable the model to handle dynamics, even without an explicit motion representation. Based on this, we introduce new optimizations for several downstream video-specific tasks and demonstrate strong performance on video depth and camera pose estimation, outperforming prior work in terms of robustness and efficiency. Moreover, MonST3R shows promising results for primarily feed-forward 4D reconstruction.
-</details>
-
-#### 16. AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation
-Yukang Cao, Liang Pan, Kai Han, Kwan-Yee K. Wong, Ziwei Liu
-
-(Nanyang Technological University, Shanghai AI Lab, The University of Hong Kong)
-<details span>
-<summary><b>Abstract</b></summary>
-Recent advancements in diffusion models have led to significant improvements in the generation and animation of 4D full-body human-object interactions (HOI). Nevertheless, existing methods primarily focus on SMPL-based motion generation, which is limited by the scarcity of realistic large-scale interaction data. This constraint affects their ability to create everyday HOI scenes. This paper addresses this challenge using a zero-shot approach with a pre-trained diffusion model.Despite this potential, achieving our goals is difficult due to the diffusion model's lack of understanding of "where" and "how" objects interact with the human body. To tackle these issues, we introduce AvatarGO, a novel framework designed to generate animatable 4D HOI scenes directly from textual inputs. Specifically, 1) for the "where" challenge, we propose LLM-guided contact retargeting, which employs Lang-SAM to identify the contact body part from text prompts, ensuring precise representation of human-object spatial relations. 2) For the "how" challenge, we introduce correspondence-aware motion optimization that constructs motion fields for both human and object models using the linear blend skinning function from SMPL-X. Our framework not only generates coherent compositional motions, but also exhibits greater robustness in handling penetration issues. Extensive experiments with existing methods validate AvatarGO's superior generation and animation capabilities on a variety of human-object pairs and diverse poses. As the first attempt to synthesize 4D avatars with object interactions, we hope AvatarGO could open new doors for human-centric 4D content creation.
-</details>
-
-#### 17. 4-LEGS: 4D Language Embedded Gaussian Splatting
-Gal Fiebelman, Tamir Cohen, Ayellet Morgenstern, Peter Hedman, Hadar Averbuch-Elor
-
-(Tel Aviv University, Google Research)
-<details span>
-<summary><b>Abstract</b></summary>
-The emergence of neural representations has revolutionized our means for digitally viewing a wide range of 3D scenes, enabling the synthesis of photorealistic images rendered from novel views. Recently, several techniques have been proposed for connecting these low-level representations with the high-level semantics understanding embodied within the scene. These methods elevate the rich semantic understanding from 2D imagery to 3D representations, distilling high-dimensional spatial features onto 3D space. In our work, we are interested in connecting language with a dynamic modeling of the world. We show how to lift spatio-temporal features to a 4D representation based on 3D Gaussian Splatting. This enables an interactive interface where the user can spatiotemporally localize events in the video from text prompts. We demonstrate our system on public 3D video datasets of people and animals performing various actions.
-</details>
-
-#### 18. GenXD: Generating Any 3D and 4D Scenes
-Yuyang Zhao, Chung-Ching Lin, Kevin Lin, Zhiwen Yan, Linjie Li, Zhengyuan Yang, Jianfeng Wang, Gim Hee Lee, Lijuan Wang
-
-(National University of Singapore, Microsoft)
-<details span>
-<summary><b>Abstract</b></summary>
-Recent developments in 2D visual generation have been remarkably successful. However, 3D and 4D generation remain challenging in real-world applications due to the lack of large-scale 4D data and effective model design. In this paper, we propose to jointly investigate general 3D and 4D generation by leveraging camera and object movements commonly observed in daily life. Due to the lack of real-world 4D data in the community, we first propose a data curation pipeline to obtain camera poses and object motion strength from videos. Based on this pipeline, we introduce a large-scale real-world 4D scene dataset: CamVid-30K. By leveraging all the 3D and 4D data, we develop our framework, GenXD, which allows us to produce any 3D or 4D scene. We propose multiview-temporal modules, which disentangle camera and object movements, to seamlessly learn from both 3D and 4D data. Additionally, GenXD employs masked latent conditions to support a variety of conditioning views. GenXD can generate videos that follow the camera trajectory as well as consistent 3D views that can be lifted into 3D representations. We perform extensive evaluations across various real-world and synthetic datasets, demonstrating GenXD's effectiveness and versatility compared to previous methods in 3D and 4D generation.
-</details>
-
-#### 19. DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion
-Wenqiang Sun, Shuo Chen, Fangfu Liu, Zilong Chen, Yueqi Duan, Jun Zhang, Yikai Wang
-
-(HKUST, Tsinghua University, ShengShu)
-<details span>
-<summary><b>Abstract</b></summary>
-In this paper, we introduce \textbf{DimensionX}, a framework designed to generate photorealistic 3D and 4D scenes from just a single image with video diffusion. Our approach begins with the insight that both the spatial structure of a 3D scene and the temporal evolution of a 4D scene can be effectively represented through sequences of video frames. While recent video diffusion models have shown remarkable success in producing vivid visuals, they face limitations in directly recovering 3D/4D scenes due to limited spatial and temporal controllability during generation. To overcome this, we propose ST-Director, which decouples spatial and temporal factors in video diffusion by learning dimension-aware LoRAs from dimension-variant data. This controllable video diffusion approach enables precise manipulation of spatial structure and temporal dynamics, allowing us to reconstruct both 3D and 4D representations from sequential frames with the combination of spatial and temporal dimensions. Additionally, to bridge the gap between generated videos and real-world scenes, we introduce a trajectory-aware mechanism for 3D generation and an identity-preserving denoising strategy for 4D generation. Extensive experiments on various real-world and synthetic datasets demonstrate that DimensionX achieves superior results in controllable video generation, as well as in 3D and 4D scene generation, compared with previous methods.
-</details>
-
-#### 20. CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
-Rundi Wu, Ruiqi Gao, Ben Poole, Alex Trevithick, Changxi Zheng, Jonathan T. Barron, Aleksander Holynski
-
-(Google DeepMind, Columbia University, UC San Diego)
-<details span>
-<summary><b>Abstract</b></summary>
-We present CAT4D, a method for creating 4D (dynamic 3D) scenes from monocular video. CAT4D leverages a multi-view video diffusion model trained on a diverse combination of datasets to enable novel view synthesis at any specified camera poses and timestamps. Combined with a novel sampling approach, this model can transform a single monocular video into a multi-view video, enabling robust 4D reconstruction via optimization of a deformable 3D Gaussian representation. We demonstrate competitive performance on novel view synthesis and dynamic scene reconstruction benchmarks, and highlight the creative capabilities for 4D scene generation from real or generated videos. 
-</details>
-
-#### 21. PaintScene4D: Consistent 4D Scene Generation from Text Prompts
-Vinayak Gupta, Yunze Man, Yu-Xiong Wang
-
-(Indian Institute of Technology Madras, University of Illinois Urbana-Champaign)
-<details span>
-<summary><b>Abstract</b></summary>
-Recent advances in diffusion models have revolutionized 2D and 3D content creation, yet generating photorealistic dynamic 4D scenes remains a significant challenge. Existing dynamic 4D generation methods typically rely on distilling knowledge from pre-trained 3D generative models, often fine-tuned on synthetic object datasets. Consequently, the resulting scenes tend to be object-centric and lack photorealism. While text-to-video models can generate more realistic scenes with motion, they often struggle with spatial understanding and provide limited control over camera viewpoints during rendering. To address these limitations, we present PaintScene4D, a novel text-to-4D scene generation framework that departs from conventional multi-view generative models in favor of a streamlined architecture that harnesses video generative models trained on diverse real-world datasets. Our method first generates a reference video using a video generation model, and then employs a strategic camera array selection for rendering. We apply a progressive warping and inpainting technique to ensure both spatial and temporal consistency across multiple viewpoints. Finally, we optimize multi-view images using a dynamic renderer, enabling flexible camera control based on user preferences. Adopting a training-free architecture, our PaintScene4D efficiently produces realistic 4D scenes that can be viewed from arbitrary trajectories. 
-</details>
-
-#### 22. 4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion
-Chaoyang Wang, Peiye Zhuang, Tuan Duc Ngo, Willi Menapace, Aliaksandr Siarohin, Michael Vasilkovsky, Ivan Skorokhodov, Sergey Tulyakov, Peter Wonka, Hsin-Ying Lee
-
-(Snap Inc., Umass Amherst, KAUST)
-<details span>
-<summary><b>Abstract</b></summary>
-We propose 4Real-Video, a novel framework for generating 4D videos, organized as a grid of video frames with both time and viewpoint axes. In this grid, each row contains frames sharing the same timestep, while each column contains frames from the same viewpoint. We propose a novel two-stream architecture. One stream performs viewpoint updates on columns, and the other stream performs temporal updates on rows. After each diffusion transformer layer, a synchronization layer exchanges information between the two token streams. We propose two implementations of the synchronization layer, using either hard or soft synchronization. This feedforward architecture improves upon previous work in three ways: higher inference speed, enhanced visual quality (measured by FVD, CLIP, and VideoScore), and improved temporal and viewpoint consistency (measured by VideoScore and Dust3R-Confidence).
-</details>
-
----
-
-| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2023 | **Animate124: Animating One Image to 4D Dynamic Scene**  | 24 Nov 2023 |          [Link](https://arxiv.org/abs/2311.14603)          | [Link](https://github.com/HeliosZhao/Animate124)  | [Link](https://animate124.github.io/)  |
-| 2023 | **4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency**  | 28 Dec 2023 |          [Link](https://arxiv.org/abs/2312.17225)          | [Link](https://github.com/VITA-Group/4DGen)  | [Link](https://vita-group.github.io/4DGen/)  |
-| 2023 | **DreamGaussian4D:Generative 4D Gaussian Splatting**  | 28 Dec 2023 |          [Link](https://arxiv.org/abs/2312.17142)          | [Link](https://github.com/jiawei-ren/dreamgaussian4d)  | [Link](https://jiawei-ren.github.io/projects/dreamgaussian4d/)  |
-| 2024 | **Fast Dynamic 3D Object Generation from a Single-view Video**  | 16 Jan 2024 |          [Link](https://arxiv.org/abs/2401.08742)          | [Link](https://github.com/fudan-zvg/Efficient4D)  | [Link](https://fudan-zvg.github.io/Efficient4D/)  |
-| 2024 | **GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation**  | 19 Mar 2024 |         [Link](https://arxiv.org/abs/2403.12365)         | [Link](https://github.com/Zerg-Overmind/GaussianFlow)   | [Link](https://zerg-overmind.github.io/GaussianFlow.github.io/) |
-| 2024 | **Comp4D: LLM-Guided Compositional 4D Scene Generation**  |  25 Mar 2024 |          [Link](https://arxiv.org/abs/2403.16993)          | [Link](https://github.com/VITA-Group/Comp4D)  |[Link](https://vita-group.github.io/Comp4D/#) |
-| 2024 | **EG4D: Explicit Generation of 4D Object without Score Distillation**  | 28 May 2024 |         [Link](https://arxiv.org/abs/2405.18132)          | [Link](https://github.com/jasongzy/EG4D)  | -- |
-| 2024 | **PLA4D: Pixel-Level Alignments for Text-to-4D Gaussian Splatting**  | 4 Jun 2024 |          [Link](https://arxiv.org/abs/2405.19957)          | --  | [Link](https://github.com/MiaoQiaowei/PLA4D.github.io) |
-| 2024 | **STAR: Skeleton-aware Text-based 4D Avatar Generation with In-Network Motion Retargeting**  | 7 Jun 2024 |          [Link](https://arxiv.org/abs/2406.04629)          | [Link](https://github.com/czh-98/STAR)      | [Link](https://star-avatar.github.io/) |
-| 2024 | **4K4DGen: Panoramic 4D Generation at 4K Resolution**  | 19 Jun 2024 |          [Link](https://arxiv.org/abs/2406.13527)          | -- | [Link](https://4k4dgen.github.io/index.html) |
-| 2024 | **Shape of Motion: 4D Reconstruction from a Single Video**  | 18 Jul 2024 |          [Link](https://arxiv.org/abs/2407.13764)          | [Link](https://github.com/vye16/shape-of-motion/) | [Link](https://shape-of-motion.github.io/) |
-| 2024 | **4Dynamic: Text-to-4D Generation with Hybrid Priors**  | 17 Jul 2024 |          [Link](https://arxiv.org/abs/2407.12684)          | -- | -- |
-| 2024 | **CT4D: Consistent Text-to-4D Generation with Animatable Meshes**  | 15 Aug 2024 |          [Link](https://arxiv.org/abs/2408.08342)          | -- | -- |
-| 2024 | **Disco4D: Disentangled 4D Human Generation and Animation from a Single Image**  | 25 Sep 2024 |          [Link](https://arxiv.org/abs/2409.17280)          | -- |  [Link](https://disco-4d.github.io/) |
-| 2024 | **MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion**  | 4 Oct 2024 |          [Link](https://arxiv.org/abs/2410.03825)          | [Link](https://github.com/Junyi42/monst3r)     |  [Link](https://monst3r-project.github.io/) |
-| 2024 | **AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation**  | 9 Oct 2024 |          [Link](https://arxiv.org/abs/2410.07164)          | [Link](https://github.com/yukangcao/AvatarGO)     |  [Link](https://yukangcao.github.io/AvatarGO/) |
-| 2024 | **4-LEGS: 4D Language Embedded Gaussian Splatting**  | 15 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10719)          |  --   |  [Link](https://tau-vailab.github.io/4-LEGS/) |
-| 2024 | **GenXD: Generating Any 3D and 4D Scenes**  | 5 Nov 2024 |          [Link](https://arxiv.org/abs/2411.02319)          |  [Link](https://github.com/HeliosZhao/GenXD)   |  [Link](https://gen-x-d.github.io/) |
-| 2024 | **DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion**  | 7 Nov 2024 |          [Link](https://arxiv.org/abs/2411.04928)          |  [Link](https://github.com/wenqsun/DimensionX)   |  [Link](https://chenshuo20.github.io/DimensionX/) |
-| 2024 | **CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models**  | 27 Nov 2024 |          [Link](https://arxiv.org/abs/2411.18613)          | --  |  [Link](https://cat-4d.github.io/) |
-| 2024 | **PaintScene4D: Consistent 4D Scene Generation from Text Prompts**  | 5 Dec 2024 |          [Link](https://arxiv.org/abs/2412.04471)          | [Link](https://github.com/paintscene4d/paintscene4d.github.io)  |  [Link](https://paintscene4d.github.io/) |
-| 2024 | **4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion**  | 5 Dec 2024 |  [Link](https://arxiv.org/abs/2412.04462) | -- |  [Link](https://snap-research.github.io/4Real-Video/) |
-
-<details close>
-<summary>ArXiv Papers References</summary>
-
-```
-%axiv papers
-
-@article{zhao2023animate124,
-  author    = {Zhao, Yuyang and Yan, Zhiwen and Xie, Enze and Hong, Lanqing and Li, Zhenguo and Lee, Gim Hee},
-  title     = {Animate124: Animating One Image to 4D Dynamic Scene},
-  journal   = {arXiv preprint arXiv:2311.14603},
-  year      = {2023},
-}
-
-@article{yin20234dgen,
-  title={4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency},
-  author={},
-  journal={arXiv preprint: 2312.17225},
-  year={2023}
-}
-
-@article{ren2023dreamgaussian4d,
-  title={DreamGaussian4D: Generative 4D Gaussian Splatting},
-  author={Ren, Jiawei and Pan, Liang and Tang, Jiaxiang and Zhang, Chi and Cao, Ang and Zeng, Gang and Liu, Ziwei},
-  journal={arXiv preprint arXiv:xxxx.xxxx},
-  year={2023}
-}
-
-@article{pan2024fast,
-  title={Fast Dynamic 3D Object Generation from a Single-view Video},
-  author={Pan, Zijie and Yang, Zeyu and Zhu, Xiatian and Zhang, Li},
-  journal={arXiv preprint arXiv 2401.08742},
-  year={2024}
-}
-
-@article{gao2024gaussianflow,
-  title={GaussianFlow: Splatting Gaussian Dynamics for 4D Content Creation},
-  author={Gao, Quankai and Xu, Qiangeng and Cao, Zhe and Mildenhall, Ben and Ma, Wenchao and Chen, Le and Tang, Danhang and Neumann, Ulrich},
-  journal={arXiv preprint arXiv:2403.12365},
-  year={2024}
-}
-
-@misc{xu2024comp4d,
-      title={Comp4D: LLM-Guided Compositional 4D Scene Generation}, 
-      author={Dejia Xu and Hanwen Liang and Neel P. Bhatt and Hezhen Hu and Hanxue Liang and Konstantinos N. Plataniotis and Zhangyang Wang},
-      year={2024},
-      eprint={2403.16993},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-
-@article{sun2024eg4d,
-  title={EG4D: Explicit Generation of 4D Object without Score Distillation},
-  author={Qi Sun and Zhiyang Guo and Ziyu Wan and Jing Nathan Yan and Shengming Yin and Wengang Zhou and Jing Liao and Houqiang Li},
-  journal={arXiv preprint arXiv:2405.18132},
-  year={2024}
-}
-
-@misc{miao2024pla4d,
-      title={PLA4D: Pixel-Level Alignments for Text-to-4D Gaussian Splatting}, 
-      author={Qiaowei Miao and Yawei Luo and Yi Yang},
-      year={2024},
-      eprint={2405.19957},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-
-@misc{chai2024star,
-  author = {Chai, Zenghao and Tang, Chen and Wong, Yongkang and Kankanhalli, Mohan},
-  title = {STAR: Skeleton-aware Text-based 4D Avatar Generation with In-Network Motion Retargeting},
-  eprint={2406.04629},
-  archivePrefix={arXiv},
-  year={2024},
-}
-
-@misc{li20244k4dgen,
-      title={4K4DGen: Panoramic 4D Generation at 4K Resolution}, 
-      author={Renjie Li and Panwang Pan and Bangbang Yang and Dejia Xu and Shijie Zhou and Xuanyang Zhang and Zeming Li and Achuta Kadambi and Zhangyang Wang and Zhiwen Fan},
-      year={2024},
-      eprint={2406.13527},
-      archivePrefix={arXiv},
-      primaryClass={id='cs.CV' full_name='Computer Vision and Pattern Recognition' is_active=True alt_name=None in_archive='cs' is_general=False description='Covers image processing, computer vision, pattern recognition, and scene understanding. Roughly includes material in ACM Subject Classes I.2.10, I.4, and I.5.'}
-}
-
-@inproceedings{som2024,
-  title     = {Shape of Motion: 4D Reconstruction from a Single Video},
-  author    = {Wang, Qianqian and Ye, Vickie and Gao, Hang and Austin, Jake and Li, Zhengqi and Kanazawa, Angjoo},
-  journal   = {arXiv preprint arXiv:2407.13764},
-  year      = {2024}
-}
-
-@misc{yuan20244dynamictextto4dgenerationhybrid,
-      title={4Dynamic: Text-to-4D Generation with Hybrid Priors}, 
-      author={Yu-Jie Yuan and Leif Kobbelt and Jiwen Liu and Yuan Zhang and Pengfei Wan and Yu-Kun Lai and Lin Gao},
-      year={2024},
-      eprint={2407.12684},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.12684}, 
-}
-
-@misc{chen2024ct4dconsistenttextto4dgeneration,
-      title={CT4D: Consistent Text-to-4D Generation with Animatable Meshes}, 
-      author={Ce Chen and Shaoli Huang and Xuelin Chen and Guangyi Chen and Xiaoguang Han and Kun Zhang and Mingming Gong},
-      year={2024},
-      eprint={2408.08342},
-      archivePrefix={arXiv},
-      primaryClass={cs.GR},
-      url={https://arxiv.org/abs/2408.08342}, 
-}
-
-@misc{pang2024disco4ddisentangled4dhuman,
-      title={Disco4D: Disentangled 4D Human Generation and Animation from a Single Image}, 
-      author={Hui En Pang and Shuai Liu and Zhongang Cai and Lei Yang and Tianwei Zhang and Ziwei Liu},
-      year={2024},
-      eprint={2409.17280},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2409.17280}, 
-}
-
-@article{zhang2024monst3r,
-  title={MonST3R: A Simple Approach for Estimating Geometry in the Presence of Motion},
-  author={Zhang, Junyi and Herrmann, Charles and Hur, Junhwa and Jampani, Varun and Darrell, Trevor and Cole, Forrester and Sun, Deqing and Yang, Ming-Hsuan},
-  journal={arXiv preprint arxiv:2410.03825},
-  year={2024}
-}
-
-@misc{cao2024avatargozeroshot4dhumanobject,
-      title={AvatarGO: Zero-shot 4D Human-Object Interaction Generation and Animation}, 
-      author={Yukang Cao and Liang Pan and Kai Han and Kwan-Yee K. Wong and Ziwei Liu},
-      year={2024},
-      eprint={2410.07164},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.07164}, 
-}
-
-@misc{fiebelman20244legs4dlanguageembedded,
-    title={4-LEGS: 4D Language Embedded Gaussian Splatting},
-    author={Gal Fiebelman and Tamir Cohen and Ayellet Morgenstern and Peter Hedman and Hadar Averbuch-Elor},
-    year={2024},
-    eprint={2410.10719},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
-}
-
-@article{zhao2024genxd,
-  author={Zhao, Yuyang and Lin, Chung-Ching and Lin, Kevin and Yan, Zhiwen and Li, Linjie and Yang, Zhengyuan and Wang, Jianfeng and Lee, Gim Hee and Wang, Lijuan},
-  title={GenXD: Generating Any 3D and 4D Scenes},
-  journal={arXiv preprint arXiv:2411.02319},
-  year={2024}
-}
-
-@misc{sun2024dimensionxcreate3d4d,
-    title={DimensionX: Create Any 3D and 4D Scenes from a Single Image with Controllable Video Diffusion}, 
-    author={Wenqiang Sun and Shuo Chen and Fangfu Liu and Zilong Chen and Yueqi Duan and Jun Zhang and Yikai Wang},
-    year={2024},
-    eprint={2411.04928},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-    url={https://arxiv.org/abs/2411.04928}, 
-}
-
-@misc{wu2024cat4dcreate4dmultiview,
-      title={CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models}, 
-      author={Rundi Wu and Ruiqi Gao and Ben Poole and Alex Trevithick and Changxi Zheng and Jonathan T. Barron and Aleksander Holynski},
-      year={2024},
-      eprint={2411.18613},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.18613}, 
-}
-
-@article{gupta2024paintscene4d,
-title={PaintScene4D: Consistent 4D Scene Generation from Text Prompts},
-author={Gupta, Vinayak and Man, Yunze and Wang, Yuxiong},
-journal={https://arxiv.org/abs/2412.04471},
-year={2024}
-}
-
-@misc{wang20244realvideolearninggeneralizablephotorealistic,
-      title={4Real-Video: Learning Generalizable Photo-Realistic 4D Video Diffusion}, 
-      author={Chaoyang Wang and Peiye Zhuang and Tuan Duc Ngo and Willi Menapace and Aliaksandr Siarohin and Michael Vasilkovsky and Ivan Skorokhodov and Sergey Tulyakov and Peter Wonka and Hsin-Ying Lee},
-      year={2024},
-      eprint={2412.04462},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.04462}, 
-}
-```
-</details>
+#### 💡 2024 ArXiv
+**For more details, please check the [2024 4D ArXiv Papers](./docs/4d.md) (there are 19 papers).**
 
 ---
 
@@ -676,6 +329,910 @@ We present Stable Video 4D (SV4D), a latent video diffusion model for multi-fram
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
 | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
 | 2024 | **SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency**  | 24 Jul 2024 |          [Link](https://arxiv.org/abs/2407.17470)          | [Link](https://github.com/Stability-AI/generative-models) | [Link](https://sv4d.github.io/) |
+
+
+## Text to Human Motion
+
+### 🎉 Motion Accepted Papers
+
+| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2023 | **MDM: Human Motion Diffusion Model**  | ICLR2023 (Top-25%) |          [Link](https://arxiv.org/abs/2209.14916)          | [Link](https://github.com/GuyTevet/motion-diffusion-model)  | [Link](https://guytevet.github.io/mdm-page/)  |
+| 2023 | **MotionGPT: Human Motion as a Foreign Language**  | NeurIPS 2023 |          [Link](https://arxiv.org/abs/2306.14795)          | [Link](https://github.com/OpenMotionLab/MotionGPT)  | [Link](https://motion-gpt.github.io/)  |
+| 2023 | **MLD: Motion Latent Diffusion Models**  | CVPR 2023 |          [Link](https://arxiv.org/abs/2212.04048)          | [Link](https://github.com/ChenFengYe/motion-latent-diffusion)  | [Link](https://chenxin.tech/mld/)  |
+| 2023 | **MotionMix: Weakly-Supervised Diffusion for Controllable Motion Generation**  | AAAI 2024 |          [Link](https://arxiv.org/abs/2401.11115)          | [Link](https://github.com/NhatHoang2002/MotionMix/tree/main)  | [Link](https://nhathoang2002.github.io/MotionMix-page/)  |
+| 2023 | **SinMDM: Single Motion Diffusion**  | ICLR 2024 Spotlight |          [Link](https://arxiv.org/abs/2302.05905)          | [Link](https://github.com/SinMDM/SinMDM)  | [Link](https://sinmdm.github.io/SinMDM-page/)  |
+| 2023 | **MoMask: Generative Masked Modeling of 3D Human Motions**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.00063)          | [Link](https://github.com/EricGuo5513/momask-codes) | [Link](https://ericguo5513.github.io/momask/)  |
+| 2023 | **Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2403.18036)          | [Link](https://github.com/diffusion-motion-transfer/diffusion-motion-transfer) | [Link](https://diffusion-motion-transfer.github.io/)  |
+| 2024 | **Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation**  | CVPRW 2024 |          [Link](https://arxiv.org/abs/2401.08559)          | [Link](https://github.com/nv-tlabs/stmc)| [Link](https://mathis.petrovich.fr/stmc/)  |
+| 2024 | **in2IN: Leveraging individual Information to Generate Human INteractions**  | HuMoGen CVPRW 2024 |          [Link](https://arxiv.org/abs/2404.09988)          | [Link](https://github.com/pabloruizponce/in2IN) | [Link](https://pabloruizponce.github.io/in2IN/)  |
+| 2024 | **Exploring Text-to-Motion Generation with Human Preference**  | HuMoGen CVPRW 2024 |          [Link](https://arxiv.org/abs/2404.09445)          | [Link](https://github.com/THU-LYJ-Lab/InstructMotion) | --  |
+| 2024 | **FlowMDM: Seamless Human Motion Composition with Blended Positional Encodings**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2402.15509)          | [Link](https://github.com/BarqueroGerman/FlowMDM) | [Link](https://barquerogerman.github.io/FlowMDM/)  |
+| 2024 | **Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance**  | CVPR 2024 (Highlight) |          [Link](https://arxiv.org/abs/2311.17009)          | [Link](https://github.com/afford-motion/afford-motion) | [Link](https://afford-motion.github.io/)  |
+| 2024 | **Generating Human Motion in 3D Scenes from Text Descriptions**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2405.07784)          | [Link](https://github.com/zju3dv/text_scene_motion) | [Link](https://zju3dv.github.io/text_scene_motion/)  |
+| 2024 | **OmniMotionGPT: Animal Motion Generation with Limited Data**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.18303)          | [Link](https://github.com/USRC-SEA/OmniMotionGPT) | [Link](https://zshyang.github.io/omgpt-website/)  |
+| 2024 | **HumanTOMATO: Text-aligned Whole-body Motion Generation**  | ICML 2024 |          [Link](https://arxiv.org/abs/2310.12978)          | [Link](https://github.com/IDEA-Research/HumanTOMATO)  | [Link](https://lhchen.top/HumanTOMATO/)  |
+| 2024 | **Self-Correcting Self-Consuming Loops for Generative Model Training**  | ICML 2024 |          [Link](https://arxiv.org/abs/2402.07087)          | [Link](https://github.com/nate-gillman/self-correcting-self-consuming) | [Link](https://cs.brown.edu/people/ngillman//sc-sc.html)  |
+| 2024 | **Flexible Motion In-betweening with Diffusion Models**  |SIGGRAPH 2024|          [Link](https://arxiv.org/abs/2405.11126)          | [Link](https://github.com/setarehc/diffusion-motion-inbetweening) | [Link](https://setarehc.github.io/CondMDI/)  |
+| 2024 | **Iterative Motion Editing with Natural Language**  |SIGGRAPH 2024|          [Link](https://arxiv.org/abs/2312.11538)          |[Link](https://github.com/purvigoel/iterative-editing-release)| [Link](https://purvigoel.github.io/iterative-motion-editing/)  |
+| 2024 | **MotionLCM: Real-time Controllable Motion Generation via Latent Consistency Model**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2404.19759)          | [Link](https://github.com/Dai-Wenxun/MotionLCM) | [Link](https://dai-wenxun.github.io/MotionLCM-page/)  |
+| 2024 | **ParCo: Part-Coordinating Text-to-Motion Synthesis**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2403.18512)          | [Link](https://github.com/qrzou/ParCo) | -- |
+| 2024 | **CoMo: Controllable Motion Generation through Language Guided Pose Code Editing**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2403.13900)          | [Link](https://github.com/yh2371/CoMo) | [Link](https://yh2371.github.io/como/) |
+| 2024 | **SMooDi: Stylized Motion Diffusion Model**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2407.12783)          | [Link](https://github.com/neu-vi/SMooDi)  | [Link](https://neu-vi.github.io/SMooDi/) |
+| 2024 | **EMDM: Efficient Motion Diffusion Model for Fast, High-Quality Human Motion Generation**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2312.02256)          | [Link](https://github.com/Frank-ZY-Dou/EMDM) | [Link](https://frank-zy-dou.github.io/projects/EMDM/index.html)  |
+| 2024 | **Plan, Posture and Go: Towards Open-World Text-to-Motion Generation**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2312.14828)          | [Link](https://github.com/moonsliu/Pro-Motion) | [Link](https://moonsliu.github.io/Pro-Motion/)  |
+| 2024 | **Generating Human Interaction Motions in Scenes with Text Control**  | ECCV 2024  |       [Link](https://arxiv.org/abs/2404.10685)          | -- | [Link](https://research.nvidia.com/labs/toronto-ai/tesmo/)  |
+| 2024 | **SATO: Stable Text-to-Motion Framework**  | ACM MULTIMEDIA 2024 |          [Link](https://arxiv.org/abs/2405.01461)          | [Link](https://github.com/sato-team/Stable-Text-to-motion-Framework) | [Link](https://sato-team.github.io/Stable-Text-to-Motion-Framework/)  |
+| 2024 | **MotionFix: Text-Driven 3D Human Motion Editing**  | SIGGRAPH Asia 2024 |          [Link](https://arxiv.org/abs/2408.00712)          | [Link](https://github.com/athn-nik/motionfix) | [Link](https://motionfix.is.tue.mpg.de/)  |
+| 2024 | **Autonomous Character-Scene Interaction Synthesis from Text Instruction**  | SIGGRAPH Asia 2024 |          [Link](https://arxiv.org/abs/2410.03187)          | -- | [Link](https://lingomotions.com/)  |
+
+<details close>
+<summary>Accepted Papers References</summary>
+
+```
+%accepted papers
+
+@inproceedings{
+tevet2023human,
+title={Human Motion Diffusion Model},
+author={Guy Tevet and Sigal Raab and Brian Gordon and Yoni Shafir and Daniel Cohen-or and Amit Haim Bermano},
+booktitle={The Eleventh International Conference on Learning Representations },
+year={2023},
+url={https://openreview.net/forum?id=SJ1kSyO2jwu}
+}
+
+@article{jiang2024motiongpt,
+    title={MotionGPT: Human Motion as a Foreign Language},
+    author={Jiang, Biao and Chen, Xin and Liu, Wen and Yu, Jingyi and Yu, Gang and Chen, Tao},
+    journal={Advances in Neural Information Processing Systems},
+    volume={36},
+    year={2024}
+}
+
+@inproceedings{chen2023executing,
+  title     = {Executing your Commands via Motion Diffusion in Latent Space},
+  author    = {Chen, Xin and Jiang, Biao and Liu, Wen and Huang, Zilong and Fu, Bin and Chen, Tao and Yu, Gang},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages     = {18000--18010},
+  year      = {2023},
+}
+
+@misc{hoang2024motionmix,
+  title={MotionMix: Weakly-Supervised Diffusion for Controllable Motion Generation}, 
+  author={Nhat M. Hoang and Kehong Gong and Chuan Guo and Michael Bi Mi},
+  year={2024},
+  eprint={2401.11115},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+
+@inproceedings{raab2024single,
+            title={Single Motion Diffusion},
+            author={Raab, Sigal and Leibovitch, Inbal and Tevet, Guy and Arar, Moab and Bermano, Amit H and Cohen-Or, Daniel},
+            booktitle={The Twelfth International Conference on Learning Representations (ICLR)},             
+            year={2024}
+}
+
+@article{guo2023momask,
+      title={MoMask: Generative Masked Modeling of 3D Human Motions}, 
+      author={Chuan Guo and Yuxuan Mu and Muhammad Gohar Javed and Sen Wang and Li Cheng},
+      year={2023},
+      eprint={2312.00063},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@article{yatim2023spacetime,
+        title = {Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer},
+        author = {Yatim, Danah and Fridman, Rafail and Bar-Tal, Omer and Kasten, Yoni and Dekel, Tali},
+        journal={arXiv preprint arxiv:2311.17009},
+        year={2023}
+}
+
+@inproceedings{petrovich24stmc,
+    title     = {Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation},
+    author    = {Petrovich, Mathis and Litany, Or and Iqbal, Umar and Black, Michael J. and Varol, G{\"u}l and Peng, Xue Bin and Rempe, Davis},
+    booktitle = {CVPR Workshop on Human Motion Generation},
+    year      = {2024}
+}
+
+@misc{ponce2024in2in,
+      title={in2IN: Leveraging individual Information to Generate Human INteractions}, 
+      author={Pablo Ruiz Ponce and German Barquero and Cristina Palmero and Sergio Escalera and Jose Garcia-Rodriguez},
+      year={2024},
+      eprint={2404.09988},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{sheng2024exploring,
+      title={Exploring Text-to-Motion Generation with Human Preference}, 
+      author={Jenny Sheng and Matthieu Lin and Andrew Zhao and Kevin Pruvost and Yu-Hui Wen and Yangguang Li and Gao Huang and Yong-Jin Liu},
+      year={2024},
+      eprint={2404.09445},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
+@article{barquero2024seamless,
+  title={Seamless Human Motion Composition with Blended Positional Encodings},
+  author={Barquero, German and Escalera, Sergio and Palmero, Cristina},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}
+
+@inproceedings{wang2024move,
+  title={Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance},
+  author={Wang, Zan and Chen, Yixin and Jia, Baoxiong and Li, Puhao and Zhang, Jinlu and Zhang, Jingze and Liu, Tengyu and Zhu, Yixin and Liang, Wei and Huang, Siyuan},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024}
+}
+
+@inproceedings{cen2024text_scene_motion,
+  title={Generating Human Motion in 3D Scenes from Text Descriptions},
+  author={Cen, Zhi and Pi, Huaijin and Peng, Sida and Shen, Zehong and Yang, Minghui and Shuai, Zhu and Bao, Hujun and Zhou, Xiaowei},
+  booktitle={CVPR},
+  year={2024}
+}
+
+@inproceedings{yang2024omnimotiongpt,
+  title={OmniMotionGPT: Animal Motion Generation with Limited Data},
+  author={Yang, Zhangsihao and Zhou, Mingyuan and Shan, Mengyi and Wen, Bingbing and Xuan, Ziwei and Hill, Mitch and Bai, Junjie and Qi, Guo-Jun and Wang, Yalin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={1249--1259},
+  year={2024}
+}
+
+@article{humantomato,
+  title={HumanTOMATO: Text-aligned Whole-body Motion Generation},
+  author={Lu, Shunlin and Chen, Ling-Hao and Zeng, Ailing and Lin, Jing and Zhang, Ruimao and Zhang, Lei and Shum, Heung-Yeung},
+  journal={arxiv:2310.12978},
+  year={2023}
+}
+
+@misc{gillman2024selfcorrecting,
+  title={Self-Correcting Self-Consuming Loops for Generative Model Training}, 
+  author={Nate Gillman and Michael Freeman and Daksh Aggarwal and Chia-Hong Hsu and Calvin Luo and Yonglong Tian and Chen Sun},
+  year={2024},
+  eprint={2402.07087},
+  archivePrefix={arXiv},
+  primaryClass={cs.LG}
+}
+
+@misc{cohan2024flexible,
+      title={Flexible Motion In-betweening with Diffusion Models}, 
+      author={Setareh Cohan and Guy Tevet and Daniele Reda and Xue Bin Peng and Michiel van de Panne},
+      year={2024},
+      eprint={2405.11126},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@inproceedings{Goel_2024, series={SIGGRAPH ’24},
+   title={Iterative Motion Editing with Natural Language},
+   url={http://dx.doi.org/10.1145/3641519.3657447},
+   DOI={10.1145/3641519.3657447},
+   booktitle={Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers ’24},
+   publisher={ACM},
+   author={Goel, Purvi and Wang, Kuan-Chieh and Liu, C. Karen and Fatahalian, Kayvon},
+   year={2024},
+   month=jul, collection={SIGGRAPH ’24} }
+
+
+@article{motionlcm,
+      title={MotionLCM: Real-time Controllable Motion Generation via Latent Consistency Model},
+      author={Wenxun Dai and Ling-Hao Chen and Jingbo Wang and Jinpeng Liu and Bo Dai and Yansong Tang},
+      journal={arXiv preprint arXiv:2404.19759},
+      year={2024}
+}
+
+@misc{zou2024parcopartcoordinatingtexttomotionsynthesis,
+      title={ParCo: Part-Coordinating Text-to-Motion Synthesis}, 
+      author={Qiran Zou and Shangyuan Yuan and Shian Du and Yu Wang and Chang Liu and Yi Xu and Jie Chen and Xiangyang Ji},
+      year={2024},
+      eprint={2403.18512},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2403.18512}, 
+}
+
+@misc{huang2024como,
+      title={CoMo: Controllable Motion Generation through Language Guided Pose Code Editing}, 
+      author={Yiming Huang and Weilin Wan and Yue Yang and Chris Callison-Burch and Mark Yatskar and Lingjie Liu},
+      year={2024},
+      eprint={2403.13900},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@misc{zhong2024smoodistylizedmotiondiffusion,
+      title={SMooDi: Stylized Motion Diffusion Model}, 
+      author={Lei Zhong and Yiming Xie and Varun Jampani and Deqing Sun and Huaizu Jiang},
+      year={2024},
+      eprint={2407.12783},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.12783}, 
+}
+
+@article{zhou2023emdm,
+  title={EMDM: Efficient Motion Diffusion Model for Fast, High-Quality Motion Generation},
+  author={Zhou, Wenyang and Dou, Zhiyang and Cao, Zeyu and Liao, Zhouyingcheng and Wang, Jingbo and Wang, Wenjia and Liu, Yuan and Komura, Taku and Wang, Wenping and Liu, Lingjie},
+  journal={arXiv preprint arXiv:2312.02256},
+  year={2023}
+}
+
+@article{liu2023plan,
+  title={Plan, Posture and Go: Towards Open-World Text-to-Motion Generation},
+  author={Liu, Jinpeng and Dai, Wenxun and Wang, Chunyu and Cheng, Yiji and Tang, Yansong and Tong, Xin},
+  journal={arXiv preprint arXiv:2312.14828},
+  year={2023}
+}
+
+@article{yi2024tesmo,
+    author={Yi, Hongwei and Thies, Justus and Black, Michael J. and Peng, Xue Bin and Rempe, Davis},
+    title={Generating Human Interaction Motions in Scenes with Text Control},
+    journal = {arXiv:2404.10685},
+    year={2024}
+}
+
+@misc{chen2024sato,
+      title={SATO: Stable Text-to-Motion Framework}, 
+      author={Wenshuo Chen and Hongru Xiao and Erhang Zhang and Lijie Hu and Lei Wang and Mengyuan Liu and Chen Chen},
+      year={2024},
+      eprint={2405.01461},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+
+@inproceedings{athanasiou2024motionfix,
+  title = {{MotionFix}: Text-Driven 3D Human Motion Editing},
+  author = {Athanasiou, Nikos and Ceske, Alpar and Diomataris, Markos and Black, Michael J. and Varol, G{\"u}l},
+  booktitle = {SIGGRAPH Asia 2024 Conference Papers},
+  year = {2024}
+}
+
+@misc{jiang2024autonomouscharactersceneinteractionsynthesis,
+      title={Autonomous Character-Scene Interaction Synthesis from Text Instruction}, 
+      author={Nan Jiang and Zimo He and Zi Wang and Hongjie Li and Yixin Chen and Siyuan Huang and Yixin Zhu},
+      year={2024},
+      eprint={2410.03187},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.03187}, 
+}
+```
+</details>
+
+---
+
+### 💡 Motion ArXiv Papers
+
+#### 1. Story-to-Motion: Synthesizing Infinite and Controllable Character Animation from Long Text  
+Zhongfei Qing, Zhongang Cai, Zhitao Yang, Lei Yang (SenseTime)
+<details span>
+<summary><b>Abstract</b></summary>
+Generating natural human motion from a story has the potential to transform the landscape of animation, gaming, and film industries. A new and challenging task, Story-to-Motion, arises when characters are required to move to various locations and perform specific motions based on a long text description. This task demands a fusion of low-level control (trajectories) and high-level control (motion semantics). Previous works in character control and text-to-motion have addressed related aspects, yet a comprehensive solution remains elusive: character control methods do not handle text description, whereas text-to-motion methods lack position constraints and often produce unstable motions. In light of these limitations, we propose a novel system that generates controllable, infinitely long motions and trajectories aligned with the input text. 1) we leverage contemporary Large Language Models to act as a text-driven motion scheduler to extract a series of (text, position) pairs from long text. 2) we develop a text-driven motion retrieval scheme that incorporates classic motion matching with motion semantic and trajectory constraints. 3) we design a progressive mask transformer that addresses common artifacts in the transition motion such as unnatural pose and foot sliding. Beyond its pioneering role as the first comprehensive solution for Story-to-Motion, our system undergoes evaluation across three distinct sub-tasks: trajectory following, temporal action composition, and motion blending, where it outperforms previous state-of-the-art (SOTA) motion synthesis methods across the board.
+</details>
+
+#### 2. Synthesizing Moving People with 3D Control  
+Boyi Li, Jathushan Rajasegaran, Yossi Gandelsman, Alexei A. Efros, Jitendra Malik (UC Berkeley)
+<details span>
+<summary><b>Abstract</b></summary>
+In this paper, we present a diffusion model-based framework for animating people from a single image for a given target 3D motion sequence. Our approach has two core components: a) learning priors about invisible parts of the human body and clothing, and b) rendering novel body poses with proper clothing and texture. For the first part, we learn an in-filling diffusion model to hallucinate unseen parts of a person given a single image. We train this model on texture map space, which makes it more sample-efficient since it is invariant to pose and viewpoint. Second, we develop a diffusion-based rendering pipeline, which is controlled by 3D human poses. This produces realistic renderings of novel poses of the person, including clothing, hair, and plausible in-filling of unseen regions. This disentangled approach allows our method to generate a sequence of images that are faithful to the target motion in the 3D pose and, to the input image in terms of visual similarity. In addition to that, the 3D control allows various synthetic camera trajectories to render a person. Our experiments show that our method is resilient in generating prolonged motions and varied challenging and complex poses compared to prior methods. 
+</details>
+
+#### 3. Large Motion Model for Unified Multi-Modal Motion Generation
+Mingyuan Zhang, Daisheng Jin, Chenyang Gu, Fangzhou Hong, Zhongang Cai, Jingfang Huang, Chongzhi Zhang, Xinying Guo, Lei Yang, Ying He, Ziwei Liu 
+
+(S-Lab, Nanyang Technological University, SenseTime China)
+<details span>
+<summary><b>Abstract</b></summary>
+Human motion generation, a cornerstone technique in animation and video production, has widespread applications in various tasks like text-to-motion and music-to-dance. Previous works focus on developing specialist models tailored for each task without scalability. In this work, we present Large Motion Model (LMM), a motion-centric, multi-modal framework that unifies mainstream motion generation tasks into a generalist model. A unified motion model is appealing since it can leverage a wide range of motion data to achieve broad generalization beyond a single task. However, it is also challenging due to the heterogeneous nature of substantially different motion data and tasks. LMM tackles these challenges from three principled aspects: 1) Data: We consolidate datasets with different modalities, formats and tasks into a comprehensive yet unified motion generation dataset, MotionVerse, comprising 10 tasks, 16 datasets, a total of 320k sequences, and 100 million frames. 2) Architecture: We design an articulated attention mechanism ArtAttention that incorporates body part-aware modeling into Diffusion Transformer backbone. 3) Pre-Training: We propose a novel pre-training strategy for LMM, which employs variable frame rates and masking forms, to better exploit knowledge from diverse training data. Extensive experiments demonstrate that our generalist LMM achieves competitive performance across various standard motion generation tasks over state-of-the-art specialist models. Notably, LMM exhibits strong generalization capabilities and emerging properties across many unseen tasks. Additionally, our ablation studies reveal valuable insights about training and scaling up large motion models for future research.
+</details>
+
+#### 4. StableMoFusion: Towards Robust and Efficient Diffusion-based Motion Generation Framework
+Yiheng Huang, Hui Yang, Chuanchen Luo, Yuxi Wang, Shibiao Xu, Zhaoxiang Zhang, Man Zhang, Junran Peng
+
+(Beijing University of Posts and Telecommunications, CAIR/HKISI/CAS, Institute of Automation/Chinese Academy of Science)
+<details span>
+<summary><b>Abstract</b></summary>
+Thanks to the powerful generative capacity of diffusion models, recent years have witnessed rapid progress in human motion generation. Existing diffusion-based methods employ disparate network architectures and training strategies. The effect of the design of each component is still unclear. In addition, the iterative denoising process consumes considerable computational overhead, which is prohibitive for real-time scenarios such as virtual characters and humanoid robots. For this reason, we first conduct a comprehensive investigation into network architectures, training strategies, and inference processs. Based on the profound analysis, we tailor each component for efficient high-quality human motion generation. Despite the promising performance, the tailored model still suffers from foot skating which is an ubiquitous issue in diffusion-based solutions. To eliminate footskate, we identify foot-ground contact and correct foot motions along the denoising process. By organically combining these well-designed components together, we present StableMoFusion, a robust and efficient framework for human motion generation. Extensive experimental results show that our StableMoFusion performs favorably against current state-of-the-art methods.
+</details>
+
+#### 5. CrowdMoGen: Zero-Shot Text-Driven Collective Motion Generation
+Xinying Guo, Mingyuan Zhang, Haozhe Xie, Chenyang Gu, Ziwei Liu (S-Lab Nanyang Technological University)
+<details span>
+<summary><b>Abstract</b></summary>
+Crowd Motion Generation is essential in entertainment industries such as animation and games as well as in strategic fields like urban simulation and planning. This new task requires an intricate integration of control and generation to realistically synthesize crowd dynamics under specific spatial and semantic constraints, whose challenges are yet to be fully explored. On the one hand, existing human motion generation models typically focus on individual behaviors, neglecting the complexities of collective behaviors. On the other hand, recent methods for multi-person motion generation depend heavily on pre-defined scenarios and are limited to a fixed, small number of inter-person interactions, thus hampering their practicality. To overcome these challenges, we introduce CrowdMoGen, a zero-shot text-driven framework that harnesses the power of Large Language Model (LLM) to incorporate the collective intelligence into the motion generation framework as guidance, thereby enabling generalizable planning and generation of crowd motions without paired training data. Our framework consists of two key components: 1) Crowd Scene Planner that learns to coordinate motions and dynamics according to specific scene contexts or introduced perturbations, and 2) Collective Motion Generator that efficiently synthesizes the required collective motions based on the holistic plans. Extensive quantitative and qualitative experiments have validated the effectiveness of our framework, which not only fills a critical gap by providing scalable and generalizable solutions for Crowd Motion Generation task but also achieves high levels of realism and flexibility.
+</details>
+
+#### 6. Infinite Motion: Extended Motion Generation via Long Text Instructions
+Mengtian Li, Chengshuo Zhai, Shengxiang Yao, Zhifeng Xie, Keyu Chen Yu-Gang Jiang
+
+(Shanghai University, Shanghai Engineering Research Center of Motion Picture Special Effects, Tavus Inc., Fudan University)
+<details span>
+<summary><b>Abstract</b></summary>
+In the realm of motion generation, the creation of long-duration, high-quality motion sequences remains a significant challenge. This paper presents our groundbreaking work on "Infinite Motion", a novel approach that leverages long text to extended motion generation, effectively bridging the gap between short and long-duration motion synthesis. Our core insight is the strategic extension and reassembly of existing high-quality text-motion datasets, which has led to the creation of a novel benchmark dataset to facilitate the training of models for extended motion sequences. A key innovation of our model is its ability to accept arbitrary lengths of text as input, enabling the generation of motion sequences tailored to specific narratives or scenarios. Furthermore, we incorporate the timestamp design for text which allows precise editing of local segments within the generated sequences, offering unparalleled control and flexibility in motion synthesis. We further demonstrate the versatility and practical utility of "Infinite Motion" through three specific applications: natural language interactive editing, motion sequence editing within long sequences and splicing of independent motion sequences. Each application highlights the adaptability of our approach and broadens the spectrum of possibilities for research and development in motion generation. Through extensive experiments, we demonstrate the superior performance of our model in generating long sequence motions compared to existing methods.
+</details>
+
+#### 7. Adding Multi-modal Controls to Whole-body Human Motion Generation
+Yuxuan Bian, Ailing Zeng, Xuan Ju, Xian Liu, Zhaoyang Zhang, Wei Liu, Qiang Xu
+
+(The Chinese University of Hong Kong, Tencent)
+<details span>
+<summary><b>Abstract</b></summary>
+Whole-body multi-modal motion generation, controlled by text, speech, or music, has numerous applications including video generation and character animation. However, employing a unified model to accomplish various generation tasks with different condition modalities presents two main challenges: motion distribution drifts across different generation scenarios and the complex optimization of mixed conditions with varying granularity. Furthermore, inconsistent motion formats in existing datasets further hinder effective multi-modal motion generation. In this paper, we propose ControlMM, a unified framework to Control whole-body Multi-modal Motion generation in a plug-and-play manner. To effectively learn and transfer motion knowledge across different motion distributions, we propose ControlMM-Attn, for parallel modeling of static and dynamic human topology graphs. To handle conditions with varying granularity, ControlMM employs a coarse-to-fine training strategy, including stage-1 text-to-motion pre-training for semantic generation and stage-2 multi-modal control adaptation for conditions of varying low-level granularity. To address existing benchmarks' varying motion format limitations, we introduce ControlMM-Bench, the first publicly available multi-modal whole-body human motion generation benchmark based on the unified whole-body SMPL-X format. Extensive experiments show that ControlMM achieves state-of-the-art performance across various standard motion generation tasks. 
+</details>
+
+#### 8. MoRAG -- Multi-Fusion Retrieval Augmented Generation for Human Motion
+Kalakonda Sai Shashank, Shubh Maheshwari, Ravi Kiran Sarvadevabhatla
+
+(IIIT Hyderabad, University of California San Diego)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce MoRAG, a novel multi-part fusion based retrieval-augmented generation strategy for text-based human motion generation. The method enhances motion diffusion models by leveraging additional knowledge obtained through an improved motion retrieval process. By effectively prompting large language models (LLMs), we address spelling errors and rephrasing issues in motion retrieval. Our approach utilizes a multi-part retrieval strategy to improve the generalizability of motion retrieval across the language space. We create diverse samples through the spatial composition of the retrieved motions. Furthermore, by utilizing low-level, part-specific motion information, we can construct motion samples for unseen text descriptions. Our experiments demonstrate that our framework can serve as a plug-and-play module, improving the performance of motion diffusion models.
+</details>
+
+#### 9. T2M-X: Learning Expressive Text-to-Motion Generation from Partially Annotated Data
+Mingdian Liu, Yilin Liu, Gurunandan Krishnan, Karl S Bayer, Bing Zhou
+
+(Iowa State University, Pennsylvania State University, Snap Inc.)
+<details span>
+<summary><b>Abstract</b></summary>
+The generation of humanoid animation from text prompts can profoundly impact animation production and AR/VR experiences. However, existing methods only generate body motion data, excluding facial expressions and hand movements. This limitation, primarily due to a lack of a comprehensive whole-body motion dataset, inhibits their readiness for production use. Recent attempts to create such a dataset have resulted in either motion inconsistency among different body parts in the artificially augmented data or lower quality in the data extracted from RGB videos. In this work, we propose T2M-X, a two-stage method that learns expressive text-to-motion generation from partially annotated data. T2M-X trains three separate Vector Quantized Variational AutoEncoders (VQ-VAEs) for body, hand, and face on respective high-quality data sources to ensure high-quality motion outputs, and a Multi-indexing Generative Pretrained Transformer (GPT) model with motion consistency loss for motion generation and coordination among different body parts. Our results show significant improvements over the baselines both quantitatively and qualitatively, demonstrating its robustness against the dataset limitations.
+</details>
+
+#### 10. UniMuMo: Unified Text, Music and Motion Generation
+Han Yang, Kun Su, Yutong Zhang, Jiaben Chen, Kaizhi Qian, Gaowen Liu, Chuang Gan
+
+(The Chinese University of Hong Kong, University of Washington, The University of British Columbia, UMass Amherst, MIT-IBM Watson AI Lab, Cisco Research)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce UniMuMo, a unified multimodal model capable of taking arbitrary text, music, and motion data as input conditions to generate outputs across all three modalities. To address the lack of time-synchronized data, we align unpaired music and motion data based on rhythmic patterns to leverage existing large-scale music-only and motion-only datasets. By converting music, motion, and text into token-based representation, our model bridges these modalities through a unified encoder-decoder transformer architecture. To support multiple generation tasks within a single framework, we introduce several architectural improvements. We propose encoding motion with a music codebook, mapping motion into the same feature space as music. We introduce a music-motion parallel generation scheme that unifies all music and motion generation tasks into a single transformer decoder architecture with a single training task of music-motion joint generation. Moreover, the model is designed by fine-tuning existing pre-trained single-modality models, significantly reducing computational demands. Extensive experiments demonstrate that UniMuMo achieves competitive results on all unidirectional generation benchmarks across music, motion, and text modalities.
+</details>
+
+#### 11. DART: A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control
+Kaifeng Zhao, Gen Li, Siyu Tang (ETH Zürich)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-conditioned human motion generation, which allows for user interaction through natural language, has become increasingly popular. Existing methods typically generate short, isolated motions based on a single input sentence. However, human motions are continuous and can extend over long periods, carrying rich semantics. Creating long, complex motions that precisely respond to streams of text descriptions, particularly in an online and real-time setting, remains a significant challenge. Furthermore, incorporating spatial constraints into text-conditioned motion generation presents additional challenges, as it requires aligning the motion semantics specified by text descriptions with geometric information, such as goal locations and 3D scene geometry. To address these limitations, we propose DART, a Diffusion-based Autoregressive motion primitive model for Real-time Text-driven motion control. Our model, DART, effectively learns a compact motion primitive space jointly conditioned on motion history and text inputs using latent diffusion models. By autoregressively generating motion primitives based on the preceding history and current text input, DART enables real-time, sequential motion generation driven by natural language descriptions. Additionally, the learned motion primitive space allows for precise spatial motion control, which we formulate either as a latent noise optimization problem or as a Markov decision process addressed through reinforcement learning. We present effective algorithms for both approaches, demonstrating our model's versatility and superior performance in various motion synthesis tasks. Experiments show our method outperforms existing baselines in motion realism, efficiency, and controllability.
+</details>
+
+#### 12. ControlMM: Controllable Masked Motion Generation
+Ekkasit Pinyoanuntapong, Muhammad Usama Saleem, Korrawe Karunratanakul, Pu Wang, Hongfei Xue, Chen Chen, Chuan Guo, Junli Cao, Jian Ren, Sergey Tulyakov
+
+(University of North Carolina at Charlotte, ETH Zurich, University of Central Florida, Snap Inc.)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advances in motion diffusion models have enabled spatially controllable text-to-motion generation. However, despite achieving acceptable control precision, these models suffer from generation speed and fidelity limitations. To address these challenges, we propose ControlMM, a novel approach incorporating spatial control signals into the generative masked motion model. ControlMM achieves real-time, high-fidelity, and high-precision controllable motion generation simultaneously. Our approach introduces two key innovations. First, we propose masked consistency modeling, which ensures high-fidelity motion generation via random masking and reconstruction, while minimizing the inconsistency between the input control signals and the extracted control signals from the generated motion. To further enhance control precision, we introduce inference-time logit editing, which manipulates the predicted conditional motion distribution so that the generated motion, sampled from the adjusted distribution, closely adheres to the input control signals. During inference, ControlMM enables parallel and iterative decoding of multiple motion tokens, allowing for high-speed motion generation. Extensive experiments show that, compared to the state of the art, ControlMM delivers superior results in motion quality, with better FID scores (0.061 vs 0.271), and higher control precision (average error 0.0091 vs 0.0108). ControlMM generates motions 20 times faster than diffusion-based methods. Additionally, ControlMM unlocks diverse applications such as any joint any frame control, body part timeline control, and obstacle avoidance.
+</details>
+
+#### 13. MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms
+Ling-Hao Chen, Wenxun Dai, Xuan Ju, Shunlin Lu, Lei Zhang
+
+(Tsinghua University, International Digital Economy Academy (IDEA), The Chinese University of Hong Kong, The Chinese University of Hong Kong Shenzhen)
+<details span>
+<summary><b>Abstract</b></summary>
+This research delves into the problem of interactive editing of human motion generation. Previous motion diffusion models lack explicit modeling of the word-level text-motion correspondence and good explainability, hence restricting their fine-grained editing ability. To address this issue, we propose an attention-based motion diffusion model, namely MotionCLR, with CLeaR modeling of attention mechanisms. Technically, MotionCLR models the in-modality and cross-modality interactions with self-attention and cross-attention, respectively. More specifically, the self-attention mechanism aims to measure the sequential similarity between frames and impacts the order of motion features. By contrast, the cross-attention mechanism works to find the fine-grained word-sequence correspondence and activate the corresponding timesteps in the motion sequence. Based on these key properties, we develop a versatile set of simple yet effective motion editing methods via manipulating attention maps, such as motion (de-)emphasizing, in-place motion replacement, and example-based motion generation, etc. For further verification of the explainability of the attention mechanism, we additionally explore the potential of action-counting and grounded motion generation ability via attention maps. Our experimental results show that our method enjoys good generation and editing ability with good explainability.
+</details>
+
+#### 14. KMM: Key Frame Mask Mamba for Extended Motion Generation
+Zeyu Zhang, Hang Gao, Akide Liu, Qi Chen, Feng Chen, Yiran Wang, Danning Li, Hao Tang
+
+(Peking University, The Australian National University, Monash University, The University of Adelaide, The University of Sydney, McGill University)
+<details span>
+<summary><b>Abstract</b></summary>
+Human motion generation is a cut-edge area of research in generative computer vision, with promising applications in video creation, game development, and robotic manipulation. The recent Mamba architecture shows promising results in efficiently modeling long and complex sequences, yet two significant challenges remain: Firstly, directly applying Mamba to extended motion generation is ineffective, as the limited capacity of the implicit memory leads to memory decay. Secondly, Mamba struggles with multimodal fusion compared to Transformers, and lack alignment with textual queries, often confusing directions (left or right) or omitting parts of longer text queries. To address these challenges, our paper presents three key contributions: Firstly, we introduce KMM, a novel architecture featuring Key frame Masking Modeling, designed to enhance Mamba's focus on key actions in motion segments. This approach addresses the memory decay problem and represents a pioneering method in customizing strategic frame-level masking in SSMs. Additionally, we designed a contrastive learning paradigm for addressing the multimodal fusion problem in Mamba and improving the motion-text alignment. Finally, we conducted extensive experiments on the go-to dataset, BABEL, achieving state-of-the-art performance with a reduction of more than 57% in FID and 70% parameters compared to previous state-of-the-art methods. 
+</details>
+
+#### 15. KinMo: Kinematic-aware Human Motion Understanding and Generation
+Pengfei Zhang, Pinxin Liu, Hyeongwoo Kim, Pablo Garrido, Bindita Chaudhuri
+
+(University of California Irvine, University of Rochester, Imperial College London, FlawlessAI)
+<details span>
+<summary><b>Abstract</b></summary>
+Controlling human motion based on text presents an important challenge in computer vision. Traditional approaches often rely on holistic action descriptions for motion synthesis, which struggle to capture subtle movements of local body parts. This limitation restricts the ability to isolate and manipulate specific movements. To address this, we propose a novel motion representation that decomposes motion into distinct body joint group movements and interactions from a kinematic perspective. We design an automatic dataset collection pipeline that enhances the existing text-motion benchmark by incorporating fine-grained local joint-group motion and interaction descriptions. To bridge the gap between text and motion domains, we introduce a hierarchical motion semantics approach that progressively fuses joint-level interaction information into the global action-level semantics for modality alignment. With this hierarchy, we introduce a coarse-to-fine motion synthesis procedure for various generation and editing downstream applications. Our quantitative and qualitative experiments demonstrate that the proposed formulation enhances text-motion retrieval by improving joint-spatial understanding, and enables more precise joint-motion generation and control.
+</details>
+
+---
+
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2023 | **Story-to-Motion: Synthesizing Infinite and Controllable Character Animation from Long Text**  | 13 Nov 2023 |          [Link](https://arxiv.org/abs/2311.07446)          | -- | [Link](https://story2motion.github.io/)  |
+| 2024 | **Synthesizing Moving People with 3D Control**  | 19 Jan 2024 |          [Link](https://arxiv.org/abs/2401.10889)          | [Link](https://github.com/Boyiliee/3DHM)   | [Link](https://boyiliee.github.io/3DHM.github.io/)  |
+| 2024 | **Large Motion Model for Unified Multi-Modal Motion Generation**  | 1 Apr 2024 |          [Link](https://arxiv.org/abs/2404.01284)          | [Link](https://github.com/mingyuan-zhang/LMM) | [Link](https://mingyuan-zhang.github.io/projects/LMM.html)  |
+| 2024 | **StableMoFusion: Towards Robust and Efficient Diffusion-based Motion Generation Framework**  | 9 May 2024 |          [Link](https://arxiv.org/abs/2405.05691)          | [Link](https://github.com/h-y1heng/StableMoFusion) | [Link](https://h-y1heng.github.io/StableMoFusion-page/)  |
+| 2024 | **CrowdMoGen: Zero-Shot Text-Driven Collective Motion Generation**  | 8 Jul 2024 |          [Link](https://arxiv.org/abs/2407.06188)          | [Link](https://github.com/gxyes/CrowdMoGen) | [Link](https://gxyes.github.io/projects/CrowdMoGen.html)  |
+| 2024 | **Infinite Motion: Extended Motion Generation via Long Text Instructions**  | 11 Jul 2024 |          [Link](https://arxiv.org/abs/2407.08443)          | [Link](https://github.com/shuochengzhai/Infinite-Motion) | [Link](https://shuochengzhai.github.io/Infinite-motion.github.io/)  |
+| 2024 | **Adding Multi-modal Controls to Whole-body Human Motion Generation**  | 30 Jul 2024 |          [Link](https://arxiv.org/abs/2407.21136)          | [Link](https://github.com/yxbian23/ControlMM) | [Link](https://yxbian23.github.io/ControlMM/)  |
+| 2024 | **MoRAG -- Multi-Fusion Retrieval Augmented Generation for Human Motion**  | 18 Sep 2024 |          [Link](https://arxiv.org/abs/2409.12140)          | [Link](https://github.com/Motion-RAG/MoRAG) | [Link](https://motion-rag.github.io/)  |
+| 2024 | **T2M-X: Learning Expressive Text-to-Motion Generation from Partially Annotated Data**  | 20 Sep 2024 |          [Link](https://arxiv.org/abs/2409.13251)          | -- | -- |
+| 2024 | **UniMuMo: Unified Text, Music, and Motion Generation**  | 6 Oct 2024 |          [Link](https://arxiv.org/abs/2410.04534)          | [Link](https://github.com/hanyangclarence/UniMuMo) | [Link](https://hanyangclarence.github.io/unimumo_demo/)  |
+| 2024 | **DART: A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control**  | 7 Oct 2024 |          [Link](https://arxiv.org/abs/2410.05260)          | -- | [Link](https://zkf1997.github.io/DART/)  |
+| 2024 | **ControlMM: Controllable Masked Motion Generation**  | 14 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10780)          | [Link](https://github.com/exitudio/ControlMM/) | [Link](https://exitudio.github.io/ControlMM-page/)  |
+| 2024 | **MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms**  | 24 Oct 2024 |          [Link](https://arxiv.org/abs/2410.18977)          | [Link](https://github.com/IDEA-Research/MotionCLR) | [Link](https://lhchen.top/MotionCLR/)  |
+| 2024 | **KMM: Key Frame Mask Mamba for Extended Motion Generation**  | 10 Nov 2024 |          [Link](https://arxiv.org/abs/2411.06481)          | [Link](https://github.com/steve-zeyu-zhang/KMM) | [Link](https://steve-zeyu-zhang.github.io/KMM/)  |
+| 2024 | **KinMo: Kinematic-aware Human Motion Understanding and Generation**  | 23 Nov 2024 |          [Link](https://arxiv.org/abs/2411.15472)          | -- | [Link](https://andypinxinliu.github.io/KinMo/)  |
+
+<details close>
+<summary>ArXiv Papers References</summary>
+
+```
+%axiv papers
+
+@misc{qing2023storytomotion,
+        title={Story-to-Motion: Synthesizing Infinite and Controllable Character Animation from Long Text}, 
+        author={Zhongfei Qing and Zhongang Cai and Zhitao Yang and Lei Yang},
+        year={2023},
+        eprint={2311.07446},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+}
+
+@article{li20243dhm,
+    author = {Li, Boyi and Rajasegaran, Jathushan and Gandelsman, Yossi and Efros, Alexei A. and Malik, Jitendra},
+    title = {Synthesizing Moving People with 3D Control},
+    journal = {Arxiv},
+    year = {2024},
+}
+
+@article{zhang2024large,
+      title   =   {Large Motion Model for Unified Multi-Modal Motion Generation}, 
+      author  =   {Zhang, Mingyuan and
+                   Jin, Daisheng around
+                   Gu, Chenyang,
+                   Hong, Fangzhou and
+                   Cai, Zhongang and
+                   Huang, Jingfang and
+                   Zhang, Chongzhi and
+                   Guo, Xinying and
+                   Yang, Lei and,
+                   He, Ying and,
+                   Liu, Ziwei},
+      year    =   {2024},
+      journal =   {arXiv preprint arXiv:2404.01284},
+}
+
+@article{huang2024stablemofusion,
+        title={StableMoFusion: Towards Robust and Efficient Diffusion-based Motion Generation Framework},
+        author = {Huang, Yiheng and Hui, Yang and Luo, Chuanchen and Wang, Yuxi and Xu, Shibiao and Zhang, Zhaoxiang and Zhang, Man and Peng, Junran},
+        journal = {arXiv preprint arXiv: 2405.05691},
+        year = {2024}
+}
+
+@misc{guo2024crowdmogenzeroshottextdrivencollective,
+      title={CrowdMoGen: Zero-Shot Text-Driven Collective Motion Generation}, 
+      author={Xinying Guo and Mingyuan Zhang and Haozhe Xie and Chenyang Gu and Ziwei Liu},
+      year={2024},
+      eprint={2407.06188},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.06188}, 
+}
+
+@misc{li2024infinitemotionextendedmotion,
+      title={Infinite Motion: Extended Motion Generation via Long Text Instructions}, 
+      author={Mengtian Li and Chengshuo Zhai and Shengxiang Yao and Zhifeng Xie and Keyu Chen Yu-Gang Jiang},
+      year={2024},
+      eprint={2407.08443},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.08443}, 
+}
+
+@article{controlmm,
+  title={Adding Multimodal Controls to Whole-body Human Motion Generation},
+  author={Bian, Yuxuan, Zeng Ailing, Ju Xuan, Liu Xian, Zhang Zhaoyang, Liu Wei, and Xu Qiang},
+  journal={arxiv},
+  year={2024}
+}
+
+@InProceedings{MoRAG,
+  author    = {Kalakonda, Sai Shashank and Maheshwari, Shubh and Sarvadevabhatla, Ravi Kiran},
+  title     = {MoRAG - Multi-Fusion Retrieval Augmented Generation for Human Motion},
+  booktitle   = {arXiv preprint},
+  year      = {2024},
+}
+
+@misc{liu2024t2mxlearningexpressivetexttomotion,
+      title={T2M-X: Learning Expressive Text-to-Motion Generation from Partially Annotated Data}, 
+      author={Mingdian Liu and Yilin Liu and Gurunandan Krishnan and Karl S Bayer and Bing Zhou},
+      year={2024},
+      eprint={2409.13251},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2409.13251}, 
+}
+
+@misc{yang2024unimumounifiedtextmusic,
+      title={UniMuMo: Unified Text, Music and Motion Generation}, 
+      author={Han Yang and Kun Su and Yutong Zhang and Jiaben Chen and Kaizhi Qian and Gaowen Liu and Chuang Gan},
+      year={2024},
+      eprint={2410.04534},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2410.04534}, 
+}
+
+@inproceedings{Zhao:DART:2024,
+   title = {A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control},
+   author = {Zhao, Kaifeng and Li, Gen and Tang, Siyu},
+   year = {2024}
+}
+
+@misc{pinyoanuntapong2024controlmmcontrollablemaskedmotion,
+      title={ControlMM: Controllable Masked Motion Generation}, 
+      author={Ekkasit Pinyoanuntapong and Muhammad Usama Saleem and Korrawe Karunratanakul and Pu Wang and Hongfei Xue and Chen Chen and Chuan Guo and Junli Cao and Jian Ren and Sergey Tulyakov},
+      year={2024},
+      eprint={2410.10780},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.10780}, 
+}
+
+@article{motionclr,
+  title={MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms},
+  author={Chen, Ling-Hao and Dai, Wenxun and Ju, Xuan and Lu, Shunlin and Zhang, Lei},
+  journal={arxiv:2410.18977},
+  year={2024}
+}
+
+@misc{zhang2024kmmkeyframemask,
+      title={KMM: Key Frame Mask Mamba for Extended Motion Generation}, 
+      author={Zeyu Zhang and Hang Gao and Akide Liu and Qi Chen and Feng Chen and Yiran Wang and Danning Li and Hao Tang},
+      year={2024},
+      eprint={2411.06481},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.06481}, 
+}
+
+@misc{zhang2024kinmokinematicawarehumanmotion,
+      title={KinMo: Kinematic-aware Human Motion Understanding and Generation}, 
+      author={Pengfei Zhang and Pinxin Liu and Hyeongwoo Kim and Pablo Garrido and Bindita Chaudhuri},
+      year={2024},
+      eprint={2411.15472},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.15472}, 
+}
+```
+</details>
+
+### Survey
+- Survey: [Human Motion Generation: A Survey](https://arxiv.org/abs/2307.10894), ArXiv 2023 Nov
+
+### Datasets
+   | Motion | Info |                              URL                              |               Others                            | 
+   | :-----: | :-----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+   |  AIST |  AIST Dance Motion Dataset  | [Link](https://aistdancedb.ongaaccel.jp/) |--|
+   |  AIST++  |  AIST++ Dance Motion Dataset | [Link](https://google.github.io/aistplusplus_dataset/) | [dance video database with SMPL annotations](https://google.github.io/aistplusplus_dataset/download.html) |
+   |  AMASS  |  optical marker-based motion capture datasets  | [Link](https://amass.is.tue.mpg.de/) |--|
+
+#### Additional Info
+<details>
+<summary>AMASS</summary>
+
+AMASS is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. AMASS is readily useful for animation, visualization, and generating training data for deep learning.
+  
+</details>
+
+
+
+## Text to 3D Human
+
+### 🎉 Human Accepted Papers
+
+| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2022 | **AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars**  | SIGGRAPH 2022 (Journal Track)  |          [Link](https://arxiv.org/abs/2205.08535)          | [Link](https://github.com/hongfz16/AvatarCLIP)  | [Link](https://hongfz16.github.io/projects/AvatarCLIP.html)  |
+| 2023 | **AvatarCraft: Transforming Text into Neural Human Avatars with Parameterized Shape and Pose Control**  | ICCV 2023 |          [Link](https://arxiv.org/abs/2303.17606)          |  [Link](https://github.com/songrise/avatarcraft)   | [Link](https://avatar-craft.github.io/)  |
+| 2023 | **DreamWaltz: Make a Scene with Complex 3D Animatable Avatars**  | NeurIPS 2023  |          [Link](https://arxiv.org/abs/2305.12529)          | [Link](https://github.com/IDEA-Research/DreamWaltz)  | [Link](https://idea-research.github.io/DreamWaltz/)  |
+| 2023 | **DreamHuman: Animatable 3D Avatars from Text**  | NeurIPS 2023 (Spotlight)  |          [Link](https://arxiv.org/abs/2306.09329)          |  --  | [Link](https://dream-human.github.io/)  |
+| 2023 | **TeCH: Text-guided Reconstruction of Lifelike Clothed Humans**  | 3DV 2024  |          [Link](https://arxiv.org/abs/2308.08545)          | [Link](https://github.com/huangyangyi/TeCH)  | [Link](https://huangyangyi.github.io/TeCH/)  |
+| 2023 | **TADA! Text to Animatable Digital Avatars**  | 3DV 2024  |          [Link](https://arxiv.org/abs/2308.10899)          | [Link](https://github.com/TingtingLiao/TADA)  | [Link](https://tada.is.tue.mpg.de/)  |
+| 2023 | **AvatarVerse: High-quality & Stable 3D Avatar Creation from Text and Pose**  | AAAI2024  |          [Link](https://arxiv.org/abs/2308.03610)          |  [Link](https://github.com/bytedance/AvatarVerse)  | [Link](https://avatarverse3d.github.io/)  |
+| 2023 | **HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting**  | CVPR 2024  |          [Link](https://arxiv.org/abs/2311.17061)          | [Link](https://github.com/alvinliu0/HumanGaussian)  | [Link](https://alvinliu0.github.io/projects/HumanGaussian)  | 
+| 2023 | **HumanNorm: Learning Normal Diffusion Model for High-quality and Realistic 3D Human Generation**  | CVPR 2024  |          [Link](https://arxiv.org/abs/2310.01406)          | [Link](https://github.com/xhuangcv/humannorm)  | [Link](https://humannorm.github.io/)  |
+| 2024 | **En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data**  | CVPR 2024  |          [Link](https://arxiv.org/abs/2401.01173)          |  [Link](https://github.com/menyifang/En3D)  | [Link](https://menyifang.github.io/projects/En3D/index.html)  |
+| 2024 | **HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation**  | SIGGRAPH 2024  |          [Link](https://arxiv.org/abs/2312.07539)          |  [Link](https://github.com/KumapowerLIU/HeadArtist)  | [Link](https://kumapowerliu.github.io/HeadArtist/)  |
+| 2024 | **HeadStudio: Text to Animatable Head Avatars with 3D Gaussian Splatting**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2402.06149)          |  [Link](https://github.com/ZhenglinZhou/HeadStudio/)  | [Link](https://zhenglinzhou.github.io/HeadStudio-ProjectPage/)  |
+| 2024 | **Instant 3D Human Avatar Generation using Image Diffusion Models**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2406.07516)          | -- | [Link](https://www.nikoskolot.com/avatarpopup/)  |
+| 2024 | **Disentangled Clothed Avatar Generation from Text Descriptions**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2312.05295)          | [Link](https://github.com/shanemankiw/SO-SMPL) | [Link](https://shanemankiw.github.io/SO-SMPL/)  |
+
+<details close>
+<summary>Accepted Papers References</summary>
+
+```
+%accepted papers
+
+@article{hong2022avatarclip,
+    title={AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars},
+    author={Hong, Fangzhou and Zhang, Mingyuan and Pan, Liang and Cai, Zhongang and Yang, Lei and Liu, Ziwei},
+    journal={ACM Transactions on Graphics (TOG)},
+    volume={41},
+    number={4},
+    pages={1--19},
+    year={2022},
+    publisher={ACM New York, NY, USA}
+}
+
+@article{jiang2023avatarcraft,
+  title={AvatarCraft: Transforming Text into Neural Human Avatars with Parameterized Shape and Pose Control},
+  author={Jiang, Ruixiang and Wang, Can and Zhang, Jingbo and Chai, Menglei and He, Mingming and Chen, Dongdong and Liao, Jing},
+  journal={arXiv preprint arXiv:2303.17606},
+  year={2023}
+}
+
+@inproceedings{huang2023dreamwaltz,
+  title={{DreamWaltz: Make a Scene with Complex 3D Animatable Avatars}},
+  author={Yukun Huang and Jianan Wang and Ailing Zeng and He Cao and Xianbiao Qi and Yukai Shi and Zheng-Jun Zha and Lei Zhang},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2023}
+}
+
+@article{kolotouros2023dreamhuman,
+  title={DreamHuman: Animatable 3D Avatars from Text},
+  author={Kolotouros, Nikos and Alldieck, Thiemo and Zanfir, Andrei and Bazavan, Eduard Gabriel and Fieraru, Mihai and Sminchisescu, Cristian},
+  booktitle={NeurIPS},
+  year={2023}
+}
+
+@inproceedings{huang2024tech,
+  title={{TeCH: Text-guided Reconstruction of Lifelike Clothed Humans}},
+  author={Huang, Yangyi and Yi, Hongwei and Xiu, Yuliang and Liao, Tingting and Tang, Jiaxiang and Cai, Deng and Thies, Justus},
+  booktitle={International Conference on 3D Vision (3DV)},
+  year={2024}
+}
+
+@article{liao2023tada,
+title={TADA! Text to Animatable Digital Avatars},
+author={Liao, Tingting and Yi, Hongwei and Xiu, Yuliang and Tang, Jiaxiang and Huang, Yangyi and Thies, Justus and Black, Michael J},
+journal={ArXiv},
+month={Aug}, 
+year={2023} 
+}
+
+@article{zhang2023avatarverse,
+  title={Avatarverse: High-quality \& stable 3d avatar creation from text and pose},
+  author={Zhang, Huichao and Chen, Bowen and Yang, Hao and Qu, Liao and Wang, Xu and Chen, Li and Long, Chao and Zhu, Feida and Du, Kang and Zheng, Min},
+  journal={arXiv preprint arXiv:2308.03610},
+  year={2023}
+}
+
+@article{liu2023humangaussian,
+    title={HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting},
+    author={Liu, Xian and Zhan, Xiaohang and Tang, Jiaxiang and Shan, Ying and Zeng, Gang and Lin, Dahua and Liu, Xihui and Liu, Ziwei},
+    journal={arXiv preprint arXiv:2311.17061},
+    year={2023}
+}
+
+@misc{huang2023humannorm,
+title={Humannorm: Learning normal diffusion model for high-quality and realistic 3d human generation},
+author={Huang, Xin and Shao, Ruizhi and Zhang, Qi and Zhang, Hongwen and Feng, Ying and Liu, Yebin and Wang, Qing},
+booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+year={2024}
+}
+
+@inproceedings{men2024en3d,
+  title={En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data},
+  author={Men, Yifang and Lei, Biwen and Yao, Yuan and Cui, Miaomiao and Lian, Zhouhui and Xie, Xuansong},
+  journal={arXiv preprint arXiv:2401.01173},
+  website={https://menyifang.github.io/projects/En3D/index.html},
+  year={2024}
+}
+
+@article{liu2023HeadArtist,
+  author = {Hongyu Liu, Xuan Wang, Ziyu Wan, Yujun Shen, Yibing Song, Jing Liao, Qifeng Chen},
+  title = {HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation},
+  journal = {arXiv:2312.07539},
+  year = {2023},
+}
+
+@article{zhou2024headstudio,
+  author = {Zhenglin Zhou and Fan Ma and Hehe Fan and Yi Yang},
+  title = {HeadStudio: Text to Animatable Head Avatars with 3D Gaussian Splatting},
+  journal={arXiv preprint arXiv:2402.06149},
+  year={2024}
+}
+
+@inproceedings{kolotouros2024avatarpopup,
+  author    = {Kolotouros, Nikos and Alldieck, Thiemo and Corona, Enric and Bazavan, Eduard Gabriel and Sminchisescu, Cristian},
+  title     = {Instant 3D Human Avatar Generation using Image Diffusion Models},
+  booktitle   = {European Conference on Computer Vision (ECCV)},
+  year      = {2024},
+}
+
+@misc{wang2023disentangled,
+      title={Disentangled Clothed Avatar Generation from Text Descriptions}, 
+      author={Jionghao Wang and Yuan Liu and Zhiyang Dou and Zhengming Yu and Yongqing Liang and Xin Li and Wenping Wang and Rong Xie and Li Song},
+      year={2023},
+      eprint={2312.05295},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+</details>
+
+---
+
+### 💡 Human ArXiv Papers
+
+#### 1. Make-A-Character: High Quality Text-to-3D Character Generation within Minutes
+Jianqiang Ren, Chao He, Lin Liu, Jiahao Chen, Yutong Wang, Yafei Song, Jianfang Li, Tangli Xue, Siqi Hu, Tao Chen, Kunkun Zheng, Jianjing Xiang, Liefeng Bo
+
+(Institute for Intelligent Computing, Alibaba Group)
+<details span>
+<summary><b>Abstract</b></summary>
+There is a growing demand for customized and expressive 3D characters with the emergence of AI agents and Metaverse, but creating 3D characters using traditional computer graphics tools is a complex and time-consuming task. To address these challenges, we propose a user-friendly framework named Make-A-Character (Mach) to create lifelike 3D avatars from text descriptions. The framework leverages the power of large language and vision models for textual intention understanding and intermediate image generation, followed by a series of human-oriented visual perception and 3D generation modules. Our system offers an intuitive approach for users to craft controllable, realistic, fully-realized 3D characters that meet their expectations within 2 minutes, while also enabling easy integration with existing CG pipeline for dynamic expressiveness. 
+</details>
+
+#### 2. MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space
+Armand Comas-Massagué, Di Qiu, Menglei Chai, Marcel Bühler, Amit Raj, Ruiqi Gao, Qiangeng Xu, Mark Matthews, Paulo Gotardo, Octavia Camps, Sergio Orts-Escolano, Thabo Beeler
+
+(Google, Northeastern Univeristy, ETH Zurich, Google DeepMind)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce a novel framework for 3D human avatar generation and personalization, leveraging text prompts to enhance user engagement and customization. Central to our approach are key innovations aimed at overcoming the challenges in photo-realistic avatar synthesis. Firstly, we utilize a conditional Neural Radiance Fields (NeRF) model, trained on a large-scale unannotated multi-view dataset, to create a versatile initial solution space that accelerates and diversifies avatar generation. Secondly, we develop a geometric prior, leveraging the capabilities of Text-to-Image Diffusion Models, to ensure superior view invariance and enable direct optimization of avatar geometry. These foundational ideas are complemented by our optimization pipeline built on Variational Score Distillation (VSD), which mitigates texture loss and over-saturation issues. As supported by our extensive experiments, these strategies collectively enable the creation of custom avatars with unparalleled visual quality and better adherence to input text prompts. 
+</details>
+
+#### 3. InstructHumans: Editing Animated 3D Human Textures with Instructions (text to 3d human texture editing)
+Jiayin Zhu, Linlin Yang, Angela Yao
+
+(National University of Singapore, Communication University of China)
+<details span>
+<summary><b>Abstract</b></summary>
+We present InstructHumans, a novel framework for instruction-driven 3D human texture editing. Existing text-based editing methods use Score Distillation Sampling (SDS) to distill guidance from generative models. This work shows that naively using such scores is harmful to editing as they destroy consistency with the source avatar. Instead, we propose an alternate SDS for Editing (SDS-E) that selectively incorporates subterms of SDS across diffusion timesteps. We further enhance SDS-E with spatial smoothness regularization and gradient-based viewpoint sampling to achieve high-quality edits with sharp and high-fidelity detailing. InstructHumans significantly outperforms existing 3D editing methods, consistent with the initial avatar while faithful to the textual instructions.
+</details>
+
+#### 4. HumanCoser: Layered 3D Human Generation via Semantic-Aware Diffusion Model
+Yi Wang, Jian Ma, Ruizhi Shao, Qiao Feng, Yu-kun Lai, Kun Li
+
+(Tianjin University, Changzhou Institute of Technology, Cardiff University)
+<details span>
+<summary><b>Abstract</b></summary>
+This paper aims to generate physically-layered 3D humans from text prompts. Existing methods either generate 3D clothed humans as a whole or support only tight and simple clothing generation, which limits their applications to virtual try-on and part-level editing. To achieve physically-layered 3D human generation with reusable and complex clothing, we propose a novel layer-wise dressed human representation based on a physically-decoupled diffusion model. Specifically, to achieve layer-wise clothing generation, we propose a dual-representation decoupling framework for generating clothing decoupled from the human body, in conjunction with an innovative multi-layer fusion volume rendering method. To match the clothing with different body shapes, we propose an SMPL-driven implicit field deformation network that enables the free transfer and reuse of clothing. Extensive experiments demonstrate that our approach not only achieves state-of-the-art layered 3D human generation with complex clothing but also supports virtual try-on and layered human animation.
+</details>
+
+#### 5. DreamHOI: Subject-Driven Generation of 3D Human-Object Interactions with Diffusion Priors
+Thomas Hanwen Zhu, Ruining Li, Tomas Jakab
+
+(University of Oxford, Carnegie Mellon University)
+<details span>
+<summary><b>Abstract</b></summary>
+We present DreamHOI, a novel method for zero-shot synthesis of human-object interactions (HOIs), enabling a 3D human model to realistically interact with any given object based on a textual description. This task is complicated by the varying categories and geometries of real-world objects and the scarcity of datasets encompassing diverse HOIs. To circumvent the need for extensive data, we leverage text-to-image diffusion models trained on billions of image-caption pairs. We optimize the articulation of a skinned human mesh using Score Distillation Sampling (SDS) gradients obtained from these models, which predict image-space edits. However, directly backpropagating image-space gradients into complex articulation parameters is ineffective due to the local nature of such gradients. To overcome this, we introduce a dual implicit-explicit representation of a skinned mesh, combining (implicit) neural radiance fields (NeRFs) with (explicit) skeleton-driven mesh articulation. During optimization, we transition between implicit and explicit forms, grounding the NeRF generation while refining the mesh articulation. We validate our approach through extensive experiments, demonstrating its effectiveness in generating realistic HOIs.
+</details>
+
+#### 6. AniGS: Animatable Gaussian Avatar from a Single Image with Inconsistent Gaussian Reconstruction
+Lingteng Qiu, Shenhao Zhu, Qi Zuo, Xiaodong Gu, Yuan Dong, Junfei Zhang, Chao Xu, Zhe Li, Weihao Yuan, Liefeng Bo, Guanying Chen, Zilong Dong
+
+(Alibaba Group, Sun Yat-sen University, Nanjing University, Huazhong University of Science and Technology)
+<details span>
+<summary><b>Abstract</b></summary>
+Generating animatable human avatars from a single image is essential for various digital human modeling applications. Existing 3D reconstruction methods often struggle to capture fine details in animatable models, while generative approaches for controllable animation, though avoiding explicit 3D modeling, suffer from viewpoint inconsistencies in extreme poses and computational inefficiencies. In this paper, we address these challenges by leveraging the power of generative models to produce detailed multi-view canonical pose images, which help resolve ambiguities in animatable human reconstruction. We then propose a robust method for 3D reconstruction of inconsistent images, enabling real-time rendering during inference. Specifically, we adapt a transformer-based video generation model to generate multi-view canonical pose images and normal maps, pretraining on a large-scale video dataset to improve generalization. To handle view inconsistencies, we recast the reconstruction problem as a 4D task and introduce an efficient 3D modeling approach using 4D Gaussian Splatting. Experiments demonstrate that our method achieves photorealistic, real-time animation of 3D human avatars from in-the-wild images, showcasing its effectiveness and generalization capability.
+</details>
+
+#### 7. MixedGaussianAvatar: Realistically and Geometrically Accurate Head Avatar via Mixed 2D-3D Gaussian Splatting
+Peng Chen, Xiaobao Wei, Qingpo Wuwu, Xinyi Wang, Xingyu Xiao, Ming Lu
+
+(Institute of Software Chinese Academy of Sciences, University of Chinese Academy of Sciences, Intel Labs China, Tsinghua University, Nankai University, Peking University)
+<details span>
+<summary><b>Abstract</b></summary>
+Reconstructing high-fidelity 3D head avatars is crucial in various applications such as virtual reality. The pioneering methods reconstruct realistic head avatars with Neural Radiance Fields (NeRF), which have been limited by training and rendering speed. Recent methods based on 3D Gaussian Splatting (3DGS) significantly improve the efficiency of training and rendering. However, the surface inconsistency of 3DGS results in subpar geometric accuracy; later, 2DGS uses 2D surfels to enhance geometric accuracy at the expense of rendering fidelity. To leverage the benefits of both 2DGS and 3DGS, we propose a novel method named MixedGaussianAvatar for realistically and geometrically accurate head avatar reconstruction. Our main idea is to utilize 2D Gaussians to reconstruct the surface of the 3D head, ensuring geometric accuracy. We attach the 2D Gaussians to the triangular mesh of the FLAME model and connect additional 3D Gaussians to those 2D Gaussians where the rendering quality of 2DGS is inadequate, creating a mixed 2D-3D Gaussian representation. These 2D-3D Gaussians can then be animated using FLAME parameters. We further introduce a progressive training strategy that first trains the 2D Gaussians and then fine-tunes the mixed 2D-3D Gaussians. We demonstrate the superiority of MixedGaussianAvatar through comprehensive experiments.
+</details>
+
+---
+
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2023 | **Make-A-Character: High Quality Text-to-3D Character Generation within Minutes**  | 24 Dec 2023  |          [Link](https://arxiv.org/abs/2312.15430)          |  [Link](https://github.com/Human3DAIGC/Make-A-Character)  | [Link](https://human3daigc.github.io/MACH/)  |
+| 2024 | **MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space**  | 1 Apr 2024  |          [Link](https://arxiv.org/abs/2404.01296)      | -- | [Link](https://syntec-research.github.io/MagicMirror/)  |
+| 2024 | **InstructHumans: Editing Animated 3D Human Textures with Instructions**  | 5 Apr 2024  |          [Link](https://arxiv.org/abs/2404.04037)          | [Link](https://github.com/viridityzhu/InstructHumans)  | [Link](https://jyzhu.top/instruct-humans/)  |
+| 2024 | **HumanCoser: Layered 3D Human Generation via Semantic-Aware Diffusion Model**  | 21 Aug 2024  |          [Link](https://arxiv.org/abs/2408.11357)          | -- | -- |
+| 2024 | **DreamHOI: Subject-Driven Generation of 3D Human-Object Interactions with Diffusion Priors**  | 12 Sep 2024  |          [Link](https://arxiv.org/abs/2409.08278)          | [Link](https://github.com/hanwenzhu/dreamhoi)| [Link](https://dreamhoi.github.io/) |
+| 2024 | **AniGS: Animatable Gaussian Avatar from a Single Image with Inconsistent Gaussian Reconstruction**  | 3 Dec 2024  |         --        | [Link](https://github.com/aigc3d/AniGS)| [Link](https://lingtengqiu.github.io/2024/AniGS/) |
+| 2024 | **MixedGaussianAvatar: Realistically and Geometrically Accurate Head Avatar via Mixed 2D-3D Gaussian Splatting**  | 6 Dec 2024  |    [Link](https://arxiv.org/abs/2412.04955)       | [Link](https://github.com/ChenVoid/MGA/)| [Link](https://chenvoid.github.io/MGA/) |
+
+<details close>
+<summary>ArXiv Papers References</summary>
+
+```
+%axiv papers
+
+@article{ren2023makeacharacter,
+      title={Make-A-Character: High Quality Text-to-3D Character Generation within Minutes},
+      author={Jianqiang Ren and Chao He and Lin Liu and Jiahao Chen and Yutong Wang and Yafei Song and Jianfang Li and Tangli Xue and Siqi Hu and Tao Chen and Kunkun Zheng and Jianjing Xiang and Liefeng Bo},
+      year={2023},
+      journal = {arXiv preprint arXiv:2312.15430}
+}
+
+@article{comas2024magicmirror,
+  title={MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space},
+  author={Comas-Massagu{\'e}, Armand and Qiu, Di and Chai, Menglei and B{\"u}hler, Marcel and Raj, Amit and Gao, Ruiqi and Xu, Qiangeng and Matthews, Mark and Gotardo, Paulo and Camps, Octavia and others},
+  journal={arXiv preprint arXiv:2404.01296},
+  year={2024}
+}
+
+@article{zhu2024InstructHumans,
+         author={Zhu, Jiayin and Yang, Linlin and Yao, Angela},
+         title={InstructHumans: Editing Animated 3D Human Textures with Instructions},
+         journal={arXiv preprint arXiv:2404.04037},
+         year={2024}
+}
+
+@misc{wang2024humancoserlayered3dhuman,
+      title={HumanCoser: Layered 3D Human Generation via Semantic-Aware Diffusion Model}, 
+      author={Yi Wang and Jian Ma and Ruizhi Shao and Qiao Feng and Yu-kun Lai and Kun Li},
+      year={2024},
+      eprint={2408.11357},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.11357}, 
+}
+
+@article{zhu2024dreamhoi,
+  title   = {{DreamHOI}: Subject-Driven Generation of 3D Human-Object Interactions with Diffusion Priors},
+  author  = {Thomas Hanwen Zhu and Ruining Li and Tomas Jakab},
+  journal = {arXiv preprint arXiv:2409.08278},
+  year    = {2024}
+}
+
+@article{qiu2024AniGS,
+  title={AniGS: Animatable Gaussian Avatar from a Single Image with Inconsistent Gaussian Reconstruction},
+  author={Qiu, Lingteng},
+  year={2024}
+}
+
+@misc{chen2024mixedgaussianavatarrealisticallygeometricallyaccurate,
+      title={MixedGaussianAvatar: Realistically and Geometrically Accurate Head Avatar via Mixed 2D-3D Gaussian Splatting}, 
+      author={Peng Chen and Xiaobao Wei and Qingpo Wuwu and Xinyi Wang and Xingyu Xiao and Ming Lu},
+      year={2024},
+      eprint={2412.04955},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.04955}, 
+}
+```
+</details>
+
+### Additional Info
+<details close>
+<summary>Survey and Awesome Repos</summary>
+ 
+#### Survey
+- [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
+  
+#### Awesome Repos
+- Resource1: [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
+</details>
+
+<details close>
+<summary>Pretrained Models</summary>
+
+   | Pretrained Models (human body) | Info |                              URL                              |
+   | :-----: | :-----: | :----------------------------------------------------------: |
+   |  SMPL  |  smpl model (smpl weights) | [Link](https://smpl.is.tue.mpg.de/) |
+   |  SMPL-X  |  smpl model (smpl weights)  | [Link](https://smpl-x.is.tue.mpg.de/) |
+   |  human_body_prior  |  vposer model (smpl weights)  | [Link](https://github.com/nghorbani/human_body_prior) |
+<details>
+<summary>SMPL</summary>
+
+SMPL is an easy-to-use, realistic, model of the of the human body that is useful for animation and computer vision.
+
+- version 1.0.0 for Python 2.7 (female/male, 10 shape PCs)
+- version 1.1.0 for Python 2.7 (female/male/neutral, 300 shape PCs)
+- UV map in OBJ format
+  
+</details>
+
+<details>
+<summary>SMPL-X</summary>
+
+SMPL-X, that extends SMPL with fully articulated hands and facial expressions (55 joints, 10475 vertices)
+
+</details>
+</details>
 
 ## Text to Scene
 
@@ -1084,927 +1641,6 @@ inproceedings{zhang20243DitScene,
 ```
 </details>
 
-## Text to Human Motion
-
-### 🎉 Motion Accepted Papers
-
-| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2023 | **MDM: Human Motion Diffusion Model**  | ICLR2023 (Top-25%) |          [Link](https://arxiv.org/abs/2209.14916)          | [Link](https://github.com/GuyTevet/motion-diffusion-model)  | [Link](https://guytevet.github.io/mdm-page/)  |
-| 2023 | **MotionGPT: Human Motion as a Foreign Language**  | NeurIPS 2023 |          [Link](https://arxiv.org/abs/2306.14795)          | [Link](https://github.com/OpenMotionLab/MotionGPT)  | [Link](https://motion-gpt.github.io/)  |
-| 2023 | **MLD: Motion Latent Diffusion Models**  | CVPR 2023 |          [Link](https://arxiv.org/abs/2212.04048)          | [Link](https://github.com/ChenFengYe/motion-latent-diffusion)  | [Link](https://chenxin.tech/mld/)  |
-| 2023 | **MotionMix: Weakly-Supervised Diffusion for Controllable Motion Generation**  | AAAI 2024 |          [Link](https://arxiv.org/abs/2401.11115)          | [Link](https://github.com/NhatHoang2002/MotionMix/tree/main)  | [Link](https://nhathoang2002.github.io/MotionMix-page/)  |
-| 2023 | **SinMDM: Single Motion Diffusion**  | ICLR 2024 Spotlight |          [Link](https://arxiv.org/abs/2302.05905)          | [Link](https://github.com/SinMDM/SinMDM)  | [Link](https://sinmdm.github.io/SinMDM-page/)  |
-| 2023 | **MoMask: Generative Masked Modeling of 3D Human Motions**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.00063)          | [Link](https://github.com/EricGuo5513/momask-codes) | [Link](https://ericguo5513.github.io/momask/)  |
-| 2023 | **Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2403.18036)          | [Link](https://github.com/diffusion-motion-transfer/diffusion-motion-transfer) | [Link](https://diffusion-motion-transfer.github.io/)  |
-| 2024 | **Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation**  | CVPRW 2024 |          [Link](https://arxiv.org/abs/2401.08559)          | [Link](https://github.com/nv-tlabs/stmc)| [Link](https://mathis.petrovich.fr/stmc/)  |
-| 2024 | **in2IN: Leveraging individual Information to Generate Human INteractions**  | HuMoGen CVPRW 2024 |          [Link](https://arxiv.org/abs/2404.09988)          | [Link](https://github.com/pabloruizponce/in2IN) | [Link](https://pabloruizponce.github.io/in2IN/)  |
-| 2024 | **Exploring Text-to-Motion Generation with Human Preference**  | HuMoGen CVPRW 2024 |          [Link](https://arxiv.org/abs/2404.09445)          | [Link](https://github.com/THU-LYJ-Lab/InstructMotion) | --  |
-| 2024 | **FlowMDM: Seamless Human Motion Composition with Blended Positional Encodings**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2402.15509)          | [Link](https://github.com/BarqueroGerman/FlowMDM) | [Link](https://barquerogerman.github.io/FlowMDM/)  |
-| 2024 | **Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance**  | CVPR 2024 (Highlight) |          [Link](https://arxiv.org/abs/2311.17009)          | [Link](https://github.com/afford-motion/afford-motion) | [Link](https://afford-motion.github.io/)  |
-| 2024 | **Generating Human Motion in 3D Scenes from Text Descriptions**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2405.07784)          | [Link](https://github.com/zju3dv/text_scene_motion) | [Link](https://zju3dv.github.io/text_scene_motion/)  |
-| 2024 | **OmniMotionGPT: Animal Motion Generation with Limited Data**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.18303)          | [Link](https://github.com/USRC-SEA/OmniMotionGPT) | [Link](https://zshyang.github.io/omgpt-website/)  |
-| 2024 | **HumanTOMATO: Text-aligned Whole-body Motion Generation**  | ICML 2024 |          [Link](https://arxiv.org/abs/2310.12978)          | [Link](https://github.com/IDEA-Research/HumanTOMATO)  | [Link](https://lhchen.top/HumanTOMATO/)  |
-| 2024 | **Self-Correcting Self-Consuming Loops for Generative Model Training**  | ICML 2024 |          [Link](https://arxiv.org/abs/2402.07087)          | [Link](https://github.com/nate-gillman/self-correcting-self-consuming) | [Link](https://cs.brown.edu/people/ngillman//sc-sc.html)  |
-| 2024 | **Flexible Motion In-betweening with Diffusion Models**  |SIGGRAPH 2024|          [Link](https://arxiv.org/abs/2405.11126)          | [Link](https://github.com/setarehc/diffusion-motion-inbetweening) | [Link](https://setarehc.github.io/CondMDI/)  |
-| 2024 | **Iterative Motion Editing with Natural Language**  |SIGGRAPH 2024|          [Link](https://arxiv.org/abs/2312.11538)          |[Link](https://github.com/purvigoel/iterative-editing-release)| [Link](https://purvigoel.github.io/iterative-motion-editing/)  |
-| 2024 | **MotionLCM: Real-time Controllable Motion Generation via Latent Consistency Model**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2404.19759)          | [Link](https://github.com/Dai-Wenxun/MotionLCM) | [Link](https://dai-wenxun.github.io/MotionLCM-page/)  |
-| 2024 | **ParCo: Part-Coordinating Text-to-Motion Synthesis**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2403.18512)          | [Link](https://github.com/qrzou/ParCo) | -- |
-| 2024 | **CoMo: Controllable Motion Generation through Language Guided Pose Code Editing**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2403.13900)          | [Link](https://github.com/yh2371/CoMo) | [Link](https://yh2371.github.io/como/) |
-| 2024 | **SMooDi: Stylized Motion Diffusion Model**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2407.12783)          | [Link](https://github.com/neu-vi/SMooDi)  | [Link](https://neu-vi.github.io/SMooDi/) |
-| 2024 | **EMDM: Efficient Motion Diffusion Model for Fast, High-Quality Human Motion Generation**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2312.02256)          | [Link](https://github.com/Frank-ZY-Dou/EMDM) | [Link](https://frank-zy-dou.github.io/projects/EMDM/index.html)  |
-| 2024 | **Plan, Posture and Go: Towards Open-World Text-to-Motion Generation**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2312.14828)          | [Link](https://github.com/moonsliu/Pro-Motion) | [Link](https://moonsliu.github.io/Pro-Motion/)  |
-| 2024 | **Generating Human Interaction Motions in Scenes with Text Control**  | ECCV 2024  |       [Link](https://arxiv.org/abs/2404.10685)          | -- | [Link](https://research.nvidia.com/labs/toronto-ai/tesmo/)  |
-| 2024 | **SATO: Stable Text-to-Motion Framework**  | ACM MULTIMEDIA 2024 |          [Link](https://arxiv.org/abs/2405.01461)          | [Link](https://github.com/sato-team/Stable-Text-to-motion-Framework) | [Link](https://sato-team.github.io/Stable-Text-to-Motion-Framework/)  |
-| 2024 | **MotionFix: Text-Driven 3D Human Motion Editing**  | SIGGRAPH Asia 2024 |          [Link](https://arxiv.org/abs/2408.00712)          | [Link](https://github.com/athn-nik/motionfix) | [Link](https://motionfix.is.tue.mpg.de/)  |
-| 2024 | **Autonomous Character-Scene Interaction Synthesis from Text Instruction**  | SIGGRAPH Asia 2024 |          [Link](https://arxiv.org/abs/2410.03187)          | -- | [Link](https://lingomotions.com/)  |
-
-<details close>
-<summary>Accepted Papers References</summary>
-
-```
-%accepted papers
-
-@inproceedings{
-tevet2023human,
-title={Human Motion Diffusion Model},
-author={Guy Tevet and Sigal Raab and Brian Gordon and Yoni Shafir and Daniel Cohen-or and Amit Haim Bermano},
-booktitle={The Eleventh International Conference on Learning Representations },
-year={2023},
-url={https://openreview.net/forum?id=SJ1kSyO2jwu}
-}
-
-@article{jiang2024motiongpt,
-    title={MotionGPT: Human Motion as a Foreign Language},
-    author={Jiang, Biao and Chen, Xin and Liu, Wen and Yu, Jingyi and Yu, Gang and Chen, Tao},
-    journal={Advances in Neural Information Processing Systems},
-    volume={36},
-    year={2024}
-}
-
-@inproceedings{chen2023executing,
-  title     = {Executing your Commands via Motion Diffusion in Latent Space},
-  author    = {Chen, Xin and Jiang, Biao and Liu, Wen and Huang, Zilong and Fu, Bin and Chen, Tao and Yu, Gang},
-  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages     = {18000--18010},
-  year      = {2023},
-}
-
-@misc{hoang2024motionmix,
-  title={MotionMix: Weakly-Supervised Diffusion for Controllable Motion Generation}, 
-  author={Nhat M. Hoang and Kehong Gong and Chuan Guo and Michael Bi Mi},
-  year={2024},
-  eprint={2401.11115},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
-}
-
-@inproceedings{raab2024single,
-            title={Single Motion Diffusion},
-            author={Raab, Sigal and Leibovitch, Inbal and Tevet, Guy and Arar, Moab and Bermano, Amit H and Cohen-Or, Daniel},
-            booktitle={The Twelfth International Conference on Learning Representations (ICLR)},             
-            year={2024}
-}
-
-@article{guo2023momask,
-      title={MoMask: Generative Masked Modeling of 3D Human Motions}, 
-      author={Chuan Guo and Yuxuan Mu and Muhammad Gohar Javed and Sen Wang and Li Cheng},
-      year={2023},
-      eprint={2312.00063},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-
-@article{yatim2023spacetime,
-        title = {Space-Time Diffusion Features for Zero-Shot Text-Driven Motion Transfer},
-        author = {Yatim, Danah and Fridman, Rafail and Bar-Tal, Omer and Kasten, Yoni and Dekel, Tali},
-        journal={arXiv preprint arxiv:2311.17009},
-        year={2023}
-}
-
-@inproceedings{petrovich24stmc,
-    title     = {Multi-Track Timeline Control for Text-Driven 3D Human Motion Generation},
-    author    = {Petrovich, Mathis and Litany, Or and Iqbal, Umar and Black, Michael J. and Varol, G{\"u}l and Peng, Xue Bin and Rempe, Davis},
-    booktitle = {CVPR Workshop on Human Motion Generation},
-    year      = {2024}
-}
-
-@misc{ponce2024in2in,
-      title={in2IN: Leveraging individual Information to Generate Human INteractions}, 
-      author={Pablo Ruiz Ponce and German Barquero and Cristina Palmero and Sergio Escalera and Jose Garcia-Rodriguez},
-      year={2024},
-      eprint={2404.09988},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-
-@misc{sheng2024exploring,
-      title={Exploring Text-to-Motion Generation with Human Preference}, 
-      author={Jenny Sheng and Matthieu Lin and Andrew Zhao and Kevin Pruvost and Yu-Hui Wen and Yangguang Li and Gao Huang and Yong-Jin Liu},
-      year={2024},
-      eprint={2404.09445},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG}
-}
-
-@article{barquero2024seamless,
-  title={Seamless Human Motion Composition with Blended Positional Encodings},
-  author={Barquero, German and Escalera, Sergio and Palmero, Cristina},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2024}
-}
-
-@inproceedings{wang2024move,
-  title={Move as You Say, Interact as You Can: Language-guided Human Motion Generation with Scene Affordance},
-  author={Wang, Zan and Chen, Yixin and Jia, Baoxiong and Li, Puhao and Zhang, Jinlu and Zhang, Jingze and Liu, Tengyu and Zhu, Yixin and Liang, Wei and Huang, Siyuan},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year={2024}
-}
-
-@inproceedings{cen2024text_scene_motion,
-  title={Generating Human Motion in 3D Scenes from Text Descriptions},
-  author={Cen, Zhi and Pi, Huaijin and Peng, Sida and Shen, Zehong and Yang, Minghui and Shuai, Zhu and Bao, Hujun and Zhou, Xiaowei},
-  booktitle={CVPR},
-  year={2024}
-}
-
-@inproceedings{yang2024omnimotiongpt,
-  title={OmniMotionGPT: Animal Motion Generation with Limited Data},
-  author={Yang, Zhangsihao and Zhou, Mingyuan and Shan, Mengyi and Wen, Bingbing and Xuan, Ziwei and Hill, Mitch and Bai, Junjie and Qi, Guo-Jun and Wang, Yalin},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={1249--1259},
-  year={2024}
-}
-
-@article{humantomato,
-  title={HumanTOMATO: Text-aligned Whole-body Motion Generation},
-  author={Lu, Shunlin and Chen, Ling-Hao and Zeng, Ailing and Lin, Jing and Zhang, Ruimao and Zhang, Lei and Shum, Heung-Yeung},
-  journal={arxiv:2310.12978},
-  year={2023}
-}
-
-@misc{gillman2024selfcorrecting,
-  title={Self-Correcting Self-Consuming Loops for Generative Model Training}, 
-  author={Nate Gillman and Michael Freeman and Daksh Aggarwal and Chia-Hong Hsu and Calvin Luo and Yonglong Tian and Chen Sun},
-  year={2024},
-  eprint={2402.07087},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG}
-}
-
-@misc{cohan2024flexible,
-      title={Flexible Motion In-betweening with Diffusion Models}, 
-      author={Setareh Cohan and Guy Tevet and Daniele Reda and Xue Bin Peng and Michiel van de Panne},
-      year={2024},
-      eprint={2405.11126},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-
-@inproceedings{Goel_2024, series={SIGGRAPH ’24},
-   title={Iterative Motion Editing with Natural Language},
-   url={http://dx.doi.org/10.1145/3641519.3657447},
-   DOI={10.1145/3641519.3657447},
-   booktitle={Special Interest Group on Computer Graphics and Interactive Techniques Conference Conference Papers ’24},
-   publisher={ACM},
-   author={Goel, Purvi and Wang, Kuan-Chieh and Liu, C. Karen and Fatahalian, Kayvon},
-   year={2024},
-   month=jul, collection={SIGGRAPH ’24} }
-
-
-@article{motionlcm,
-      title={MotionLCM: Real-time Controllable Motion Generation via Latent Consistency Model},
-      author={Wenxun Dai and Ling-Hao Chen and Jingbo Wang and Jinpeng Liu and Bo Dai and Yansong Tang},
-      journal={arXiv preprint arXiv:2404.19759},
-      year={2024}
-}
-
-@misc{zou2024parcopartcoordinatingtexttomotionsynthesis,
-      title={ParCo: Part-Coordinating Text-to-Motion Synthesis}, 
-      author={Qiran Zou and Shangyuan Yuan and Shian Du and Yu Wang and Chang Liu and Yi Xu and Jie Chen and Xiangyang Ji},
-      year={2024},
-      eprint={2403.18512},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2403.18512}, 
-}
-
-@misc{huang2024como,
-      title={CoMo: Controllable Motion Generation through Language Guided Pose Code Editing}, 
-      author={Yiming Huang and Weilin Wan and Yue Yang and Chris Callison-Burch and Mark Yatskar and Lingjie Liu},
-      year={2024},
-      eprint={2403.13900},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-
-@misc{zhong2024smoodistylizedmotiondiffusion,
-      title={SMooDi: Stylized Motion Diffusion Model}, 
-      author={Lei Zhong and Yiming Xie and Varun Jampani and Deqing Sun and Huaizu Jiang},
-      year={2024},
-      eprint={2407.12783},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.12783}, 
-}
-
-@article{zhou2023emdm,
-  title={EMDM: Efficient Motion Diffusion Model for Fast, High-Quality Motion Generation},
-  author={Zhou, Wenyang and Dou, Zhiyang and Cao, Zeyu and Liao, Zhouyingcheng and Wang, Jingbo and Wang, Wenjia and Liu, Yuan and Komura, Taku and Wang, Wenping and Liu, Lingjie},
-  journal={arXiv preprint arXiv:2312.02256},
-  year={2023}
-}
-
-@article{liu2023plan,
-  title={Plan, Posture and Go: Towards Open-World Text-to-Motion Generation},
-  author={Liu, Jinpeng and Dai, Wenxun and Wang, Chunyu and Cheng, Yiji and Tang, Yansong and Tong, Xin},
-  journal={arXiv preprint arXiv:2312.14828},
-  year={2023}
-}
-
-@article{yi2024tesmo,
-    author={Yi, Hongwei and Thies, Justus and Black, Michael J. and Peng, Xue Bin and Rempe, Davis},
-    title={Generating Human Interaction Motions in Scenes with Text Control},
-    journal = {arXiv:2404.10685},
-    year={2024}
-}
-
-@misc{chen2024sato,
-      title={SATO: Stable Text-to-Motion Framework}, 
-      author={Wenshuo Chen and Hongru Xiao and Erhang Zhang and Lijie Hu and Lei Wang and Mengyuan Liu and Chen Chen},
-      year={2024},
-      eprint={2405.01461},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-
-@inproceedings{athanasiou2024motionfix,
-  title = {{MotionFix}: Text-Driven 3D Human Motion Editing},
-  author = {Athanasiou, Nikos and Ceske, Alpar and Diomataris, Markos and Black, Michael J. and Varol, G{\"u}l},
-  booktitle = {SIGGRAPH Asia 2024 Conference Papers},
-  year = {2024}
-}
-
-@misc{jiang2024autonomouscharactersceneinteractionsynthesis,
-      title={Autonomous Character-Scene Interaction Synthesis from Text Instruction}, 
-      author={Nan Jiang and Zimo He and Zi Wang and Hongjie Li and Yixin Chen and Siyuan Huang and Yixin Zhu},
-      year={2024},
-      eprint={2410.03187},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.03187}, 
-}
-```
-</details>
-
----
-
-### 💡 Motion ArXiv Papers
-
-#### 1. Story-to-Motion: Synthesizing Infinite and Controllable Character Animation from Long Text  
-Zhongfei Qing, Zhongang Cai, Zhitao Yang, Lei Yang (SenseTime)
-<details span>
-<summary><b>Abstract</b></summary>
-Generating natural human motion from a story has the potential to transform the landscape of animation, gaming, and film industries. A new and challenging task, Story-to-Motion, arises when characters are required to move to various locations and perform specific motions based on a long text description. This task demands a fusion of low-level control (trajectories) and high-level control (motion semantics). Previous works in character control and text-to-motion have addressed related aspects, yet a comprehensive solution remains elusive: character control methods do not handle text description, whereas text-to-motion methods lack position constraints and often produce unstable motions. In light of these limitations, we propose a novel system that generates controllable, infinitely long motions and trajectories aligned with the input text. 1) we leverage contemporary Large Language Models to act as a text-driven motion scheduler to extract a series of (text, position) pairs from long text. 2) we develop a text-driven motion retrieval scheme that incorporates classic motion matching with motion semantic and trajectory constraints. 3) we design a progressive mask transformer that addresses common artifacts in the transition motion such as unnatural pose and foot sliding. Beyond its pioneering role as the first comprehensive solution for Story-to-Motion, our system undergoes evaluation across three distinct sub-tasks: trajectory following, temporal action composition, and motion blending, where it outperforms previous state-of-the-art (SOTA) motion synthesis methods across the board.
-</details>
-
-#### 2. Synthesizing Moving People with 3D Control  
-Boyi Li, Jathushan Rajasegaran, Yossi Gandelsman, Alexei A. Efros, Jitendra Malik (UC Berkeley)
-<details span>
-<summary><b>Abstract</b></summary>
-In this paper, we present a diffusion model-based framework for animating people from a single image for a given target 3D motion sequence. Our approach has two core components: a) learning priors about invisible parts of the human body and clothing, and b) rendering novel body poses with proper clothing and texture. For the first part, we learn an in-filling diffusion model to hallucinate unseen parts of a person given a single image. We train this model on texture map space, which makes it more sample-efficient since it is invariant to pose and viewpoint. Second, we develop a diffusion-based rendering pipeline, which is controlled by 3D human poses. This produces realistic renderings of novel poses of the person, including clothing, hair, and plausible in-filling of unseen regions. This disentangled approach allows our method to generate a sequence of images that are faithful to the target motion in the 3D pose and, to the input image in terms of visual similarity. In addition to that, the 3D control allows various synthetic camera trajectories to render a person. Our experiments show that our method is resilient in generating prolonged motions and varied challenging and complex poses compared to prior methods. 
-</details>
-
-#### 3. Large Motion Model for Unified Multi-Modal Motion Generation
-Mingyuan Zhang, Daisheng Jin, Chenyang Gu, Fangzhou Hong, Zhongang Cai, Jingfang Huang, Chongzhi Zhang, Xinying Guo, Lei Yang, Ying He, Ziwei Liu 
-
-(S-Lab, Nanyang Technological University, SenseTime China)
-<details span>
-<summary><b>Abstract</b></summary>
-Human motion generation, a cornerstone technique in animation and video production, has widespread applications in various tasks like text-to-motion and music-to-dance. Previous works focus on developing specialist models tailored for each task without scalability. In this work, we present Large Motion Model (LMM), a motion-centric, multi-modal framework that unifies mainstream motion generation tasks into a generalist model. A unified motion model is appealing since it can leverage a wide range of motion data to achieve broad generalization beyond a single task. However, it is also challenging due to the heterogeneous nature of substantially different motion data and tasks. LMM tackles these challenges from three principled aspects: 1) Data: We consolidate datasets with different modalities, formats and tasks into a comprehensive yet unified motion generation dataset, MotionVerse, comprising 10 tasks, 16 datasets, a total of 320k sequences, and 100 million frames. 2) Architecture: We design an articulated attention mechanism ArtAttention that incorporates body part-aware modeling into Diffusion Transformer backbone. 3) Pre-Training: We propose a novel pre-training strategy for LMM, which employs variable frame rates and masking forms, to better exploit knowledge from diverse training data. Extensive experiments demonstrate that our generalist LMM achieves competitive performance across various standard motion generation tasks over state-of-the-art specialist models. Notably, LMM exhibits strong generalization capabilities and emerging properties across many unseen tasks. Additionally, our ablation studies reveal valuable insights about training and scaling up large motion models for future research.
-</details>
-
-#### 4. StableMoFusion: Towards Robust and Efficient Diffusion-based Motion Generation Framework
-Yiheng Huang, Hui Yang, Chuanchen Luo, Yuxi Wang, Shibiao Xu, Zhaoxiang Zhang, Man Zhang, Junran Peng
-
-(Beijing University of Posts and Telecommunications, CAIR/HKISI/CAS, Institute of Automation/Chinese Academy of Science)
-<details span>
-<summary><b>Abstract</b></summary>
-Thanks to the powerful generative capacity of diffusion models, recent years have witnessed rapid progress in human motion generation. Existing diffusion-based methods employ disparate network architectures and training strategies. The effect of the design of each component is still unclear. In addition, the iterative denoising process consumes considerable computational overhead, which is prohibitive for real-time scenarios such as virtual characters and humanoid robots. For this reason, we first conduct a comprehensive investigation into network architectures, training strategies, and inference processs. Based on the profound analysis, we tailor each component for efficient high-quality human motion generation. Despite the promising performance, the tailored model still suffers from foot skating which is an ubiquitous issue in diffusion-based solutions. To eliminate footskate, we identify foot-ground contact and correct foot motions along the denoising process. By organically combining these well-designed components together, we present StableMoFusion, a robust and efficient framework for human motion generation. Extensive experimental results show that our StableMoFusion performs favorably against current state-of-the-art methods.
-</details>
-
-#### 5. CrowdMoGen: Zero-Shot Text-Driven Collective Motion Generation
-Xinying Guo, Mingyuan Zhang, Haozhe Xie, Chenyang Gu, Ziwei Liu (S-Lab Nanyang Technological University)
-<details span>
-<summary><b>Abstract</b></summary>
-Crowd Motion Generation is essential in entertainment industries such as animation and games as well as in strategic fields like urban simulation and planning. This new task requires an intricate integration of control and generation to realistically synthesize crowd dynamics under specific spatial and semantic constraints, whose challenges are yet to be fully explored. On the one hand, existing human motion generation models typically focus on individual behaviors, neglecting the complexities of collective behaviors. On the other hand, recent methods for multi-person motion generation depend heavily on pre-defined scenarios and are limited to a fixed, small number of inter-person interactions, thus hampering their practicality. To overcome these challenges, we introduce CrowdMoGen, a zero-shot text-driven framework that harnesses the power of Large Language Model (LLM) to incorporate the collective intelligence into the motion generation framework as guidance, thereby enabling generalizable planning and generation of crowd motions without paired training data. Our framework consists of two key components: 1) Crowd Scene Planner that learns to coordinate motions and dynamics according to specific scene contexts or introduced perturbations, and 2) Collective Motion Generator that efficiently synthesizes the required collective motions based on the holistic plans. Extensive quantitative and qualitative experiments have validated the effectiveness of our framework, which not only fills a critical gap by providing scalable and generalizable solutions for Crowd Motion Generation task but also achieves high levels of realism and flexibility.
-</details>
-
-#### 6. Infinite Motion: Extended Motion Generation via Long Text Instructions
-Mengtian Li, Chengshuo Zhai, Shengxiang Yao, Zhifeng Xie, Keyu Chen Yu-Gang Jiang
-
-(Shanghai University, Shanghai Engineering Research Center of Motion Picture Special Effects, Tavus Inc., Fudan University)
-<details span>
-<summary><b>Abstract</b></summary>
-In the realm of motion generation, the creation of long-duration, high-quality motion sequences remains a significant challenge. This paper presents our groundbreaking work on "Infinite Motion", a novel approach that leverages long text to extended motion generation, effectively bridging the gap between short and long-duration motion synthesis. Our core insight is the strategic extension and reassembly of existing high-quality text-motion datasets, which has led to the creation of a novel benchmark dataset to facilitate the training of models for extended motion sequences. A key innovation of our model is its ability to accept arbitrary lengths of text as input, enabling the generation of motion sequences tailored to specific narratives or scenarios. Furthermore, we incorporate the timestamp design for text which allows precise editing of local segments within the generated sequences, offering unparalleled control and flexibility in motion synthesis. We further demonstrate the versatility and practical utility of "Infinite Motion" through three specific applications: natural language interactive editing, motion sequence editing within long sequences and splicing of independent motion sequences. Each application highlights the adaptability of our approach and broadens the spectrum of possibilities for research and development in motion generation. Through extensive experiments, we demonstrate the superior performance of our model in generating long sequence motions compared to existing methods.
-</details>
-
-#### 7. Adding Multi-modal Controls to Whole-body Human Motion Generation
-Yuxuan Bian, Ailing Zeng, Xuan Ju, Xian Liu, Zhaoyang Zhang, Wei Liu, Qiang Xu
-
-(The Chinese University of Hong Kong, Tencent)
-<details span>
-<summary><b>Abstract</b></summary>
-Whole-body multi-modal motion generation, controlled by text, speech, or music, has numerous applications including video generation and character animation. However, employing a unified model to accomplish various generation tasks with different condition modalities presents two main challenges: motion distribution drifts across different generation scenarios and the complex optimization of mixed conditions with varying granularity. Furthermore, inconsistent motion formats in existing datasets further hinder effective multi-modal motion generation. In this paper, we propose ControlMM, a unified framework to Control whole-body Multi-modal Motion generation in a plug-and-play manner. To effectively learn and transfer motion knowledge across different motion distributions, we propose ControlMM-Attn, for parallel modeling of static and dynamic human topology graphs. To handle conditions with varying granularity, ControlMM employs a coarse-to-fine training strategy, including stage-1 text-to-motion pre-training for semantic generation and stage-2 multi-modal control adaptation for conditions of varying low-level granularity. To address existing benchmarks' varying motion format limitations, we introduce ControlMM-Bench, the first publicly available multi-modal whole-body human motion generation benchmark based on the unified whole-body SMPL-X format. Extensive experiments show that ControlMM achieves state-of-the-art performance across various standard motion generation tasks. 
-</details>
-
-#### 8. MoRAG -- Multi-Fusion Retrieval Augmented Generation for Human Motion
-Kalakonda Sai Shashank, Shubh Maheshwari, Ravi Kiran Sarvadevabhatla
-
-(IIIT Hyderabad, University of California San Diego)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce MoRAG, a novel multi-part fusion based retrieval-augmented generation strategy for text-based human motion generation. The method enhances motion diffusion models by leveraging additional knowledge obtained through an improved motion retrieval process. By effectively prompting large language models (LLMs), we address spelling errors and rephrasing issues in motion retrieval. Our approach utilizes a multi-part retrieval strategy to improve the generalizability of motion retrieval across the language space. We create diverse samples through the spatial composition of the retrieved motions. Furthermore, by utilizing low-level, part-specific motion information, we can construct motion samples for unseen text descriptions. Our experiments demonstrate that our framework can serve as a plug-and-play module, improving the performance of motion diffusion models.
-</details>
-
-#### 9. T2M-X: Learning Expressive Text-to-Motion Generation from Partially Annotated Data
-Mingdian Liu, Yilin Liu, Gurunandan Krishnan, Karl S Bayer, Bing Zhou
-
-(Iowa State University, Pennsylvania State University, Snap Inc.)
-<details span>
-<summary><b>Abstract</b></summary>
-The generation of humanoid animation from text prompts can profoundly impact animation production and AR/VR experiences. However, existing methods only generate body motion data, excluding facial expressions and hand movements. This limitation, primarily due to a lack of a comprehensive whole-body motion dataset, inhibits their readiness for production use. Recent attempts to create such a dataset have resulted in either motion inconsistency among different body parts in the artificially augmented data or lower quality in the data extracted from RGB videos. In this work, we propose T2M-X, a two-stage method that learns expressive text-to-motion generation from partially annotated data. T2M-X trains three separate Vector Quantized Variational AutoEncoders (VQ-VAEs) for body, hand, and face on respective high-quality data sources to ensure high-quality motion outputs, and a Multi-indexing Generative Pretrained Transformer (GPT) model with motion consistency loss for motion generation and coordination among different body parts. Our results show significant improvements over the baselines both quantitatively and qualitatively, demonstrating its robustness against the dataset limitations.
-</details>
-
-#### 10. UniMuMo: Unified Text, Music and Motion Generation
-Han Yang, Kun Su, Yutong Zhang, Jiaben Chen, Kaizhi Qian, Gaowen Liu, Chuang Gan
-
-(The Chinese University of Hong Kong, University of Washington, The University of British Columbia, UMass Amherst, MIT-IBM Watson AI Lab, Cisco Research)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce UniMuMo, a unified multimodal model capable of taking arbitrary text, music, and motion data as input conditions to generate outputs across all three modalities. To address the lack of time-synchronized data, we align unpaired music and motion data based on rhythmic patterns to leverage existing large-scale music-only and motion-only datasets. By converting music, motion, and text into token-based representation, our model bridges these modalities through a unified encoder-decoder transformer architecture. To support multiple generation tasks within a single framework, we introduce several architectural improvements. We propose encoding motion with a music codebook, mapping motion into the same feature space as music. We introduce a music-motion parallel generation scheme that unifies all music and motion generation tasks into a single transformer decoder architecture with a single training task of music-motion joint generation. Moreover, the model is designed by fine-tuning existing pre-trained single-modality models, significantly reducing computational demands. Extensive experiments demonstrate that UniMuMo achieves competitive results on all unidirectional generation benchmarks across music, motion, and text modalities.
-</details>
-
-#### 11. DART: A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control
-Kaifeng Zhao, Gen Li, Siyu Tang (ETH Zürich)
-<details span>
-<summary><b>Abstract</b></summary>
-Text-conditioned human motion generation, which allows for user interaction through natural language, has become increasingly popular. Existing methods typically generate short, isolated motions based on a single input sentence. However, human motions are continuous and can extend over long periods, carrying rich semantics. Creating long, complex motions that precisely respond to streams of text descriptions, particularly in an online and real-time setting, remains a significant challenge. Furthermore, incorporating spatial constraints into text-conditioned motion generation presents additional challenges, as it requires aligning the motion semantics specified by text descriptions with geometric information, such as goal locations and 3D scene geometry. To address these limitations, we propose DART, a Diffusion-based Autoregressive motion primitive model for Real-time Text-driven motion control. Our model, DART, effectively learns a compact motion primitive space jointly conditioned on motion history and text inputs using latent diffusion models. By autoregressively generating motion primitives based on the preceding history and current text input, DART enables real-time, sequential motion generation driven by natural language descriptions. Additionally, the learned motion primitive space allows for precise spatial motion control, which we formulate either as a latent noise optimization problem or as a Markov decision process addressed through reinforcement learning. We present effective algorithms for both approaches, demonstrating our model's versatility and superior performance in various motion synthesis tasks. Experiments show our method outperforms existing baselines in motion realism, efficiency, and controllability.
-</details>
-
-#### 12. ControlMM: Controllable Masked Motion Generation
-Ekkasit Pinyoanuntapong, Muhammad Usama Saleem, Korrawe Karunratanakul, Pu Wang, Hongfei Xue, Chen Chen, Chuan Guo, Junli Cao, Jian Ren, Sergey Tulyakov
-
-(University of North Carolina at Charlotte, ETH Zurich, University of Central Florida, Snap Inc.)
-<details span>
-<summary><b>Abstract</b></summary>
-Recent advances in motion diffusion models have enabled spatially controllable text-to-motion generation. However, despite achieving acceptable control precision, these models suffer from generation speed and fidelity limitations. To address these challenges, we propose ControlMM, a novel approach incorporating spatial control signals into the generative masked motion model. ControlMM achieves real-time, high-fidelity, and high-precision controllable motion generation simultaneously. Our approach introduces two key innovations. First, we propose masked consistency modeling, which ensures high-fidelity motion generation via random masking and reconstruction, while minimizing the inconsistency between the input control signals and the extracted control signals from the generated motion. To further enhance control precision, we introduce inference-time logit editing, which manipulates the predicted conditional motion distribution so that the generated motion, sampled from the adjusted distribution, closely adheres to the input control signals. During inference, ControlMM enables parallel and iterative decoding of multiple motion tokens, allowing for high-speed motion generation. Extensive experiments show that, compared to the state of the art, ControlMM delivers superior results in motion quality, with better FID scores (0.061 vs 0.271), and higher control precision (average error 0.0091 vs 0.0108). ControlMM generates motions 20 times faster than diffusion-based methods. Additionally, ControlMM unlocks diverse applications such as any joint any frame control, body part timeline control, and obstacle avoidance.
-</details>
-
-#### 13. MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms
-Ling-Hao Chen, Wenxun Dai, Xuan Ju, Shunlin Lu, Lei Zhang
-
-(Tsinghua University, International Digital Economy Academy (IDEA), The Chinese University of Hong Kong, The Chinese University of Hong Kong Shenzhen)
-<details span>
-<summary><b>Abstract</b></summary>
-This research delves into the problem of interactive editing of human motion generation. Previous motion diffusion models lack explicit modeling of the word-level text-motion correspondence and good explainability, hence restricting their fine-grained editing ability. To address this issue, we propose an attention-based motion diffusion model, namely MotionCLR, with CLeaR modeling of attention mechanisms. Technically, MotionCLR models the in-modality and cross-modality interactions with self-attention and cross-attention, respectively. More specifically, the self-attention mechanism aims to measure the sequential similarity between frames and impacts the order of motion features. By contrast, the cross-attention mechanism works to find the fine-grained word-sequence correspondence and activate the corresponding timesteps in the motion sequence. Based on these key properties, we develop a versatile set of simple yet effective motion editing methods via manipulating attention maps, such as motion (de-)emphasizing, in-place motion replacement, and example-based motion generation, etc. For further verification of the explainability of the attention mechanism, we additionally explore the potential of action-counting and grounded motion generation ability via attention maps. Our experimental results show that our method enjoys good generation and editing ability with good explainability.
-</details>
-
-#### 14. KMM: Key Frame Mask Mamba for Extended Motion Generation
-Zeyu Zhang, Hang Gao, Akide Liu, Qi Chen, Feng Chen, Yiran Wang, Danning Li, Hao Tang
-
-(Peking University, The Australian National University, Monash University, The University of Adelaide, The University of Sydney, McGill University)
-<details span>
-<summary><b>Abstract</b></summary>
-Human motion generation is a cut-edge area of research in generative computer vision, with promising applications in video creation, game development, and robotic manipulation. The recent Mamba architecture shows promising results in efficiently modeling long and complex sequences, yet two significant challenges remain: Firstly, directly applying Mamba to extended motion generation is ineffective, as the limited capacity of the implicit memory leads to memory decay. Secondly, Mamba struggles with multimodal fusion compared to Transformers, and lack alignment with textual queries, often confusing directions (left or right) or omitting parts of longer text queries. To address these challenges, our paper presents three key contributions: Firstly, we introduce KMM, a novel architecture featuring Key frame Masking Modeling, designed to enhance Mamba's focus on key actions in motion segments. This approach addresses the memory decay problem and represents a pioneering method in customizing strategic frame-level masking in SSMs. Additionally, we designed a contrastive learning paradigm for addressing the multimodal fusion problem in Mamba and improving the motion-text alignment. Finally, we conducted extensive experiments on the go-to dataset, BABEL, achieving state-of-the-art performance with a reduction of more than 57% in FID and 70% parameters compared to previous state-of-the-art methods. 
-</details>
-
-#### 15. KinMo: Kinematic-aware Human Motion Understanding and Generation
-Pengfei Zhang, Pinxin Liu, Hyeongwoo Kim, Pablo Garrido, Bindita Chaudhuri
-
-(University of California Irvine, University of Rochester, Imperial College London, FlawlessAI)
-<details span>
-<summary><b>Abstract</b></summary>
-Controlling human motion based on text presents an important challenge in computer vision. Traditional approaches often rely on holistic action descriptions for motion synthesis, which struggle to capture subtle movements of local body parts. This limitation restricts the ability to isolate and manipulate specific movements. To address this, we propose a novel motion representation that decomposes motion into distinct body joint group movements and interactions from a kinematic perspective. We design an automatic dataset collection pipeline that enhances the existing text-motion benchmark by incorporating fine-grained local joint-group motion and interaction descriptions. To bridge the gap between text and motion domains, we introduce a hierarchical motion semantics approach that progressively fuses joint-level interaction information into the global action-level semantics for modality alignment. With this hierarchy, we introduce a coarse-to-fine motion synthesis procedure for various generation and editing downstream applications. Our quantitative and qualitative experiments demonstrate that the proposed formulation enhances text-motion retrieval by improving joint-spatial understanding, and enables more precise joint-motion generation and control.
-</details>
-
-#### 16. The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion
-Changan Chen, Juze Zhang, Shrinidhi K. Lakshmikanth, Yusu Fang, Ruizhi Shao, Gordon Wetzstein, Li Fei-Fei, Ehsan Adeli (Stanford University)
-
-<details span>
-<summary><b>Abstract</b></summary>
-Human communication is inherently multimodal, involving a combination of verbal and non-verbal cues such as speech, facial expressions, and body gestures. Modeling these behaviors is essential for understanding human interaction and for creating virtual characters that can communicate naturally in applications like games, films, and virtual reality. However, existing motion generation models are typically limited to specific input modalities -- either speech, text, or motion data -- and cannot fully leverage the diversity of available data. In this paper, we propose a novel framework that unifies verbal and non-verbal language using multimodal language models for human motion understanding and generation. This model is flexible in taking text, speech, and motion or any combination of them as input. Coupled with our novel pre-training strategy, our model not only achieves state-of-the-art performance on co-speech gesture generation but also requires much less data for training. Our model also unlocks an array of novel tasks such as editable gesture generation and emotion prediction from motion. We believe unifying the verbal and non-verbal language of human motion is essential for real-world applications, and language models offer a powerful approach to achieving this goal. 
-</details>
-
----
-
-| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2023 | **Story-to-Motion: Synthesizing Infinite and Controllable Character Animation from Long Text**  | 13 Nov 2023 |          [Link](https://arxiv.org/abs/2311.07446)          | -- | [Link](https://story2motion.github.io/)  |
-| 2024 | **Synthesizing Moving People with 3D Control**  | 19 Jan 2024 |          [Link](https://arxiv.org/abs/2401.10889)          | [Link](https://github.com/Boyiliee/3DHM)   | [Link](https://boyiliee.github.io/3DHM.github.io/)  |
-| 2024 | **Large Motion Model for Unified Multi-Modal Motion Generation**  | 1 Apr 2024 |          [Link](https://arxiv.org/abs/2404.01284)          | [Link](https://github.com/mingyuan-zhang/LMM) | [Link](https://mingyuan-zhang.github.io/projects/LMM.html)  |
-| 2024 | **StableMoFusion: Towards Robust and Efficient Diffusion-based Motion Generation Framework**  | 9 May 2024 |          [Link](https://arxiv.org/abs/2405.05691)          | [Link](https://github.com/h-y1heng/StableMoFusion) | [Link](https://h-y1heng.github.io/StableMoFusion-page/)  |
-| 2024 | **CrowdMoGen: Zero-Shot Text-Driven Collective Motion Generation**  | 8 Jul 2024 |          [Link](https://arxiv.org/abs/2407.06188)          | [Link](https://github.com/gxyes/CrowdMoGen) | [Link](https://gxyes.github.io/projects/CrowdMoGen.html)  |
-| 2024 | **Infinite Motion: Extended Motion Generation via Long Text Instructions**  | 11 Jul 2024 |          [Link](https://arxiv.org/abs/2407.08443)          | [Link](https://github.com/shuochengzhai/Infinite-Motion) | [Link](https://shuochengzhai.github.io/Infinite-motion.github.io/)  |
-| 2024 | **Adding Multi-modal Controls to Whole-body Human Motion Generation**  | 30 Jul 2024 |          [Link](https://arxiv.org/abs/2407.21136)          | [Link](https://github.com/yxbian23/ControlMM) | [Link](https://yxbian23.github.io/ControlMM/)  |
-| 2024 | **MoRAG -- Multi-Fusion Retrieval Augmented Generation for Human Motion**  | 18 Sep 2024 |          [Link](https://arxiv.org/abs/2409.12140)          | [Link](https://github.com/Motion-RAG/MoRAG) | [Link](https://motion-rag.github.io/)  |
-| 2024 | **T2M-X: Learning Expressive Text-to-Motion Generation from Partially Annotated Data**  | 20 Sep 2024 |          [Link](https://arxiv.org/abs/2409.13251)          | -- | -- |
-| 2024 | **UniMuMo: Unified Text, Music, and Motion Generation**  | 6 Oct 2024 |          [Link](https://arxiv.org/abs/2410.04534)          | [Link](https://github.com/hanyangclarence/UniMuMo) | [Link](https://hanyangclarence.github.io/unimumo_demo/)  |
-| 2024 | **DART: A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control**  | 7 Oct 2024 |          [Link](https://arxiv.org/abs/2410.05260)          | -- | [Link](https://zkf1997.github.io/DART/)  |
-| 2024 | **ControlMM: Controllable Masked Motion Generation**  | 14 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10780)          | [Link](https://github.com/exitudio/ControlMM/) | [Link](https://exitudio.github.io/ControlMM-page/)  |
-| 2024 | **MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms**  | 24 Oct 2024 |          [Link](https://arxiv.org/abs/2410.18977)          | [Link](https://github.com/IDEA-Research/MotionCLR) | [Link](https://lhchen.top/MotionCLR/)  |
-| 2024 | **KMM: Key Frame Mask Mamba for Extended Motion Generation**  | 10 Nov 2024 |          [Link](https://arxiv.org/abs/2411.06481)          | [Link](https://github.com/steve-zeyu-zhang/KMM) | [Link](https://steve-zeyu-zhang.github.io/KMM/)  |
-| 2024 | **KinMo: Kinematic-aware Human Motion Understanding and Generation**  | 23 Nov 2024 |          [Link](https://arxiv.org/abs/2411.15472)          | -- | [Link](https://andypinxinliu.github.io/KinMo/)  |
-| 2024 | **The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion**  | 13 Dec 2024 |          [Link](https://arxiv.org/abs/2412.10523)          | -- | [Link](https://languageofmotion.github.io/)  |
-
-<details close>
-<summary>ArXiv Papers References</summary>
-
-```
-%axiv papers
-
-@misc{qing2023storytomotion,
-        title={Story-to-Motion: Synthesizing Infinite and Controllable Character Animation from Long Text}, 
-        author={Zhongfei Qing and Zhongang Cai and Zhitao Yang and Lei Yang},
-        year={2023},
-        eprint={2311.07446},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV}
-}
-
-@article{li20243dhm,
-    author = {Li, Boyi and Rajasegaran, Jathushan and Gandelsman, Yossi and Efros, Alexei A. and Malik, Jitendra},
-    title = {Synthesizing Moving People with 3D Control},
-    journal = {Arxiv},
-    year = {2024},
-}
-
-@article{zhang2024large,
-      title   =   {Large Motion Model for Unified Multi-Modal Motion Generation}, 
-      author  =   {Zhang, Mingyuan and
-                   Jin, Daisheng around
-                   Gu, Chenyang,
-                   Hong, Fangzhou and
-                   Cai, Zhongang and
-                   Huang, Jingfang and
-                   Zhang, Chongzhi and
-                   Guo, Xinying and
-                   Yang, Lei and,
-                   He, Ying and,
-                   Liu, Ziwei},
-      year    =   {2024},
-      journal =   {arXiv preprint arXiv:2404.01284},
-}
-
-@article{huang2024stablemofusion,
-        title={StableMoFusion: Towards Robust and Efficient Diffusion-based Motion Generation Framework},
-        author = {Huang, Yiheng and Hui, Yang and Luo, Chuanchen and Wang, Yuxi and Xu, Shibiao and Zhang, Zhaoxiang and Zhang, Man and Peng, Junran},
-        journal = {arXiv preprint arXiv: 2405.05691},
-        year = {2024}
-}
-
-@misc{guo2024crowdmogenzeroshottextdrivencollective,
-      title={CrowdMoGen: Zero-Shot Text-Driven Collective Motion Generation}, 
-      author={Xinying Guo and Mingyuan Zhang and Haozhe Xie and Chenyang Gu and Ziwei Liu},
-      year={2024},
-      eprint={2407.06188},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.06188}, 
-}
-
-@misc{li2024infinitemotionextendedmotion,
-      title={Infinite Motion: Extended Motion Generation via Long Text Instructions}, 
-      author={Mengtian Li and Chengshuo Zhai and Shengxiang Yao and Zhifeng Xie and Keyu Chen Yu-Gang Jiang},
-      year={2024},
-      eprint={2407.08443},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.08443}, 
-}
-
-@article{controlmm,
-  title={Adding Multimodal Controls to Whole-body Human Motion Generation},
-  author={Bian, Yuxuan, Zeng Ailing, Ju Xuan, Liu Xian, Zhang Zhaoyang, Liu Wei, and Xu Qiang},
-  journal={arxiv},
-  year={2024}
-}
-
-@InProceedings{MoRAG,
-  author    = {Kalakonda, Sai Shashank and Maheshwari, Shubh and Sarvadevabhatla, Ravi Kiran},
-  title     = {MoRAG - Multi-Fusion Retrieval Augmented Generation for Human Motion},
-  booktitle   = {arXiv preprint},
-  year      = {2024},
-}
-
-@misc{liu2024t2mxlearningexpressivetexttomotion,
-      title={T2M-X: Learning Expressive Text-to-Motion Generation from Partially Annotated Data}, 
-      author={Mingdian Liu and Yilin Liu and Gurunandan Krishnan and Karl S Bayer and Bing Zhou},
-      year={2024},
-      eprint={2409.13251},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2409.13251}, 
-}
-
-@misc{yang2024unimumounifiedtextmusic,
-      title={UniMuMo: Unified Text, Music and Motion Generation}, 
-      author={Han Yang and Kun Su and Yutong Zhang and Jiaben Chen and Kaizhi Qian and Gaowen Liu and Chuang Gan},
-      year={2024},
-      eprint={2410.04534},
-      archivePrefix={arXiv},
-      primaryClass={cs.SD},
-      url={https://arxiv.org/abs/2410.04534}, 
-}
-
-@inproceedings{Zhao:DART:2024,
-   title = {A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control},
-   author = {Zhao, Kaifeng and Li, Gen and Tang, Siyu},
-   year = {2024}
-}
-
-@misc{pinyoanuntapong2024controlmmcontrollablemaskedmotion,
-      title={ControlMM: Controllable Masked Motion Generation}, 
-      author={Ekkasit Pinyoanuntapong and Muhammad Usama Saleem and Korrawe Karunratanakul and Pu Wang and Hongfei Xue and Chen Chen and Chuan Guo and Junli Cao and Jian Ren and Sergey Tulyakov},
-      year={2024},
-      eprint={2410.10780},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.10780}, 
-}
-
-@article{motionclr,
-  title={MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms},
-  author={Chen, Ling-Hao and Dai, Wenxun and Ju, Xuan and Lu, Shunlin and Zhang, Lei},
-  journal={arxiv:2410.18977},
-  year={2024}
-}
-
-@misc{zhang2024kmmkeyframemask,
-      title={KMM: Key Frame Mask Mamba for Extended Motion Generation}, 
-      author={Zeyu Zhang and Hang Gao and Akide Liu and Qi Chen and Feng Chen and Yiran Wang and Danning Li and Hao Tang},
-      year={2024},
-      eprint={2411.06481},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.06481}, 
-}
-
-@misc{zhang2024kinmokinematicawarehumanmotion,
-      title={KinMo: Kinematic-aware Human Motion Understanding and Generation}, 
-      author={Pengfei Zhang and Pinxin Liu and Hyeongwoo Kim and Pablo Garrido and Bindita Chaudhuri},
-      year={2024},
-      eprint={2411.15472},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.15472}, 
-}
-
-@misc{chen2024languagemotionunifyingverbal,
-      title={The Language of Motion: Unifying Verbal and Non-verbal Language of 3D Human Motion}, 
-      author={Changan Chen and Juze Zhang and Shrinidhi K. Lakshmikanth and Yusu Fang and Ruizhi Shao and Gordon Wetzstein and Li Fei-Fei and Ehsan Adeli},
-      year={2024},
-      eprint={2412.10523},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.10523}, 
-}
-```
-</details>
-
-### Survey
-- Survey: [Human Motion Generation: A Survey](https://arxiv.org/abs/2307.10894), ArXiv 2023 Nov
-
-### Datasets
-   | Motion | Info |                              URL                              |               Others                            | 
-   | :-----: | :-----: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-   |  AIST |  AIST Dance Motion Dataset  | [Link](https://aistdancedb.ongaaccel.jp/) |--|
-   |  AIST++  |  AIST++ Dance Motion Dataset | [Link](https://google.github.io/aistplusplus_dataset/) | [dance video database with SMPL annotations](https://google.github.io/aistplusplus_dataset/download.html) |
-   |  AMASS  |  optical marker-based motion capture datasets  | [Link](https://amass.is.tue.mpg.de/) |--|
-
-#### Additional Info
-<details>
-<summary>AMASS</summary>
-
-AMASS is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. AMASS is readily useful for animation, visualization, and generating training data for deep learning.
-  
-</details>
-
-
-
-## Text to 3D Human
-
-### 🎉 Human Accepted Papers
-
-| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2022 | **AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars**  | SIGGRAPH 2022 (Journal Track)  |          [Link](https://arxiv.org/abs/2205.08535)          | [Link](https://github.com/hongfz16/AvatarCLIP)  | [Link](https://hongfz16.github.io/projects/AvatarCLIP.html)  |
-| 2023 | **AvatarCraft: Transforming Text into Neural Human Avatars with Parameterized Shape and Pose Control**  | ICCV 2023 |          [Link](https://arxiv.org/abs/2303.17606)          |  [Link](https://github.com/songrise/avatarcraft)   | [Link](https://avatar-craft.github.io/)  |
-| 2023 | **DreamWaltz: Make a Scene with Complex 3D Animatable Avatars**  | NeurIPS 2023  |          [Link](https://arxiv.org/abs/2305.12529)          | [Link](https://github.com/IDEA-Research/DreamWaltz)  | [Link](https://idea-research.github.io/DreamWaltz/)  |
-| 2023 | **DreamHuman: Animatable 3D Avatars from Text**  | NeurIPS 2023 (Spotlight)  |          [Link](https://arxiv.org/abs/2306.09329)          |  --  | [Link](https://dream-human.github.io/)  |
-| 2023 | **TeCH: Text-guided Reconstruction of Lifelike Clothed Humans**  | 3DV 2024  |          [Link](https://arxiv.org/abs/2308.08545)          | [Link](https://github.com/huangyangyi/TeCH)  | [Link](https://huangyangyi.github.io/TeCH/)  |
-| 2023 | **TADA! Text to Animatable Digital Avatars**  | 3DV 2024  |          [Link](https://arxiv.org/abs/2308.10899)          | [Link](https://github.com/TingtingLiao/TADA)  | [Link](https://tada.is.tue.mpg.de/)  |
-| 2023 | **AvatarVerse: High-quality & Stable 3D Avatar Creation from Text and Pose**  | AAAI2024  |          [Link](https://arxiv.org/abs/2308.03610)          |  [Link](https://github.com/bytedance/AvatarVerse)  | [Link](https://avatarverse3d.github.io/)  |
-| 2023 | **HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting**  | CVPR 2024  |          [Link](https://arxiv.org/abs/2311.17061)          | [Link](https://github.com/alvinliu0/HumanGaussian)  | [Link](https://alvinliu0.github.io/projects/HumanGaussian)  | 
-| 2023 | **HumanNorm: Learning Normal Diffusion Model for High-quality and Realistic 3D Human Generation**  | CVPR 2024  |          [Link](https://arxiv.org/abs/2310.01406)          | [Link](https://github.com/xhuangcv/humannorm)  | [Link](https://humannorm.github.io/)  |
-| 2024 | **En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data**  | CVPR 2024  |          [Link](https://arxiv.org/abs/2401.01173)          |  [Link](https://github.com/menyifang/En3D)  | [Link](https://menyifang.github.io/projects/En3D/index.html)  |
-| 2024 | **HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation**  | SIGGRAPH 2024  |          [Link](https://arxiv.org/abs/2312.07539)          |  [Link](https://github.com/KumapowerLIU/HeadArtist)  | [Link](https://kumapowerliu.github.io/HeadArtist/)  |
-| 2024 | **HeadStudio: Text to Animatable Head Avatars with 3D Gaussian Splatting**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2402.06149)          |  [Link](https://github.com/ZhenglinZhou/HeadStudio/)  | [Link](https://zhenglinzhou.github.io/HeadStudio-ProjectPage/)  |
-| 2024 | **Instant 3D Human Avatar Generation using Image Diffusion Models**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2406.07516)          | -- | [Link](https://www.nikoskolot.com/avatarpopup/)  |
-| 2024 | **Disentangled Clothed Avatar Generation from Text Descriptions**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2312.05295)          | [Link](https://github.com/shanemankiw/SO-SMPL) | [Link](https://shanemankiw.github.io/SO-SMPL/)  |
-
-<details close>
-<summary>Accepted Papers References</summary>
-
-```
-%accepted papers
-
-@article{hong2022avatarclip,
-    title={AvatarCLIP: Zero-Shot Text-Driven Generation and Animation of 3D Avatars},
-    author={Hong, Fangzhou and Zhang, Mingyuan and Pan, Liang and Cai, Zhongang and Yang, Lei and Liu, Ziwei},
-    journal={ACM Transactions on Graphics (TOG)},
-    volume={41},
-    number={4},
-    pages={1--19},
-    year={2022},
-    publisher={ACM New York, NY, USA}
-}
-
-@article{jiang2023avatarcraft,
-  title={AvatarCraft: Transforming Text into Neural Human Avatars with Parameterized Shape and Pose Control},
-  author={Jiang, Ruixiang and Wang, Can and Zhang, Jingbo and Chai, Menglei and He, Mingming and Chen, Dongdong and Liao, Jing},
-  journal={arXiv preprint arXiv:2303.17606},
-  year={2023}
-}
-
-@inproceedings{huang2023dreamwaltz,
-  title={{DreamWaltz: Make a Scene with Complex 3D Animatable Avatars}},
-  author={Yukun Huang and Jianan Wang and Ailing Zeng and He Cao and Xianbiao Qi and Yukai Shi and Zheng-Jun Zha and Lei Zhang},
-  booktitle={Advances in Neural Information Processing Systems},
-  year={2023}
-}
-
-@article{kolotouros2023dreamhuman,
-  title={DreamHuman: Animatable 3D Avatars from Text},
-  author={Kolotouros, Nikos and Alldieck, Thiemo and Zanfir, Andrei and Bazavan, Eduard Gabriel and Fieraru, Mihai and Sminchisescu, Cristian},
-  booktitle={NeurIPS},
-  year={2023}
-}
-
-@inproceedings{huang2024tech,
-  title={{TeCH: Text-guided Reconstruction of Lifelike Clothed Humans}},
-  author={Huang, Yangyi and Yi, Hongwei and Xiu, Yuliang and Liao, Tingting and Tang, Jiaxiang and Cai, Deng and Thies, Justus},
-  booktitle={International Conference on 3D Vision (3DV)},
-  year={2024}
-}
-
-@article{liao2023tada,
-title={TADA! Text to Animatable Digital Avatars},
-author={Liao, Tingting and Yi, Hongwei and Xiu, Yuliang and Tang, Jiaxiang and Huang, Yangyi and Thies, Justus and Black, Michael J},
-journal={ArXiv},
-month={Aug}, 
-year={2023} 
-}
-
-@article{zhang2023avatarverse,
-  title={Avatarverse: High-quality \& stable 3d avatar creation from text and pose},
-  author={Zhang, Huichao and Chen, Bowen and Yang, Hao and Qu, Liao and Wang, Xu and Chen, Li and Long, Chao and Zhu, Feida and Du, Kang and Zheng, Min},
-  journal={arXiv preprint arXiv:2308.03610},
-  year={2023}
-}
-
-@article{liu2023humangaussian,
-    title={HumanGaussian: Text-Driven 3D Human Generation with Gaussian Splatting},
-    author={Liu, Xian and Zhan, Xiaohang and Tang, Jiaxiang and Shan, Ying and Zeng, Gang and Lin, Dahua and Liu, Xihui and Liu, Ziwei},
-    journal={arXiv preprint arXiv:2311.17061},
-    year={2023}
-}
-
-@misc{huang2023humannorm,
-title={Humannorm: Learning normal diffusion model for high-quality and realistic 3d human generation},
-author={Huang, Xin and Shao, Ruizhi and Zhang, Qi and Zhang, Hongwen and Feng, Ying and Liu, Yebin and Wang, Qing},
-booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-year={2024}
-}
-
-@inproceedings{men2024en3d,
-  title={En3D: An Enhanced Generative Model for Sculpting 3D Humans from 2D Synthetic Data},
-  author={Men, Yifang and Lei, Biwen and Yao, Yuan and Cui, Miaomiao and Lian, Zhouhui and Xie, Xuansong},
-  journal={arXiv preprint arXiv:2401.01173},
-  website={https://menyifang.github.io/projects/En3D/index.html},
-  year={2024}
-}
-
-@article{liu2023HeadArtist,
-  author = {Hongyu Liu, Xuan Wang, Ziyu Wan, Yujun Shen, Yibing Song, Jing Liao, Qifeng Chen},
-  title = {HeadArtist: Text-conditioned 3D Head Generation with Self Score Distillation},
-  journal = {arXiv:2312.07539},
-  year = {2023},
-}
-
-@article{zhou2024headstudio,
-  author = {Zhenglin Zhou and Fan Ma and Hehe Fan and Yi Yang},
-  title = {HeadStudio: Text to Animatable Head Avatars with 3D Gaussian Splatting},
-  journal={arXiv preprint arXiv:2402.06149},
-  year={2024}
-}
-
-@inproceedings{kolotouros2024avatarpopup,
-  author    = {Kolotouros, Nikos and Alldieck, Thiemo and Corona, Enric and Bazavan, Eduard Gabriel and Sminchisescu, Cristian},
-  title     = {Instant 3D Human Avatar Generation using Image Diffusion Models},
-  booktitle   = {European Conference on Computer Vision (ECCV)},
-  year      = {2024},
-}
-
-@misc{wang2023disentangled,
-      title={Disentangled Clothed Avatar Generation from Text Descriptions}, 
-      author={Jionghao Wang and Yuan Liu and Zhiyang Dou and Zhengming Yu and Yongqing Liang and Xin Li and Wenping Wang and Rong Xie and Li Song},
-      year={2023},
-      eprint={2312.05295},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
-```
-</details>
-
----
-
-### 💡 Human ArXiv Papers
-
-#### 1. Make-A-Character: High Quality Text-to-3D Character Generation within Minutes
-Jianqiang Ren, Chao He, Lin Liu, Jiahao Chen, Yutong Wang, Yafei Song, Jianfang Li, Tangli Xue, Siqi Hu, Tao Chen, Kunkun Zheng, Jianjing Xiang, Liefeng Bo
-
-(Institute for Intelligent Computing, Alibaba Group)
-<details span>
-<summary><b>Abstract</b></summary>
-There is a growing demand for customized and expressive 3D characters with the emergence of AI agents and Metaverse, but creating 3D characters using traditional computer graphics tools is a complex and time-consuming task. To address these challenges, we propose a user-friendly framework named Make-A-Character (Mach) to create lifelike 3D avatars from text descriptions. The framework leverages the power of large language and vision models for textual intention understanding and intermediate image generation, followed by a series of human-oriented visual perception and 3D generation modules. Our system offers an intuitive approach for users to craft controllable, realistic, fully-realized 3D characters that meet their expectations within 2 minutes, while also enabling easy integration with existing CG pipeline for dynamic expressiveness. 
-</details>
-
-#### 2. MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space
-Armand Comas-Massagué, Di Qiu, Menglei Chai, Marcel Bühler, Amit Raj, Ruiqi Gao, Qiangeng Xu, Mark Matthews, Paulo Gotardo, Octavia Camps, Sergio Orts-Escolano, Thabo Beeler
-
-(Google, Northeastern Univeristy, ETH Zurich, Google DeepMind)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce a novel framework for 3D human avatar generation and personalization, leveraging text prompts to enhance user engagement and customization. Central to our approach are key innovations aimed at overcoming the challenges in photo-realistic avatar synthesis. Firstly, we utilize a conditional Neural Radiance Fields (NeRF) model, trained on a large-scale unannotated multi-view dataset, to create a versatile initial solution space that accelerates and diversifies avatar generation. Secondly, we develop a geometric prior, leveraging the capabilities of Text-to-Image Diffusion Models, to ensure superior view invariance and enable direct optimization of avatar geometry. These foundational ideas are complemented by our optimization pipeline built on Variational Score Distillation (VSD), which mitigates texture loss and over-saturation issues. As supported by our extensive experiments, these strategies collectively enable the creation of custom avatars with unparalleled visual quality and better adherence to input text prompts. 
-</details>
-
-#### 3. InstructHumans: Editing Animated 3D Human Textures with Instructions (text to 3d human texture editing)
-Jiayin Zhu, Linlin Yang, Angela Yao
-
-(National University of Singapore, Communication University of China)
-<details span>
-<summary><b>Abstract</b></summary>
-We present InstructHumans, a novel framework for instruction-driven 3D human texture editing. Existing text-based editing methods use Score Distillation Sampling (SDS) to distill guidance from generative models. This work shows that naively using such scores is harmful to editing as they destroy consistency with the source avatar. Instead, we propose an alternate SDS for Editing (SDS-E) that selectively incorporates subterms of SDS across diffusion timesteps. We further enhance SDS-E with spatial smoothness regularization and gradient-based viewpoint sampling to achieve high-quality edits with sharp and high-fidelity detailing. InstructHumans significantly outperforms existing 3D editing methods, consistent with the initial avatar while faithful to the textual instructions.
-</details>
-
-#### 4. HumanCoser: Layered 3D Human Generation via Semantic-Aware Diffusion Model
-Yi Wang, Jian Ma, Ruizhi Shao, Qiao Feng, Yu-kun Lai, Kun Li
-
-(Tianjin University, Changzhou Institute of Technology, Cardiff University)
-<details span>
-<summary><b>Abstract</b></summary>
-This paper aims to generate physically-layered 3D humans from text prompts. Existing methods either generate 3D clothed humans as a whole or support only tight and simple clothing generation, which limits their applications to virtual try-on and part-level editing. To achieve physically-layered 3D human generation with reusable and complex clothing, we propose a novel layer-wise dressed human representation based on a physically-decoupled diffusion model. Specifically, to achieve layer-wise clothing generation, we propose a dual-representation decoupling framework for generating clothing decoupled from the human body, in conjunction with an innovative multi-layer fusion volume rendering method. To match the clothing with different body shapes, we propose an SMPL-driven implicit field deformation network that enables the free transfer and reuse of clothing. Extensive experiments demonstrate that our approach not only achieves state-of-the-art layered 3D human generation with complex clothing but also supports virtual try-on and layered human animation.
-</details>
-
-#### 5. DreamHOI: Subject-Driven Generation of 3D Human-Object Interactions with Diffusion Priors
-Thomas Hanwen Zhu, Ruining Li, Tomas Jakab
-
-(University of Oxford, Carnegie Mellon University)
-<details span>
-<summary><b>Abstract</b></summary>
-We present DreamHOI, a novel method for zero-shot synthesis of human-object interactions (HOIs), enabling a 3D human model to realistically interact with any given object based on a textual description. This task is complicated by the varying categories and geometries of real-world objects and the scarcity of datasets encompassing diverse HOIs. To circumvent the need for extensive data, we leverage text-to-image diffusion models trained on billions of image-caption pairs. We optimize the articulation of a skinned human mesh using Score Distillation Sampling (SDS) gradients obtained from these models, which predict image-space edits. However, directly backpropagating image-space gradients into complex articulation parameters is ineffective due to the local nature of such gradients. To overcome this, we introduce a dual implicit-explicit representation of a skinned mesh, combining (implicit) neural radiance fields (NeRFs) with (explicit) skeleton-driven mesh articulation. During optimization, we transition between implicit and explicit forms, grounding the NeRF generation while refining the mesh articulation. We validate our approach through extensive experiments, demonstrating its effectiveness in generating realistic HOIs.
-</details>
-
-#### 6. AniGS: Animatable Gaussian Avatar from a Single Image with Inconsistent Gaussian Reconstruction
-Lingteng Qiu, Shenhao Zhu, Qi Zuo, Xiaodong Gu, Yuan Dong, Junfei Zhang, Chao Xu, Zhe Li, Weihao Yuan, Liefeng Bo, Guanying Chen, Zilong Dong
-
-(Alibaba Group, Sun Yat-sen University, Nanjing University, Huazhong University of Science and Technology)
-<details span>
-<summary><b>Abstract</b></summary>
-Generating animatable human avatars from a single image is essential for various digital human modeling applications. Existing 3D reconstruction methods often struggle to capture fine details in animatable models, while generative approaches for controllable animation, though avoiding explicit 3D modeling, suffer from viewpoint inconsistencies in extreme poses and computational inefficiencies. In this paper, we address these challenges by leveraging the power of generative models to produce detailed multi-view canonical pose images, which help resolve ambiguities in animatable human reconstruction. We then propose a robust method for 3D reconstruction of inconsistent images, enabling real-time rendering during inference. Specifically, we adapt a transformer-based video generation model to generate multi-view canonical pose images and normal maps, pretraining on a large-scale video dataset to improve generalization. To handle view inconsistencies, we recast the reconstruction problem as a 4D task and introduce an efficient 3D modeling approach using 4D Gaussian Splatting. Experiments demonstrate that our method achieves photorealistic, real-time animation of 3D human avatars from in-the-wild images, showcasing its effectiveness and generalization capability.
-</details>
-
-#### 7. MixedGaussianAvatar: Realistically and Geometrically Accurate Head Avatar via Mixed 2D-3D Gaussian Splatting
-Peng Chen, Xiaobao Wei, Qingpo Wuwu, Xinyi Wang, Xingyu Xiao, Ming Lu
-
-(Institute of Software Chinese Academy of Sciences, University of Chinese Academy of Sciences, Intel Labs China, Tsinghua University, Nankai University, Peking University)
-<details span>
-<summary><b>Abstract</b></summary>
-Reconstructing high-fidelity 3D head avatars is crucial in various applications such as virtual reality. The pioneering methods reconstruct realistic head avatars with Neural Radiance Fields (NeRF), which have been limited by training and rendering speed. Recent methods based on 3D Gaussian Splatting (3DGS) significantly improve the efficiency of training and rendering. However, the surface inconsistency of 3DGS results in subpar geometric accuracy; later, 2DGS uses 2D surfels to enhance geometric accuracy at the expense of rendering fidelity. To leverage the benefits of both 2DGS and 3DGS, we propose a novel method named MixedGaussianAvatar for realistically and geometrically accurate head avatar reconstruction. Our main idea is to utilize 2D Gaussians to reconstruct the surface of the 3D head, ensuring geometric accuracy. We attach the 2D Gaussians to the triangular mesh of the FLAME model and connect additional 3D Gaussians to those 2D Gaussians where the rendering quality of 2DGS is inadequate, creating a mixed 2D-3D Gaussian representation. These 2D-3D Gaussians can then be animated using FLAME parameters. We further introduce a progressive training strategy that first trains the 2D Gaussians and then fine-tunes the mixed 2D-3D Gaussians. We demonstrate the superiority of MixedGaussianAvatar through comprehensive experiments.
-</details>
-
----
-
-| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2023 | **Make-A-Character: High Quality Text-to-3D Character Generation within Minutes**  | 24 Dec 2023  |          [Link](https://arxiv.org/abs/2312.15430)          |  [Link](https://github.com/Human3DAIGC/Make-A-Character)  | [Link](https://human3daigc.github.io/MACH/)  |
-| 2024 | **MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space**  | 1 Apr 2024  |          [Link](https://arxiv.org/abs/2404.01296)      | -- | [Link](https://syntec-research.github.io/MagicMirror/)  |
-| 2024 | **InstructHumans: Editing Animated 3D Human Textures with Instructions**  | 5 Apr 2024  |          [Link](https://arxiv.org/abs/2404.04037)          | [Link](https://github.com/viridityzhu/InstructHumans)  | [Link](https://jyzhu.top/instruct-humans/)  |
-| 2024 | **HumanCoser: Layered 3D Human Generation via Semantic-Aware Diffusion Model**  | 21 Aug 2024  |          [Link](https://arxiv.org/abs/2408.11357)          | -- | -- |
-| 2024 | **DreamHOI: Subject-Driven Generation of 3D Human-Object Interactions with Diffusion Priors**  | 12 Sep 2024  |          [Link](https://arxiv.org/abs/2409.08278)          | [Link](https://github.com/hanwenzhu/dreamhoi)| [Link](https://dreamhoi.github.io/) |
-| 2024 | **AniGS: Animatable Gaussian Avatar from a Single Image with Inconsistent Gaussian Reconstruction**  | 3 Dec 2024  |         --        | [Link](https://github.com/aigc3d/AniGS)| [Link](https://lingtengqiu.github.io/2024/AniGS/) |
-| 2024 | **MixedGaussianAvatar: Realistically and Geometrically Accurate Head Avatar via Mixed 2D-3D Gaussian Splatting**  | 6 Dec 2024  |    [Link](https://arxiv.org/abs/2412.04955)       | [Link](https://github.com/ChenVoid/MGA/)| [Link](https://chenvoid.github.io/MGA/) |
-
-<details close>
-<summary>ArXiv Papers References</summary>
-
-```
-%axiv papers
-
-@article{ren2023makeacharacter,
-      title={Make-A-Character: High Quality Text-to-3D Character Generation within Minutes},
-      author={Jianqiang Ren and Chao He and Lin Liu and Jiahao Chen and Yutong Wang and Yafei Song and Jianfang Li and Tangli Xue and Siqi Hu and Tao Chen and Kunkun Zheng and Jianjing Xiang and Liefeng Bo},
-      year={2023},
-      journal = {arXiv preprint arXiv:2312.15430}
-}
-
-@article{comas2024magicmirror,
-  title={MagicMirror: Fast and High-Quality Avatar Generation with a Constrained Search Space},
-  author={Comas-Massagu{\'e}, Armand and Qiu, Di and Chai, Menglei and B{\"u}hler, Marcel and Raj, Amit and Gao, Ruiqi and Xu, Qiangeng and Matthews, Mark and Gotardo, Paulo and Camps, Octavia and others},
-  journal={arXiv preprint arXiv:2404.01296},
-  year={2024}
-}
-
-@article{zhu2024InstructHumans,
-         author={Zhu, Jiayin and Yang, Linlin and Yao, Angela},
-         title={InstructHumans: Editing Animated 3D Human Textures with Instructions},
-         journal={arXiv preprint arXiv:2404.04037},
-         year={2024}
-}
-
-@misc{wang2024humancoserlayered3dhuman,
-      title={HumanCoser: Layered 3D Human Generation via Semantic-Aware Diffusion Model}, 
-      author={Yi Wang and Jian Ma and Ruizhi Shao and Qiao Feng and Yu-kun Lai and Kun Li},
-      year={2024},
-      eprint={2408.11357},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2408.11357}, 
-}
-
-@article{zhu2024dreamhoi,
-  title   = {{DreamHOI}: Subject-Driven Generation of 3D Human-Object Interactions with Diffusion Priors},
-  author  = {Thomas Hanwen Zhu and Ruining Li and Tomas Jakab},
-  journal = {arXiv preprint arXiv:2409.08278},
-  year    = {2024}
-}
-
-@article{qiu2024AniGS,
-  title={AniGS: Animatable Gaussian Avatar from a Single Image with Inconsistent Gaussian Reconstruction},
-  author={Qiu, Lingteng},
-  year={2024}
-}
-
-@misc{chen2024mixedgaussianavatarrealisticallygeometricallyaccurate,
-      title={MixedGaussianAvatar: Realistically and Geometrically Accurate Head Avatar via Mixed 2D-3D Gaussian Splatting}, 
-      author={Peng Chen and Xiaobao Wei and Qingpo Wuwu and Xinyi Wang and Xingyu Xiao and Ming Lu},
-      year={2024},
-      eprint={2412.04955},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.04955}, 
-}
-```
-</details>
-
-### Additional Info
-<details close>
-<summary>Survey and Awesome Repos</summary>
- 
-#### Survey
-- [PROGRESS AND PROSPECTS IN 3D GENERATIVE AI: A TECHNICAL OVERVIEW INCLUDING 3D HUMAN](https://arxiv.org/pdf/2401.02620.pdf), ArXiv 2024
-  
-#### Awesome Repos
-- Resource1: [Awesome Digital Human](https://github.com/weihaox/awesome-digital-human)
-</details>
-
-<details close>
-<summary>Pretrained Models</summary>
-
-   | Pretrained Models (human body) | Info |                              URL                              |
-   | :-----: | :-----: | :----------------------------------------------------------: |
-   |  SMPL  |  smpl model (smpl weights) | [Link](https://smpl.is.tue.mpg.de/) |
-   |  SMPL-X  |  smpl model (smpl weights)  | [Link](https://smpl-x.is.tue.mpg.de/) |
-   |  human_body_prior  |  vposer model (smpl weights)  | [Link](https://github.com/nghorbani/human_body_prior) |
-<details>
-<summary>SMPL</summary>
-
-SMPL is an easy-to-use, realistic, model of the of the human body that is useful for animation and computer vision.
-
-- version 1.0.0 for Python 2.7 (female/male, 10 shape PCs)
-- version 1.1.0 for Python 2.7 (female/male/neutral, 300 shape PCs)
-- UV map in OBJ format
-  
-</details>
-
-<details>
-<summary>SMPL-X</summary>
-
-SMPL-X, that extends SMPL with fully articulated hands and facial expressions (55 joints, 10475 vertices)
-
-</details>
-</details>
 
 ## Text to Video
 
