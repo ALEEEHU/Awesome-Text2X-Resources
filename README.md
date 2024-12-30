@@ -1911,6 +1911,15 @@ Zongyu Lin, Wei Liu, Chen Chen, Jiasen Lu, Wenze Hu, Tsu-Jui Fu, Jesse Allardice
 The field of video generation has made remarkable advancements, yet there remains a pressing need for a clear, systematic recipe that can guide the development of robust and scalable models. In this work, we present a comprehensive study that systematically explores the interplay of model architectures, training recipes, and data curation strategies, culminating in a simple and scalable text-image-conditioned video generation method, named STIV. Our framework integrates image condition into a Diffusion Transformer (DiT) through frame replacement, while incorporating text conditioning via a joint image-text conditional classifier-free guidance. This design enables STIV to perform both text-to-video (T2V) and text-image-to-video (TI2V) tasks simultaneously. Additionally, STIV can be easily extended to various applications, such as video prediction, frame interpolation, multi-view generation, and long video generation, etc. With comprehensive ablation studies on T2I, T2V, and TI2V, STIV demonstrate strong performance, despite its simple design. An 8.7B model with 512 resolution achieves 83.1 on VBench T2V, surpassing both leading open and closed-source models like CogVideoX-5B, Pika, Kling, and Gen-3. The same-sized model also achieves a state-of-the-art result of 90.1 on VBench I2V task at 512 resolution. By providing a transparent and extensible recipe for building cutting-edge video generation models, we aim to empower future research and accelerate progress toward more versatile and reliable video generation solutions.
 </details>
 
+#### 18. 3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation
+Xiao Fu, Xian Liu, Xintao Wang, Sida Peng, Menghan Xia, Xiaoyu Shi, Ziyang Yuan, Pengfei Wan, Di Zhang, Dahua Lin
+
+(The Chinese University of Hong Kong, Kuaishou Technology, Zhejiang University)
+<details span>
+<summary><b>Abstract</b></summary>
+This paper aims to manipulate multi-entity 3D motions in video generation. Previous methods on controllable video generation primarily leverage 2D control signals to manipulate object motions and have achieved remarkable synthesis results. However, 2D control signals are inherently limited in expressing the 3D nature of object motions. To overcome this problem, we introduce 3DTrajMaster, a robust controller that regulates multi-entity dynamics in 3D space, given user-desired 6DoF pose (location and rotation) sequences of entities. At the core of our approach is a plug-and-play 3D-motion grounded object injector that fuses multiple input entities with their respective 3D trajectories through a gated self-attention mechanism. In addition, we exploit an injector architecture to preserve the video diffusion prior, which is crucial for generalization ability. To mitigate video quality degradation, we introduce a domain adaptor during training and employ an annealed sampling strategy during inference. To address the lack of suitable training data, we construct a 360-Motion Dataset, which first correlates collected 3D human and animal assets with GPT-generated trajectory and then captures their motion with 12 evenly-surround cameras on diverse 3D UE platforms. Extensive experiments show that 3DTrajMaster sets a new state-of-the-art in both accuracy and generalization for controlling multi-entity 3D motions.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -1932,6 +1941,7 @@ The field of video generation has made remarkable advancements, yet there remain
 | 2024 | **Motion Prompting: Controlling Video Generation with Motion Trajectories**  |  3 Dec 2024  | [Link](https://arxiv.org/abs/2412.02700)  |    --     | [Link](https://motion-prompting.github.io/) |
 | 2024 | **Mogo: RQ Hierarchical Causal Transformer for High-Quality 3D Human Motion Generation**  |  5 Dec 2024  | [Link](https://arxiv.org/abs/2412.07797)  |    --     | -- |
 | 2024 | **STIV: Scalable Text and Image Conditioned Video Generation**  |  10 Dec 2024  | [Link](https://www.arxiv.org/abs/2412.07730)  |    --     | -- |
+| 2024 | **3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation**  |  10 Dec 2024  | [Link](https://arxiv.org/abs/2412.07759)  |   [Link](https://github.com/KwaiVGI/3DTrajMaster)     | [Link](https://fuxiao0719.github.io/projects/3dtrajmaster/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -2096,6 +2106,13 @@ The field of video generation has made remarkable advancements, yet there remain
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2412.07730}, 
+}
+
+@article{fu20243dtrajmaster,
+    title={3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation},
+    author={Fu, Xiao and Liu, Xian and Wang, Xintao and Peng, Sida and Xia, Menghan and Shi, Xiaoyu and Yuan, Ziyang and Wan, Pengfei and Zhang, Di and Lin, Dahua},
+    journal={arXiv preprint arXiv:2412.07759},
+    year={2024}
 }
 ```
 </details>
