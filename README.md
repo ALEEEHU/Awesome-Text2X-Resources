@@ -23,13 +23,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ## Table of Contents
 
 - [Text to 4D](#text-to-4d)
-  * [2023](#year-2023)
-     * [2023 Accepted Papers](#-2023-accepted)
-     * [2023 ArXiv Papers](#-2023-arxiv)
-  * [2024](#year-2024)
-     * [2024 Accepted Papers](#-2024-accepted)
-     * [2024 ArXiv Papers](#-2024-arxiv)
-  * [Additional Info](#other-4d-additional-info)
+  * [ArXiv Papers](#-4d-arxiv-papers)
 - [Text to Human Motion](#text-to-human-motion)
   * [Accepted Papers](#-motion-accepted-papers)
   * [ArXiv Papers](#-motion-arxiv-papers)
@@ -50,8 +44,16 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 ## Update Logs
 <details span>
-<summary><b>Update Logs:</b></summary>
-<br>
+<summary><b>2025 Update Logs:</b></summary>
+<br>	
+	
+* `2025.01.06` - update layout.
+
+  
+</details>
+
+<details close>
+<summary><b>2024 Update Logs:</b></summary>
 	
 * `2024.09.26` - update several papers status "NeurIPS 2024" to accepted papers, congrats to all 🎉
 * `2024.09.03` - add one new section 'text to model'.
@@ -71,87 +73,18 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ## Text to 4D
 (Also, Image to 4D)
 
-### Year 2023
-In 2023, tasks classified as text/Image to 4D and video to 4D generally involve producing four-dimensional data from text/Image or video input.
+### 💡 4D ArXiv Papers
 
-#### 🎉 2023 Accepted
-
-| Task | Year | Title             | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ---- | ----------------- | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :-------------------------------: |
-|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2023 | **Text-To-4D Dynamic Scene Generation**  | ICML 2023 |          [Link](https://arxiv.org/abs/2301.11280)          | --  | [Link](https://make-a-video3d.github.io/)  |
-|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2023 |  **4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.17984)          | [Link](https://github.com/sherwinbahmani/4dfy)  | [Link](https://sherwinbahmani.github.io/4dfy/)  |
-|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2023 |  **Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2312.13763)          | -- | [Link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/)  |
-| <img src="https://img.shields.io/badge/Text/Image to 4D-orange" /> | 2023 |  **Dream-in-4D: A Unified Approach for Text- and Image-guided 4D Scene Generation**  | CVPR 2024 |          [Link](https://arxiv.org/abs/2311.16854)          | [Link](https://github.com/NVlabs/dream-in-4d)  | [Link](https://research.nvidia.com/labs/nxp/dream-in-4d/)  |
-|<img src="https://img.shields.io/badge/Text to 4D Editing-gray" /> | 2023 |  **Control4D: Efficient 4D Portrait Editing with Text**  | CVPR 2024 |    [Link](https://arxiv.org/abs/2305.20082)          | --  | [Link](https://control4darxiv.github.io./)  |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2023 | **Consistent4D: Consistent 360° Dynamic Object Generation from Monocular Video**  | ICLR 2024 |          [Link](https://arxiv.org/abs/2311.02848)          | [Link](https://github.com/yanqinJiang/Consistent4D)  | [Link](https://consistent4d.github.io/)  |
-
-<details close>
-<summary>Accepted Papers References</summary>
-
-```
-%accepted papers
-
-%text to 4d
-@article{singer2023text4d,
-  author = {Singer, Uriel and Sheynin, Shelly and Polyak, Adam and Ashual, Oron and
-           Makarov, Iurii and Kokkinos, Filippos and Goyal, Naman and Vedaldi, Andrea and
-           Parikh, Devi and Johnson, Justin and Taigman, Yaniv},
-  title = {Text-To-4D Dynamic Scene Generation},
-  journal = {arXiv:2301.11280},
-  year = {2023},
-}
-
-@article{bah20244dfy,
-  author = {Bahmani, Sherwin and Skorokhodov, Ivan and Rong, Victor and Wetzstein, Gordon and Guibas, Leonidas and Wonka, Peter and Tulyakov, Sergey and Park, Jeong Joon and Tagliasacchi, Andrea and Lindell, David B.},
-  title = {4D-fy: Text-to-4D Generation Using Hybrid Score Distillation Sampling},
-  journal = {IEEE Conference on Computer Vision and Pattern Recognition ({CVPR})},
-  year = {2024},
-}
-
-@article{ling2023alignyourgaussians,
-    title={Align Your Gaussians: Text-to-4D with Dynamic 3D Gaussians and Composed Diffusion Models},
-    author={Ling, Huan and Kim, Seung Wook and Torralba, Antonio and Fidler, Sanja and Kreis, Karsten},
-    title={arXiv preprint arXiv:2312.13763},
-    year={2023}
-}
-
-%text/Image to 4d
-@InProceedings{zheng2024unified,
-    title     = {A Unified Approach for Text- and Image-guided 4D Scene Generation},
-    author    = {Yufeng Zheng and Xueting Li and Koki Nagano and Sifei Liu and Otmar Hilliges and Shalini De Mello},
-    booktitle = {CVPR},
-    year      = {2024}
-}
-
-% Text to 4D Editing
-@inproceedings{shao2024control4d,
-  title={Control4d: Efficient 4d portrait editing with text},
-  author={Shao, Ruizhi and Sun, Jingxiang and Peng, Cheng and Zheng, Zerong and Zhou, Boyao and Zhang, Hongwen and Liu, Yebin},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={4556--4567},
-  year={2024}
-}
-
-% video to 4d
-@inproceedings{
-jiang2024consistentd,
-title={Consistent4D: Consistent 360{\textdegree} Dynamic Object Generation from Monocular Video},
-author={Yanqin Jiang and Li Zhang and Jin Gao and Weiming Hu and Yao Yao},
-booktitle={The Twelfth International Conference on Learning Representations},
-year={2024},
-url={https://openreview.net/forum?id=sPUrdFGepF}
-}
-```
+#### 1. AR4D: Autoregressive 4D Generation from Monocular Videos
+Hanxin Zhu, Tianyu He, Xiqian Yu, Junliang Guo, Zhibo Chen, Jiang Bian (University of Science and Technology of China, Microsoft Research Asia)
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in generative models have ignited substantial interest in dynamic 3D content creation (\ie, 4D generation). Existing approaches primarily rely on Score Distillation Sampling (SDS) to infer novel-view videos, typically leading to issues such as limited diversity, spatial-temporal inconsistency and poor prompt alignment, due to the inherent randomness of SDS. To tackle these problems, we propose AR4D, a novel paradigm for SDS-free 4D generation. Specifically, our paradigm consists of three stages. To begin with, for a monocular video that is either generated or captured, we first utilize pre-trained expert models to create a 3D representation of the first frame, which is further fine-tuned to serve as the canonical space. Subsequently, motivated by the fact that videos happen naturally in an autoregressive manner, we propose to generate each frame's 3D representation based on its previous frame's representation, as this autoregressive generation manner can facilitate more accurate geometry and motion estimation. Meanwhile, to prevent overfitting during this process, we introduce a progressive view sampling strategy, utilizing priors from pre-trained large-scale 3D reconstruction models. To avoid appearance drift introduced by autoregressive generation, we further incorporate a refinement stage based on a global deformation field and the geometry of each frame's 3D representation. Extensive experiments have demonstrated that AR4D can achieve state-of-the-art 4D generation without SDS, delivering greater diversity, improved spatial-temporal consistency, and better alignment with input prompts.
 </details>
 
-#### 💡 2023 ArXiv
-
-| Task | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| <img src="https://img.shields.io/badge/Single Image to 4D-blue" /> | 2023 | **Animate124: Animating One Image to 4D Dynamic Scene**  | 24 Nov 2023 |          [Link](https://arxiv.org/abs/2311.14603)  | [Link](https://github.com/HeliosZhao/Animate124)  | [Link](https://animate124.github.io/)  |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" /> | 2023 | **4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency**  | 28 Dec 2023 |          [Link](https://arxiv.org/abs/2312.17225)          | [Link](https://github.com/VITA-Group/4DGen)  | [Link](https://vita-group.github.io/4DGen/)  |
-| <img src="https://img.shields.io/badge/Single Image/Video to 4D-orange" /> | 2023 | **DreamGaussian4D:Generative 4D Gaussian Splatting**  | 28 Dec 2023 |          [Link](https://arxiv.org/abs/2312.17142)     | [Link](https://github.com/jiawei-ren/dreamgaussian4d)  | [Link](https://jiawei-ren.github.io/projects/dreamgaussian4d/)  |
-
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2025 | **AR4D: Autoregressive 4D Generation from Monocular Videos**  | 3 Jan 2025 |          [Link](https://arxiv.org/abs/2501.01722)          | --  | [Link](https://hanxinzhu-lab.github.io/AR4D/)  |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -159,176 +92,27 @@ url={https://openreview.net/forum?id=sPUrdFGepF}
 ```
 %axiv papers
 
-% single image to 4d
-@article{zhao2023animate124,
-  author    = {Zhao, Yuyang and Yan, Zhiwen and Xie, Enze and Hong, Lanqing and Li, Zhenguo and Lee, Gim Hee},
-  title     = {Animate124: Animating One Image to 4D Dynamic Scene},
-  journal   = {arXiv preprint arXiv:2311.14603},
-  year      = {2023},
-}
-
-% video to 4d
-@article{yin20234dgen,
-  title={4DGen: Grounded 4D Content Generation with Spatial-temporal Consistency},
-  author={},
-  journal={arXiv preprint: 2312.17225},
-  year={2023}
-}
-
-% single image/video to 4d
-@article{ren2023dreamgaussian4d,
-  title={DreamGaussian4D: Generative 4D Gaussian Splatting},
-  author={Ren, Jiawei and Pan, Liang and Tang, Jiaxiang and Zhang, Chi and Cao, Ang and Zeng, Gang and Liu, Ziwei},
-  journal={arXiv preprint arXiv:2312.17142},
-  year={2023}
+@misc{zhu2025ar4dautoregressive4dgeneration,
+      title={AR4D: Autoregressive 4D Generation from Monocular Videos}, 
+      author={Hanxin Zhu and Tianyu He and Xiqian Yu and Junliang Guo and Zhibo Chen and Jiang Bian},
+      year={2025},
+      eprint={2501.01722},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2501.01722}, 
 }
 ```
 </details>
 
 ---
+
+### Previous Papers
+
+### Year 2023
+In 2023, tasks classified as text/Image to 4D and video to 4D generally involve producing four-dimensional data from text/Image or video input. For more details, please check the [2023 4D Papers](./docs/4d/4d_2023.md), including 6 accepted papers and 3 arXiv papers.
 
 ### Year 2024
-
-#### 🎉 2024 Accepted
-
-| Task | Year | Title             | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ---- | ----------------- | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :-------------------------------: |
-|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2024 | **TC4D: Trajectory-Conditioned Text-to-4D Generation**  | ECCV 2024 |         [Link](https://arxiv.org/abs/2403.17920)         | [Link](https://github.com/sherwinbahmani/tc4d)   | [Link](https://sherwinbahmani.github.io/tc4d/) |
-|<img src="https://img.shields.io/badge/Video/Text&Image to 4D-orange" />| 2024 | **STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians**  | ECCV 2024  |           [Link](https://arxiv.org/abs/2403.14939) | [Link](https://github.com/zeng-yifei/STAG4D)  |[Link](https://nju-3dv.github.io/projects/STAG4D/) |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **SC4D: Sparse-Controlled Video-to-4D Generation and Motion Transfer**  | ECCV 2024  |          [Link](https://arxiv.org/abs/2404.03736)          | [Link](https://github.com/JarrentWu1031/SC4D)  |[Link](https://sc4d.github.io/) |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2405.02280)          | [Link](https://github.com/dreamscene4d/dreamscene4d)  |[Link](https://dreamscene4d.github.io/) |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **4Diffusion: Multi-view Video Diffusion Model for 4D Generation**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.20674)        | [Link](https://github.com/aejion/4Diffusion)  | [Link](https://aejion.github.io/4diffusion/)  |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2410.06756) |         [Link](https://github.com/WU-CVGL/DreamMesh4D)         | [Link](https://lizhiqi49.github.io/DreamMesh4D/) |
-|<img src="https://img.shields.io/badge/Video%20to%204D-CCFF80" />| 2024 | **L4GM: Large 4D Gaussian Reconstruction Model**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.10324)          | [Link](https://github.com/nv-tlabs/L4GM-official)  |[Link](https://research.nvidia.com/labs/toronto-ai/l4gm/) |
-|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" />| 2024 | **4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2406.07472)          | -- | [Link](https://snap-research.github.io/4Real/) |
-|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2024 | **Animate3D: Animating Any 3D Model with Multi-view Video Diffusion**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2407.11398)          | [Link](https://github.com/yanqinJiang/Animate3D) | [Link](https://animate3d.github.io/) |
-|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" /> | 2024 | **Compositional 3D-aware Video Generation with LLM Director**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2409.00558) |     --   | [Link](https://www.microsoft.com/en-us/research/project/compositional-3d-aware-video-generation/) |
-|<img src="https://img.shields.io/badge/Text to 4D-FFFF93" />| 2024 | **Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels**  | NeurIPS 2024 |       [Link](https://arxiv.org/abs/2405.16822)        | [Link](https://github.com/yikaiw/vidu4d)  | [Link](https://vidu4d-dgs.github.io/)  |
-| <img src="https://img.shields.io/badge/Text/Image to 4D-orange" /> | 2024 | **Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2405.16645)          | [Link](https://github.com/VITA-Group/Diffusion4D)  |[Link](https://vita-group.github.io/Diffusion4D/) |
-
-<details close>
-<summary>Accepted Papers References</summary>
-
-```
-%accepted papers
-
-%text to 4d (ECCV24)
-@inproceedings{bahmani2025tc4d,
-  title={Tc4d: Trajectory-conditioned text-to-4d generation},
-  author={Bahmani, Sherwin and Liu, Xian and Yifan, Wang and Skorokhodov, Ivan and Rong, Victor and Liu, Ziwei and Liu, Xihui and Park, Jeong Joon and Tulyakov, Sergey and Wetzstein, Gordon and others},
-  booktitle={European Conference on Computer Vision},
-  pages={53--72},
-  year={2025},
-  organization={Springer}
-}
-
-%text/Image and video to 4d (ECCV24)
-@inproceedings{zeng2025stag4d,
-  title={Stag4d: Spatial-temporal anchored generative 4d gaussians},
-  author={Zeng, Yifei and Jiang, Yanqin and Zhu, Siyu and Lu, Yuanxun and Lin, Youtian and Zhu, Hao and Hu, Weiming and Cao, Xun and Yao, Yao},
-  booktitle={European Conference on Computer Vision},
-  pages={163--179},
-  year={2025},
-  organization={Springer}
-}
-
-%video to 4d (ECCV24 and NIPS24)
-@inproceedings{wu2025sc4d,
-  title={Sc4d: Sparse-controlled video-to-4d generation and motion transfer},
-  author={Wu, Zijie and Yu, Chaohui and Jiang, Yanqin and Cao, Chenjie and Wang, Fan and Bai, Xiang},
-  booktitle={European Conference on Computer Vision},
-  pages={361--379},
-  year={2025},
-  organization={Springer}
-}
-
-@inproceedings{dreamscene4d,
-  title={DreamScene4D: Dynamic Multi-Object Scene Generation from Monocular Videos},
-  author={Chu, Wen-Hsuan and Ke, Lei and Fragkiadaki, Katerina},
-  booktitle={NeurIPS},
-  year={2024}
-}
-
-@article{zhang20244diffusion,
-    title={4Diffusion: Multi-view Video Diffusion Model for 4D Generation}, 
-    author={Haiyu Zhang and Xinyuan Chen and Yaohui Wang and Xihui Liu and Yunhong Wang and Yu Qiao},
-    year={2024}
-}
-
-@inproceedings{li2024dreammesh4d,
-    title={DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation},
-    author={Zhiqi Li and Yiming Chen and Peidong Liu},
-    booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
-    year={2024}
-}
-
-@article{ren2024l4gm,
-    title={L4GM: Large 4D Gaussian Reconstruction Model},
-    author={Ren, Jiawei and Xie, Kevin and Mirzaei, Ashkan and Liang, Hanxue and Zeng, Xiaohui and Kreis, Karsten and Liu, Ziwei and Torralba, Antonio and Fidler, Sanja and Kim, Seung Wook and Ling, Huan},
-    title={arXiv preprint arXiv:2406.xxxxx},
-    year={2024}
-}
-
-%text to 4d (NIPS24)
-@article{yu20244real,
-  title={4Real: Towards Photorealistic 4D Scene Generation via Video Diffusion Models},
-  author={Yu, Heng and Wang, Chaoyang and Zhuang, Peiye and Menapace, Willi and Siarohin, Aliaksandr and Cao, Junli and Jeni, Laszlo A and Tulyakov, Sergey and Lee, Hsin-Ying},
-  journal={arXiv preprint arXiv:2406.07472},
-  year={2024}
-}
-
-@article{jiang2024animate3d,
-  title={Animate3d: Animating any 3d model with multi-view video diffusion},
-  author={Jiang, Yanqin and Yu, Chaohui and Cao, Chenjie and Wang, Fan and Hu, Weiming and Gao, Jin},
-  journal={arXiv preprint arXiv:2407.11398},
-  year={2024}
-}
-
-@article{zhu2024compositional,
-  title={Compositional 3d-aware video generation with llm director},
-  author={Zhu, Hanxin and He, Tianyu and Tang, Anni and Guo, Junliang and Chen, Zhibo and Bian, Jiang},
-  journal={arXiv preprint arXiv:2409.00558},
-  year={2024}
-}
-
-@article{wang2024vidu4d,
-  title={Vidu4D: Single Generated Video to High-Fidelity 4D Reconstruction with Dynamic Gaussian Surfels},
-  author={Wang, Yikai and Wang, Xinzhou and Chen, Zilong and Wang, Zhengyi and Sun, Fuchun and Zhu, Jun},
-  journal={arXiv preprint arXiv:2405.16822},
-  year={2024}
-}
-
-@article{liang2024diffusion4d,
-  title={Diffusion4D: Fast Spatial-temporal Consistent 4D Generation via Video Diffusion Models},
-  author={Liang, Hanwen and Yin, Yuyang and Xu, Dejia and Liang, Hanxue and Wang, Zhangyang and Plataniotis, Konstantinos N and Zhao, Yao and Wei, Yunchao},
-  journal={arXiv preprint arXiv:2405.16645},
-  year={2024}
-}
-```
-</details>
-
-
-#### 💡 2024 ArXiv
-**For more details, please check the [2024 4D ArXiv Papers](./docs/4d.md) (there are 19 papers).**
-
----
-
-### Other 4D Additional Info
-```Video-to-4D diffusion model for novel-view video synthesis```
-
-**1. SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency**
-
-Yiming Xie, Chun-Han Yao, Vikram Voleti, Huaizu Jiang, Varun Jampani
-
-(Stability AI, Northeastern University)
-<details span>
-<summary><b>Abstract</b></summary>
-We present Stable Video 4D (SV4D), a latent video diffusion model for multi-frame and multi-view consistent dynamic 3D content generation. Unlike previous methods that rely on separately trained generative models for video generation and novel view synthesis, we design a unified diffusion model to generate novel view videos of dynamic 3D objects. Specifically, given a monocular reference video, SV4D generates novel views for each video frame that are temporally consistent. We then use the generated novel view videos to optimize an implicit 4D representation (dynamic NeRF) efficiently, without the need for cumbersome SDS-based optimization used in most prior works. To train our unified novel view video generation model, we curated a dynamic 3D object dataset from the existing Objaverse dataset. Extensive experimental results on multiple datasets and user studies demonstrate SV4D's state-of-the-art performance on novel-view video synthesis as well as 4D generation compared to prior works.
-</details>
-
-| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2024 | **SV4D: Dynamic 3D Content Generation with Multi-Frame and Multi-View Consistency**  | 24 Jul 2024 |          [Link](https://arxiv.org/abs/2407.17470)          | [Link](https://github.com/Stability-AI/generative-models) | [Link](https://sv4d.github.io/) |
+For more details, please check the [2024 4D Papers](./docs/4d/4d_2024.md), including 12 accepted papers and 22 arXiv papers.
 
 
 ## Text to Human Motion
