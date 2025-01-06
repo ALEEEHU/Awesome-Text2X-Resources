@@ -1703,7 +1703,16 @@ Dongjie Fu (Mogo AI)
 In the field of text-to-motion generation, Bert-type Masked Models (MoMask, MMM) currently produce higher-quality outputs compared to GPT-type autoregressive models (T2M-GPT). However, these Bert-type models often lack the streaming output capability required for applications in video game and multimedia environments, a feature inherent to GPT-type models. Additionally, they demonstrate weaker performance in out-of-distribution generation. To surpass the quality of BERT-type models while leveraging a GPT-type structure, without adding extra refinement models that complicate scaling data, we propose a novel architecture, Mogo (Motion Only Generate Once), which generates high-quality lifelike 3D human motions by training a single transformer model. Mogo consists of only two main components: 1) RVQ-VAE, a hierarchical residual vector quantization variational autoencoder, which discretizes continuous motion sequences with high precision; 2) Hierarchical Causal Transformer, responsible for generating the base motion sequences in an autoregressive manner while simultaneously inferring residuals across different layers. Experimental results demonstrate that Mogo can generate continuous and cyclic motion sequences up to 260 frames (13 seconds), surpassing the 196 frames (10 seconds) length limitation of existing datasets like HumanML3D. On the HumanML3D test set, Mogo achieves a FID score of 0.079, outperforming both the GPT-type model T2M-GPT (FID = 0.116), AttT2M (FID = 0.112) and the BERT-type model MMM (FID = 0.080). Furthermore, our model achieves the best quantitative performance in out-of-distribution generation.
 </details>
 
-#### 17. STIV: Scalable Text and Image Conditioned Video Generation
+#### 17. Mind the Time: Temporally-Controlled Multi-Event Video Generation
+Ziyi Wu, Aliaksandr Siarohin, Willi Menapace, Ivan Skorokhodov, Yuwei Fang, Varnith Chordia, Igor Gilitschenski, Sergey Tulyakov
+
+(Snap Research, University of Toronto, Vector Institute)
+<details span>
+<summary><b>Abstract</b></summary>
+Real-world videos consist of sequences of events. Generating such sequences with precise temporal control is infeasible with existing video generators that rely on a single paragraph of text as input. When tasked with generating multiple events described using a single prompt, such methods often ignore some of the events or fail to arrange them in the correct order. To address this limitation, we present MinT, a multi-event video generator with temporal control. Our key insight is to bind each event to a specific period in the generated video, which allows the model to focus on one event at a time. To enable time-aware interactions between event captions and video tokens, we design a time-based positional encoding method, dubbed ReRoPE. This encoding helps to guide the cross-attention operation. By fine-tuning a pre-trained video diffusion transformer on temporally grounded data, our approach produces coherent videos with smoothly connected events. For the first time in the literature, our model offers control over the timing of events in generated videos. Extensive experiments demonstrate that MinT outperforms existing open-source models by a large margin.
+</details>
+
+#### 18. STIV: Scalable Text and Image Conditioned Video Generation
 Zongyu Lin, Wei Liu, Chen Chen, Jiasen Lu, Wenze Hu, Tsu-Jui Fu, Jesse Allardice, Zhengfeng Lai, Liangchen Song, Bowen Zhang, Cha Chen, Yiran Fei, Yifan Jiang, Lezhi Li, Yizhou Sun, Kai-Wei Chang, Yinfei Yang
 
 (Apple, UCLA)
@@ -1712,7 +1721,7 @@ Zongyu Lin, Wei Liu, Chen Chen, Jiasen Lu, Wenze Hu, Tsu-Jui Fu, Jesse Allardice
 The field of video generation has made remarkable advancements, yet there remains a pressing need for a clear, systematic recipe that can guide the development of robust and scalable models. In this work, we present a comprehensive study that systematically explores the interplay of model architectures, training recipes, and data curation strategies, culminating in a simple and scalable text-image-conditioned video generation method, named STIV. Our framework integrates image condition into a Diffusion Transformer (DiT) through frame replacement, while incorporating text conditioning via a joint image-text conditional classifier-free guidance. This design enables STIV to perform both text-to-video (T2V) and text-image-to-video (TI2V) tasks simultaneously. Additionally, STIV can be easily extended to various applications, such as video prediction, frame interpolation, multi-view generation, and long video generation, etc. With comprehensive ablation studies on T2I, T2V, and TI2V, STIV demonstrate strong performance, despite its simple design. An 8.7B model with 512 resolution achieves 83.1 on VBench T2V, surpassing both leading open and closed-source models like CogVideoX-5B, Pika, Kling, and Gen-3. The same-sized model also achieves a state-of-the-art result of 90.1 on VBench I2V task at 512 resolution. By providing a transparent and extensible recipe for building cutting-edge video generation models, we aim to empower future research and accelerate progress toward more versatile and reliable video generation solutions.
 </details>
 
-#### 18. 3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation
+#### 19. 3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation
 Xiao Fu, Xian Liu, Xintao Wang, Sida Peng, Menghan Xia, Xiaoyu Shi, Ziyang Yuan, Pengfei Wan, Di Zhang, Dahua Lin
 
 (The Chinese University of Hong Kong, Kuaishou Technology, Zhejiang University)
@@ -1741,6 +1750,7 @@ This paper aims to manipulate multi-entity 3D motions in video generation. Previ
 | 2024 | **PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation**  |  30 Nov 2024  | [Link](https://arxiv.org/abs/2412.00596)  |    [Link](https://github.com/pittisl/PhyT2V)      | -- |
 | 2024 | **Motion Prompting: Controlling Video Generation with Motion Trajectories**  |  3 Dec 2024  | [Link](https://arxiv.org/abs/2412.02700)  |    --     | [Link](https://motion-prompting.github.io/) |
 | 2024 | **Mogo: RQ Hierarchical Causal Transformer for High-Quality 3D Human Motion Generation**  |  5 Dec 2024  | [Link](https://arxiv.org/abs/2412.07797)  |    --     | -- |
+| 2024 | **Mind the Time: Temporally-Controlled Multi-Event Video Generation**  |  6 Dec 2024  | [Link](https://arxiv.org/abs/2412.05263)  |   --     | [Link](https://mint-video.github.io/) |
 | 2024 | **STIV: Scalable Text and Image Conditioned Video Generation**  |  10 Dec 2024  | [Link](https://www.arxiv.org/abs/2412.07730)  |    --     | -- |
 | 2024 | **3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation**  |  10 Dec 2024  | [Link](https://arxiv.org/abs/2412.07759)  |   [Link](https://github.com/KwaiVGI/3DTrajMaster)     | [Link](https://fuxiao0719.github.io/projects/3dtrajmaster/) |
 
@@ -1897,6 +1907,13 @@ This paper aims to manipulate multi-entity 3D motions in video generation. Previ
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2412.07797}, 
+}
+
+@article{MinT,
+  title={Mind the Time: Temporally-Controlled Multi-Event Video Generation},
+  author={Wu, Ziyi and Siarohin, Aliaksandr and Menapace, Willi and Skorokhodov, Ivan and Fang, Yuwei and Chordia, Varnith and Gilitschenski, Igor and Tulyakov, Sergey},
+  journal={arXiv preprint arXiv:2412.05263},
+  year={2024}
 }
 
 @misc{lin2024stivscalabletextimage,
