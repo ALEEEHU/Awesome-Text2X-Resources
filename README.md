@@ -137,6 +137,38 @@ For more details, please check the [2024 4D Papers](./docs/4d/4d_2024.md), inclu
 
 ### 💡 T2V ArXiv Papers
 
+#### 1. TransPixar: Advancing Text-to-Video Generation with Transparency
+Luozhou Wang, Yijun Li, Zhifei Chen, Jui-Hsien Wang, Zhifei Zhang, He Zhang, Zhe Lin, Yingcong Chen
+
+(HKUST(GZ), HKUST, Adobe Research)
+<details span>
+<summary><b>Abstract</b></summary>
+Text-to-video generative models have made significant strides, enabling diverse applications in entertainment, advertising, and education. However, generating RGBA video, which includes alpha channels for transparency, remains a challenge due to limited datasets and the difficulty of adapting existing models. Alpha channels are crucial for visual effects (VFX), allowing transparent elements like smoke and reflections to blend seamlessly into scenes. We introduce TransPixar, a method to extend pretrained video models for RGBA generation while retaining the original RGB capabilities. TransPixar leverages a diffusion transformer (DiT) architecture, incorporating alpha-specific tokens and using LoRA-based fine-tuning to jointly generate RGB and alpha channels with high consistency. By optimizing attention mechanisms, TransPixar preserves the strengths of the original RGB model and achieves strong alignment between RGB and alpha channels despite limited training data. Our approach effectively generates diverse and consistent RGBA videos, advancing the possibilities for VFX and interactive content creation.
+</details>
+
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2025 | **TransPixar: Advancing Text-to-Video Generation with Transparency**  | 6 Jan 2025 |          [Link](https://arxiv.org/abs/2501.03006)          | [Link](https://github.com/wileewang/TransPixar)  | [Link](https://wileewang.github.io/TransPixar/)  |
+
+<details close>
+<summary>ArXiv Papers References</summary>
+
+```
+%axiv papers
+
+@misc{wang2025transpixar,
+     title={TransPixar: Advancing Text-to-Video Generation with Transparency}, 
+     author={Luozhou Wang and Yijun Li and Zhifei Chen and Jui-Hsien Wang and Zhifei Zhang and He Zhang and Zhe Lin and Yingcong Chen},
+     year={2025},
+     eprint={2501.03006},
+     archivePrefix={arXiv},
+     primaryClass={cs.CV},
+     url={https://arxiv.org/abs/2501.03006}, 
+}
+
+```
+</details>
+
 
 ---
 
