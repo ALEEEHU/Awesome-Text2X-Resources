@@ -24,6 +24,9 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 - [Text to 4D](#text-to-4d)
   * [ArXiv Papers](#-4d-arxiv-papers)
+- [Text to Video](#text-to-video)
+  * [ArXiv Papers](#-t2v-arxiv-papers)
+  * [Additional Info](#other-additional-info)
 - [Text to Human Motion](#text-to-human-motion)
   * [Accepted Papers](#-motion-accepted-papers)
   * [ArXiv Papers](#-motion-arxiv-papers)
@@ -34,10 +37,6 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 - [Text to 3D Scene](#text-to-scene)
   * [Accepted Papers](#-scene-accepted-papers)
   * [ArXiv Papers](#-scene-arxiv-papers)
-- [Text to Video](#text-to-video)
-  * [Accepted Papers](#-video-accepted-papers)
-  * [ArXiv Papers](#-video-arxiv-papers)
-  * [Additional Info](#other-additional-info)
 - [Related Resources](#related-resources)
   * [Text to Other Tasks](#text-to-other-tasks)
   * [Survey and Awesome Repos](#survey-and-awesome-repos)
@@ -47,7 +46,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 <summary><b>2025 Update Logs:</b></summary>
 <br>	
 	
-* `2025.01.06` - update layout.
+* `2025.01.09` - update layout.
 
   
 </details>
@@ -132,6 +131,59 @@ In 2023, tasks classified as text/Image to 4D and video to 4D generally involve 
 ### Year 2024
 For more details, please check the [2024 4D Papers](./docs/4d/4d_2024.md), including 12 accepted papers and 22 arXiv papers.
 
+
+
+## Text to Video
+
+### 💡 T2V ArXiv Papers
+
+
+---
+
+### Previous Papers
+
+### Year 2024
+For more details, please check the [2024 T2V Papers](./docs/video/t2v_2024.md), including 7 accepted papers and 19 arXiv papers.
+
+
+### Other Additional Info
+
+- OSS video generation models: [Mochi 1](https://github.com/genmoai/models) preview is an open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence.
+- Survey: The Dawn of Video Generation: Preliminary Explorations with SORA-like Models, [arXiv](https://arxiv.org/abs/2410.05227), [Project Page](https://ailab-cvc.github.io/VideoGen-Eval/), [GitHub Repo](https://github.com/AILab-CVC/VideoGen-Eval)
+
+#### 📚 Dataset Works
+
+#### 1. VidGen-1M: A Large-Scale Dataset for Text-to-video Generation
+Zhiyu Tan, Xiaomeng Yang, Luozheng Qin, Hao Li
+
+(Fudan University, ShangHai Academy of AI for Science)
+<details span>
+<summary><b>Abstract</b></summary>
+The quality of video-text pairs fundamentally determines the upper bound of text-to-video models. Currently, the datasets used for training these models suffer from significant shortcomings, including low temporal consistency, poor-quality captions, substandard video quality, and imbalanced data distribution. The prevailing video curation process, which depends on image models for tagging and manual rule-based curation, leads to a high computational load and leaves behind unclean data. As a result, there is a lack of appropriate training datasets for text-to-video models. To address this problem, we present VidGen-1M, a superior training dataset for text-to-video models. Produced through a coarse-to-fine curation strategy, this dataset guarantees high-quality videos and detailed captions with excellent temporal consistency. When used to train the video generation model, this dataset has led to experimental results that surpass those obtained with other models.
+</details>
+
+| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
+| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
+| 2024 | **VidGen-1M: A Large-Scale Dataset for Text-to-video Generation**  | 5 Aug 2024  |          [Link](https://arxiv.org/abs/2408.02629)          | [Link](https://github.com/SAIS-FUXI/VidGen) | [Link](https://sais-fuxi.github.io/projects/vidgen-1m/)  |
+
+<details close>
+<summary>References</summary>
+
+```
+%axiv papers
+
+@article{tan2024vidgen,
+  title={VidGen-1M: A Large-Scale Dataset for Text-to-video Generation},
+  author={Tan, Zhiyu and Yang, Xiaomeng, and Qin, Luozheng and Li Hao},
+  booktitle={arXiv preprint arxiv:2408.02629},
+  year={2024}
+}
+
+
+```
+</details>
+
+--------------
 
 ## Text to Human Motion
 
@@ -1494,499 +1546,6 @@ inproceedings{zhang20243DitScene,
       year={2024},
       journal= {arxiv:2412.21117},
 }
-```
-</details>
-
-
-## Text to Video
-
-### 🎉 Video Accepted Papers
-
-| Year | Title                                                        | Venue  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2024 | **MicroCinema:A Divide-and-Conquer Approach for Text-to-Video Generation**  | CVPR 2024 (Highlight) |          [Link](https://arxiv.org/abs/2311.18829)          | -- | [Link](https://wangyanhui666.github.io/MicroCinema.github.io/)  |
-| 2024 | **LivePhoto: Real Image Animation with Text-guided Motion Control**  | ECCV 2024 |          [Link](https://arxiv.org/abs/2312.02928)          | [Link](https://github.com/XavierCHEN34/LivePhoto)  | [Link](https://xavierchen34.github.io/LivePhoto-Page/)  |
-| 2024 | **xGen-VideoSyn-1: High-fidelity Text-to-Video Synthesis with Compressed Representations**  |  ECCV 2024 AI4VA |          [Link](https://arxiv.org/abs/2408.12590)          | [Link](https://github.com/SalesforceAIResearch/xgen-videosyn)  | -- |
-| 2024 | **MotionBooth: Motion-Aware Customized Text-to-Video Generation**  | NeurIPS 2024 Spotlight  | [Link](https://arxiv.org/abs/2406.17758) |         [Link](https://github.com/jianzongwu/MotionBooth)         | [Link](https://jianzongwu.github.io/projects/motionbooth/) |
-| 2024 | **Vivid-ZOO: Multi-View Video Generation with Diffusion Model**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2406.08659) |         [Link](https://github.com/hi-zhengcheng/vividzoo)         | [Link](https://hi-zhengcheng.github.io/vividzoo/) |
-| 2024 | **Enhancing Motion in Text-to-Video Generation with Decomposed Encoding and Conditioning**  | NeurIPS 2024  | [Link](https://arxiv.org/abs/2410.24219) |         [Link](https://github.com/PR-Ryan/DEMO)    | [Link](https://pr-ryan.github.io/DEMO-project/) |
-| 2024 | **VideoDirectorGPT: Consistent Multi-scene Video Generation via LLM-Guided Planning**  | COLM 2024  | [Link](https://arxiv.org/abs/2309.15091) |         [Link](https://github.com/HL-hanlin/VideoDirectorGPT)         | [Link](https://videodirectorgpt.github.io/) |
-
-<details close>
-<summary>Accepted Papers References</summary>
-
-```
-%accepted papers
-
-@inproceedings{wang2024microcinema,
-  title={Microcinema: A divide-and-conquer approach for text-to-video generation},
-  author={Wang, Yanhui and Bao, Jianmin and Weng, Wenming and Feng, Ruoyu and Yin, Dacheng and Yang, Tao and Zhang, Jingxu and Dai, Qi and Zhao, Zhiyuan and Wang, Chunyu and others},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={8414--8424},
-  year={2024}
-}
-
-@article{chen2023livephoto,
-    title={LivePhoto: Real Image Animation with Text-guided Motion Control},
-    author={Chen, Xi and Liu, Zhiheng and Chen, Mengting and Feng, Yutong and Liu, Yu and Shen, Yujun and Zhao, Hengshuang},
-    journal={arXiv preprint arXiv:2312.02928},
-    year={2023}
-}
-
-@misc{qin2024xgenvideosyn1highfidelitytexttovideosynthesis,
-      title={xGen-VideoSyn-1: High-fidelity Text-to-Video Synthesis with Compressed Representations}, 
-      author={Can Qin and Congying Xia and Krithika Ramakrishnan and Michael Ryoo and Lifu Tu and Yihao Feng and Manli Shu and Honglu Zhou and Anas Awadalla and Jun Wang and Senthil Purushwalkam and Le Xue and Yingbo Zhou and Huan Wang and Silvio Savarese and Juan Carlos Niebles and Zeyuan Chen and Ran Xu and Caiming Xiong},
-      year={2024},
-      eprint={2408.12590},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2408.12590}, 
-}
-
-@article{wu2024motionbooth,
-  title={MotionBooth: Motion-Aware Customized Text-to-Video Generation},
-  author={Jianzong Wu and Xiangtai Li and Yanhong Zeng and Jiangning Zhang and Qianyu Zhou and Yining Li and Yunhai Tong and Kai Chen},
-  journal={arXiv pre-print arXiv:2406.17758},
-  year={2024},
-}
-
-@misc{li2024vividzoo,
-  title={Vivid-ZOO: Multi-View Video Generation with Diffusion Model}, 
-  author={Bing Li and Cheng Zheng and Wenxuan Zhu and Jinjie Mai and Biao Zhang and Peter Wonka and Bernard Ghanem},
-  year={2024},
-  eprint={2406.08659},
-  archivePrefix={arXiv},
-}
-
-@misc{ruan2024enhancingmotiontexttovideogeneration,
-      title={Enhancing Motion in Text-to-Video Generation with Decomposed Encoding and Conditioning}, 
-      author={Penghui Ruan and Pichao Wang and Divya Saxena and Jiannong Cao and Yuhui Shi},
-      year={2024},
-      eprint={2410.24219},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.24219}, 
-}
-
-@article{Lin2023VideoDirectorGPT,
-        author = {Han Lin and Abhay Zala and Jaemin Cho and Mohit Bansal},
-        title = {VideoDirectorGPT: Consistent Multi-Scene Video Generation via LLM-Guided Planning},
-        year = {2023},
-}
-```
-</details>
-
----
-
-### 💡 Video ArXiv Papers
-
-#### 1. StreamingT2V: Consistent, Dynamic, and Extendable Long Video Generation from Text  
-Roberto Henschel, Levon Khachatryan, Daniil Hayrapetyan, Hayk Poghosyan, Vahram Tadevosyan, Zhangyang Wang, Shant Navasardyan, Humphrey Shi
-
-(Picsart AI Resarch (PAIR), UT Austin, SHI Labs @ Georgia Tech Oregon & UIUC)
-<details span>
-<summary><b>Abstract</b></summary>
-Text-to-video diffusion models enable the generation of high-quality videos that follow text instructions, making it easy to create diverse and individual content. However, existing approaches mostly focus on high-quality short video generation (typically 16 or 24 frames), ending up with hard-cuts when naively extended to the case of long video synthesis. To overcome these limitations, we introduce StreamingT2V, an autoregressive approach for long video generation of 80, 240, 600, 1200 or more frames with smooth transitions. The key components are:(i) a short-term memory block called conditional attention module (CAM), which conditions the current generation on the features extracted from the previous chunk via an attentional mechanism, leading to consistent chunk transitions, (ii) a long-term memory block called appearance preservation module, which extracts high-level scene and object features from the first video chunk to prevent the model from forgetting the initial scene, and (iii) a randomized blending approach that enables to apply a video enhancer autoregressively for infinitely long videos without inconsistencies between chunks. Experiments show that StreamingT2V generates high motion amount. In contrast, all competing image-to-video methods are prone to video stagnation when applied naively in an autoregressive manner. Thus, we propose with StreamingT2V a high-quality seamless text-to-long video generator that outperforms competitors with consistency and motion.
-</details>
-
-#### 2. Text-Animator: Controllable Visual Text Video Generation
-Lin Liu, Quande Liu, Shengju Qian, Yuan Zhou, Wengang Zhou, Houqiang Li, Lingxi Xie, Qi Tian
-
-(University of Science and Technology of China, Tencent, Nanyang Technical University, Huawei Tech)
-<details span>
-<summary><b>Abstract</b></summary>
-Video generation is a challenging yet pivotal task in various industries, such as gaming, e-commerce, and advertising. One significant unresolved aspect within T2V is the effective visualization of text within generated videos. Despite the progress achieved in Text-to-Video~(T2V) generation, current methods still cannot effectively visualize texts in videos directly, as they mainly focus on summarizing semantic scene information, understanding, and depicting actions. While recent advances in image-level visual text generation show promise, transitioning these techniques into the video domain faces problems, notably in preserving textual fidelity and motion coherence. In this paper, we propose an innovative approach termed Text-Animator for visual text video generation. Text-Animator contains a text embedding injection module to precisely depict the structures of visual text in generated videos. Besides, we develop a camera control module and a text refinement module to improve the stability of generated visual text by controlling the camera movement as well as the motion of visualized text. Quantitative and qualitative experimental results demonstrate the superiority of our approach to the accuracy of generated visual text over state-of-the-art video generation methods. 
-</details>
-
-#### 3. Still-Moving: Customized Video Generation without Customized Video Data
-Hila Chefer, Shiran Zada, Roni Paiss, Ariel Ephrat, Omer Tov, Michael Rubinstein, Lior Wolf, Tali Dekel, Tomer Michaeli, Inbar Mosseri
-
-(Google DeepMind, Tel Aviv University, Weizmann Institute of Science, Technion)
-<details span>
-<summary><b>Abstract</b></summary>
-Customizing text-to-image (T2I) models has seen tremendous progress recently, particularly in areas such as personalization, stylization, and conditional generation. However, expanding this progress to video generation is still in its infancy, primarily due to the lack of customized video data. In this work, we introduce Still-Moving, a novel generic framework for customizing a text-to-video (T2V) model, without requiring any customized video data. The framework applies to the prominent T2V design where the video model is built over a text-to-image (T2I) model (e.g., via inflation). We assume access to a customized version of the T2I model, trained only on still image data (e.g., using DreamBooth or StyleDrop). Naively plugging in the weights of the customized T2I model into the T2V model often leads to significant artifacts or insufficient adherence to the customization data. To overcome this issue, we train lightweight Spatial Adapters that adjust the features produced by the injected T2I layers. Importantly, our adapters are trained on "frozen videos" (i.e., repeated images), constructed from image samples generated by the customized T2I model. This training is facilitated by a novel Motion Adapter module, which allows us to train on such static videos while preserving the motion prior of the video model. At test time, we remove the Motion Adapter modules and leave in only the trained Spatial Adapters. This restores the motion prior of the T2V model while adhering to the spatial prior of the customized T2I model. We demonstrate the effectiveness of our approach on diverse tasks including personalized, stylized, and conditional generation. In all evaluated scenarios, our method seamlessly integrates the spatial prior of the customized T2I model with a motion prior supplied by the T2V model.
-</details>
-
-#### 4. CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer
-Zhuoyi Yang, Jiayan Teng, Wendi Zheng, Ming Ding, Shiyu Huang, Jiazheng Xu, Yuanming Yang, Xiaohan Zhang, Xiaotao Gu, Guanyu Feng, Da Yin, Wenyi Hong, Weihan Wang, Yean Cheng, Yuxuan Zhang, Ting Liu, Bin Xu, Yuxiao Dong, Jie Tang
-
-(Zhipu AI, Tsinghua University)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce CogVideoX, a large-scale diffusion transformer model designed for generating videos based on text prompts. To efficently model video data, we propose to levearge a 3D Variational Autoencoder (VAE) to compresses videos along both spatial and temporal dimensions. To improve the text-video alignment,we propose an expert transformer with the expert adaptive LayerNorm to facilitate the deep fusion between the two modalities. By employing a progressive training technique, CogVideoX is adept at producing coherent, long-duration videos characterized by significant motion. In addition, we develop an effectively text-video data processing pipeline that includes various data preprocessing strategies and a video captioning method. It significantly helps enhance the performance of CogVideoX,
-improving both generation quality and semantic alignment. Results show that CogVideoX demonstrates state-of-the-art performance across both multiple machine metrics and human evaluations.
-</details>
-
-#### 5. CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities
-Tao Wu, Yong Zhang, Xintao Wang, Xianpan Zhou, Guangcong Zheng, Zhongang Qi, Ying Shan, Xi Li
-
-(Zhejiang University, Tencent AI Lab, ARC Lab Tencent PCG)
-<details span>
-<summary><b>Abstract</b></summary>
-Customized video generation aims to generate high-quality videos guided by text prompts and subject's reference images. However, since it is only trained on static images, the fine-tuning process of subject learning disrupts abilities of video diffusion models (VDMs) to combine concepts and generate motions. To restore these abilities, some methods use additional video similar to the prompt to fine-tune or guide the model. This requires frequent changes of guiding videos and even re-tuning of the model when generating different motions, which is very inconvenient for users. In this paper, we propose CustomCrafter, a novel framework that preserves the model's motion generation and conceptual combination abilities without additional video and fine-tuning to recovery. For preserving conceptual combination ability, we design a plug-and-play module to update few parameters in VDMs, enhancing the model's ability to capture the appearance details and the ability of concept combinations for new subjects. For motion generation, we observed that VDMs tend to restore the motion of video in the early stage of denoising, while focusing on the recovery of subject details in the later stage. Therefore, we propose Dynamic Weighted Video Sampling Strategy. Using the pluggability of our subject learning modules, we reduce the impact of this module on motion generation in the early stage of denoising, preserving the ability to generate motion of VDMs. In the later stage of denoising, we restore this module to repair the appearance details of the specified subject, thereby ensuring the fidelity of the subject's appearance. Experimental results show that our method has a significant improvement compared to previous methods.
-</details>
-
-#### 6. Tora: Trajectory-oriented Diffusion Transformer for Video Generation
-Zhenghao Zhang, Junchao Liao, Menghao Li, Zuozhuo Dai, Bingxue Qiu, Siyu Zhu, Long Qin, Weizhi Wang
-
-(Alibaba Group, Fudan University)
-<details span>
-<summary><b>Abstract</b></summary>
-Recent advancements in Diffusion Transformer (DiT) have demonstrated remarkable proficiency in producing high-quality video content. Nonetheless, the potential of transformer-based diffusion models for effectively generating videos with controllable motion remains an area of limited exploration. This paper introduces Tora, the first trajectory-oriented DiT framework that concurrently integrates textual, visual, and trajectory conditions, thereby enabling scalable video generation with effective motion guidance. Specifically, Tora consists of a Trajectory Extractor(TE), a Spatial-Temporal DiT, and a Motion-guidance Fuser(MGF). The TE encodes arbitrary trajectories into hierarchical spacetime motion patches with a 3D video compression network. The MGF integrates the motion patches into the DiT blocks to generate consistent videos that accurately follow designated trajectories. Our design aligns seamlessly with DiT's scalability, allowing precise control of video content's dynamics with diverse durations, aspect ratios, and resolutions. Extensive experiments demonstrate Tora's excellence in achieving high motion fidelity, while also meticulously simulating the intricate movement of the physical world.
-</details>
-
-#### 7. BroadWay: Boost Your Text-to-Video Generation Model in a Training-free Way
-Jiazi Bu, Pengyang Ling, Pan Zhang, Tong Wu, Xiaoyi Dong, Yuhang Zang, Yuhang Cao, Dahua Lin, Jiaqi Wang
-
-(Shanghai Jiao Tong University, University of Science and Technology of China, The Chinese University of Hong Kong, Shanghai Artificial Intelligence Laboratory)
-<details span>
-<summary><b>Abstract</b></summary>
-The text-to-video (T2V) generation models, offering convenient visual creation, have recently garnered increasing attention. Despite their substantial potential, the generated videos may present artifacts, including structural implausibility, temporal inconsistency, and a lack of motion, often resulting in near-static video. In this work, we have identified a correlation between the disparity of temporal attention maps across different blocks and the occurrence of temporal inconsistencies. Additionally, we have observed that the energy contained within the temporal attention maps is directly related to the magnitude of motion amplitude in the generated videos. Based on these observations, we present BroadWay, a training-free method to improve the quality of text-to-video generation without introducing additional parameters, augmenting memory or sampling time. Specifically, BroadWay is composed of two principal components: 1) Temporal Self-Guidance improves the structural plausibility and temporal consistency of generated videos by reducing the disparity between the temporal attention maps across various decoder blocks. 2) Fourier-based Motion Enhancement enhances the magnitude and richness of motion by amplifying the energy of the map. Extensive experiments demonstrate that BroadWay significantly improves the quality of text-to-video generation with negligible additional cost.
-</details>
-
-#### 8. Pyramidal Flow Matching for Efficient Video Generative Modeling
-Yang Jin, Zhicheng Sun, Ningyuan Li, Kun Xu, Kun Xu, Hao Jiang, Nan Zhuang, Quzhe Huang, Yang Song, Yadong Mu, Zhouchen Lin
-
-(Peking University, Kuaishou Technology, Beijing University of Posts and Telecommunications)
-<details span>
-<summary><b>Abstract</b></summary>
-Video generation requires modeling a vast spatiotemporal space, which demands significant computational resources and data usage. To reduce the complexity, the prevailing approaches employ a cascaded architecture to avoid direct training with full resolution. Despite reducing computational demands, the separate optimization of each sub-stage hinders knowledge sharing and sacrifices flexibility. This work introduces a unified pyramidal flow matching algorithm. It reinterprets the original denoising trajectory as a series of pyramid stages, where only the final stage operates at the full resolution, thereby enabling more efficient video generative modeling. Through our sophisticated design, the flows of different pyramid stages can be interlinked to maintain continuity. Moreover, we craft autoregressive video generation with a temporal pyramid to compress the full-resolution history. The entire framework can be optimized in an end-to-end manner and with a single unified Diffusion Transformer (DiT). Extensive experiments demonstrate that our method supports generating high-quality 5-second (up to 10-second) videos at 768p resolution and 24 FPS within 20.7k A100 GPU training hours. 
-</details>
-
-#### 9. GameGen-X: Interactive Open-world Game Video Generation
-Haoxuan Che, Xuanhua He, Quande Liu, Cheng Jin, Hao Chen
-
-(Hong Kong Univerity of Science and Technology, Univerity of Science and Technology of China, The Chinese Univerity of Hong Kong)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce GameGen-X, the first diffusion transformer model specifically designed for both generating and interactively controlling open-world game videos. This model facilitates high-quality, open-domain generation by simulating an extensive array of game engine features, such as innovative characters, dynamic environments, complex actions, and diverse events. Additionally, it provides interactive controllability, predicting and altering future content based on the current clip, thus allowing for gameplay simulation. To realize this vision, we first collected and built an Open-World Video Game Dataset from scratch. It is the first and largest dataset for open-world game video generation and control, which comprises over a million diverse gameplay video clips sampling from over 150 games with informative captions from GPT-4o. GameGen-X undergoes a two-stage training process, consisting of foundation model pre-training and instruction tuning. Firstly, the model was pre-trained via text-to-video generation and video continuation, endowing it with the capability for long-sequence, high-quality open-domain game video generation. Further, to achieve interactive controllability, we designed InstructNet to incorporate game-related multi-modal control signal experts. This allows the model to adjust latent representations based on user inputs, unifying character interaction and scene content control for the first time in video generation. During instruction tuning, only the InstructNet is updated while the pre-trained foundation model is frozen, enabling the integration of interactive controllability without loss of diversity and quality of generated video content.
-</details>
-
-#### 10. Motion Control for Enhanced Complex Action Video Generation
-Qiang Zhou, Shaofeng Zhang, Nianzu Yang, Ye Qian, Hao Li
-
-(INF Tech., Shanghai Jiao Tong University, Fudan University)
-<details span>
-<summary><b>Abstract</b></summary>
-Existing text-to-video (T2V) models often struggle with generating videos with sufficiently pronounced or complex actions. A key limitation lies in the text prompt's inability to precisely convey intricate motion details. To address this, we propose a novel framework, MVideo, designed to produce long-duration videos with precise, fluid actions. MVideo overcomes the limitations of text prompts by incorporating mask sequences as an additional motion condition input, providing a clearer, more accurate representation of intended actions. Leveraging foundational vision models such as GroundingDINO and SAM2, MVideo automatically generates mask sequences, enhancing both efficiency and robustness. Our results demonstrate that, after training, MVideo effectively aligns text prompts with motion conditions to produce videos that simultaneously meet both criteria. This dual control mechanism allows for more dynamic video generation by enabling alterations to either the text prompt or motion condition independently, or both in tandem. Furthermore, MVideo supports motion condition editing and composition, facilitating the generation of videos with more complex actions. MVideo thus advances T2V motion generation, setting a strong benchmark for improved action depiction in current video diffusion models.
-</details>
-
-#### 11. AnimateAnything: Consistent and Controllable Animation for video generation
-Guojun Lei, Chi Wang, Hong Li, Rong Zhang, Yikai Wang, Weiwei Xu
-
-(State Key Lab of CAD&CG Zhejiang University, Tsinghua University, Beihang University, Zhejiang Gongshang University, ShengShu)
-<details span>
-<summary><b>Abstract</b></summary>
-We present a unified controllable video generation approach AnimateAnything that facilitates precise and consistent video manipulation across various conditions, including camera trajectories, text prompts, and user motion annotations. Specifically, we carefully design a multi-scale control feature fusion network to construct a common motion representation for different conditions. It explicitly converts all control information into frame-by-frame optical flows. Then we incorporate the optical flows as motion priors to guide final video generation. In addition, to reduce the flickering issues caused by large-scale motion, we propose a frequency-based stabilization module. It can enhance temporal coherence by ensuring the video's frequency domain consistency. Experiments demonstrate that our method outperforms the state-of-the-art approaches. 
-</details>
-
-#### 12. FlipSketch: Flipping Static Drawings to Text-Guided Sketch Animations (Text-to-Video Finetuning)
-Hmrishav Bandyopadhyay, Yi-Zhe Song
-
-(SketchX CVSSP University of Surrey, United Kingdom)
-<details span>
-<summary><b>Abstract</b></summary>
-Sketch animations offer a powerful medium for visual storytelling, from simple flip-book doodles to professional studio productions. While traditional animation requires teams of skilled artists to draw key frames and in-between frames, existing automation attempts still demand significant artistic effort through precise motion paths or keyframe specification. We present FlipSketch, a system that brings back the magic of flip-book animation -- just draw your idea and describe how you want it to move! Our approach harnesses motion priors from text-to-video diffusion models, adapting them to generate sketch animations through three key innovations: (i) fine-tuning for sketch-style frame generation, (ii) a reference frame mechanism that preserves visual integrity of input sketch through noise refinement, and (iii) a dual-attention composition that enables fluid motion without losing visual consistency. Unlike constrained vector animations, our raster frames support dynamic sketch transformations, capturing the expressive freedom of traditional animation. The result is an intuitive system that makes sketch animation as simple as doodling and describing, while maintaining the artistic essence of hand-drawn animation.
-</details>
-
-#### 13. DreamRunner: Fine-Grained Storytelling Video Generation with Retrieval-Augmented Motion Adaptation
-Zun Wang, Jialu Li, Han Lin, Jaehong Yoon, Mohit Bansal
-
-(University of North Carolina, Chapel Hill)
-<details span>
-<summary><b>Abstract</b></summary>
-Storytelling video generation (SVG) has recently emerged as a task to create long, multi-motion, multi-scene videos that consistently represent the story described in the input text script. SVG holds great potential for diverse content creation in media and entertainment; however, it also presents significant challenges: (1) objects must exhibit a range of fine-grained, complex motions, (2) multiple objects need to appear consistently across scenes, and (3) subjects may require multiple motions with seamless transitions within a single scene. To address these challenges, we propose DreamRunner, a novel story-to-video generation method: First, we structure the input script using a large language model (LLM) to facilitate both coarse-grained scene planning as well as fine-grained object-level layout and motion planning. Next, DreamRunner presents retrieval-augmented test-time adaptation to capture target motion priors for objects in each scene, supporting diverse motion customization based on retrieved videos, thus facilitating the generation of new videos with complex, scripted motions. Lastly, we propose a novel spatial-temporal region-based 3D attention and prior injection module SR3AI for fine-grained object-motion binding and frame-by-frame semantic control. We compare DreamRunner with various SVG baselines, demonstrating state-of-the-art performance in character consistency, text alignment, and smooth transitions. Additionally, DreamRunner exhibits strong fine-grained condition-following ability in compositional text-to-video generation, significantly outperforming baselines on T2V-ComBench. Finally, we validate DreamRunner's robust ability to generate multi-object interactions with qualitative examples.
-</details>
-
-#### 14. PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation
-Qiyao Xue, Xiangyu Yin, Boyuan Yang, Wei Gao (University of Pittsburgh)
-<details span>
-<summary><b>Abstract</b></summary>
-Text-to-video (T2V) generation has been recently enabled by transformer-based diffusion models, but current T2V models lack capabilities in adhering to the real-world common knowledge and physical rules, due to their limited understanding of physical realism and deficiency in temporal modeling. Existing solutions are either data-driven or require extra model inputs, but cannot be generalizable to out-of-distribution domains. In this paper, we present PhyT2V, a new data-independent T2V technique that expands the current T2V model's capability of video generation to out-of-distribution domains, by enabling chain-of-thought and step-back reasoning in T2V prompting. Our experiments show that PhyT2V improves existing T2V models' adherence to real-world physical rules by 2.3x, and achieves 35% improvement compared to T2V prompt enhancers. 
-</details>
-
-#### 15. Motion Prompting: Controlling Video Generation with Motion Trajectories
-Daniel Geng, Charles Herrmann, Junhwa Hur, Forrester Cole, Serena Zhang, Tobias Pfaff, Tatiana Lopez-Guevara, Carl Doersch, Yusuf Aytar, Michael Rubinstein, Chen Sun, Oliver Wang, Andrew Owens, Deqing Sun
-
-(Google DeepMind, University of Michigan, Brown University)
-<details span>
-<summary><b>Abstract</b></summary>
-Motion control is crucial for generating expressive and compelling video content; however, most existing video generation models rely mainly on text prompts for control, which struggle to capture the nuances of dynamic actions and temporal compositions. To this end, we train a video generation model conditioned on spatio-temporally sparse or dense motion trajectories. In contrast to prior motion conditioning work, this flexible representation can encode any number of trajectories, object-specific or global scene motion, and temporally sparse motion; due to its flexibility we refer to this conditioning as motion prompts. While users may directly specify sparse trajectories, we also show how to translate high-level user requests into detailed, semi-dense motion prompts, a process we term motion prompt expansion. We demonstrate the versatility of our approach through various applications, including camera and object motion control, "interacting" with an image, motion transfer, and image editing. Our results showcase emergent behaviors, such as realistic physics, suggesting the potential of motion prompts for probing video models and interacting with future generative world models. Finally, we evaluate quantitatively, conduct a human study, and demonstrate strong performance. 
-</details>
-
-#### 16. Mogo: RQ Hierarchical Causal Transformer for High-Quality 3D Human Motion Generation
-Dongjie Fu (Mogo AI)
-<details span>
-<summary><b>Abstract</b></summary>
-In the field of text-to-motion generation, Bert-type Masked Models (MoMask, MMM) currently produce higher-quality outputs compared to GPT-type autoregressive models (T2M-GPT). However, these Bert-type models often lack the streaming output capability required for applications in video game and multimedia environments, a feature inherent to GPT-type models. Additionally, they demonstrate weaker performance in out-of-distribution generation. To surpass the quality of BERT-type models while leveraging a GPT-type structure, without adding extra refinement models that complicate scaling data, we propose a novel architecture, Mogo (Motion Only Generate Once), which generates high-quality lifelike 3D human motions by training a single transformer model. Mogo consists of only two main components: 1) RVQ-VAE, a hierarchical residual vector quantization variational autoencoder, which discretizes continuous motion sequences with high precision; 2) Hierarchical Causal Transformer, responsible for generating the base motion sequences in an autoregressive manner while simultaneously inferring residuals across different layers. Experimental results demonstrate that Mogo can generate continuous and cyclic motion sequences up to 260 frames (13 seconds), surpassing the 196 frames (10 seconds) length limitation of existing datasets like HumanML3D. On the HumanML3D test set, Mogo achieves a FID score of 0.079, outperforming both the GPT-type model T2M-GPT (FID = 0.116), AttT2M (FID = 0.112) and the BERT-type model MMM (FID = 0.080). Furthermore, our model achieves the best quantitative performance in out-of-distribution generation.
-</details>
-
-#### 17. Mind the Time: Temporally-Controlled Multi-Event Video Generation
-Ziyi Wu, Aliaksandr Siarohin, Willi Menapace, Ivan Skorokhodov, Yuwei Fang, Varnith Chordia, Igor Gilitschenski, Sergey Tulyakov
-
-(Snap Research, University of Toronto, Vector Institute)
-<details span>
-<summary><b>Abstract</b></summary>
-Real-world videos consist of sequences of events. Generating such sequences with precise temporal control is infeasible with existing video generators that rely on a single paragraph of text as input. When tasked with generating multiple events described using a single prompt, such methods often ignore some of the events or fail to arrange them in the correct order. To address this limitation, we present MinT, a multi-event video generator with temporal control. Our key insight is to bind each event to a specific period in the generated video, which allows the model to focus on one event at a time. To enable time-aware interactions between event captions and video tokens, we design a time-based positional encoding method, dubbed ReRoPE. This encoding helps to guide the cross-attention operation. By fine-tuning a pre-trained video diffusion transformer on temporally grounded data, our approach produces coherent videos with smoothly connected events. For the first time in the literature, our model offers control over the timing of events in generated videos. Extensive experiments demonstrate that MinT outperforms existing open-source models by a large margin.
-</details>
-
-#### 18. STIV: Scalable Text and Image Conditioned Video Generation
-Zongyu Lin, Wei Liu, Chen Chen, Jiasen Lu, Wenze Hu, Tsu-Jui Fu, Jesse Allardice, Zhengfeng Lai, Liangchen Song, Bowen Zhang, Cha Chen, Yiran Fei, Yifan Jiang, Lezhi Li, Yizhou Sun, Kai-Wei Chang, Yinfei Yang
-
-(Apple, UCLA)
-<details span>
-<summary><b>Abstract</b></summary>
-The field of video generation has made remarkable advancements, yet there remains a pressing need for a clear, systematic recipe that can guide the development of robust and scalable models. In this work, we present a comprehensive study that systematically explores the interplay of model architectures, training recipes, and data curation strategies, culminating in a simple and scalable text-image-conditioned video generation method, named STIV. Our framework integrates image condition into a Diffusion Transformer (DiT) through frame replacement, while incorporating text conditioning via a joint image-text conditional classifier-free guidance. This design enables STIV to perform both text-to-video (T2V) and text-image-to-video (TI2V) tasks simultaneously. Additionally, STIV can be easily extended to various applications, such as video prediction, frame interpolation, multi-view generation, and long video generation, etc. With comprehensive ablation studies on T2I, T2V, and TI2V, STIV demonstrate strong performance, despite its simple design. An 8.7B model with 512 resolution achieves 83.1 on VBench T2V, surpassing both leading open and closed-source models like CogVideoX-5B, Pika, Kling, and Gen-3. The same-sized model also achieves a state-of-the-art result of 90.1 on VBench I2V task at 512 resolution. By providing a transparent and extensible recipe for building cutting-edge video generation models, we aim to empower future research and accelerate progress toward more versatile and reliable video generation solutions.
-</details>
-
-#### 19. 3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation
-Xiao Fu, Xian Liu, Xintao Wang, Sida Peng, Menghan Xia, Xiaoyu Shi, Ziyang Yuan, Pengfei Wan, Di Zhang, Dahua Lin
-
-(The Chinese University of Hong Kong, Kuaishou Technology, Zhejiang University)
-<details span>
-<summary><b>Abstract</b></summary>
-This paper aims to manipulate multi-entity 3D motions in video generation. Previous methods on controllable video generation primarily leverage 2D control signals to manipulate object motions and have achieved remarkable synthesis results. However, 2D control signals are inherently limited in expressing the 3D nature of object motions. To overcome this problem, we introduce 3DTrajMaster, a robust controller that regulates multi-entity dynamics in 3D space, given user-desired 6DoF pose (location and rotation) sequences of entities. At the core of our approach is a plug-and-play 3D-motion grounded object injector that fuses multiple input entities with their respective 3D trajectories through a gated self-attention mechanism. In addition, we exploit an injector architecture to preserve the video diffusion prior, which is crucial for generalization ability. To mitigate video quality degradation, we introduce a domain adaptor during training and employ an annealed sampling strategy during inference. To address the lack of suitable training data, we construct a 360-Motion Dataset, which first correlates collected 3D human and animal assets with GPT-generated trajectory and then captures their motion with 12 evenly-surround cameras on diverse 3D UE platforms. Extensive experiments show that 3DTrajMaster sets a new state-of-the-art in both accuracy and generalization for controlling multi-entity 3D motions.
-</details>
-
----
-
-| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2024 | **StreamingT2V: Consistent, Dynamic, and Extendable Long Video Generation from Text**  | 21 Mar 2024 |          [Link](https://arxiv.org/abs/2403.14773)          | [Link](https://github.com/Picsart-AI-Research/StreamingT2V) | [Link](https://streamingt2v.github.io/)  |
-| 2024 | **Text-Animator: Controllable Visual Text Video Generation**  | 25 Jun 2024 |          [Link](https://arxiv.org/abs/2406.17777)          | [Link](https://github.com/laulampaul/text-animator) | [Link](https://laulampaul.github.io/text-animator.html)  |
-| 2024 | **Still-Moving: Customized Video Generation without Customized Video Data**  | 11 Jul 2024  | [Link](https://arxiv.org/abs/2407.08674) |          --         | [Link](https://still-moving.github.io/) |
-| 2024 | **CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer**  | 12 Aug 2024  | [Link](https://arxiv.org/abs/2408.06072) |          [Link](https://github.com/THUDM/CogVideo)          | [Hugging Face](https://huggingface.co/docs/diffusers/main/en/api/pipelines/cogvideox) |
-| 2024 | **CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities**  | 23 Aug 2024  | [Link](https://arxiv.org/abs/2408.13239) |          [Link](https://github.com/WuTao-CS/CustomCrafter)        | [Link](https://customcrafter.github.io/) |
-| 2024 | **Tora: Trajectory-oriented Diffusion Transformer for Video Generation**  | 27 Aug 2024  | [Link](https://arxiv.org/abs/2407.21705)  |      [Link](https://github.com/alibaba/Tora)      | [Link](https://ali-videoai.github.io/tora_video/) |
-| 2024 | **BroadWay: Boost Your Text-to-Video Generation Model in a Training-free Way**  | 8 Oct 2024  | [Link](https://arxiv.org/abs/2410.06241)  |      --      | -- |
-| 2024 | **Pyramidal Flow Matching for Efficient Video Generative Modeling**  | 8 Oct 2024  | [Link](https://arxiv.org/abs/2410.05954)  |      [Link](https://github.com/jy0205/Pyramid-Flow)      | [Link](https://pyramid-flow.github.io/) |
-| 2024 | **GameGen-X: Interactive Open-world Game Video Generation**  |  1 Nov 2024  | [Link](https://arxiv.org/abs/2411.00769)  |          [Link](https://github.com/GameGen-X/GameGen-X)        | [Link](https://gamegen-x.github.io/) |
-| 2024 | **MVideo: Motion Control for Enhanced Complex Action Video Generation**  |  13 Nov 2024  | [Link](https://arxiv.org/abs/2411.08328)  |     --      | [Link](https://mvideo-v1.github.io/) |
-| 2024 | **AnimateAnything: Consistent and Controllable Animation for video generation**  |  16 Nov 2024  | [Link](https://arxiv.org/abs/2411.10836)  |     [Link](https://github.com/yu-shaonian/AnimateAnything)      | [Link](https://yu-shaonian.github.io/Animate_Anything/) |
-| 2024 | **FlipSketch: Flipping Static Drawings to Text-Guided Sketch Animations**  |  16 Nov 2024  | [Link](https://arxiv.org/abs/2411.10818)  |    --      | [Link](https://github.com/hmrishavbandy/FlipSketch) |
-| 2024 | **DreamRunner: Fine-Grained Storytelling Video Generation with Retrieval-Augmented Motion Adaptation**  |  25 Nov 2024  | [Link](https://arxiv.org/abs/2411.16657)  |    [Link](https://github.com/wz0919/DreamRunner)      | [Link](https://dreamrunner-story2video.github.io/) |
-| 2024 | **PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation**  |  30 Nov 2024  | [Link](https://arxiv.org/abs/2412.00596)  |    [Link](https://github.com/pittisl/PhyT2V)      | -- |
-| 2024 | **Motion Prompting: Controlling Video Generation with Motion Trajectories**  |  3 Dec 2024  | [Link](https://arxiv.org/abs/2412.02700)  |    --     | [Link](https://motion-prompting.github.io/) |
-| 2024 | **Mogo: RQ Hierarchical Causal Transformer for High-Quality 3D Human Motion Generation**  |  5 Dec 2024  | [Link](https://arxiv.org/abs/2412.07797)  |    --     | -- |
-| 2024 | **Mind the Time: Temporally-Controlled Multi-Event Video Generation**  |  6 Dec 2024  | [Link](https://arxiv.org/abs/2412.05263)  |   --     | [Link](https://mint-video.github.io/) |
-| 2024 | **STIV: Scalable Text and Image Conditioned Video Generation**  |  10 Dec 2024  | [Link](https://www.arxiv.org/abs/2412.07730)  |    --     | -- |
-| 2024 | **3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation**  |  10 Dec 2024  | [Link](https://arxiv.org/abs/2412.07759)  |   [Link](https://github.com/KwaiVGI/3DTrajMaster)     | [Link](https://fuxiao0719.github.io/projects/3dtrajmaster/) |
-
-<details close>
-<summary>ArXiv Papers References</summary>
-
-```
-%axiv papers
-
-@article{henschel2024streamingt2v,
-  title={StreamingT2V: Consistent, Dynamic, and Extendable Long Video Generation from Text},
-  author={Henschel, Roberto and Khachatryan, Levon and Hayrapetyan, Daniil and Poghosyan, Hayk and Tadevosyan, Vahram and Wang, Zhangyang and Navasardyan, Shant and Shi, Humphrey},
-  journal={arXiv preprint arXiv:2403.14773},
-  year={2024}
-}
-
-@misc{liu2024textanimatorcontrollablevisualtext,
-      title={Text-Animator: Controllable Visual Text Video Generation}, 
-      author={Lin Liu and Quande Liu and Shengju Qian and Yuan Zhou and Wengang Zhou and Houqiang Li and Lingxi Xie and Qi Tian},
-      year={2024},
-      eprint={2406.17777},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2406.17777}, 
-}
-
-@misc{chefer2024stillmovingcustomizedvideogeneration,
-      title={Still-Moving: Customized Video Generation without Customized Video Data}, 
-      author={Hila Chefer and Shiran Zada and Roni Paiss and Ariel Ephrat and Omer Tov and Michael Rubinstein and Lior Wolf and Tali Dekel and Tomer Michaeli and Inbar Mosseri},
-      year={2024},
-      eprint={2407.08674},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2407.08674}, 
-}
-
-@misc{yang2024cogvideoxtexttovideodiffusionmodels,
-      title={CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer}, 
-      author={Zhuoyi Yang and Jiayan Teng and Wendi Zheng and Ming Ding and Shiyu Huang and Jiazheng Xu and Yuanming Yang and Wenyi Hong and Xiaohan Zhang and Guanyu Feng and Da Yin and Xiaotao Gu and Yuxuan Zhang and Weihan Wang and Yean Cheng and Ting Liu and Bin Xu and Yuxiao Dong and Jie Tang},
-      year={2024},
-      eprint={2408.06072},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2408.06072}, 
-}
-
-@misc{wu2024customcraftercustomizedvideogeneration,
-      title={CustomCrafter: Customized Video Generation with Preserving Motion and Concept Composition Abilities}, 
-      author={Tao Wu and Yong Zhang and Xintao Wang and Xianpan Zhou and Guangcong Zheng and Zhongang Qi and Ying Shan and Xi Li},
-      year={2024},
-      eprint={2408.13239},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2408.13239}, 
-}
-
-@misc{tora,
-        title={Tora: Trajectory-oriented Diffusion Transformer for Video Generation}, 
-        author={Zhenghao Zhang and Junchao Liao and Menghao Li and Long Qin and Weizhi Wang},   
-        year={2024},
-        eprint={2407.21705},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV},
-        url={https://arxiv.org/abs/2407.21705}, 
-}
-
-@misc{bu2024broadwayboosttexttovideogeneration,
-      title={BroadWay: Boost Your Text-to-Video Generation Model in a Training-free Way}, 
-      author={Jiazi Bu and Pengyang Ling and Pan Zhang and Tong Wu and Xiaoyi Dong and Yuhang Zang and Yuhang Cao and Dahua Lin and Jiaqi Wang},
-      year={2024},
-      eprint={2410.06241},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.06241}, 
-}
-
-@article{jin2024pyramidal,
-  title={Pyramidal Flow Matching for Efficient Video Generative Modeling},
-  author={Jin, Yang and Sun, Zhicheng and Li, Ningyuan and Xu, Kun and Xu, Kun and Jiang, Hao and Zhuang, Nan and Huang, Quzhe and Song, Yang and Mu, Yadong and Lin, Zhouchen},
-  jounal={arXiv preprint arXiv:2410.05954},
-  year={2024}
-}
-
-@misc{che2024gamegenxinteractiveopenworldgame,
-      title={GameGen-X: Interactive Open-world Game Video Generation}, 
-      author={Haoxuan Che and Xuanhua He and Quande Liu and Cheng Jin and Hao Chen},
-      year={2024},
-      eprint={2411.00769},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.00769}, 
-}
-
-@misc{zhou2024motioncontrolenhancedcomplex,
-      title={Motion Control for Enhanced Complex Action Video Generation}, 
-      author={Qiang Zhou and Shaofeng Zhang and Nianzu Yang and Ye Qian and Hao Li},
-      year={2024},
-      eprint={2411.08328},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.08328}, 
-}
-
-@misc{lei2024animateanythingconsistentcontrollableanimation,
-      title={AnimateAnything: Consistent and Controllable Animation for Video Generation}, 
-      author={Guojun Lei and Chi Wang and Hong Li and Rong Zhang and Yikai Wang and Weiwei Xu},
-      year={2024},
-      eprint={2411.10836},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.10836}, 
-}
-
-@misc{bandyopadhyay2024flipsketch,
-  title={FlipSketch: Flipping assets Drawings to Text-Guided Sketch Animations}, 
-  author={Hmrishav Bandyopadhyay and Yi-Zhe Song},
-  year={2024},
-  eprint={2411.10818},
-  archivePrefix={arXiv},
-  primaryClass={cs.GR},
-  url={https://arxiv.org/abs/2411.10818}, 
-}
-
-@article{zun2024dreamrunner,
-    author = {Zun Wang and Jialu Li and Han Lin and Jaehong Yoon and Mohit Bansal},
-    title  = {DreamRunner: Fine-Grained Storytelling Video Generation with Retrieval-Augmented Motion Adaptation},
-    journal   = {arxiv},
-    year      = {2024},
-    url       = {https://arxiv.org/abs/2411.16657}
-}
-
-@misc{xue2024phyt2vllmguidediterativeselfrefinement,
-      title={PhyT2V: LLM-Guided Iterative Self-Refinement for Physics-Grounded Text-to-Video Generation}, 
-      author={Qiyao Xue and Xiangyu Yin and Boyuan Yang and Wei Gao},
-      year={2024},
-      eprint={2412.00596},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.00596}, 
-}
-
-@article{geng2024motionprompting,
-  author    = {Geng, Daniel and Herrmann, Charles and Hur, Junhwa and Cole, Forrester and Zhang, Serena and Pfaff, Tobias and Lopez-Guevara, Tatiana and Doersch, Carl and Aytar, Yusuf and Rubinstein, Michael and Sun, Chen and Wang, Oliver and Owens, Andrew and Sun, Deqing},
-  title     = {Motion Prompting: Controlling Video Generation with Motion Trajectories},
-  journal   = {arXiv preprint arXiv:2412.02700},
-  year      = {2024},
-}
-
-@misc{fu2024mogorqhierarchicalcausal,
-      title={Mogo: RQ Hierarchical Causal Transformer for High-Quality 3D Human Motion Generation}, 
-      author={Dongjie Fu},
-      year={2024},
-      eprint={2412.07797},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.07797}, 
-}
-
-@article{MinT,
-  title={Mind the Time: Temporally-Controlled Multi-Event Video Generation},
-  author={Wu, Ziyi and Siarohin, Aliaksandr and Menapace, Willi and Skorokhodov, Ivan and Fang, Yuwei and Chordia, Varnith and Gilitschenski, Igor and Tulyakov, Sergey},
-  journal={arXiv preprint arXiv:2412.05263},
-  year={2024}
-}
-
-@misc{lin2024stivscalabletextimage,
-      title={STIV: Scalable Text and Image Conditioned Video Generation}, 
-      author={Zongyu Lin and Wei Liu and Chen Chen and Jiasen Lu and Wenze Hu and Tsu-Jui Fu and Jesse Allardice and Zhengfeng Lai and Liangchen Song and Bowen Zhang and Cha Chen and Yiran Fei and Yifan Jiang and Lezhi Li and Yizhou Sun and Kai-Wei Chang and Yinfei Yang},
-      year={2024},
-      eprint={2412.07730},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.07730}, 
-}
-
-@article{fu20243dtrajmaster,
-    title={3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation},
-    author={Fu, Xiao and Liu, Xian and Wang, Xintao and Peng, Sida and Xia, Menghan and Shi, Xiaoyu and Yuan, Ziyang and Wan, Pengfei and Zhang, Di and Lin, Dahua},
-    journal={arXiv preprint arXiv:2412.07759},
-    year={2024}
-}
-```
-</details>
-
-### Other Additional Info
-
-- OSS video generation models: [Mochi 1](https://github.com/genmoai/models) preview is an open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence.
-- Survey: The Dawn of Video Generation: Preliminary Explorations with SORA-like Models, [arXiv](https://arxiv.org/abs/2410.05227), [Project Page](https://ailab-cvc.github.io/VideoGen-Eval/), [GitHub Repo](https://github.com/AILab-CVC/VideoGen-Eval)
-
-#### 📚 Dataset Works
-
-#### 1. VidGen-1M: A Large-Scale Dataset for Text-to-video Generation
-Zhiyu Tan, Xiaomeng Yang, Luozheng Qin, Hao Li
-
-(Fudan University, ShangHai Academy of AI for Science)
-<details span>
-<summary><b>Abstract</b></summary>
-The quality of video-text pairs fundamentally determines the upper bound of text-to-video models. Currently, the datasets used for training these models suffer from significant shortcomings, including low temporal consistency, poor-quality captions, substandard video quality, and imbalanced data distribution. The prevailing video curation process, which depends on image models for tagging and manual rule-based curation, leads to a high computational load and leaves behind unclean data. As a result, there is a lack of appropriate training datasets for text-to-video models. To address this problem, we present VidGen-1M, a superior training dataset for text-to-video models. Produced through a coarse-to-fine curation strategy, this dataset guarantees high-quality videos and detailed captions with excellent temporal consistency. When used to train the video generation model, this dataset has led to experimental results that surpass those obtained with other models.
-</details>
-
-| Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
-| ---- | ------------------------------------------------------------ | :----: | :--------------------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
-| 2024 | **VidGen-1M: A Large-Scale Dataset for Text-to-video Generation**  | 5 Aug 2024  |          [Link](https://arxiv.org/abs/2408.02629)          | [Link](https://github.com/SAIS-FUXI/VidGen) | [Link](https://sais-fuxi.github.io/projects/vidgen-1m/)  |
-
-<details close>
-<summary>References</summary>
-
-```
-%axiv papers
-
-@article{tan2024vidgen,
-  title={VidGen-1M: A Large-Scale Dataset for Text-to-video Generation},
-  author={Tan, Zhiyu and Yang, Xiaomeng, and Qin, Luozheng and Li Hao},
-  booktitle={arXiv preprint arxiv:2408.02629},
-  year={2024}
-}
-
-
 ```
 </details>
 
