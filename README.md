@@ -172,18 +172,17 @@ Text-to-video generative models have made significant strides, enabling diverse 
 
 ---
 
+### Other Additional Info
+
 ### Previous Papers
 
 ### Year 2024
 For more details, please check the [2024 T2V Papers](./docs/video/t2v_2024.md), including 7 accepted papers and 19 arXiv papers.
 
-
-### Other Additional Info
-
 - OSS video generation models: [Mochi 1](https://github.com/genmoai/models) preview is an open state-of-the-art video generation model with high-fidelity motion and strong prompt adherence.
 - Survey: The Dawn of Video Generation: Preliminary Explorations with SORA-like Models, [arXiv](https://arxiv.org/abs/2410.05227), [Project Page](https://ailab-cvc.github.io/VideoGen-Eval/), [GitHub Repo](https://github.com/AILab-CVC/VideoGen-Eval)
 
-#### 📚 Dataset Works
+### 📚 Dataset Works
 
 #### 1. VidGen-1M: A Large-Scale Dataset for Text-to-video Generation
 Zhiyu Tan, Xiaomeng Yang, Luozheng Qin, Hao Li
