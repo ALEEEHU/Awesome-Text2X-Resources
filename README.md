@@ -130,7 +130,7 @@ Weikang Bian, Zhaoyang Huang, Xiaoyu Shi, Yijin Li, Fu-Yun Wang, Hongsheng Li
 In 2023, tasks classified as text/Image to 4D and video to 4D generally involve producing four-dimensional data from text/Image or video input. For more details, please check the [2023 4D Papers](./docs/4d/4d_2023.md), including 6 accepted papers and 3 arXiv papers.
 
 ### Year 2024
-For more details, please check the [2024 4D Papers](./docs/4d/4d_2024.md), including 14 accepted papers and 20 arXiv papers.
+For more details, please check the [2024 4D Papers](./docs/4d/4d_2024.md), including 15 accepted papers and 19 arXiv papers.
 
 
 
