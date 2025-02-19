@@ -560,6 +560,13 @@ Peng Chen, Xiaobao Wei, Qingpo Wuwu, Xinyi Wang, Xingyu Xiao, Ming Lu
 Reconstructing high-fidelity 3D head avatars is crucial in various applications such as virtual reality. The pioneering methods reconstruct realistic head avatars with Neural Radiance Fields (NeRF), which have been limited by training and rendering speed. Recent methods based on 3D Gaussian Splatting (3DGS) significantly improve the efficiency of training and rendering. However, the surface inconsistency of 3DGS results in subpar geometric accuracy; later, 2DGS uses 2D surfels to enhance geometric accuracy at the expense of rendering fidelity. To leverage the benefits of both 2DGS and 3DGS, we propose a novel method named MixedGaussianAvatar for realistically and geometrically accurate head avatar reconstruction. Our main idea is to utilize 2D Gaussians to reconstruct the surface of the 3D head, ensuring geometric accuracy. We attach the 2D Gaussians to the triangular mesh of the FLAME model and connect additional 3D Gaussians to those 2D Gaussians where the rendering quality of 2DGS is inadequate, creating a mixed 2D-3D Gaussian representation. These 2D-3D Gaussians can then be animated using FLAME parameters. We further introduce a progressive training strategy that first trains the 2D Gaussians and then fine-tunes the mixed 2D-3D Gaussians. We demonstrate the superiority of MixedGaussianAvatar through comprehensive experiments.
 </details>
 
+#### 7. SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing
+Xueting Li, Ye Yuan, Shalini De Mello, Gilles Daviet, Jonathan Leaf, Miles Macklin, Jan Kautz, Umar Iqbal (NVIDIA)
+<details span>
+<summary><b>Abstract</b></summary>
+We introduce SimAvatar, a framework designed to generate simulation-ready clothed 3D human avatars from a text prompt. Current text-driven human avatar generation methods either model hair, clothing, and the human body using a unified geometry or produce hair and garments that are not easily adaptable for simulation within existing simulation pipelines. The primary challenge lies in representing the hair and garment geometry in a way that allows leveraging established prior knowledge from foundational image diffusion models (e.g., Stable Diffusion) while being simulation-ready using either physics or neural simulators. To address this task, we propose a two-stage framework that combines the flexibility of 3D Gaussians with simulation-ready hair strands and garment meshes. Specifically, we first employ three text-conditioned 3D generative models to generate garment mesh, body shape and hair strands from the given text prompt. To leverage prior knowledge from foundational diffusion models, we attach 3D Gaussians to the body mesh, garment mesh, as well as hair strands and learn the avatar appearance through optimization. To drive the avatar given a pose sequence, we first apply physics simulators onto the garment meshes and hair strands. We then transfer the motion onto 3D Gaussians through carefully designed mechanisms for each body part. As a result, our synthesized avatars have vivid texture and realistic dynamic motion. To the best of our knowledge, our method is the first to produce highly realistic, fully simulation-ready 3D avatars, surpassing the capabilities of current approaches.
+</details>
+
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -570,6 +577,7 @@ Reconstructing high-fidelity 3D head avatars is crucial in various applications 
 | 2024 | **DreamHOI: Subject-Driven Generation of 3D Human-Object Interactions with Diffusion Priors**  | 12 Sep 2024  |          [Link](https://arxiv.org/abs/2409.08278)          | [Link](https://github.com/hanwenzhu/dreamhoi)| [Link](https://dreamhoi.github.io/) |
 | 2024 | **AniGS: Animatable Gaussian Avatar from a Single Image with Inconsistent Gaussian Reconstruction**  | 3 Dec 2024  |         [Link](https://arxiv.org/abs/2412.02684)        | [Link](https://github.com/aigc3d/AniGS)| [Link](https://lingtengqiu.github.io/2024/AniGS/) |
 | 2024 | **MixedGaussianAvatar: Realistically and Geometrically Accurate Head Avatar via Mixed 2D-3D Gaussian Splatting**  | 6 Dec 2024  |    [Link](https://arxiv.org/abs/2412.04955)       | [Link](https://github.com/ChenVoid/MGA/)| [Link](https://chenvoid.github.io/MGA/) |
+| 2024 | **SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing**  | 19 Dec 2024  |    [Link](https://arxiv.org/abs/2412.09545)       | -- | [Link](https://nvlabs.github.io/SimAvatar/) |
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -623,6 +631,13 @@ Reconstructing high-fidelity 3D head avatars is crucial in various applications 
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2412.04955}, 
+}
+
+@article{li2024simavatar,
+  title={SimAvatar: Simulation-Ready Avatars with Layered Hair and Clothing},
+  author={Li, Xueting and Yuan, Ye and De Mello, Shalini and Daviet, Gilles and Leaf, Jonathan and Macklin, Miles and Kautz, Jan and Iqbal, Umar},
+  journal={arXiv preprint arXiv:2412.09545},
+  year={2024}
 }
 ```
 </details>
