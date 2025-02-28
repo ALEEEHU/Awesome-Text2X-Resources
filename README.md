@@ -13,8 +13,7 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 ✉️ Any additions or suggestions, feel free to contribute and contact hyqale1024@gmail.com. 
 
 ## 🔥 News
-* `2024.12.21` adjusted the layouts of several sections and _Happy Winter Solstice_ ⚪🥣.
-* `2024.04.05` adjusted the layout and added accepted lists and ArXiv lists to each section.
+* `2025.02.28` - update several papers status "CVPR 2025" to accepted papers, congrats to all 🎉
 
 
 <div><div align="center">
@@ -43,7 +42,6 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 <details span>
 <summary><b>2025 Update Logs:</b></summary>
 <br>	
-
 * `2025.01.23` - update several papers status "ICLR 2025" to accepted papers, congrats to all 🎉
 * `2025.01.09` - update layout.
 
@@ -52,13 +50,14 @@ This is an open collection of state-of-the-art (SOTA), novel **Text to X (X can 
 
 <details close>
 <summary><b>Previous 2024 Update Logs:</b></summary>
-	
+* `2024.12.21` adjusted the layouts of several sections and _Happy Winter Solstice_ ⚪🥣.
 * `2024.09.26` - update several papers status "NeurIPS 2024" to accepted papers, congrats to all 🎉
 * `2024.09.03` - add one new section 'text to model'.
 * `2024.06.30` - add one new section 'text to video'.	
 * `2024.07.02` - update several papers status "ECCV 2024" to accepted papers, congrats to all 🎉
 * `2024.06.21` - add one hot Topic about _AIGC 4D Generation_ on the section of __Suvery and Awesome Repos__.
 * `2024.06.17` - an awesome repo for CVPR2024 [Link](https://github.com/52CV/CVPR-2024-Papers) 👍🏻
+* `2024.04.05` adjusted the layout and added accepted lists and ArXiv lists to each section.
 * `2024.04.05` - an awesome repo for CVPR2024 on 3DGS and NeRF [Link](https://github.com/Yubel426/NeRF-3DGS-at-CVPR-2024) 👍🏻
 * `2024.03.25` - add one new survey paper of 3D GS into the section of "Survey and Awesome Repos--Topic 1: 3D Gaussian Splatting".
 * `2024.03.12` - add a new section "Dynamic Gaussian Splatting", including Neural Deformable 3D Gaussians, 4D Gaussians, Dynamic 3D Gaussians.
@@ -284,7 +283,7 @@ Recently, the field of text-guided 3D scene generation has garnered significant 
 ### Previous Papers
 
 ### Year 2023-2024
-For more details, please check the [2023-2024 3D Scene Papers](./docs/3d_scene/3d_scene_23-24.md), including 17 accepted papers and 13 arXiv papers.
+For more details, please check the [2023-2024 3D Scene Papers](./docs/3d_scene/3d_scene_23-24.md), including 19 accepted papers and 11 arXiv papers.
 
 --------------
 
@@ -330,7 +329,7 @@ Human motion generation and editing are key components of computer graphics and 
 ### Previous Papers
 
 ### Year 2023-2024
-For more details, please check the [2023-2024 Text to Human Motion Papers](./docs/human_motion/motion_23-24.md), including 30 accepted papers and 14 arXiv papers.
+For more details, please check the [2023-2024 Text to Human Motion Papers](./docs/human_motion/motion_23-24.md), including 31 accepted papers and 13 arXiv papers.
 
 ### 📚 Dataset Works
 
