@@ -18,6 +18,8 @@
 | 2024 | **ReplaceAnything3D:Text-Guided 3D Scene Editing with Compositional Neural Radiance Fields**  | NeurIPS 2024 |          [Link](https://arxiv.org/abs/2401.17895)          | --  |[Link](https://replaceanything3d.github.io/) |
 | 2024 | **RealmDreamer: Text-Driven 3D Scene Generation with Inpainting and Depth Diffusion**  | 3DV 2025 |          [Link](https://arxiv.org/abs/2404.07199)          | [Link](https://github.com/jaidevshriram/realmdreamer)  |[Link](https://realmdreamer.github.io/) |
 | 2024 | **3DitScene: Editing Any Scene via Language-guided Disentangled Gaussian Splatting**  | ICLR 2025 |          [Link](https://arxiv.org/abs/2405.18424)         | [Link](https://github.com/zqh0253/3DitScene)  |[Link](https://zqh0253.github.io/3DitScene/) |
+| 2024 | **The Scene Language: Representing Scenes with Programs, Words, and Embeddings**  | CVPR 2025 |          [Link](https://arxiv.org/abs/2410.16770)          | [Link](https://github.com/zzyunzhi/scene-language)  | [Link](https://ai.stanford.edu/~yzzhang/projects/scene-language/)|
+| 2024 | **Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation**  | CVPR 2025 |          [Link](https://arxiv.org/abs/2412.21117)          | [Link](https://github.com/XDimLab/Prometheus)  | [Link](https://freemty.github.io/project-prometheus/)|
 
 <details close>
 <summary>Accepted Papers References</summary>
@@ -167,6 +169,22 @@
   year={2024}
 }
 
+@misc{zhang2024scenelanguagerepresentingscenes,
+      title={The Scene Language: Representing Scenes with Programs, Words, and Embeddings}, 
+      author={Yunzhi Zhang and Zizhang Li and Matt Zhou and Shangzhe Wu and Jiajun Wu},
+      year={2024},
+      eprint={2410.16770},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.16770}, 
+}
+
+@article{yang2024prometheus,
+      title={Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation}, 
+      author={Yuanbo, Yang and Jiahao, Shao and Xinyang, Li and Yujun, Shen and Andreas, Geiger and Yiyi, Liao},
+      year={2024},
+      journal= {arxiv:2412.21117},
+}
 ```
 </details>
 
@@ -272,22 +290,6 @@ Ling Yang, Zixiang Zhang, Junlin Han, Bohan Zeng, Runjia Li, Philip Torr, Wentao
 Generating high-quality 3D assets from textual descriptions remains a pivotal challenge in computer graphics and vision research. Due to the scarcity of 3D data, state-of-the-art approaches utilize pre-trained 2D diffusion priors, optimized through Score Distillation Sampling (SDS). Despite progress, crafting complex 3D scenes featuring multiple objects or intricate interactions is still difficult. To tackle this, recent methods have incorporated box or layout guidance. However, these layout-guided compositional methods often struggle to provide fine-grained control, as they are generally coarse and lack expressiveness. To overcome these challenges, we introduce a novel SDS approach, Semantic Score Distillation Sampling (SemanticSDS), designed to effectively improve the expressiveness and accuracy of compositional text-to-3D generation. Our approach integrates new semantic embeddings that maintain consistency across different rendering views and clearly differentiate between various objects and parts. These embeddings are transformed into a semantic map, which directs a region-specific SDS process, enabling precise optimization and compositional generation. By leveraging explicit semantic guidance, our method unlocks the compositional capabilities of existing pre-trained diffusion models, thereby achieving superior quality in 3D content generation, particularly for complex objects and scenes. Experimental results demonstrate that our SemanticSDS framework is highly effective for generating state-of-the-art complex 3D content.
 </details>
 
-#### 12. The Scene Language: Representing Scenes with Programs, Words, and Embeddings
-Yunzhi Zhang, Zizhang Li, Matt Zhou, Shangzhe Wu, Jiajun Wu (Stanford University, UC Berkeley)
-<details span>
-<summary><b>Abstract</b></summary>
-We introduce the Scene Language, a visual scene representation that concisely and precisely describes the structure, semantics, and identity of visual scenes. It represents a scene with three key components: a program that specifies the hierarchical and relational structure of entities in the scene, words in natural language that summarize the semantic class of each entity, and embeddings that capture the visual identity of each entity. This representation can be inferred from pre-trained language models via a training-free inference technique, given text or image inputs. The resulting scene can be rendered into images using traditional, neural, or hybrid graphics renderers. Together, this forms a robust, automated system for high-quality 3D and 4D scene generation. Compared with existing representations like scene graphs, our proposed Scene Language generates complex scenes with higher fidelity, while explicitly modeling the scene structures to enable precise control and editing.
-</details>
-
-#### 13. Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation
-Yuanbo Yang, Jiahao Shao, Xinyang Li, Yujun Shen, Andreas Geiger, Yiyi Liao
-
-(Zhejiang University, Xiamen University, Ant Group, University of Tübingen)
-<details span>
-<summary><b>Abstract</b></summary>
-In this work, we introduce Prometheus, a 3D-aware latent diffusion model for text-to-3D generation at both object and scene levels in seconds. We formulate 3D scene generation as multi-view, feed-forward, pixel-aligned 3D Gaussian generation within the latent diffusion paradigm. To ensure generalizability, we build our model upon pre-trained text-to-image generation model with only minimal adjustments, and further train it using a large number of images from both single-view and multi-view datasets. Furthermore, we introduce an RGB-D latent space into 3D Gaussian generation to disentangle appearance and geometry information, enabling efficient feed-forward generation of 3D Gaussians with better fidelity and geometry. Extensive experimental results demonstrate the effectiveness of our method in both feed-forward 3D Gaussian reconstruction and text-to-3D generation. 
-</details>
-
 ---
 
 | Year | Title                                                        | ArXiv Time  |                           Paper                            |                      Code                      | Project Page                      |
@@ -303,8 +305,7 @@ In this work, we introduce Prometheus, a 3D-aware latent diffusion model for tex
 | 2024 | **SceneDreamer360: Text-Driven 3D-Consistent Scene Generation with Panoramic Gaussian Splatting**  | 25 Aug 2024 |          [Link](https://arxiv.org/abs/5811784)          | [Link](https://github.com/liwrui/SceneDreamer360)  | [Link](https://scenedreamer360.github.io/)|
 | 2024 | **WonderWorld: Interactive 3D Scene Generation from a Single Image**  | 10 Sep 2024 |          [Link](https://arxiv.org/abs/2406.09394)          | [Link](https://github.com/KovenYu/WonderWorld)  | [Link](https://kovenyu.com/wonderworld/) |
 | 2024 | **Semantic Score Distillation Sampling for Compositional Text-to-3D Generation**  | 11 Oct 2024 |          [Link](https://arxiv.org/abs/2410.09009)          | [Link](https://github.com/YangLing0818/SemanticSDS-3D)  | -- |
-| 2024 | **The Scene Language: Representing Scenes with Programs, Words, and Embeddings**  | 22 Oct 2024 |          [Link](https://arxiv.org/abs/2410.16770)          | [Link](https://github.com/zzyunzhi/scene-language)  | [Link](https://ai.stanford.edu/~yzzhang/projects/scene-language/)|
-| 2024 | **Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation**  | 30 Dec 2024 |          [Link](https://arxiv.org/abs/2412.21117)          | [Link](https://github.com/XDimLab/Prometheus)  | [Link](https://freemty.github.io/project-prometheus/)|
+
 
 <details close>
 <summary>ArXiv Papers References</summary>
@@ -402,23 +403,6 @@ In this work, we introduce Prometheus, a 3D-aware latent diffusion model for tex
   author={Yang, Ling and Zhang, Zixiang and Han, Junlin and Zeng, Bohan and Li, Runjia and Torr, Philip and Zhang, Wentao},
   journal={arXiv preprint arXiv:2410.09009},
   year={2024}
-}
-
-@misc{zhang2024scenelanguagerepresentingscenes,
-      title={The Scene Language: Representing Scenes with Programs, Words, and Embeddings}, 
-      author={Yunzhi Zhang and Zizhang Li and Matt Zhou and Shangzhe Wu and Jiajun Wu},
-      year={2024},
-      eprint={2410.16770},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2410.16770}, 
-}
-
-@article{yang2024prometheus,
-      title={Prometheus: 3D-Aware Latent Diffusion Models for Feed-Forward Text-to-3D Scene Generation}, 
-      author={Yuanbo, Yang and Jiahao, Shao and Xinyang, Li and Yujun, Shen and Andreas, Geiger and Yiyi, Liao},
-      year={2024},
-      journal= {arxiv:2412.21117},
 }
 ```
 </details>
