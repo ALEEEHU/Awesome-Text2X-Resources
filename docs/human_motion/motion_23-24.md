@@ -32,6 +32,7 @@
 | 2024 | **Autonomous Character-Scene Interaction Synthesis from Text Instruction**  | SIGGRAPH Asia 2024 |          [Link](https://arxiv.org/abs/2410.03187)          | -- | [Link](https://lingomotions.com/)  |
 | 2024 | **MoRAG -- Multi-Fusion Retrieval Augmented Generation for Human Motion**  | WACV 2025 |          [Link](https://arxiv.org/abs/2409.12140)          | [Link](https://github.com/Motion-RAG/MoRAG) | [Link](https://motion-rag.github.io/)  |
 | 2024 | **UniMuMo: Unified Text, Music, and Motion Generation**  | AAAI 2025 |          [Link](https://arxiv.org/abs/2410.04534)          | [Link](https://github.com/hanyangclarence/UniMuMo) | [Link](https://hanyangclarence.github.io/unimumo_demo/)  |
+| 2024 | **DART: A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control**  | ICLR 2025 Spotlight |          [Link](https://arxiv.org/abs/2410.05260)          | -- | [Link](https://zkf1997.github.io/DART/)  |
 
 
 <details close>
@@ -286,6 +287,13 @@ url={https://openreview.net/forum?id=SJ1kSyO2jwu}
       primaryClass={cs.SD},
       url={https://arxiv.org/abs/2410.04534}, 
 }
+
+@article{zhao2024dart,
+  title={Dart: A diffusion-based autoregressive motion model for real-time text-driven motion control},
+  author={Zhao, Kaifeng and Li, Gen and Tang, Siyu},
+  journal={arXiv preprint arXiv:2410.05260},
+  year={2024}
+}
 ```
 </details>
 
@@ -359,13 +367,6 @@ Mingdian Liu, Yilin Liu, Gurunandan Krishnan, Karl S Bayer, Bing Zhou
 The generation of humanoid animation from text prompts can profoundly impact animation production and AR/VR experiences. However, existing methods only generate body motion data, excluding facial expressions and hand movements. This limitation, primarily due to a lack of a comprehensive whole-body motion dataset, inhibits their readiness for production use. Recent attempts to create such a dataset have resulted in either motion inconsistency among different body parts in the artificially augmented data or lower quality in the data extracted from RGB videos. In this work, we propose T2M-X, a two-stage method that learns expressive text-to-motion generation from partially annotated data. T2M-X trains three separate Vector Quantized Variational AutoEncoders (VQ-VAEs) for body, hand, and face on respective high-quality data sources to ensure high-quality motion outputs, and a Multi-indexing Generative Pretrained Transformer (GPT) model with motion consistency loss for motion generation and coordination among different body parts. Our results show significant improvements over the baselines both quantitatively and qualitatively, demonstrating its robustness against the dataset limitations.
 </details>
 
-#### 9. DART: A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control
-Kaifeng Zhao, Gen Li, Siyu Tang (ETH Zürich)
-<details span>
-<summary><b>Abstract</b></summary>
-Text-conditioned human motion generation, which allows for user interaction through natural language, has become increasingly popular. Existing methods typically generate short, isolated motions based on a single input sentence. However, human motions are continuous and can extend over long periods, carrying rich semantics. Creating long, complex motions that precisely respond to streams of text descriptions, particularly in an online and real-time setting, remains a significant challenge. Furthermore, incorporating spatial constraints into text-conditioned motion generation presents additional challenges, as it requires aligning the motion semantics specified by text descriptions with geometric information, such as goal locations and 3D scene geometry. To address these limitations, we propose DART, a Diffusion-based Autoregressive motion primitive model for Real-time Text-driven motion control. Our model, DART, effectively learns a compact motion primitive space jointly conditioned on motion history and text inputs using latent diffusion models. By autoregressively generating motion primitives based on the preceding history and current text input, DART enables real-time, sequential motion generation driven by natural language descriptions. Additionally, the learned motion primitive space allows for precise spatial motion control, which we formulate either as a latent noise optimization problem or as a Markov decision process addressed through reinforcement learning. We present effective algorithms for both approaches, demonstrating our model's versatility and superior performance in various motion synthesis tasks. Experiments show our method outperforms existing baselines in motion realism, efficiency, and controllability.
-</details>
-
 #### 10. ControlMM: Controllable Masked Motion Generation
 Ekkasit Pinyoanuntapong, Muhammad Usama Saleem, Korrawe Karunratanakul, Pu Wang, Hongfei Xue, Chen Chen, Chuan Guo, Junli Cao, Jian Ren, Sergey Tulyakov
 
@@ -423,7 +424,6 @@ The scaling law has been validated in various domains, such as natural language 
 | 2024 | **Infinite Motion: Extended Motion Generation via Long Text Instructions**  | 11 Jul 2024 |          [Link](https://arxiv.org/abs/2407.08443)          | [Link](https://github.com/shuochengzhai/Infinite-Motion) | [Link](https://shuochengzhai.github.io/Infinite-motion.github.io/)  |
 | 2024 | **Adding Multi-modal Controls to Whole-body Human Motion Generation**  | 30 Jul 2024 |          [Link](https://arxiv.org/abs/2407.21136)          | [Link](https://github.com/yxbian23/ControlMM) | [Link](https://yxbian23.github.io/ControlMM/)  |
 | 2024 | **T2M-X: Learning Expressive Text-to-Motion Generation from Partially Annotated Data**  | 20 Sep 2024 |          [Link](https://arxiv.org/abs/2409.13251)          | -- | -- |
-| 2024 | **DART: A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control**  | 7 Oct 2024 |          [Link](https://arxiv.org/abs/2410.05260)          | -- | [Link](https://zkf1997.github.io/DART/)  |
 | 2024 | **ControlMM: Controllable Masked Motion Generation**  | 14 Oct 2024 |          [Link](https://arxiv.org/abs/2410.10780)          | [Link](https://github.com/exitudio/ControlMM/) | [Link](https://exitudio.github.io/ControlMM-page/)  |
 | 2024 | **MotionCLR: Motion Generation and Training-free Editing via Understanding Attention Mechanisms**  | 24 Oct 2024 |          [Link](https://arxiv.org/abs/2410.18977)          | [Link](https://github.com/IDEA-Research/MotionCLR) | [Link](https://lhchen.top/MotionCLR/)  |
 | 2024 | **KMM: Key Frame Mask Mamba for Extended Motion Generation**  | 10 Nov 2024 |          [Link](https://arxiv.org/abs/2411.06481)          | [Link](https://github.com/steve-zeyu-zhang/KMM) | [Link](https://steve-zeyu-zhang.github.io/KMM/)  |
@@ -511,12 +511,6 @@ The scaling law has been validated in various domains, such as natural language 
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2409.13251}, 
-}
-
-@inproceedings{Zhao:DART:2024,
-   title = {A Diffusion-Based Autoregressive Motion Model for Real-Time Text-Driven Motion Control},
-   author = {Zhao, Kaifeng and Li, Gen and Tang, Siyu},
-   year = {2024}
 }
 
 @misc{pinyoanuntapong2024controlmmcontrollablemaskedmotion,
